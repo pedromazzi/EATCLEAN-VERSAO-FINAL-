@@ -395,12 +395,12 @@ const ListaCompras = () => {
               <div
                 key={index}
                 className="flex items-center space-x-3 py-2 cursor-pointer hover:bg-eatclean-light-gray/50 rounded-md px-2 -mx-2"
-                onClick={() => handleToggleCheck(ingredient)}
+                // REMOVIDO: onClick={() => handleToggleCheck(ingredient)} do div pai
               >
                 <Checkbox
                   id={`ingredient-${index}`}
                   checked={checkedItems.has(ingredient)}
-                  onCheckedChange={() => handleToggleCheck(ingredient)}
+                  onCheckedChange={(checked) => handleToggleCheck(ingredient)} // onCheckedChange já é suficiente
                   className="h-5 w-5 rounded-full border-eatclean-gray-inactive data-[state=checked]:bg-eatclean-primary-green data-[state=checked]:text-eatclean-white"
                 />
                 <Label
