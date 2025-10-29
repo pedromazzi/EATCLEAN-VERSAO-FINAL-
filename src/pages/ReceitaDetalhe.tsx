@@ -6,9 +6,8 @@ import RecipeDetailHeader from "@/components/RecipeDetailHeader";
 import IngredientCheckbox from "@/components/IngredientCheckbox";
 import PreparationStep from "@/components/PreparationStep";
 import NutritionalInfoCard from "@/components/NutritionalInfoCard";
-import NotFound from "./NotFound"; // Importar NotFound para caso a receita não seja encontrada
-
-const FAVORITES_STORAGE_KEY = "eatclean_favoritos";
+import NotFound from "./NotFound";
+import { addFavoriteRecipeId, removeFavoriteRecipeId, checkIsFavorite } from "@/utils/favorites";
 
 const ReceitaDetalhe = () => {
   const { id } = useParams<{ id: string }>();
@@ -20,21 +19,18 @@ const ReceitaDetalhe = () => {
     setRecipe(foundRecipe);
 
     if (foundRecipe) {
-      const favorites = JSON.parse(localStorage.getItem(FAVORITES_STORAGE_KEY) || "[]");
-      setIsFavorite(favorites.includes(foundRecipe.id));
+      setIsFavorite(checkIsFavorite(foundRecipe.id));
     }
   }, [id]);
 
   const handleToggleFavorite = () => {
     if (!recipe) return;
 
-    let favorites = JSON.parse(localStorage.getItem(FAVORITES_STORAGE_KEY) || "[]");
     if (isFavorite) {
-      favorites = favorites.filter((favId: string) => favId !== recipe.id);
+      removeFavoriteRecipeId(recipe.id);
     } else {
-      favorites.push(recipe.id);
+      addFavoriteRecipeId(recipe.id);
     }
-    localStorage.setItem(FAVORITES_STORAGE_KEY, JSON.stringify(favorites));
     setIsFavorite(!isFavorite);
   };
 
@@ -46,8 +42,7 @@ const ReceitaDetalhe = () => {
     <div className="min-h-screen flex flex-col bg-eatclean-white">
       <RecipeDetailHeader isFavorite={isFavorite} onToggleFavorite={handleToggleFavorite} />
 
-      <div className="flex-grow pt-16"> {/* Padding top para o header fixo */}
-        {/* Imagem da Receita */}
+      <div className="flex-grow pt-16">
         <img
           src={recipe.imagem}
           alt={recipe.nome}
@@ -55,7 +50,6 @@ const ReceitaDetalhe = () => {
         />
 
         <div className="p-4">
-          {/* Título e Descrição */}
           <h1 className="text-3xl font-bold text-eatclean-gray-text mt-4 mb-2">
             {recipe.nome}
           </h1>
@@ -63,7 +57,6 @@ const ReceitaDetalhe = () => {
             {recipe.descricao}
           </p>
 
-          {/* Seção Ingredientes */}
           <section className="mb-8">
             <h2 className="text-xl font-bold text-eatclean-gray-text mb-4">Ingredientes</h2>
             <div className="space-y-2">
@@ -73,7 +66,6 @@ const ReceitaDetalhe = () => {
             </div>
           </section>
 
-          {/* Seção Modo de Preparo */}
           <section className="mb-8">
             <h2 className="text-xl font-bold text-eatclean-gray-text mb-4">Modo de Preparo</h2>
             <div className="space-y-4">
@@ -83,7 +75,6 @@ const ReceitaDetalhe = () => {
             </div>
           </section>
 
-          {/* Seção Informações Nutricionais */}
           <section className="mb-8">
             <h2 className="text-xl font-bold text-eatclean-gray-text mb-4">Informações Nutricionais</h2>
             <div className="grid grid-cols-2 gap-4">
