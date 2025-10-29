@@ -1,18 +1,16 @@
 import React from "react";
 import MealPrepArticleCard from "@/components/MealPrepArticleCard";
 
-// Importando as imagens do diretório public
-import mealPrepHero from "/images/meal-prep/meal-prep.png";
-import mealPrepChef from "/images/meal-prep/meal-prep2.png";
-
+// As imagens na pasta public são acessadas diretamente pelo caminho raiz '/'
+// Não é necessário importá-las como módulos em Vite quando estão em 'public'.
 
 const MealPrep = () => {
   return (
-    <div className="p-4 bg-eatclean-light-gray min-h-[calc(100vh-128px)]"> {/* Ajustado min-h para considerar header e footer */}
+    <div className="p-4 bg-eatclean-light-gray min-h-[calc(100vh-128px)]">
       {/* 1. CABEÇALHO COM IMAGEM */}
       <div className="mb-6">
         <img
-          src={mealPrepHero} // Usando a imagem importada
+          src="/images/meal-prep/meal-prep.png" // Caminho direto para a imagem na pasta public
           alt="Meal Prep"
           className="w-full h-48 object-cover rounded-xl shadow-md"
         />
@@ -27,12 +25,12 @@ const MealPrep = () => {
           Descubra como preparar refeições saudáveis com antecedência para
           economizar tempo e manter uma dieta equilibrada.
         </p>
-      </div>
+      </div >
 
       {/* 3. DOIS CARDS COM FOTO (Artigos) */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
         <MealPrepArticleCard
-          imageSrc={mealPrepChef} // Usando a imagem importada
+          imageSrc="/images/meal-prep/meal-prep2.png" // Caminho direto para a imagem na pasta public
           title="Guia completo de meal prep para iniciantes"
           description="Aprenda os passos básicos para começar a preparar suas refeições da semana."
           linkTo="/guia-meal-prep-iniciantes" // Placeholder para futura rota
@@ -43,7 +41,7 @@ const MealPrep = () => {
           description="Opções práticas e saborosas para levar para o trabalho ou faculdade."
           linkTo="/receitas-meal-prep-almoco" // Placeholder para futura rota
         />
-      </div>
+      </div >
 
       {/* 4. CONTEÚDO DE MEAL PREP (Seção Principal) */}
       <section className="bg-eatclean-white rounded-xl shadow-sm p-6 mb-4">
@@ -66,7 +64,7 @@ const MealPrep = () => {
           Varie os temperos para não enjoar das refeições ao longo da semana.
         </p>
       </section>
-    </div>
+    </div >
   );
 };
 
