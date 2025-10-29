@@ -62,6 +62,13 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        // Custom EatClean colors
+        "eatclean-primary-green": "hsl(var(--eatclean-primary-green))",
+        "eatclean-orange-highlight": "hsl(var(--eatclean-orange-highlight))",
+        "eatclean-gray-text": "hsl(var(--eatclean-gray-text))",
+        "eatclean-gray-inactive": "hsl(var(--eatclean-gray-inactive))",
+        "eatclean-light-gray": "hsl(var(--eatclean-light-gray))",
+        "eatclean-white": "hsl(var(--eatclean-white))",
       },
       borderRadius: {
         lg: "var(--radius)",
