@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from "react";
-import { Shuffle, ShoppingCart, Download } from "lucide-react";
+import { Shuffle, ShoppingCart, Share2 } from "lucide-react"; // Removido Download, adicionado Share2
 import { Button } from "@/components/ui/button";
 import { initialRecipes } from "@/data/recipes";
 import { Recipe } from "@/types/recipe";
@@ -122,28 +122,63 @@ const PlanoSemanal = () => {
       uniqueRecipeIds.includes(recipe.id)
     );
 
-    // This would typically pass data via context or a more robust state management.
-    // For now, we'll just navigate and assume ListaCompras can fetch based on IDs if needed,
-    // or we'd implement a more direct data passing mechanism.
-    // For this example, we'll just navigate.
     navigate("/lista-compras", { state: { recipes: recipesForShoppingList } });
     toast.info("Gerando lista de compras...");
   };
 
-  const handleExportPlan = () => {
-    if (!weeklyPlan) {
-      toast.error("Gere um plano antes de exportar.");
+  const copyToClipboard = (text: string) => {
+    navigator.clipboard.writeText(text).then(() => {
+      toast.success('Plano copiado para a área de transferência!');
+    }).catch((error) => {
+      console.error('Erro ao copiar:', error);
+      toast.error('Não foi possível copiar o plano.');
+    });
+  };
+
+  const handleSharePlan = async () => {
+    if (!weeklyPlan || weeklyPlan.plan.length === 0) {
+      toast.error("Gere um plano antes de compartilhar.");
       return;
     }
-    const dataStr = JSON.stringify(weeklyPlan, null, 2);
-    const dataUri =
-      "data:application/json;charset=utf-8," + encodeURIComponent(dataStr);
-    const link = document.createElement("a");
-    link.setAttribute("href", dataUri);
-    link.setAttribute("download", "plano-semanal-eatclean.json");
-    link.click();
-    toast.success("Plano exportado com sucesso!");
+
+    let textoPlano = "🍽️ MEU PLANO SEMANAL - EATCLEAN\n\n";
+    let totalCalories = 0;
+
+    weeklyPlan.plan.forEach((day) => {
+      textoPlano += `📅 ${day.dayName.toUpperCase()}\n`;
+      day.meals.forEach((recipeId, index) => {
+        if (recipeId) {
+          const recipe = initialRecipes.find((r) => r.id === recipeId);
+          if (recipe) {
+            const emoji = index === 0 ? "☀️" : index === 1 ? "🍴" : "🌙";
+            const nomeRefeicao = index === 0 ? "Café da Manhã" : index === 1 ? "Almoço" : "Jantar";
+            textoPlano += `${emoji} ${nomeRefeicao}: ${recipe.nome} (${recipe.calorias} kcal)\n`;
+            totalCalories += recipe.calorias;
+          }
+        }
+      });
+      textoPlano += "\n";
+    });
+
+    textoPlano += `Total de calorias da semana: ${totalCalories} kcal\n\n`;
+    textoPlano += "Criado com EatClean 💚";
+
+    if (navigator.share) {
+      try {
+        await navigator.share({
+          title: 'Meu Plano Semanal - EatClean',
+          text: textoPlano,
+        });
+      } catch (error) {
+        console.log('Erro ao compartilhar:', error, "Tentando copiar para área de transferência.");
+        copyToClipboard(textoPlano);
+      }
+    } else {
+      copyToClipboard(textoPlano);
+    }
   };
+
+  const isPlanGenerated = weeklyPlan && weeklyPlan.plan.length > 0;
 
   return (
     <div className="p-4 bg-eatclean-light-gray min-h-[calc(100vh-128px)]">
@@ -217,7 +252,7 @@ const PlanoSemanal = () => {
       </div>
 
       {/* Grade do Plano */}
-      {weeklyPlan && weeklyPlan.plan.length > 0 && (
+      {isPlanGenerated && (
         <div className="bg-eatclean-white rounded-xl shadow-sm p-4 mb-6">
           <h2 className="text-xl font-bold text-eatclean-gray-text mb-4">
             Seu Plano
@@ -235,7 +270,7 @@ const PlanoSemanal = () => {
                 </tr>
               </thead>
               <tbody>
-                {weeklyPlan.plan.map((day, dayIndex) => (
+                {weeklyPlan!.plan.map((day, dayIndex) => (
                   <tr
                     key={day.dayName}
                     className="border-b border-eatclean-light-gray last:border-b-0"
@@ -273,6 +308,7 @@ const PlanoSemanal = () => {
               variant="outline"
               className="flex-grow border-eatclean-orange-highlight text-eatclean-orange-highlight hover:bg-eatclean-orange-highlight/10"
               onClick={handleGenerateShoppingList}
+              disabled={!isPlanGenerated}
             >
               <ShoppingCart size={18} className="mr-2" />
               Gerar Lista de Compras
@@ -280,16 +316,17 @@ const PlanoSemanal = () => {
             <Button
               variant="outline"
               className="flex-grow border-eatclean-gray-inactive text-eatclean-gray-text hover:bg-eatclean-light-gray"
-              onClick={handleExportPlan}
+              onClick={handleSharePlan}
+              disabled={!isPlanGenerated}
             >
-              <Download size={18} className="mr-2" />
-              Exportar Plano
+              <Share2 size={18} className="mr-2" />
+              Compartilhar Plano
             </Button>
           </div>
         </div>
       )}
 
-      {!weeklyPlan && (
+      {!isPlanGenerated && (
         <div className="text-center text-eatclean-gray-inactive py-12">
           <p className="text-lg mb-4">
             Configure o número de dias e refeições e gere seu plano!
