@@ -43,7 +43,7 @@ const Explorar = () => {
   }, [searchTerm, activeCategory]);
 
   return (
-    <div className="p-4">
+    <div className="p-4 bg-eatclean-light-gray min-h-[calc(100vh-128px)]">
       {/* Barra de Pesquisa */}
       <div className="relative mb-6">
         <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-eatclean-gray-inactive" size={20} />

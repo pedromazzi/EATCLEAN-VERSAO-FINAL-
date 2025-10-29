@@ -33,7 +33,7 @@ const Favoritos = () => {
   };
 
   return (
-    <div className="p-4">
+    <div className="p-4 bg-eatclean-light-gray min-h-[calc(100vh-128px)]">
       <h1 className="text-3xl font-bold text-eatclean-gray-text mb-6 text-center">
         Favoritos
       </h1>

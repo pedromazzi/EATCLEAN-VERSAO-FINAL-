@@ -35,7 +35,7 @@
     --sidebar-ring: 217.2 91.2% 59.8%;
 
     /* Custom EatClean colors */
-    --eatclean-primary-green: 178 34% 27%; /* #2D5F5D */
+    --eatclean-primary-green: 144 50% 51%; /* #48BB78 - Verde mais claro */
     --eatclean-orange-highlight: 18 100% 60%; /* #FF6B35 */
     --eatclean-gray-text: 215 18% 27%; /* #374151 */
     --eatclean-gray-inactive: 217 10% 46%; /* #6B7280 */
@@ -74,7 +74,7 @@
     --sidebar-ring: 217.2 91.2% 59.8%;
 
     /* Custom EatClean colors for dark mode (keeping same for now) */
-    --eatclean-primary-green: 178 34% 27%;
+    --eatclean-primary-green: 144 50% 51%; /* #48BB78 - Verde mais claro */
     --eatclean-orange-highlight: 18 100% 60%;
     --eatclean-gray-text: 215 18% 27%;
     --eatclean-gray-inactive: 217 10% 46%;
