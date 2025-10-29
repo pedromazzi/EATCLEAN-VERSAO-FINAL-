@@ -2,7 +2,7 @@ import React from "react";
 import { ChevronLeft, Heart, Share2 } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { toast } from "@/utils/toast";
+// import { toast } from "@/utils/toast"; // Removido a importação do toast
 
 interface RecipeDetailHeaderProps {
   isFavorite: boolean;
@@ -17,7 +17,7 @@ const RecipeDetailHeader: React.FC<RecipeDetailHeaderProps> = ({
 
   const handleShare = () => {
     // Implementar funcionalidade de compartilhamento real se necessário
-    toast.success("Link da receita copiado para a área de transferência!");
+    console.log("Link da receita copiado para a área de transferência!"); // Substituído toast.success por console.log
     navigator.clipboard.writeText(window.location.href);
   };
 
