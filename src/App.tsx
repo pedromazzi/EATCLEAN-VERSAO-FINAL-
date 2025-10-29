@@ -34,7 +34,11 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Layout />}> {/* Usa o Layout como rota pai */}
+          {/* Rota para ReceitaDetalhe que usa seu próprio header */}
+          <Route path="/receita/:id" element={<ReceitaDetalhe />} />
+
+          {/* Rotas que usam o Layout padrão (Header e Footer) */}
+          <Route path="/" element={<Layout />}>
             <Route index element={<Explorar />} /> {/* Rota padrão para '/' */}
             <Route path="explorar" element={<Explorar />} />
             <Route path="favoritos" element={<Favoritos />} />
@@ -42,7 +46,6 @@ const App = () => (
             <Route path="guia" element={<Guia />} />
             <Route path="plano-semanal" element={<PlanoSemanal />} />
             <Route path="lista-compras" element={<ListaCompras />} />
-            <Route path="receita/:id" element={<ReceitaDetalhe />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Route>
