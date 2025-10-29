@@ -12,36 +12,65 @@ import { toast } from "sonner";
 
 const CHECKED_ITEMS_STORAGE_KEY = "eatclean_lista_compras_marcados";
 
+// Lista de ingredientes a serem completamente ignorados na lista de compras
+const ingredientesParaIgnorar = [
+  'gelo',
+  'água',
+  'água filtrada',
+  'água de coco gelada', // 'Água de coco' será normalizado, mas 'água de coco gelada' pode ser ignorado se for apenas para consumo imediato
+  'a gosto',
+  'sal a gosto',
+  'pimenta a gosto',
+  'temperos a gosto',
+  'azeite a gosto',
+  'azeite de oliva a gosto',
+  'azeite de oliva extra virgem a gosto',
+  'azeite extra virgem a gosto',
+];
+
+const deveIgnorarIngrediente = (ingrediente: string): boolean => {
+  const ingredienteLower = ingrediente.toLowerCase();
+  return ingredientesParaIgnorar.some(item => 
+    ingredienteLower === item || ingredienteLower.includes(item)
+  );
+};
+
 // Função para limpar o nome do ingrediente, removendo quantidades, medidas e descritivos
 const cleanIngredientName = (ingredient: string): string | null => {
   // Converter para minúsculo
   let cleaned = ingredient.toLowerCase().trim();
   
-  // Remover tudo antes de "de" ou "do" ou "da" no início
-  cleaned = cleaned.replace(/^(\d+\s?)?(\/\d+\s?)?(xícara|colher|colheres|sopa|chá|litro|g|kg|ml|l|unidade|dente|dentes|pitada|folhas|folha|talo|talos|peito|médio|média|grande|pequeno|pequena)(\s)?(de|do|da)\s/gi, '');
+  // Remover "uma" ou "um" no início
+  cleaned = cleaned.replace(/^uma?\s+/gi, '');
+  
+  // Remover "pitada de" completamente
+  cleaned = cleaned.replace(/pitada\s+(de|do|da)?\s*/gi, '');
+  
+  // Remover tudo antes de "de" ou "do" ou "da" no início (medidas)
+  cleaned = cleaned.replace(/^(\d+\s?)?(\/\d+)?(\s)?(xícara|xícaras|colher|colheres|sopa|chá|litro|litros|g|kg|ml|l|unidade|unidades|dente|dentes|folhas|folha|talo|talos|peito|médio|média|grande|pequeno|pequena)(\s)?(de|do|da)\s/gi, '');
   
   // Remover números e frações no início
   cleaned = cleaned.replace(/^(\d+)(\/\d+)?\s*/g, '');
   
-  // Remover medidas soltas no início
-  cleaned = cleaned.replace(/^(xícara|colher|colheres|sopa|chá|litro|unidade|dente|dentes|pitada|folhas|folha|talo|talos|peito)\s+(de|do|da)?\s*/gi, '');
+  // Remover medidas soltas
+  cleaned = cleaned.replace(/^(xícara|xícaras|colher|colheres|sopa|chá|litro|litros|unidade|unidades|dente|dentes|folhas|folha|talo|talos|peito)\s+(de|do|da)?\s*/gi, '');
   
   // Remover preparos e detalhes
-  cleaned = cleaned.replace(/\s+(picado|picada|picados|picadas|cortado|cortada|ralado|ralada|desfiado|desfiada|fatiado|fatiada|em cubos|em tiras|em tiras finas|ao meio|cozido|cozida|a vapor|grelhado|grelhada|fresco|fresca|maduro|madura)/gi, '');
+  cleaned = cleaned.replace(/\s+(picado|picada|picados|picadas|cortado|cortada|ralado|ralada|desfiado|desfiada|fatiado|fatiada|em cubos|em tiras|em tiras finas|ao meio|cozido|cozida|a vapor|grelhado|grelhada|fresco|fresca|maduro|madura|congelado|congelada|gelado|gelada)/gi, '');
   
   // Remover qualificadores
-  cleaned = cleaned.replace(/\s+(extra|virgem|sem açúcar|natural|integral|vegetal|light)/gi, '');
+  cleaned = cleaned.replace(/\s+(extra|virgem|sem açúcar|natural|integral|vegetal|light|em flocos|secas|verde)/gi, '');
   
   // Remover finalizações
-  cleaned = cleaned.replace(/\s+(para finalizar|a gosto|opcional)/gi, '');
+  cleaned = cleaned.impo = cleaned.replace(/\s+(para finalizar|a gosto|opcional)/gi, '');
   
   // Remover parênteses e conteúdo
   cleaned = cleaned.replace(/\(.*?\)/g, '');
   
-  // Remover "folhas de" ou "suco de"
-  cleaned = cleaned.replace(/^(folhas|folha|suco|sopa|chá|litro|caldo|molho|extrato)\s+(de|do|da)?\s*/gi, '');
+  // Remover "folhas de", "suco de", etc
+  cleaned = cleaned.replace(/^(folhas|folha|suco|sopa|chá|litro|caldo|molho|extrato|pasta|sementes)\s+(de|do|da)?\s*/gi, '');
   
-  // Remover conectores desnecessários no início
+  // Remover conectores desnecessários
   cleaned = cleaned.replace(/^(de|do|da|e|ou|em)\s+/gi, '');
   
   // Limpar espaços múltiplos
@@ -57,47 +86,79 @@ const cleanIngredientName = (ingredient: string): string | null => {
 // Função para normalizar nomes de ingredientes
 const normalizarIngrediente = (ingredient: string): string => {
   const dicionario: { [key: string]: string } = {
-    'azeite oliva': 'Azeite de oliva',
+    // Básicos
+    'sal': 'Sal',
+    'pimenta': 'Pimenta',
+    'sal e pimenta': 'Sal e pimenta',
+    'temperos': 'Temperos variados',
+    
+    // Óleos e gorduras
     'azeite': 'Azeite de oliva',
+    'azeite oliva': 'Azeite de oliva',
+    
+    // Vegetais
     'cebola roxa': 'Cebola roxa',
     'cebola': 'Cebola',
     'tomate cereja': 'Tomate cereja',
     'tomate': 'Tomate',
     'batata doce': 'Batata doce',
     'batata': 'Batata',
-    'sal e pimenta': 'Sal e pimenta', // Ajustado para 'sal e pimenta'
-    'pimenta reino': 'Pimenta do reino',
-    'pimenta': 'Pimenta',
-    'alho': 'Alho',
-    'frango': 'Frango',
+    'pimentão': 'Pimentão',
     'brócolis': 'Brócolis',
     'alface': 'Alface',
+    'espinafre': 'Espinafre',
+    'cenoura': 'Cenoura',
+    'pepino': 'Pepino',
+    'aipo': 'Aipo',
+    'maçã': 'Maçã',
+    
+    // Ervas
     'coentro': 'Coentro',
     'salsinha': 'Salsinha',
-    'pepino': 'Pepino',
-    'cenoura': 'Cenoura',
-    'aipo': 'Aipo',
+    'hortelã': 'Hortelã',
+    'ervas': 'Ervas frescas',
+    
+    // Proteínas
+    'frango': 'Frango',
+    
+    // Grãos e cereais
     'quinoa': 'Quinoa',
+    'aveia': 'Aveia',
+    
+    // Frutas
     'abacate': 'Abacate',
+    'banana': 'Banana',
     'limão': 'Limão',
-    'cacau em pó': 'Cacau em pó',
+    
+    // Laticínios e similares
     'leite': 'Leite vegetal',
     'iogurte': 'Iogurte',
+    
+    // Ingredientes especiais
+    'cacau em pó': 'Cacau em pó',
+    'amendoim': 'Pasta de amendoim',
+    'chia': 'Sementes de chia',
     'homus': 'Homus',
     'tortilha': 'Tortilha integral',
-    'pimentão': 'Pimentão',
     'baunilha': 'Extrato de baunilha',
-    'temperos': 'Temperos variados',
-    'ervas': 'Ervas frescas',
+    'mel': 'Mel',
+    'xarope': 'Xarope',
     'adoçante': 'Adoçante',
-    'caldo legumes': 'Caldo de legumes'
+    
+    // Líquidos
+    'água coco': 'Água de coco',
+    'caldo': 'Caldo de legumes',
+    
+    // Outros
+    'frutas': 'Frutas secas',
+    'legumes': 'Legumes variados'
   };
   
   const ingredientLower = ingredient.toLowerCase();
   
-  // Buscar no dicionário
+  // Buscar correspondência no dicionário
   for (const [key, value] of Object.entries(dicionario)) {
-    if (ingredientLower.includes(key)) {
+    if (ingredientLower === key || ingredientLower.includes(key)) {
       return value;
     }
   }
@@ -113,20 +174,54 @@ const ListaCompras = () => {
 
   // Função para carregar e consolidar ingredientes
   const generateShoppingList = useCallback((recipesToProcess: Recipe[]) => {
-    const ingredientsSet = new Set<string>();
+    const tempIngredients: string[] = [];
 
     recipesToProcess.forEach((recipe) => {
       recipe.ingredientes.forEach((rawIngredient) => {
+        // 1. Verificar se o ingrediente deve ser ignorado completamente
+        if (deveIgnorarIngrediente(rawIngredient)) {
+          return;
+        }
+        
+        // 2. Limpar o nome do ingrediente
         const cleaned = cleanIngredientName(rawIngredient);
         if (cleaned) {
+          // 3. Normalizar o nome do ingrediente
           const normalized = normalizarIngrediente(cleaned);
-          ingredientsSet.add(normalized);
+          tempIngredients.push(normalized);
         }
       });
     });
 
+    const finalIngredientsSet = new Set<string>();
+    let hasSal = false;
+    let hasPimenta = false;
+
+    tempIngredients.forEach(ing => {
+      const lowerIng = ing.toLowerCase();
+      if (lowerIng === 'sal') {
+        hasSal = true;
+      } else if (lowerIng === 'pimenta') {
+        hasPimenta = true;
+      } else if (lowerIng === 'sal e pimenta') {
+        hasSal = true;
+        hasPimenta = true;
+      } else {
+        finalIngredientsSet.add(ing);
+      }
+    });
+
+    // Consolidar "Sal" e "Pimenta"
+    if (hasSal && hasPimenta) {
+      finalIngredientsSet.add('Sal e pimenta');
+    } else if (hasSal) {
+      finalIngredientsSet.add('Sal');
+    } else if (hasPimenta) {
+      finalIngredientsSet.add('Pimenta');
+    }
+    
     // Retornar array ordenado alfabeticamente
-    return Array.from(ingredientsSet).sort((a, b) => 
+    return Array.from(finalIngredientsSet).sort((a, b) => 
       a.localeCompare(b, 'pt-BR', { sensitivity: 'base' })
     );
   }, []);
