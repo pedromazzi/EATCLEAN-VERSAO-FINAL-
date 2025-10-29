@@ -17,7 +17,7 @@ const ingredientesParaIgnorar = [
   'gelo',
   'água',
   'água filtrada',
-  'água de coco gelada', // 'Água de coco' será normalizado, mas 'água de coco gelada' pode ser ignorado se for apenas para consumo imediato
+  'água de coco gelada',
   'a gosto',
   'sal a gosto',
   'pimenta a gosto',
@@ -37,6 +37,9 @@ const deveIgnorarIngrediente = (ingrediente: string): boolean => {
 
 // Função para limpar o nome do ingrediente, removendo quantidades, medidas e descritivos
 const cleanIngredientName = (ingredient: string): string | null => {
+  // Garantir que é string
+  if (typeof ingredient !== 'string') return null;
+
   // Converter para minúsculo
   let cleaned = ingredient.toLowerCase().trim();
   
@@ -62,7 +65,7 @@ const cleanIngredientName = (ingredient: string): string | null => {
   cleaned = cleaned.replace(/\s+(extra|virgem|sem açúcar|natural|integral|vegetal|light|em flocos|secas|verde)/gi, '');
   
   // Remover finalizações
-  cleaned = cleaned.impo = cleaned.replace(/\s+(para finalizar|a gosto|opcional)/gi, '');
+  cleaned = cleaned.replace(/\s+(para finalizar|a gosto|opcional)/gi, '');
   
   // Remover parênteses e conteúdo
   cleaned = cleaned.replace(/\(.*?\)/g, '');
@@ -85,6 +88,9 @@ const cleanIngredientName = (ingredient: string): string | null => {
 
 // Função para normalizar nomes de ingredientes
 const normalizarIngrediente = (ingredient: string): string => {
+  // Garantir que é string
+  if (typeof ingredient !== 'string') return ingredient;
+
   const dicionario: { [key: string]: string } = {
     // Básicos
     'sal': 'Sal',
@@ -174,56 +180,45 @@ const ListaCompras = () => {
 
   // Função para carregar e consolidar ingredientes
   const generateShoppingList = useCallback((recipesToProcess: Recipe[]) => {
-    const tempIngredients: string[] = [];
-
+    const ingredientesArray: string[] = [];
+    let temSalOuPimenta = false;
+    
     recipesToProcess.forEach((recipe) => {
       recipe.ingredientes.forEach((rawIngredient) => {
-        // 1. Verificar se o ingrediente deve ser ignorado completamente
+        // Verificar se deve ignorar
         if (deveIgnorarIngrediente(rawIngredient)) {
           return;
         }
         
-        // 2. Limpar o nome do ingrediente
         const cleaned = cleanIngredientName(rawIngredient);
         if (cleaned) {
-          // 3. Normalizar o nome do ingrediente
           const normalized = normalizarIngrediente(cleaned);
-          tempIngredients.push(normalized);
+          
+          // Verificar sal e pimenta para consolidação
+          const normalizedLower = normalized.toLowerCase();
+          if (normalizedLower.includes('sal') || normalizedLower.includes('pimenta')) {
+            temSalOuPimenta = true;
+          } else {
+            // Adicionar se não for duplicata
+            if (!ingredientesArray.includes(normalized)) {
+              ingredientesArray.push(normalized);
+            }
+          }
         }
       });
     });
-
-    const finalIngredientsSet = new Set<string>();
-    let hasSal = false;
-    let hasPimenta = false;
-
-    tempIngredients.forEach(ing => {
-      const lowerIng = ing.toLowerCase();
-      if (lowerIng === 'sal') {
-        hasSal = true;
-      } else if (lowerIng === 'pimenta') {
-        hasPimenta = true;
-      } else if (lowerIng === 'sal e pimenta') {
-        hasSal = true;
-        hasPimenta = true;
-      } else {
-        finalIngredientsSet.add(ing);
-      }
-    });
-
-    // Consolidar "Sal" e "Pimenta"
-    if (hasSal && hasPimenta) {
-      finalIngredientsSet.add('Sal e pimenta');
-    } else if (hasSal) {
-      finalIngredientsSet.add('Sal');
-    } else if (hasPimenta) {
-      finalIngredientsSet.add('Pimenta');
+    
+    // Adicionar "Sal e pimenta" se algum dos dois foi encontrado
+    if (temSalOuPimenta) {
+      ingredientesArray.push('Sal e pimenta');
     }
     
-    // Retornar array ordenado alfabeticamente
-    return Array.from(finalIngredientsSet).sort((a, b) => 
-      a.localeCompare(b, 'pt-BR', { sensitivity: 'base' })
-    );
+    // Ordenar o array de forma segura
+    return ingredientesArray.sort((a, b) => {
+      const strA = String(a).toLowerCase();
+      const strB = String(b).toLowerCase();
+      return strA < strB ? -1 : strA > strB ? 1 : 0;
+    });
   }, []);
 
   // Efeito para carregar a lista de compras e o estado dos checkboxes
