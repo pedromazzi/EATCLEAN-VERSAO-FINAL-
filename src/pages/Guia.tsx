@@ -1,5 +1,13 @@
 import React from "react";
-import { Droplet, Scale, Lightbulb, ChevronDown } from "lucide-react";
+import {
+  Leaf, // Para Alimentação Saudável — Fundamentos
+  Droplet, // Para Macronutrientes
+  Droplets, // Para Micronutrientes e Hidratação
+  ClipboardList, // Para Planejamento Alimentar
+  Scale, // Para Controle de Calorias e Macros
+  TrendingUp, // Para Hábitos e Consistência
+  // ChevronDown é incluído automaticamente pelo AccordionTrigger do shadcn/ui
+} from "lucide-react";
 import {
   Accordion,
   AccordionContent,
@@ -26,72 +34,81 @@ const Guia = () => {
 
       {/* 2. CONTEÚDO EM ACCORDIONS */}
       <Accordion type="multiple" className="w-full space-y-4">
-        {/* TÓPICO 1: Nutrientes Essenciais */}
+        {/* ACCORDION 1: Alimentação Saudável — Fundamentos */}
         <AccordionItem value="item-1" className="bg-eatclean-white rounded-xl shadow-sm border-none">
-          <AccordionTrigger className="flex items-center justify-between p-4 text-eatclean-gray-text font-bold text-lg hover:no-underline">
-            <div className="flex items-center gap-3">
-              <div className="w-8 h-8 rounded-full bg-eatclean-primary-green/10 flex items-center justify-center">
-                <Droplet size={20} className="text-eatclean-primary-green" />
-              </div>
-              <span>Nutrientes Essenciais</span>
+          <AccordionTrigger className="flex items-center justify-start gap-3 p-4 text-eatclean-gray-text font-bold text-lg hover:no-underline">
+            <div className="w-8 h-8 rounded-full bg-eatclean-primary-green/10 flex items-center justify-center flex-shrink-0">
+              <Leaf size={20} className="text-eatclean-primary-green" />
             </div>
-            <ChevronDown className="h-4 w-4 shrink-0 transition-transform duration-200" />
+            <span className="flex-grow text-left">Alimentação Saudável — Fundamentos</span>
           </AccordionTrigger>
           <AccordionContent className="px-4 pb-4 text-eatclean-gray-text space-y-3">
-            <p>
-              <strong className="text-eatclean-gray-text">Proteínas:</strong> Essenciais para construir e reparar tecidos, enzimas e hormônios.
-            </p>
-            <p>
-              <strong className="text-eatclean-gray-text">Carboidratos:</strong> Fonte de energia para o corpo, encontrados em grãos, frutas e vegetais.
-            </p>
-            <p>
-              <strong className="text-eatclean-gray-text">Gorduras:</strong> Importantes para a absorção de vitaminas e produção de hormônios.
-            </p>
+            <p>Texto sobre fundamentos da alimentação saudável será adicionado aqui.</p>
           </AccordionContent>
         </AccordionItem>
 
-        {/* TÓPICO 2: Porções Recomendadas */}
+        {/* ACCORDION 2: Macronutrientes: Proteínas, Carboidratos e Gorduras */}
         <AccordionItem value="item-2" className="bg-eatclean-white rounded-xl shadow-sm border-none">
-          <AccordionTrigger className="flex items-center justify-between p-4 text-eatclean-gray-text font-bold text-lg hover:no-underline">
-            <div className="flex items-center gap-3">
-              <div className="w-8 h-8 rounded-full bg-eatclean-primary-green/10 flex items-center justify-center">
-                <Scale size={20} className="text-eatclean-primary-green" />
-              </div>
-              <span>Porções Recomendadas</span>
+          <AccordionTrigger className="flex items-center justify-start gap-3 p-4 text-eatclean-gray-text font-bold text-lg hover:no-underline">
+            <div className="w-8 h-8 rounded-full bg-eatclean-primary-green/10 flex items-center justify-center flex-shrink-0">
+              <Droplet size={20} className="text-eatclean-primary-green" />
             </div>
-            <ChevronDown className="h-4 w-4 shrink-0 transition-transform duration-200" />
+            <span className="flex-grow text-left">Macronutrientes: Proteínas, Carboidratos e Gorduras</span>
           </AccordionTrigger>
           <AccordionContent className="px-4 pb-4 text-eatclean-gray-text space-y-3">
-            <p>
-              <strong className="text-eatclean-gray-text">Proteínas:</strong> Consuma 2-3 porções por dia, incluindo carnes magras, peixes, ovos e leguminosas.
-            </p>
-            <p>
-              <strong className="text-eatclean-gray-text">Carboidratos:</strong> Inclua 3-5 porções diárias, priorizando grãos integrais, frutas e vegetais.
-            </p>
-            <p>
-              <strong className="text-eatclean-gray-text">Gorduras:</strong> Limite a 1-2 porções por dia, optando por fontes saudáveis como azeite, abacate e oleaginosas.
-            </p>
+            <p>Texto sobre macronutrientes será adicionado aqui.</p>
           </AccordionContent>
         </AccordionItem>
 
-        {/* TÓPICO 3: Dicas para uma Alimentação Equilibrada */}
+        {/* ACCORDION 3: Micronutrientes e Hidratação */}
         <AccordionItem value="item-3" className="bg-eatclean-white rounded-xl shadow-sm border-none">
-          <AccordionTrigger className="flex items-center justify-between p-4 text-eatclean-gray-text font-bold text-lg hover:no-underline">
-            <div className="flex items-center gap-3">
-              <div className="w-8 h-8 rounded-full bg-eatclean-primary-green/10 flex items-center justify-center">
-                <Lightbulb size={20} className="text-eatclean-primary-green" />
-              </div>
-              <span>Dicas para uma Alimentação Equilibrada</span>
+          <AccordionTrigger className="flex items-center justify-start gap-3 p-4 text-eatclean-gray-text font-bold text-lg hover:no-underline">
+            <div className="w-8 h-8 rounded-full bg-eatclean-primary-green/10 flex items-center justify-center flex-shrink-0">
+              <Droplets size={20} className="text-eatclean-primary-green" />
             </div>
-            <ChevronDown className="h-4 w-4 shrink-0 transition-transform duration-200" />
+            <span className="flex-grow text-left">Micronutrientes e Hidratação</span>
           </AccordionTrigger>
-          <AccordionContent className="px-4 pb-4 text-eatclean-gray-text space-y-2">
-            <ul className="list-disc pl-5 space-y-1">
-              <li>Varie os alimentos para garantir a ingestão de diferentes nutrientes.</li>
-              <li>Priorize alimentos naturais e minimize processados.</li>
-              <li>Mantenha-se hidratado bebendo água ao longo do dia.</li>
-              <li>Planeje suas refeições com antecedência.</li>
-            </ul>
+          <AccordionContent className="px-4 pb-4 text-eatclean-gray-text space-y-3">
+            <p>Texto sobre micronutrientes e hidratação será adicionado aqui.</p>
+          </AccordionContent>
+        </AccordionItem>
+
+        {/* ACCORDION 4: Planejamento Alimentar */}
+        <AccordionItem value="item-4" className="bg-eatclean-white rounded-xl shadow-sm border-none">
+          <AccordionTrigger className="flex items-center justify-start gap-3 p-4 text-eatclean-gray-text font-bold text-lg hover:no-underline">
+            <div className="w-8 h-8 rounded-full bg-eatclean-primary-green/10 flex items-center justify-center flex-shrink-0">
+              <ClipboardList size={20} className="text-eatclean-primary-green" />
+            </div>
+            <span className="flex-grow text-left">Planejamento Alimentar</span>
+          </AccordionTrigger>
+          <AccordionContent className="px-4 pb-4 text-eatclean-gray-text space-y-3">
+            <p>Texto sobre planejamento alimentar será adicionado aqui.</p>
+          </AccordionContent>
+        </AccordionItem>
+
+        {/* ACCORDION 5: Controle de Calorias e Macros */}
+        <AccordionItem value="item-5" className="bg-eatclean-white rounded-xl shadow-sm border-none">
+          <AccordionTrigger className="flex items-center justify-start gap-3 p-4 text-eatclean-gray-text font-bold text-lg hover:no-underline">
+            <div className="w-8 h-8 rounded-full bg-eatclean-primary-green/10 flex items-center justify-center flex-shrink-0">
+              <Scale size={20} className="text-eatclean-primary-green" />
+            </div>
+            <span className="flex-grow text-left">Controle de Calorias e Macros</span>
+          </AccordionTrigger>
+          <AccordionContent className="px-4 pb-4 text-eatclean-gray-text space-y-3">
+            <p>Texto sobre controle de calorias e macros será adicionado aqui.</p>
+          </AccordionContent>
+        </AccordionItem>
+
+        {/* ACCORDION 6: Hábitos e Consistência */}
+        <AccordionItem value="item-6" className="bg-eatclean-white rounded-xl shadow-sm border-none">
+          <AccordionTrigger className="flex items-center justify-start gap-3 p-4 text-eatclean-gray-text font-bold text-lg hover:no-underline">
+            <div className="w-8 h-8 rounded-full bg-eatclean-primary-green/10 flex items-center justify-center flex-shrink-0">
+              <TrendingUp size={20} className="text-eatclean-primary-green" />
+            </div>
+            <span className="flex-grow text-left">Hábitos e Consistência</span>
+          </AccordionTrigger>
+          <AccordionContent className="px-4 pb-4 text-eatclean-gray-text space-y-3">
+            <p>Texto sobre hábitos e consistência será adicionado aqui.</p>
           </AccordionContent>
         </AccordionItem>
       </Accordion>
