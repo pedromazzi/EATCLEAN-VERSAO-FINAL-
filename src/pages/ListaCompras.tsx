@@ -12,6 +12,34 @@ import { toast } from "sonner";
 
 const CHECKED_ITEMS_STORAGE_KEY = "eatclean_lista_compras_marcados";
 
+// Função para limpar o nome do ingrediente, removendo quantidades, medidas e descritivos
+const cleanIngredientName = (ingredient: string): string | null => {
+  let cleaned = ingredient.toLowerCase();
+
+  // Remove texto entre parênteses (ex: "(amêndoa, coco)")
+  cleaned = cleaned.replace(/\(.*?\)/g, '');
+
+  // Remove frases que não são nomes de ingredientes principais
+  cleaned = cleaned.replace(/para finalizar|a gosto|opcional|do reino/gi, '');
+
+  // Remove números e unidades/quantificadores comuns
+  cleaned = cleaned.replace(/\b\d+(\s*\/\s*\d+)?\s*(xícara|xícaras|colher|colheres|g|kg|ml|l|unidade|unidades|dente|dentes|pitada|folhas|talos|ramo|ramos|pedaço|pedaços|fatia|fatias|copo|copos|gramas|litros|mililitros)?\b/gi, '');
+
+  // Remove adjetivos/descritores comuns
+  cleaned = cleaned.replace(/\b(médio|média|grande|pequeno|picado|picada|cortado|ralado|ralada|desfiado|cozido|cozida|fresco|fresca|maduro|madura|extra|virgem|suco|de|do|da|com)\b/gi, '');
+
+  cleaned = cleaned.trim();
+
+  // Remove múltiplos espaços em branco
+  cleaned = cleaned.replace(/\s\s+/g, ' ');
+
+  // Capitaliza a primeira letra
+  if (cleaned.length > 0) {
+    return cleaned.charAt(0).toUpperCase() + cleaned.slice(1);
+  }
+  return null;
+};
+
 const ListaCompras = () => {
   const navigate = useNavigate();
   const location = useLocation();
@@ -20,22 +48,33 @@ const ListaCompras = () => {
 
   // Função para carregar e consolidar ingredientes
   const generateShoppingList = useCallback((recipesToProcess: Recipe[]) => {
-    const allIngredients = new Set<string>();
+    const allCleanedIngredients = new Set<string>();
+
     recipesToProcess.forEach((recipe) => {
-      recipe.ingredientes.forEach((ingredient) => {
-        allIngredients.add(ingredient);
+      recipe.ingredientes.forEach((rawIngredient) => {
+        // Trata casos como "Sal e pimenta" dividindo-os antes de limpar
+        const parts = rawIngredient.split(/ e /i); // Divide por " e " (case-insensitive)
+
+        parts.forEach(part => {
+          const cleaned = cleanIngredientName(part);
+          if (cleaned) {
+            allCleanedIngredients.add(cleaned);
+          }
+        });
       });
     });
-    return Array.from(allIngredients);
+
+    // Retorna um array ordenado alfabeticamente
+    return Array.from(allCleanedIngredients).sort();
   }, []);
 
   // Efeito para carregar a lista de compras e o estado dos checkboxes
   useEffect(() => {
-    let recipesFromPlan: Recipe[] = [];
+    let recipesToProcess: Recipe[] = [];
 
     // 1. Tentar carregar receitas do estado de navegação (vindo do Plano Semanal)
     if (location.state && location.state.recipes) {
-      recipesFromPlan = location.state.recipes as Recipe[];
+      recipesToProcess = location.state.recipes as Recipe[];
     } else {
       // 2. Se não houver no estado, tentar carregar do Local Storage
       const storedPlan = loadWeeklyPlan();
@@ -44,13 +83,13 @@ const ListaCompras = () => {
           day.meals.filter((id) => id !== null)
         ) as string[];
         const uniqueRecipeIds = Array.from(new Set(allRecipeIdsInPlan));
-        recipesFromPlan = initialRecipes.filter((recipe) =>
+        recipesToProcess = initialRecipes.filter((recipe) =>
           uniqueRecipeIds.includes(recipe.id)
         );
       }
     }
 
-    const generatedList = generateShoppingList(recipesFromPlan);
+    const generatedList = generateShoppingList(recipesToProcess);
     setShoppingList(generatedList);
 
     // Carregar estado dos checkboxes do Local Storage
