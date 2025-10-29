@@ -2,24 +2,19 @@ import React from "react";
 import { ChevronLeft, Heart, Share2 } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-// import { toast } from "@/utils/toast"; // Removido a importação do toast
 
 interface RecipeDetailHeaderProps {
   isFavorite: boolean;
   onToggleFavorite: () => void;
+  onShare: () => void; // Adicionada a prop onShare
 }
 
 const RecipeDetailHeader: React.FC<RecipeDetailHeaderProps> = ({
   isFavorite,
   onToggleFavorite,
+  onShare, // Desestruturando a nova prop
 }) => {
   const navigate = useNavigate();
-
-  const handleShare = () => {
-    // Implementar funcionalidade de compartilhamento real se necessário
-    console.log("Link da receita copiado para a área de transferência!"); // Substituído toast.success por console.log
-    navigator.clipboard.writeText(window.location.href);
-  };
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-eatclean-white/80 backdrop-blur-sm p-4 flex justify-between items-center h-16">
@@ -47,7 +42,7 @@ const RecipeDetailHeader: React.FC<RecipeDetailHeaderProps> = ({
         <Button
           variant="ghost"
           size="icon"
-          onClick={handleShare}
+          onClick={onShare} // Chamando a função onShare passada via props
           className="text-eatclean-gray-text hover:bg-eatclean-light-gray"
         >
           <Share2 size={24} />

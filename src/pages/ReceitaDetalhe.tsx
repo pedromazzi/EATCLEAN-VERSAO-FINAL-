@@ -8,6 +8,7 @@ import PreparationStep from "@/components/PreparationStep";
 import NutritionalInfoCard from "@/components/NutritionalInfoCard";
 import NotFound from "./NotFound";
 import { addFavoriteRecipeId, removeFavoriteRecipeId, checkIsFavorite } from "@/utils/favorites";
+import { toast } from "sonner"; // Importando o toast
 
 const ReceitaDetalhe = () => {
   const { id } = useParams<{ id: string }>();
@@ -28,10 +29,73 @@ const ReceitaDetalhe = () => {
 
     if (isFavorite) {
       removeFavoriteRecipeId(recipe.id);
+      toast.info(`"${recipe.nome}" removida dos favoritos.`);
     } else {
       addFavoriteRecipeId(recipe.id);
+      toast.success(`"${recipe.nome}" adicionada aos favoritos!`);
     }
     setIsFavorite(!isFavorite);
+  };
+
+  const copyToClipboard = (text: string) => {
+    navigator.clipboard.writeText(text).then(() => {
+      toast.success('Receita copiada para a área de transferência! 📋');
+    }).catch((error) => {
+      console.error('Erro ao copiar:', error);
+      toast.error('Não foi possível copiar a receita.');
+    });
+  };
+
+  const handleShare = async () => {
+    if (!recipe) {
+      toast.error("Não foi possível carregar os detalhes da receita para compartilhar.");
+      return;
+    }
+
+    let texto = `🍽️ ${recipe.nome}\n\n`;
+    
+    texto += `${recipe.descricao}\n\n`;
+    
+    texto += `⏱️ Tempo de preparo: ${recipe.tempoPreparo} min\n`;
+    texto += `🔥 Calorias: ${recipe.calorias} kcal\n\n`;
+    
+    texto += `📝 INGREDIENTES:\n`;
+    recipe.ingredientes.forEach(ingrediente => {
+      texto += `• ${ingrediente}\n`;
+    });
+    
+    texto += `\n👨‍🍳 MODO DE PREPARO:\n`;
+    recipe.modoPreparo.forEach((passo, index) => {
+      texto += `${index + 1}. ${passo}\n`;
+    });
+    
+    texto += `\n💪 INFORMAÇÕES NUTRICIONAIS:\n`;
+    texto += `Calorias: ${recipe.informacoesNutricionais.calorias} kcal\n`;
+    texto += `Proteínas: ${recipe.informacoesNutricionais.proteinas}g\n`;
+    texto += `Carboidratos: ${recipe.informacoesNutricionais.carboidratos}g\n`;
+    texto += `Gorduras: ${recipe.informacoesNutricionais.gorduras}g\n\n`;
+    
+    texto += `Receita do app EatClean 💚\n${window.location.href}`; // Adiciona a URL atual
+
+    if (navigator.share) {
+      try {
+        await navigator.share({
+          title: recipe.nome,
+          text: texto,
+          url: window.location.href, // Compartilha a URL diretamente também
+        });
+        toast.success('Receita compartilhada com sucesso!');
+      } catch (error: any) {
+        // Usuário cancelou ou erro diferente de AbortError
+        if (error.name !== 'AbortError') {
+          console.error('Erro ao compartilhar:', error);
+          copyToClipboard(texto); // Fallback para copiar
+        }
+      }
+    } else {
+      // Navegador não suporta Web Share API
+      copyToClipboard(texto); // Fallback para copiar
+    }
   };
 
   if (!recipe) {
@@ -40,7 +104,11 @@ const ReceitaDetalhe = () => {
 
   return (
     <div className="min-h-screen flex flex-col bg-eatclean-white">
-      <RecipeDetailHeader isFavorite={isFavorite} onToggleFavorite={handleToggleFavorite} />
+      <RecipeDetailHeader 
+        isFavorite={isFavorite} 
+        onToggleFavorite={handleToggleFavorite} 
+        onShare={handleShare} // Passando a nova função de compartilhar
+      />
 
       <div className="flex-grow pt-16">
         <img
