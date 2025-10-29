@@ -21,12 +21,12 @@ const Guia = () => {
       {/* 1. CABEÇALHO DA TELA */}
       <div className="relative mb-6 rounded-xl overflow-hidden shadow-md">
         <img
-          src="https://via.placeholder.com/400x200/2D5F5D/FFFFFF?text=Guia+Nutricional"
+          src="/images/guia/guia-nutricional.png" // Caminho direto para a imagem real
           alt="Guia Nutricional"
-          className="w-full h-48 object-cover"
+          className="w-full h-48 md:h-64 object-cover"
         />
-        <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
-          <h1 className="text-3xl font-bold text-eatclean-white">
+        <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-center justify-center">
+          <h1 className="text-3xl md:text-4xl font-bold text-eatclean-white">
             Guia Nutricional
           </h1>
         </div>
