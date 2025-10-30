@@ -1,0 +1,758 @@
+[
+  {
+    "id": 121,
+    "titulo": "Purê de Mandioquinha Light",
+    "categoria": "Acompanhamentos",
+    "tempo": "25 min",
+    "porcoes": 4,
+    "tamanhoPorcao": "1 concha média (150g)",
+    "dificuldade": "Fácil",
+    "calorias": 135,
+    "proteinas": 3,
+    "carboidratos": 28,
+    "gorduras": 2,
+    "ingredientes": [
+      "500g de mandioquinha",
+      "100ml de leite desnatado",
+      "1 colher de manteiga ghee",
+      "Sal e noz-moscada",
+      "Cebolinha picada"
+    ],
+    "modoPreparo": [
+      "Descasque e corte mandioquinha em cubos",
+      "Cozinhe em água com sal até amolecer",
+      "Escorra bem",
+      "Amasse até formar purê",
+      "Adicione leite aos poucos",
+      "Acrescente ghee e noz-moscada",
+      "Ajuste consistência",
+      "Finalize com cebolinha"
+    ],
+    "tags": ["cremoso", "acompanhamento", "brasileiro"],
+    "imagem": "pure-mandioquinha.jpg",
+    "substituicoes": {
+      "mandioquinha": "batata doce ou batata",
+      "leite": "caldo de legumes",
+      "ghee": "azeite"
+    }
+  },
+  {
+    "id": 122,
+    "titulo": "Farofa Fit de Aveia",
+    "categoria": "Acompanhamentos",
+    "tempo": "15 min",
+    "porcoes": 6,
+    "tamanhoPorcao": "1/2 xícara (80g)",
+    "dificuldade": "Fácil",
+    "calorias": 145,
+    "proteinas": 5,
+    "carboidratos": 22,
+    "gorduras": 4,
+    "ingredientes": [
+      "2 xícaras de aveia",
+      "1 cebola picada",
+      "2 dentes de alho",
+      "1 cenoura ralada",
+      "1/2 xícara de uvas passas",
+      "Azeite spray",
+      "Sal e cheiro verde"
+    ],
+    "modoPreparo": [
+      "Refogue alho e cebola",
+      "Adicione cenoura",
+      "Acrescente aveia",
+      "Torre mexendo sempre",
+      "Adicione uvas passas",
+      "Tempere com sal",
+      "Finalize com cheiro verde",
+      "Sirva quente"
+    ],
+    "tags": ["brasileiro", "crocante", "integral"],
+    "imagem": "farofa-aveia.jpg",
+    "substituicoes": {
+      "aveia": "quinoa em flocos",
+      "uvas passas": "bacon vegetal",
+      "cenoura": "beterraba"
+    }
+  },
+  {
+    "id": 123,
+    "titulo": "Legumes Assados no Forno",
+    "categoria": "Acompanhamentos",
+    "tempo": "40 min",
+    "porcoes": 6,
+    "tamanhoPorcao": "1 xícara (180g)",
+    "dificuldade": "Fácil",
+    "calorias": 115,
+    "proteinas": 3,
+    "carboidratos": 22,
+    "gorduras": 3,
+    "ingredientes": [
+      "2 batatas doces",
+      "2 cenouras",
+      "1 abobrinha",
+      "1 berinjela",
+      "Azeite spray",
+      "Alecrim e tomilho",
+      "Sal e pimenta"
+    ],
+    "modoPreparo": [
+      "Pré-aqueça o forno a 200°C",
+      "Corte legumes em cubos grandes",
+      "Disponha em assadeira",
+      "Borrife azeite",
+      "Tempere com sal, pimenta e ervas",
+      "Misture bem",
+      "Asse por 35-40 minutos",
+      "Vire na metade do tempo"
+    ],
+    "tags": ["assado", "colorido", "nutritivo"],
+    "imagem": "legumes-assados.jpg",
+    "substituicoes": {
+      "legumes": "qualquer combinação disponível",
+      "ervas": "páprica defumada",
+      "batata doce": "mandioca"
+    }
+  },
+  {
+    "id": 124,
+    "titulo": "Couve Refogada com Alho",
+    "categoria": "Acompanhamentos",
+    "tempo": "10 min",
+    "porcoes": 4,
+    "tamanhoPorcao": "1 xícara (120g)",
+    "dificuldade": "Muito Fácil",
+    "calorias": 65,
+    "proteinas": 4,
+    "carboidratos": 8,
+    "gorduras": 2,
+    "ingredientes": [
+      "1 maço de couve",
+      "4 dentes de alho",
+      "Azeite spray",
+      "Sal a gosto",
+      "Limão (opcional)"
+    ],
+    "modoPreparo": [
+      "Lave bem a couve",
+      "Corte em tiras finas",
+      "Aqueça frigideira",
+      "Refogue alho picado",
+      "Adicione couve",
+      "Refogue por 3-4 minutos",
+      "Tempere com sal",
+      "Finalize com limão se desejar"
+    ],
+    "tags": ["brasileiro", "rápido", "nutritivo"],
+    "imagem": "couve-refogada.jpg",
+    "substituicoes": {
+      "couve": "escarola ou espinafre",
+      "alho": "cebola",
+      "limão": "vinagre"
+    }
+  },
+  {
+    "id": 125,
+    "titulo": "Polenta Cremosa Fit",
+    "categoria": "Acompanhamentos",
+    "tempo": "20 min",
+    "porcoes": 6,
+    "tamanhoPorcao": "1 concha média (160g)",
+    "dificuldade": "Fácil",
+    "calorias": 125,
+    "proteinas": 4,
+    "carboidratos": 24,
+    "gorduras": 2,
+    "ingredientes": [
+      "1 xícara de fubá",
+      "4 xícaras de água",
+      "1 xícara de leite desnatado",
+      "50g de queijo parmesão",
+      "Sal a gosto",
+      "Manjericão fresco"
+    ],
+    "modoPreparo": [
+      "Ferva água com sal",
+      "Adicione fubá aos poucos mexendo",
+      "Cozinhe em fogo baixo por 15 minutos",
+      "Mexa constantemente",
+      "Adicione leite",
+      "Acrescente parmesão",
+      "Ajuste consistência",
+      "Finalize com manjericão"
+    ],
+    "tags": ["cremoso", "italiano", "comfort"],
+    "imagem": "polenta-cremosa.jpg",
+    "substituicoes": {
+      "fubá": "farinha de milho fina",
+      "parmesão": "queijo cottage",
+      "leite": "caldo de legumes"
+    }
+  },
+  {
+    "id": 126,
+    "titulo": "Chá Verde Gelado com Limão",
+    "categoria": "Bebidas",
+    "tempo": "10 min + 2h geladeira",
+    "porcoes": 4,
+    "tamanhoPorcao": "1 copo grande (300ml)",
+    "dificuldade": "Muito Fácil",
+    "calorias": 25,
+    "proteinas": 0,
+    "carboidratos": 6,
+    "gorduras": 0,
+    "ingredientes": [
+      "4 sachês de chá verde",
+      "1L de água",
+      "Suco de 2 limões",
+      "Adoçante a gosto",
+      "Hortelã fresca",
+      "Gelo"
+    ],
+    "modoPreparo": [
+      "Ferva a água",
+      "Adicione sachês de chá",
+      "Deixe em infusão por 5 minutos",
+      "Retire os sachês",
+      "Adicione suco de limão",
+      "Adoce a gosto",
+      "Leve à geladeira",
+      "Sirva com gelo e hortelã"
+    ],
+    "tags": ["refrescante", "detox", "gelado"],
+    "imagem": "cha-verde-limao.jpg",
+    "substituicoes": {
+      "chá verde": "chá branco",
+      "limão": "gengibre",
+      "hortelã": "capim limão"
+    }
+  },
+  {
+    "id": 127,
+    "titulo": "Água Saborizada Detox",
+    "categoria": "Bebidas",
+    "tempo": "5 min + 2h geladeira",
+    "porcoes": 6,
+    "tamanhoPorcao": "1 copo grande (300ml)",
+    "dificuldade": "Muito Fácil",
+    "calorias": 15,
+    "proteinas": 0,
+    "carboidratos": 4,
+    "gorduras": 0,
+    "ingredientes": [
+      "1,5L de água gelada",
+      "1 limão fatiado",
+      "1 laranja fatiada",
+      "10 folhas de hortelã",
+      "1 pepino fatiado",
+      "Gengibre ralado"
+    ],
+    "modoPreparo": [
+      "Lave bem todas frutas e ervas",
+      "Fatie limão, laranja e pepino",
+      "Adicione tudo em jarra",
+      "Complete com água gelada",
+      "Adicione hortelã e gengibre",
+      "Deixe na geladeira por 2 horas",
+      "Sirva bem gelado"
+    ],
+    "tags": ["detox", "hidratante", "zero calorias"],
+    "imagem": "agua-saborizada.jpg",
+    "substituicoes": {
+      "frutas": "qualquer combinação cítrica",
+      "hortelã": "manjericão",
+      "pepino": "kiwi"
+    }
+  },
+  {
+    "id": 128,
+    "titulo": "Café Proteico Gelado",
+    "categoria": "Bebidas",
+    "tempo": "5 min",
+    "porcoes": 1,
+    "tamanhoPorcao": "1 copo grande (400ml)",
+    "dificuldade": "Muito Fácil",
+    "calorias": 165,
+    "proteinas": 20,
+    "carboidratos": 18,
+    "gorduras": 3,
+    "ingredientes": [
+      "200ml de café forte gelado",
+      "1 scoop de whey baunilha ou chocolate",
+      "150ml de leite desnatado",
+      "Gelo",
+      "Adoçante a gosto",
+      "Canela para decorar"
+    ],
+    "modoPreparo": [
+      "Bata café, whey e leite no liquidificador",
+      "Adicione gelo",
+      "Adoce a gosto",
+      "Bata até ficar cremoso",
+      "Sirva em copo alto",
+      "Polvilhe canela"
+    ],
+    "tags": ["proteico", "energético", "gelado"],
+    "imagem": "cafe-proteico.jpg",
+    "substituicoes": {
+      "whey": "banana + pasta amendoim",
+      "leite": "leite de amêndoas",
+      "café": "café descafeinado"
+    }
+  },
+  {
+    "id": 129,
+    "titulo": "Smoothie Tropical Energético",
+    "categoria": "Bebidas",
+    "tempo": "5 min",
+    "porcoes": 1,
+    "tamanhoPorcao": "1 copo grande (400ml)",
+    "dificuldade": "Muito Fácil",
+    "calorias": 215,
+    "proteinas": 6,
+    "carboidratos": 45,
+    "gorduras": 3,
+    "ingredientes": [
+      "1 banana",
+      "1/2 xícara de manga",
+      "1/2 xícara de abacaxi",
+      "200ml de água de coco",
+      "1 colher de linhaça",
+      "Gelo"
+    ],
+    "modoPreparo": [
+      "Adicione todos ingredientes no liquidificador",
+      "Bata em potência máxima",
+      "Adicione mais água se necessário",
+      "Sirva imediatamente gelado"
+    ],
+    "tags": ["tropical", "energético", "vitamínico"],
+    "imagem": "smoothie-tropical.jpg",
+    "substituicoes": {
+      "manga": "mamão",
+      "abacaxi": "maracujá",
+      "água coco": "suco de laranja"
+    }
+  },
+  {
+    "id": 130,
+    "titulo": "Limonada Suíça Fit",
+    "categoria": "Bebidas",
+    "tempo": "10 min",
+    "porcoes": 4,
+    "tamanhoPorcao": "1 copo grande (300ml)",
+    "dificuldade": "Fácil",
+    "calorias": 45,
+    "proteinas": 1,
+    "carboidratos": 10,
+    "gorduras": 0,
+    "ingredientes": [
+      "4 limões",
+      "1L de água gelada",
+      "1 lata de leite condensado light",
+      "Gelo",
+      "Hortelã para decorar"
+    ],
+    "modoPreparo": [
+      "Lave bem os limões",
+      "Corte em rodelas finas",
+      "Bata no liquidificador com água",
+      "Bata por apenas 10 segundos",
+      "Coe",
+      "Adicione leite condensado",
+      "Misture bem",
+      "Sirva com gelo e hortelã"
+    ],
+    "tags": ["refrescante", "cremoso", "gelado"],
+    "imagem": "limonada-suica.jpg",
+    "substituicoes": {
+      "leite condensado": "iogurte grego adoçado",
+      "limão": "lima da pérsia",
+      "água": "água de coco"
+    }
+  },
+  {
+    "id": 131,
+    "titulo": "Canja de Galinha Light",
+    "categoria": "Sopas e Caldos",
+    "tempo": "40 min",
+    "porcoes": 6,
+    "tamanhoPorcao": "1 tigela grande (350ml)",
+    "dificuldade": "Fácil",
+    "calorias": 185,
+    "proteinas": 22,
+    "carboidratos": 18,
+    "gorduras": 4,
+    "ingredientes": [
+      "400g de peito de frango",
+      "1/2 xícara de arroz integral",
+      "2 cenouras",
+      "2 batatas pequenas",
+      "1 cebola",
+      "2L de água",
+      "Cheiro verde",
+      "Sal e pimenta"
+    ],
+    "modoPreparo": [
+      "Cozinhe frango em água com sal",
+      "Desfie o frango e reserve",
+      "No caldo, adicione arroz",
+      "Cozinhe por 15 minutos",
+      "Adicione cenoura e batata",
+      "Cozinhe até legumes amolecerem",
+      "Retorne frango desfiado",
+      "Finalize com cheiro verde"
+    ],
+    "tags": ["reconfortante", "proteico", "brasileiro"],
+    "imagem": "canja-galinha.jpg",
+    "substituicoes": {
+      "frango": "peru",
+      "arroz integral": "arroz branco",
+      "batata": "mandioquinha"
+    }
+  },
+  {
+    "id": 132,
+    "titulo": "Sopa de Tomate Caseira",
+    "categoria": "Sopas e Caldos",
+    "tempo": "30 min",
+    "porcoes": 6,
+    "tamanhoPorcao": "1 tigela grande (300ml)",
+    "dificuldade": "Fácil",
+    "calorias": 95,
+    "proteinas": 3,
+    "carboidratos": 16,
+    "gorduras": 3,
+    "ingredientes": [
+      "1kg de tomates maduros",
+      "1 cebola grande",
+      "3 dentes de alho",
+      "1L de caldo de legumes",
+      "Manjericão fresco",
+      "Azeite",
+      "Sal e pimenta"
+    ],
+    "modoPreparo": [
+      "Corte tomates em quartos",
+      "Refogue alho e cebola",
+      "Adicione tomates",
+      "Cozinhe por 10 minutos",
+      "Acrescente caldo",
+      "Cozinhe mais 15 minutos",
+      "Bata no liquidificador",
+      "Finalize com manjericão e azeite"
+    ],
+    "tags": ["clássico", "cremoso", "italiano"],
+    "imagem": "sopa-tomate.jpg",
+    "substituicoes": {
+      "tomate fresco": "tomate pelado em lata",
+      "manjericão": "orégano",
+      "caldo": "água"
+    }
+  },
+  {
+    "id": 133,
+    "titulo": "Caldo Verde Tradicional",
+    "categoria": "Sopas e Caldos",
+    "tempo": "35 min",
+    "porcoes": 6,
+    "tamanhoPorcao": "1 tigela grande (350ml)",
+    "dificuldade": "Fácil",
+    "calorias": 145,
+    "proteinas": 6,
+    "carboidratos": 24,
+    "gorduras": 3,
+    "ingredientes": [
+      "4 batatas grandes",
+      "1 maço de couve",
+      "1 cebola",
+      "2 dentes de alho",
+      "1,5L de água",
+      "Azeite",
+      "Sal e pimenta"
+    ],
+    "modoPreparo": [
+      "Cozinhe batatas com cebola e alho",
+      "Quando macias, amasse grosseiramente",
+      "Corte couve em tiras bem finas",
+      "Adicione água até consistência desejada",
+      "Acrescente couve",
+      "Cozinhe por 5 minutos",
+      "Tempere com sal e pimenta",
+      "Finalize com fio de azeite"
+    ],
+    "tags": ["português", "tradicional", "comfort"],
+    "imagem": "caldo-verde.jpg",
+    "substituicoes": {
+      "batata": "mandioca",
+      "couve": "escarola",
+      "água": "caldo de galinha"
+    }
+  },
+  {
+    "id": 134,
+    "titulo": "Sopa de Mandioquinha com Frango",
+    "categoria": "Sopas e Caldos",
+    "tempo": "35 min",
+    "porcoes": 6,
+    "tamanhoPorcao": "1 tigela grande (350ml)",
+    "dificuldade": "Fácil",
+    "calorias": 175,
+    "proteinas": 18,
+    "carboidratos": 22,
+    "gorduras": 4,
+    "ingredientes": [
+      "500g de mandioquinha",
+      "300g de frango desfiado",
+      "1 cebola",
+      "2 dentes de alho",
+      "1,5L de caldo de galinha",
+      "100ml de creme de leite light",
+      "Salsinha",
+      "Sal e pimenta"
+    ],
+    "modoPreparo": [
+      "Refogue alho e cebola",
+      "Adicione mandioquinha em cubos",
+      "Acrescente caldo",
+      "Cozinhe até amolecer",
+      "Bata metade no liquidificador",
+      "Retorne à panela",
+      "Adicione frango e creme",
+      "Finalize com salsinha"
+    ],
+    "tags": ["cremoso", "proteico", "nutritivo"],
+    "imagem": "sopa-mandioquinha.jpg",
+    "substituicoes": {
+      "mandioquinha": "batata doce",
+      "frango": "carne desfiada",
+      "creme de leite": "iogurte natural"
+    }
+  },
+  {
+    "id": 135,
+    "titulo": "Sopa de Ervilha com Hortelã",
+    "categoria": "Sopas e Caldos",
+    "tempo": "40 min",
+    "porcoes": 6,
+    "tamanhoPorcao": "1 tigela grande (300ml)",
+    "dificuldade": "Fácil",
+    "calorias": 155,
+    "proteinas": 10,
+    "carboidratos": 26,
+    "gorduras": 2,
+    "ingredientes": [
+      "2 xícaras de ervilha seca",
+      "1 cebola",
+      "2 dentes de alho",
+      "1 cenoura",
+      "1,5L de água",
+      "Hortelã fresca",
+      "Sal e pimenta"
+    ],
+    "modoPreparo": [
+      "Deixe ervilha de molho por 8h",
+      "Refogue alho e cebola",
+      "Adicione ervilha escorrida",
+      "Acrescente água e cenoura",
+      "Cozinhe por 30 minutos",
+      "Bata metade no liquidificador",
+      "Tempere com sal e pimenta",
+      "Finalize com hortelã picada"
+    ],
+    "tags": ["proteína vegetal", "cremoso", "nutritivo"],
+    "imagem": "sopa-ervilha.jpg",
+    "substituicoes": {
+      "ervilha seca": "lentilha",
+      "hortelã": "coentro",
+      "cenoura": "batata"
+    }
+  },
+  {
+    "id": 136,
+    "titulo": "Panqueca Americana Integral",
+    "categoria": "Café da Manhã",
+    "tempo": "20 min",
+    "porcoes": 3,
+    "tamanhoPorcao": "3 panquecas médias (180g)",
+    "dificuldade": "Fácil",
+    "calorias": 235,
+    "proteinas": 12,
+    "carboidratos": 38,
+    "gorduras": 5,
+    "ingredientes": [
+      "1 xícara de farinha integral",
+      "1 ovo",
+      "1 xícara de leite desnatado",
+      "1 colher de fermento",
+      "1 colher de mel",
+      "Canela",
+      "Pitada de sal"
+    ],
+    "modoPreparo": [
+      "Misture farinha, fermento, canela e sal",
+      "À parte, bata ovo, leite e mel",
+      "Misture líquidos aos secos",
+      "Deixe descansar 5 minutos",
+      "Aqueça frigideira antiaderente",
+      "Despeje porções da massa",
+      "Vire quando bolhas aparecerem",
+      "Sirva com frutas"
+    ],
+    "tags": ["integral", "fofo", "clássico"],
+    "imagem": "panqueca-americana-integral.jpg",
+    "substituicoes": {
+      "farinha integral": "farinha de aveia",
+      "leite": "bebida vegetal",
+      "mel": "banana amassada"
+    }
+  },
+  {
+    "id": 137,
+    "titulo": "Pão de Queijo de Batata Doce",
+    "categoria": "Café da Manhã",
+    "tempo": "30 min",
+    "porcoes": 12,
+    "tamanhoPorcao": "2 pães (80g)",
+    "dificuldade": "Médio",
+    "calorias": 125,
+    "proteinas": 6,
+    "carboidratos": 20,
+    "gorduras": 3,
+    "ingredientes": [
+      "1 xícara de batata doce cozida",
+      "1 xícara de polvilho azedo",
+      "1 ovo",
+      "50g de queijo minas ralado",
+      "2 colheres de azeite",
+      "Sal a gosto"
+    ],
+    "modoPreparo": [
+      "Pré-aqueça o forno a 180°C",
+      "Amasse bem a batata doce",
+      "Misture com polvilho e sal",
+      "Adicione ovo, queijo e azeite",
+      "Amasse até formar massa",
+      "Modele bolinhas",
+      "Disponha em forma untada",
+      "Asse por 25 minutos até dourar"
+    ],
+    "tags": ["sem glúten", "brasileiro", "caseiro"],
+    "imagem": "pao-queijo-batata-doce.jpg",
+    "substituicoes": {
+      "batata doce": "mandioca",
+      "polvilho azedo": "polvilho doce",
+      "queijo minas": "parmesão"
+    }
+  },
+  {
+    "id": 138,
+    "titulo": "Iogurte Natural Caseiro",
+    "categoria": "Café da Manhã",
+    "tempo": "10 min + 8h fermentação",
+    "porcoes": 4,
+    "tamanhoPorcao": "1 pote (200ml)",
+    "dificuldade": "Médio",
+    "calorias": 145,
+    "proteinas": 12,
+    "carboidratos": 18,
+    "gorduras": 3,
+    "ingredientes": [
+      "1L de leite integral ou desnatado",
+      "2 colheres de iogurte natural (fermento)",
+      "Frutas para servir",
+      "Mel (opcional)"
+    ],
+    "modoPreparo": [
+      "Aqueça leite até 40-45°C",
+      "Retire do fogo",
+      "Misture o iogurte fermento",
+      "Transfira para potes",
+      "Cubra com pano",
+      "Deixe em local morno por 8h",
+      "Leve à geladeira por 4h",
+      "Sirva com frutas e mel"
+    ],
+    "tags": ["caseiro", "probiótico", "natural"],
+    "imagem": "iogurte-caseiro.jpg",
+    "substituicoes": {
+      "leite integral": "leite desnatado",
+      "fermento": "iogurte grego",
+      "frutas": "granola"
+    }
+  },
+  {
+    "id": 139,
+    "titulo": "Bolo de Caneca Salgado",
+    "categoria": "Café da Manhã",
+    "tempo": "5 min",
+    "porcoes": 1,
+    "tamanhoPorcao": "1 caneca (250ml)",
+    "dificuldade": "Muito Fácil",
+    "calorias": 185,
+    "proteinas": 14,
+    "carboidratos": 20,
+    "gorduras": 6,
+    "ingredientes": [
+      "1 ovo",
+      "3 colheres de aveia",
+      "2 colheres de queijo cottage",
+      "1 colher de fermento",
+      "Tomate cereja",
+      "Orégano",
+      "Sal"
+    ],
+    "modoPreparo": [
+      "Bata ovo em uma caneca",
+      "Adicione aveia e cottage",
+      "Tempere com sal e orégano",
+      "Misture bem",
+      "Adicione fermento",
+      "Coloque tomates por cima",
+      "Microondas por 2-3 minutos",
+      "Deixe esfriar 1 minuto"
+    ],
+    "tags": ["rápido", "microondas", "prático"],
+    "imagem": "bolo-caneca-salgado.jpg",
+    "substituicoes": {
+      "cottage": "ricota",
+      "aveia": "farinha integral",
+      "tomate": "azeitona"
+    }
+  },
+  {
+    "id": 140,
+    "titulo": "Vitamina de Mamão com Laranja",
+    "categoria": "Café da Manhã",
+    "tempo": "5 min",
+    "porcoes": 1,
+    "tamanhoPorcao": "1 copo grande (400ml)",
+    "dificuldade": "Muito Fácil",
+    "calorias": 165,
+    "proteinas": 5,
+    "carboidratos": 36,
+    "gorduras": 1,
+    "ingredientes": [
+      "1 xícara de mamão",
+      "Suco de 2 laranjas",
+      "1/2 xícara de aveia",
+      "1 colher de mel",
+      "Gelo"
+    ],
+    "modoPreparo": [
+      "Corte mamão em cubos",
+      "Esprema laranjas",
+      "Adicione tudo no liquidificador",
+      "Bata até ficar cremoso",
+      "Adicione gelo",
+      "Sirva imediatamente"
+    ],
+    "tags": ["vitamínico", "digestivo", "energético"],
+    "imagem": "vitamina-mamao-laranja.jpg",
+    "substituicoes": {
+      "mamão": "banana",
+      "laranja": "tangerina",
+      "aveia": "linhaça"
+    }
+  }
+]

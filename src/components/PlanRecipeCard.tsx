@@ -15,19 +15,19 @@ const PlanRecipeCard: React.FC<PlanRecipeCardProps> = ({ recipe, onReplace }) =>
       <Link to={`/receita/${recipe.id}`} className="flex-shrink-0 w-1/3">
         <img
           src={recipe.imagem}
-          alt={recipe.nome}
+          alt={recipe.titulo} // Usando 'titulo'
           className="w-full h-full object-cover"
         />
       </Link>
       <div className="flex-grow p-2 flex flex-col justify-between">
         <Link to={`/receita/${recipe.id}`}>
           <h4 className="text-sm font-semibold text-eatclean-gray-text line-clamp-2 leading-tight">
-            {recipe.nome}
+            {recipe.titulo} {/* Usando 'titulo' */}
           </h4>
         </Link>
         <div className="flex items-center gap-1 text-xs text-eatclean-orange-highlight">
           <Flame size={12} />
-          <span>{recipe.calorias} kcal</span>
+          <span>{recipe.calorias} kcal</span> {/* Usando 'calorias' top-level */}
         </div>
       </div>
       <Button

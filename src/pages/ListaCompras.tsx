@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Label } from "@/components/ui/label";
 import { cn } from "@/lib/utils";
-import { initialRecipes } from "@/data/recipes";
+import { receitas } from "@/data/receitas"; // Importação atualizada
 import { Recipe } from "@/types/recipe";
 import { loadWeeklyPlan } from "@/utils/planStorage";
 import { toast } from "sonner";
@@ -236,7 +236,7 @@ const ListaCompras = () => {
           day.meals.filter((id) => id !== null)
         ) as string[];
         const uniqueRecipeIds = Array.from(new Set(allRecipeIdsInPlan));
-        recipesToProcess = initialRecipes.filter((recipe) =>
+        recipesToProcess = receitas.filter((recipe) => // Usando 'receitas'
           uniqueRecipeIds.includes(recipe.id)
         );
       }

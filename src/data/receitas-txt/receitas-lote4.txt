@@ -1,0 +1,765 @@
+[
+  {
+    "id": 61,
+    "titulo": "Tilápia ao Forno com Limão",
+    "categoria": "Almoço/Jantar",
+    "tempo": "25 min",
+    "porcoes": 2,
+    "tamanhoPorcao": "1 filé grande (180g)",
+    "dificuldade": "Fácil",
+    "calorias": 205,
+    "proteinas": 36,
+    "carboidratos": 4,
+    "gorduras": 5,
+    "ingredientes": [
+      "2 filés de tilápia (360g)",
+      "2 limões fatiados",
+      "3 dentes de alho",
+      "Azeite spray",
+      "Sal, pimenta e orégano",
+      "Tomates cereja",
+      "Ervas frescas"
+    ],
+    "modoPreparo": [
+      "Pré-aqueça o forno a 200°C",
+      "Tempere os filés com sal, pimenta e alho",
+      "Disponha em assadeira forrada",
+      "Cubra com rodelas de limão",
+      "Adicione tomates cereja ao redor",
+      "Polvilhe orégano e ervas",
+      "Asse por 15-20 minutos",
+      "Sirva com legumes"
+    ],
+    "tags": ["proteico", "low carb", "leve"],
+    "imagem": "tilapia-limao.jpg",
+    "substituicoes": {
+      "tilápia": "pescada ou merluza",
+      "limão": "laranja",
+      "tomate cereja": "pimentão"
+    }
+  },
+  {
+    "id": 62,
+    "titulo": "Granola Caseira Fit",
+    "categoria": "Café da Manhã",
+    "tempo": "30 min",
+    "porcoes": 15,
+    "tamanhoPorcao": "3 colheres (40g)",
+    "dificuldade": "Fácil",
+    "calorias": 165,
+    "proteinas": 5,
+    "carboidratos": 22,
+    "gorduras": 7,
+    "ingredientes": [
+      "3 xícaras de aveia",
+      "1/2 xícara de castanhas picadas",
+      "1/4 xícara de coco ralado",
+      "1/4 xícara de mel",
+      "2 colheres de óleo de coco",
+      "1 colher de canela",
+      "1/4 xícara de uvas passas"
+    ],
+    "modoPreparo": [
+      "Pré-aqueça o forno a 160°C",
+      "Misture aveia, castanhas e coco",
+      "Derreta mel com óleo de coco",
+      "Despeje sobre a mistura seca",
+      "Adicione canela e mexa bem",
+      "Espalhe em assadeira",
+      "Asse por 20 min mexendo a cada 5min",
+      "Adicione passas após esfriar"
+    ],
+    "tags": ["caseiro", "crocante", "natural"],
+    "imagem": "granola-caseira.jpg",
+    "substituicoes": {
+      "castanhas": "amêndoas ou nozes",
+      "mel": "xarope de agave",
+      "passas": "cranberries secas"
+    }
+  },
+  {
+    "id": 63,
+    "titulo": "Yakisoba Fit de Frango",
+    "categoria": "Almoço/Jantar",
+    "tempo": "25 min",
+    "porcoes": 3,
+    "tamanhoPorcao": "1 prato fundo (350g)",
+    "dificuldade": "Médio",
+    "calorias": 315,
+    "proteinas": 28,
+    "carboidratos": 35,
+    "gorduras": 8,
+    "ingredientes": [
+      "200g de macarrão de arroz",
+      "300g de frango em tiras",
+      "1 cenoura em julienne",
+      "1 brócolis pequeno",
+      "1 pimentão",
+      "3 colheres de shoyu light",
+      "Gengibre e alho",
+      "Gergelim"
+    ],
+    "modoPreparo": [
+      "Cozinhe o macarrão e reserve",
+      "Tempere frango com shoyu e gengibre",
+      "Em wok ou frigideira, doure o frango",
+      "Reserve o frango",
+      "Refogue os legumes rapidamente",
+      "Retorne o frango",
+      "Adicione macarrão e shoyu",
+      "Finalize com gergelim"
+    ],
+    "tags": ["oriental", "completo", "colorido"],
+    "imagem": "yakisoba-fit.jpg",
+    "substituicoes": {
+      "macarrão arroz": "abobrinha em tiras",
+      "frango": "camarão ou tofu",
+      "shoyu": "molho de ostras light"
+    }
+  },
+  {
+    "id": 64,
+    "titulo": "Mousse de Maracujá Light",
+    "categoria": "Sobremesas",
+    "tempo": "15 min + 3h geladeira",
+    "porcoes": 6,
+    "tamanhoPorcao": "1 taça (120ml)",
+    "dificuldade": "Fácil",
+    "calorias": 105,
+    "proteinas": 8,
+    "carboidratos": 14,
+    "gorduras": 2,
+    "ingredientes": [
+      "1 lata de leite condensado light",
+      "1 lata de creme de leite light",
+      "Polpa de 3 maracujás",
+      "1 envelope de gelatina incolor",
+      "50ml de água"
+    ],
+    "modoPreparo": [
+      "Hidrate e dissolva a gelatina",
+      "Bata no liquidificador leite condensado, creme e polpa",
+      "Adicione a gelatina dissolvida",
+      "Bata por mais 1 minuto",
+      "Distribua em taças",
+      "Leve à geladeira por 3 horas",
+      "Decore com sementes de maracujá"
+    ],
+    "tags": ["sobremesa", "gelado", "cítrico"],
+    "imagem": "mousse-maracuja.jpg",
+    "substituicoes": {
+      "maracujá": "limão ou morango",
+      "leite condensado": "leite condensado fit caseiro",
+      "creme de leite": "iogurte grego batido"
+    }
+  },
+  {
+    "id": 65,
+    "titulo": "Frango Xadrez Fit",
+    "categoria": "Almoço/Jantar",
+    "tempo": "25 min",
+    "porcoes": 3,
+    "tamanhoPorcao": "1 prato raso (280g)",
+    "dificuldade": "Médio",
+    "calorias": 255,
+    "proteinas": 32,
+    "carboidratos": 18,
+    "gorduras": 7,
+    "ingredientes": [
+      "400g de frango em cubos",
+      "1 pimentão vermelho",
+      "1 pimentão verde",
+      "1 cebola",
+      "3 colheres de shoyu light",
+      "1 colher de amido de milho",
+      "Gengibre e alho",
+      "Castanha de caju"
+    ],
+    "modoPreparo": [
+      "Tempere frango com shoyu, gengibre e alho",
+      "Corte pimentões e cebola em quadrados",
+      "Doure o frango em fogo alto",
+      "Reserve o frango",
+      "Refogue os legumes rapidamente",
+      "Retorne o frango",
+      "Dissolva amido em água e adicione",
+      "Finalize com castanhas"
+    ],
+    "tags": ["oriental", "proteico", "colorido"],
+    "imagem": "frango-xadrez.jpg",
+    "substituicoes": {
+      "frango": "camarão ou tofu",
+      "castanha caju": "amendoim",
+      "amido": "araruta"
+    }
+  },
+  {
+    "id": 66,
+    "titulo": "Vitamina de Beterraba Energética",
+    "categoria": "Bebidas",
+    "tempo": "5 min",
+    "porcoes": 1,
+    "tamanhoPorcao": "1 copo grande (350ml)",
+    "dificuldade": "Muito Fácil",
+    "calorias": 185,
+    "proteinas": 8,
+    "carboidratos": 35,
+    "gorduras": 2,
+    "ingredientes": [
+      "1 beterraba pequena cozida",
+      "1 banana",
+      "1 laranja (suco)",
+      "1 colher de aveia",
+      "200ml de água de coco",
+      "Gengibre ralado"
+    ],
+    "modoPreparo": [
+      "Corte a beterraba em cubos",
+      "Adicione todos ingredientes no liquidificador",
+      "Bata até ficar homogêneo",
+      "Adicione gelo se desejar",
+      "Coe se preferir",
+      "Sirva imediatamente"
+    ],
+    "tags": ["energético", "pré-treino", "nutritivo"],
+    "imagem": "vitamina-beterraba.jpg",
+    "substituicoes": {
+      "beterraba": "cenoura",
+      "banana": "maçã",
+      "água de coco": "água normal"
+    }
+  },
+  {
+    "id": 67,
+    "titulo": "Almôndegas Assadas de Peru",
+    "categoria": "Almoço/Jantar",
+    "tempo": "30 min",
+    "porcoes": 4,
+    "tamanhoPorcao": "4 almôndegas (160g)",
+    "dificuldade": "Fácil",
+    "calorias": 215,
+    "proteinas": 30,
+    "carboidratos": 8,
+    "gorduras": 7,
+    "ingredientes": [
+      "500g de carne de peru moída",
+      "1 ovo",
+      "2 colheres de aveia",
+      "1 cebola pequena ralada",
+      "2 dentes de alho",
+      "Salsinha e cebolinha",
+      "Sal, pimenta e páprica"
+    ],
+    "modoPreparo": [
+      "Pré-aqueça o forno a 200°C",
+      "Misture todos ingredientes",
+      "Tempere bem",
+      "Modele bolinhas médias",
+      "Disponha em assadeira",
+      "Asse por 20-25 minutos",
+      "Vire na metade do tempo",
+      "Sirva com molho de tomate"
+    ],
+    "tags": ["proteico", "assado", "marmita"],
+    "imagem": "almondegas-peru.jpg",
+    "substituicoes": {
+      "peru": "frango ou patinho moído",
+      "aveia": "farinha de rosca integral",
+      "ovo": "chia hidratada"
+    }
+  },
+  {
+    "id": 68,
+    "titulo": "Panqueca Doce de Batata Doce",
+    "categoria": "Café da Manhã",
+    "tempo": "15 min",
+    "porcoes": 2,
+    "tamanhoPorcao": "3 panquecas pequenas (total 150g)",
+    "dificuldade": "Fácil",
+    "calorias": 225,
+    "proteinas": 12,
+    "carboidratos": 35,
+    "gorduras": 5,
+    "ingredientes": [
+      "1 batata doce média cozida",
+      "2 ovos",
+      "3 colheres de aveia",
+      "1 colher de canela",
+      "1 pitada de sal",
+      "Adoçante a gosto"
+    ],
+    "modoPreparo": [
+      "Amasse bem a batata doce",
+      "Adicione ovos e misture",
+      "Acrescente aveia e canela",
+      "Adoce a gosto",
+      "Deixe descansar 5 minutos",
+      "Aqueça frigideira antiaderente",
+      "Despeje porções pequenas",
+      "Cozinhe 2 minutos cada lado"
+    ],
+    "tags": ["doce", "natural", "nutritivo"],
+    "imagem": "panqueca-batata-doce.jpg",
+    "substituicoes": {
+      "batata doce": "abóbora cozida",
+      "aveia": "farinha de amêndoas",
+      "ovos": "linhaça + água"
+    }
+  },
+  {
+    "id": 69,
+    "titulo": "Ceviche de Peixe Branco",
+    "categoria": "Almoço/Jantar",
+    "tempo": "20 min + 1h marinando",
+    "porcoes": 3,
+    "tamanhoPorcao": "1 tigela média (220g)",
+    "dificuldade": "Médio",
+    "calorias": 165,
+    "proteinas": 28,
+    "carboidratos": 10,
+    "gorduras": 3,
+    "ingredientes": [
+      "300g de peixe branco em cubos",
+      "Suco de 4 limões",
+      "1 cebola roxa fatiada",
+      "1 tomate sem sementes",
+      "Coentro fresco",
+      "Pimenta dedo-de-moça",
+      "Sal a gosto"
+    ],
+    "modoPreparo": [
+      "Corte o peixe em cubos pequenos",
+      "Coloque em tigela com suco de limão",
+      "Marine na geladeira por 1 hora",
+      "Escorra metade do suco",
+      "Adicione cebola, tomate e coentro",
+      "Tempere com sal e pimenta",
+      "Misture delicadamente",
+      "Sirva bem gelado"
+    ],
+    "tags": ["refrescante", "proteico", "peruano"],
+    "imagem": "ceviche-peixe.jpg",
+    "substituicoes": {
+      "peixe branco": "camarão",
+      "limão": "lima da pérsia",
+      "coentro": "salsinha"
+    }
+  },
+  {
+    "id": 70,
+    "titulo": "Trufa de Tâmaras",
+    "categoria": "Sobremesas",
+    "tempo": "15 min",
+    "porcoes": 16,
+    "tamanhoPorcao": "2 trufas (40g)",
+    "dificuldade": "Fácil",
+    "calorias": 115,
+    "proteinas": 3,
+    "carboidratos": 18,
+    "gorduras": 4,
+    "ingredientes": [
+      "1 xícara de tâmaras sem caroço",
+      "1/2 xícara de amêndoas",
+      "3 colheres de cacau em pó",
+      "2 colheres de coco ralado",
+      "1 colher de essência de baunilha",
+      "Cacau ou coco para decorar"
+    ],
+    "modoPreparo": [
+      "Hidrate tâmaras em água quente por 5min",
+      "Escorra e bata com amêndoas no processador",
+      "Adicione cacau, coco e baunilha",
+      "Processe até formar massa",
+      "Modele bolinhas pequenas",
+      "Passe no cacau ou coco",
+      "Leve à geladeira por 30 minutos"
+    ],
+    "tags": ["sobremesa", "sem açúcar", "vegano"],
+    "imagem": "trufa-tamaras.jpg",
+    "substituicoes": {
+      "tâmaras": "figos secos",
+      "amêndoas": "castanha de caju",
+      "cacau": "alfarroba"
+    }
+  },
+  {
+    "id": 71,
+    "titulo": "Nhoque de Batata Doce Fit",
+    "categoria": "Almoço/Jantar",
+    "tempo": "40 min",
+    "porcoes": 4,
+    "tamanhoPorcao": "1 prato raso (250g)",
+    "dificuldade": "Médio",
+    "calorias": 245,
+    "proteinas": 10,
+    "carboidratos": 42,
+    "gorduras": 5,
+    "ingredientes": [
+      "500g de batata doce cozida",
+      "1 xícara de farinha de arroz",
+      "1 ovo",
+      "Sal e noz-moscada",
+      "Molho de tomate caseiro",
+      "Manjericão fresco"
+    ],
+    "modoPreparo": [
+      "Amasse a batata doce ainda quente",
+      "Adicione ovo, sal e noz-moscada",
+      "Acrescente farinha aos poucos",
+      "Amasse até formar massa",
+      "Faça rolinhos e corte em pedaços",
+      "Marque com garfo",
+      "Cozinhe em água fervente até subir",
+      "Sirva com molho de tomate"
+    ],
+    "tags": ["italiano", "sem glúten", "caseiro"],
+    "imagem": "nhoque-batata-doce.jpg",
+    "substituicoes": {
+      "batata doce": "mandioquinha",
+      "farinha arroz": "polvilho",
+      "molho tomate": "molho pesto"
+    }
+  },
+  {
+    "id": 72,
+    "titulo": "Salada Caprese Light",
+    "categoria": "Almoço/Jantar",
+    "tempo": "10 min",
+    "porcoes": 2,
+    "tamanhoPorcao": "1 prato médio (250g)",
+    "dificuldade": "Muito Fácil",
+    "calorias": 185,
+    "proteinas": 12,
+    "carboidratos": 8,
+    "gorduras": 12,
+    "ingredientes": [
+      "3 tomates grandes maduros",
+      "200g de muçarela de búfala light",
+      "Folhas de manjericão fresco",
+      "Azeite extra virgem",
+      "Vinagre balsâmico",
+      "Sal e pimenta"
+    ],
+    "modoPreparo": [
+      "Corte tomates em rodelas grossas",
+      "Fatie a muçarela",
+      "Intercale tomate e queijo no prato",
+      "Distribua folhas de manjericão",
+      "Regue com azeite",
+      "Adicione gotas de balsâmico",
+      "Tempere com sal e pimenta"
+    ],
+    "tags": ["italiana", "fresco", "simples"],
+    "imagem": "salada-caprese.jpg",
+    "substituicoes": {
+      "muçarela búfala": "queijo branco",
+      "tomate": "tomate cereja",
+      "balsâmico": "limão siciliano"
+    }
+  },
+  {
+    "id": 73,
+    "titulo": "Bolo de Cenoura Fit",
+    "categoria": "Sobremesas",
+    "tempo": "50 min",
+    "porcoes": 12,
+    "tamanhoPorcao": "1 fatia média (80g)",
+    "dificuldade": "Fácil",
+    "calorias": 145,
+    "proteinas": 6,
+    "carboidratos": 22,
+    "gorduras": 4,
+    "ingredientes": [
+      "2 cenouras médias",
+      "3 ovos",
+      "1/2 xícara de óleo de coco",
+      "1 xícara de aveia",
+      "1 xícara de farinha integral",
+      "1 colher de fermento",
+      "Adoçante a gosto",
+      "Cobertura: cacau + leite"
+    ],
+    "modoPreparo": [
+      "Pré-aqueça o forno a 180°C",
+      "Bata cenoura, ovos e óleo no liquidificador",
+      "Transfira para bowl",
+      "Adicione aveia, farinha e adoçante",
+      "Acrescente fermento e misture",
+      "Despeje em forma untada",
+      "Asse por 40 minutos",
+      "Faça cobertura e despeje morna"
+    ],
+    "tags": ["clássico", "caseiro", "sobremesa"],
+    "imagem": "bolo-cenoura.jpg",
+    "substituicoes": {
+      "óleo coco": "óleo de girassol",
+      "aveia": "farinha de amêndoas",
+      "farinha integral": "farinha de arroz"
+    }
+  },
+  {
+    "id": 74,
+    "titulo": "Rolinho Primavera Assado",
+    "categoria": "Lanches/Snacks",
+    "tempo": "30 min",
+    "porcoes": 8,
+    "tamanhoPorcao": "2 rolinhos (100g)",
+    "dificuldade": "Médio",
+    "calorias": 145,
+    "proteinas": 10,
+    "carboidratos": 18,
+    "gorduras": 4,
+    "ingredientes": [
+      "8 folhas de massa filo",
+      "200g de frango desfiado",
+      "1 cenoura ralada",
+      "1/2 repolho picado",
+      "Gengibre e shoyu",
+      "Azeite spray",
+      "Gergelim"
+    ],
+    "modoPreparo": [
+      "Pré-aqueça o forno a 200°C",
+      "Refogue legumes com gengibre e shoyu",
+      "Misture com frango",
+      "Corte massa filo em retângulos",
+      "Recheie e enrole como charuto",
+      "Pincele com azeite",
+      "Polvilhe gergelim",
+      "Asse por 15-20 minutos até dourar"
+    ],
+    "tags": ["oriental", "assado", "crocante"],
+    "imagem": "rolinho-primavera.jpg",
+    "substituicoes": {
+      "massa filo": "massa de pastel integral",
+      "frango": "camarão",
+      "repolho": "acelga"
+    }
+  },
+  {
+    "id": 75,
+    "titulo": "Shake Pós-Treino de Chocolate",
+    "categoria": "Bebidas",
+    "tempo": "3 min",
+    "porcoes": 1,
+    "tamanhoPorcao": "1 copo grande (400ml)",
+    "dificuldade": "Muito Fácil",
+    "calorias": 285,
+    "proteinas": 32,
+    "carboidratos": 35,
+    "gorduras": 4,
+    "ingredientes": [
+      "2 scoops de whey chocolate",
+      "1 banana congelada",
+      "1 colher de aveia",
+      "1 colher de cacau",
+      "300ml de leite desnatado",
+      "Gelo a gosto"
+    ],
+    "modoPreparo": [
+      "Adicione todos ingredientes no liquidificador",
+      "Bata em potência máxima",
+      "Ajuste consistência com gelo",
+      "Sirva imediatamente após treino"
+    ],
+    "tags": ["proteico", "pós-treino", "recovery"],
+    "imagem": "shake-pos-treino.jpg",
+    "substituicoes": {
+      "whey": "pasta de amendoim + aveia",
+      "banana": "mamão",
+      "leite": "bebida de amêndoas"
+    }
+  },
+  {
+    "id": 76,
+    "titulo": "Picadinho de Carne com Legumes",
+    "categoria": "Almoço/Jantar",
+    "tempo": "30 min",
+    "porcoes": 4,
+    "tamanhoPorcao": "1 concha grande (280g)",
+    "dificuldade": "Fácil",
+    "calorias": 265,
+    "proteinas": 32,
+    "carboidratos": 16,
+    "gorduras": 9,
+    "ingredientes": [
+      "500g de carne magra em cubos",
+      "2 batatas médias",
+      "2 cenouras",
+      "1 cebola",
+      "2 dentes de alho",
+      "1 xícara de vagem",
+      "Temperos e ervas",
+      "Sal e pimenta"
+    ],
+    "modoPreparo": [
+      "Tempere a carne com sal e alho",
+      "Doure a carne em panela",
+      "Adicione cebola e refogue",
+      "Acrescente batata e cenoura",
+      "Adicione água até cobrir",
+      "Cozinhe por 15 minutos",
+      "Adicione vagem nos últimos 5 minutos",
+      "Ajuste temperos e sirva"
+    ],
+    "tags": ["proteico", "brasileiro", "comfort food"],
+    "imagem": "picadinho-carne.jpg",
+    "substituicoes": {
+      "carne": "frango em cubos",
+      "batata": "mandioquinha",
+      "vagem": "chuchu"
+    }
+  },
+  {
+    "id": 77,
+    "titulo": "Crepe Francês Integral",
+    "categoria": "Café da Manhã",
+    "tempo": "20 min",
+    "porcoes": 4,
+    "tamanhoPorcao": "2 crepes (120g)",
+    "dificuldade": "Médio",
+    "calorias": 195,
+    "proteinas": 12,
+    "carboidratos": 26,
+    "gorduras": 5,
+    "ingredientes": [
+      "1 xícara de farinha integral",
+      "2 ovos",
+      "1 xícara de leite desnatado",
+      "1 colher de azeite",
+      "Sal a gosto",
+      "Recheio a escolher"
+    ],
+    "modoPreparo": [
+      "Bata todos ingredientes no liquidificador",
+      "Deixe descansar por 10 minutos",
+      "Aqueça frigideira antiaderente",
+      "Despeje fina camada de massa",
+      "Espalhe girando a frigideira",
+      "Cozinhe 1-2 minutos cada lado",
+      "Recheie a gosto e dobre",
+      "Sirva quente ou frio"
+    ],
+    "tags": ["francês", "versátil", "fino"],
+    "imagem": "crepe-frances.jpg",
+    "substituicoes": {
+      "farinha integral": "farinha de aveia",
+      "leite": "bebida vegetal",
+      "recheio": "doce ou salgado"
+    }
+  },
+  {
+    "id": 78,
+    "titulo": "Tabule Libanês Fit",
+    "categoria": "Almoço/Jantar",
+    "tempo": "20 min",
+    "porcoes": 4,
+    "tamanhoPorcao": "1 tigela média (220g)",
+    "dificuldade": "Fácil",
+    "calorias": 165,
+    "proteinas": 6,
+    "carboidratos": 26,
+    "gorduras": 5,
+    "ingredientes": [
+      "1 xícara de trigo para quibe",
+      "3 tomates picados",
+      "1 pepino picado",
+      "1 maço de salsinha",
+      "Hortelã fresca",
+      "Suco de 2 limões",
+      "Azeite",
+      "Sal e pimenta"
+    ],
+    "modoPreparo": [
+      "Hidrate o trigo em água por 15min",
+      "Escorra bem apertando",
+      "Pique finamente salsinha e hortelã",
+      "Misture todos ingredientes",
+      "Tempere com limão, azeite e sal",
+      "Deixe marinar por 10 minutos",
+      "Ajuste temperos",
+      "Sirva fresco"
+    ],
+    "tags": ["árabe", "refrescante", "vegetariano"],
+    "imagem": "tabule-libanes.jpg",
+    "substituicoes": {
+      "trigo quibe": "quinoa cozida",
+      "pepino": "abobrinha crua",
+      "hortelã": "manjericão"
+    }
+  },
+  {
+    "id": 79,
+    "titulo": "Gelatina Proteica Cremosa",
+    "categoria": "Sobremesas",
+    "tempo": "10 min + 3h geladeira",
+    "porcoes": 4,
+    "tamanhoPorcao": "1 potinho (150ml)",
+    "dificuldade": "Muito Fácil",
+    "calorias": 95,
+    "proteinas": 12,
+    "carboidratos": 10,
+    "gorduras": 1,
+    "ingredientes": [
+      "1 caixa de gelatina diet",
+      "200g de iogurte grego",
+      "1 scoop de whey baunilha",
+      "300ml de água quente",
+      "100ml de água fria"
+    ],
+    "modoPreparo": [
+      "Dissolva gelatina em água quente",
+      "Adicione água fria",
+      "Deixe esfriar até morno",
+      "Bata com iogurte e whey no liquidificador",
+      "Distribua em potinhos",
+      "Leve à geladeira por 3 horas",
+      "Sirva gelado"
+    ],
+    "tags": ["proteico", "light", "sobremesa"],
+    "imagem": "gelatina-proteica.jpg",
+    "substituicoes": {
+      "gelatina": "ágar-ágar",
+      "iogurte grego": "iogurte natural",
+      "whey": "leite em pó desnatado"
+    }
+  },
+  {
+    "id": 80,
+    "titulo": "Medalhão de Filé Mignon Fit",
+    "categoria": "Almoço/Jantar",
+    "tempo": "20 min",
+    "porcoes": 2,
+    "tamanhoPorcao": "1 medalhão grande (180g)",
+    "dificuldade": "Médio",
+    "calorias": 285,
+    "proteinas": 38,
+    "carboidratos": 2,
+    "gorduras": 14,
+    "ingredientes": [
+      "2 medalhões de filé mignon (360g)",
+      "2 dentes de alho",
+      "Alecrim fresco",
+      "Sal rosa e pimenta",
+      "Azeite spray",
+      "Manteiga ghee (opcional)"
+    ],
+    "modoPreparo": [
+      "Deixe a carne em temperatura ambiente",
+      "Tempere com sal, pimenta e alho",
+      "Aqueça grill em fogo alto",
+      "Sele a carne 3-4 minutos cada lado",
+      "Para mal passada, retire agora",
+      "Para ao ponto, mais 2 minutos",
+      "Deixe descansar 5 minutos",
+      "Finalize com alecrim"
+    ],
+    "tags": ["proteico", "gourmet", "especial"],
+    "imagem": "medalhao-file.jpg",
+    "substituicoes": {
+      "filé mignon": "alcatra ou picanha",
+      "alecrim": "tomilho",
+      "ghee": "azeite extra virgem"
+    }
+  }
+]

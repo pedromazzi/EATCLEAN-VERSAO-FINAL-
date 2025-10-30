@@ -1,0 +1,381 @@
+[
+  {
+    "id": 111,
+    "titulo": "Palitos de Cenoura com Homus",
+    "categoria": "Lanches/Snacks",
+    "tempo": "10 min",
+    "porcoes": 2,
+    "tamanhoPorcao": "1 xícara de palitos + 3 colheres homus (150g)",
+    "dificuldade": "Muito Fácil",
+    "calorias": 145,
+    "proteinas": 6,
+    "carboidratos": 18,
+    "gorduras": 6,
+    "ingredientes": [
+      "3 cenouras grandes",
+      "1 lata de grão de bico",
+      "2 colheres de tahine",
+      "Suco de 1 limão",
+      "1 dente de alho",
+      "Azeite",
+      "Cominho"
+    ],
+    "modoPreparo": [
+      "Corte cenouras em palitos",
+      "Bata grão de bico, tahine, limão e alho",
+      "Adicione água até consistência cremosa",
+      "Tempere com cominho e sal",
+      "Regue homus com azeite",
+      "Sirva cenouras com homus para mergulhar"
+    ],
+    "tags": ["saudável", "árabe", "vegetariano"],
+    "imagem": "palitos-homus.jpg",
+    "substituicoes": {
+      "cenoura": "pepino ou aipo",
+      "grão de bico": "edamame",
+      "tahine": "pasta de amendoim"
+    }
+  },
+  {
+    "id": 112,
+    "titulo": "Mini Quiche de Espinafre",
+    "categoria": "Lanches/Snacks",
+    "tempo": "30 min",
+    "porcoes": 12,
+    "tamanhoPorcao": "2 mini quiches (80g)",
+    "dificuldade": "Médio",
+    "calorias": 115,
+    "proteinas": 8,
+    "carboidratos": 10,
+    "gorduras": 5,
+    "ingredientes": [
+      "4 ovos",
+      "1 xícara de espinafre picado",
+      "1/2 xícara de queijo cottage",
+      "1/4 xícara de aveia",
+      "1 cebola pequena",
+      "Sal, pimenta e noz-moscada"
+    ],
+    "modoPreparo": [
+      "Pré-aqueça o forno a 180°C",
+      "Refogue espinafre e cebola",
+      "Bata ovos com cottage e aveia",
+      "Adicione espinafre refogado",
+      "Tempere com sal, pimenta e noz-moscada",
+      "Distribua em forminhas de cupcake",
+      "Asse por 20-25 minutos",
+      "Deixe esfriar antes de desenformar"
+    ],
+    "tags": ["proteico", "porção individual", "meal prep"],
+    "imagem": "mini-quiche.jpg",
+    "substituicoes": {
+      "espinafre": "brócolis ou tomate",
+      "cottage": "ricota",
+      "aveia": "farinha integral"
+    }
+  },
+  {
+    "id": 113,
+    "titulo": "Rolinhos de Peito de Peru",
+    "categoria": "Lanches/Snacks",
+    "tempo": "10 min",
+    "porcoes": 2,
+    "tamanhoPorcao": "3 rolinhos (120g)",
+    "dificuldade": "Muito Fácil",
+    "calorias": 165,
+    "proteinas": 22,
+    "carboidratos": 8,
+    "gorduras": 5,
+    "ingredientes": [
+      "6 fatias de peito de peru",
+      "6 fatias de queijo branco",
+      "Cenoura ralada",
+      "Alface",
+      "Cream cheese light",
+      "Mostarda dijon"
+    ],
+    "modoPreparo": [
+      "Passe cream cheese nas fatias de peru",
+      "Adicione uma pitada de mostarda",
+      "Coloque queijo branco",
+      "Adicione cenoura e alface",
+      "Enrole bem apertado",
+      "Corte ao meio",
+      "Prenda com palito se necessário"
+    ],
+    "tags": ["low carb", "rápido", "proteico"],
+    "imagem": "rolinhos-peru.jpg",
+    "substituicoes": {
+      "peru": "blanquet de frango",
+      "queijo branco": "queijo cottage",
+      "cream cheese": "pasta de ricota"
+    }
+  },
+  {
+    "id": 114,
+    "titulo": "Chips de Grão de Bico Assado",
+    "categoria": "Lanches/Snacks",
+    "tempo": "40 min",
+    "porcoes": 4,
+    "tamanhoPorcao": "1/2 xícara (70g)",
+    "dificuldade": "Fácil",
+    "calorias": 145,
+    "proteinas": 8,
+    "carboidratos": 22,
+    "gorduras": 3,
+    "ingredientes": [
+      "2 latas de grão de bico",
+      "Azeite spray",
+      "Páprica defumada",
+      "Alho em pó",
+      "Cominho",
+      "Sal"
+    ],
+    "modoPreparo": [
+      "Pré-aqueça o forno a 200°C",
+      "Escorra e seque bem o grão de bico",
+      "Tempere com páprica, alho, cominho e sal",
+      "Espalhe em assadeira",
+      "Asse por 30-40 minutos",
+      "Mexa a cada 10 minutos",
+      "Deixe esfriar até ficarem crocantes",
+      "Guarde em pote hermético"
+    ],
+    "tags": ["crocante", "proteico", "vegano"],
+    "imagem": "chips-grao-bico.jpg",
+    "substituicoes": {
+      "grão de bico": "edamame",
+      "páprica": "curry",
+      "temperos": "qualquer combinação"
+    }
+  },
+  {
+    "id": 115,
+    "titulo": "Ovo Cozido Recheado",
+    "categoria": "Lanches/Snacks",
+    "tempo": "15 min",
+    "porcoes": 6,
+    "tamanhoPorcao": "2 metades recheadas (60g)",
+    "dificuldade": "Fácil",
+    "calorias": 95,
+    "proteinas": 10,
+    "carboidratos": 2,
+    "gorduras": 5,
+    "ingredientes": [
+      "6 ovos",
+      "3 colheres de iogurte grego",
+      "1 colher de mostarda",
+      "Suco de limão",
+      "Sal e pimenta",
+      "Páprica para decorar",
+      "Cebolinha"
+    ],
+    "modoPreparo": [
+      "Cozinhe ovos por 10 minutos",
+      "Deixe esfriar e descasque",
+      "Corte ao meio e retire gemas",
+      "Amasse gemas com iogurte e mostarda",
+      "Adicione limão, sal e pimenta",
+      "Recheie as claras com a mistura",
+      "Polvilhe páprica e cebolinha",
+      "Leve à geladeira até servir"
+    ],
+    "tags": ["proteico", "low carb", "festa"],
+    "imagem": "ovo-recheado.jpg",
+    "substituicoes": {
+      "iogurte": "maionese light",
+      "mostarda": "wasabi",
+      "páprica": "curry"
+    }
+  },
+  {
+    "id": 116,
+    "titulo": "Mix de Castanhas Temperadas",
+    "categoria": "Lanches/Snacks",
+    "tempo": "20 min",
+    "porcoes": 8,
+    "tamanhoPorcao": "1/4 xícara (40g)",
+    "dificuldade": "Fácil",
+    "calorias": 185,
+    "proteinas": 6,
+    "carboidratos": 8,
+    "gorduras": 15,
+    "ingredientes": [
+      "1 xícara de amêndoas",
+      "1 xícara de castanha de caju",
+      "1/2 xícara de nozes",
+      "1 colher de mel",
+      "Alecrim fresco",
+      "Sal rosa",
+      "Pimenta caiena"
+    ],
+    "modoPreparo": [
+      "Pré-aqueça o forno a 160°C",
+      "Misture todas as castanhas",
+      "Regue com mel",
+      "Adicione alecrim picado, sal e pimenta",
+      "Misture bem",
+      "Espalhe em assadeira",
+      "Asse por 15 minutos mexendo",
+      "Deixe esfriar e guarde em pote"
+    ],
+    "tags": ["nutritivo", "energético", "natural"],
+    "imagem": "mix-castanhas.jpg",
+    "substituicoes": {
+      "castanhas": "qualquer mix preferido",
+      "mel": "xarope de bordo",
+      "alecrim": "tomilho"
+    }
+  },
+  {
+    "id": 117,
+    "titulo": "Espetinho Caprese",
+    "categoria": "Lanches/Snacks",
+    "tempo": "10 min",
+    "porcoes": 4,
+    "tamanhoPorcao": "3 espetinhos (120g)",
+    "dificuldade": "Muito Fácil",
+    "calorias": 145,
+    "proteinas": 10,
+    "carboidratos": 6,
+    "gorduras": 9,
+    "ingredientes": [
+      "12 tomates cereja",
+      "12 bolinhas de muçarela de búfala",
+      "12 folhas de manjericão",
+      "Azeite extra virgem",
+      "Vinagre balsâmico",
+      "Sal e pimenta",
+      "Palitos de espetinho"
+    ],
+    "modoPreparo": [
+      "Lave tomates e manjericão",
+      "Escorra muçarela",
+      "Monte nos palitos: tomate, manjericão, queijo",
+      "Disponha em prato",
+      "Regue com azeite e balsâmico",
+      "Tempere com sal e pimenta",
+      "Sirva fresco"
+    ],
+    "tags": ["italiano", "fresco", "elegante"],
+    "imagem": "espetinho-caprese.jpg",
+    "substituicoes": {
+      "muçarela búfala": "queijo branco em cubos",
+      "manjericão": "rúcula",
+      "balsâmico": "limão siciliano"
+    }
+  },
+  {
+    "id": 118,
+    "titulo": "Biscoito de Polvilho Caseiro",
+    "categoria": "Lanches/Snacks",
+    "tempo": "25 min",
+    "porcoes": 20,
+    "tamanhoPorcao": "3 biscoitos (40g)",
+    "dificuldade": "Médio",
+    "calorias": 115,
+    "proteinas": 3,
+    "carboidratos": 20,
+    "gorduras": 3,
+    "ingredientes": [
+      "2 xícaras de polvilho azedo",
+      "1/2 xícara de água",
+      "1/4 xícara de óleo",
+      "1 ovo",
+      "50g de queijo parmesão",
+      "Sal a gosto"
+    ],
+    "modoPreparo": [
+      "Pré-aqueça o forno a 180°C",
+      "Ferva água com óleo e sal",
+      "Despeje sobre polvilho mexendo",
+      "Deixe esfriar",
+      "Adicione ovo e parmesão",
+      "Amasse até formar massa",
+      "Modele biscoitos pequenos",
+      "Asse por 20 minutos até dourar"
+    ],
+    "tags": ["sem glúten", "crocante", "brasileiro"],
+    "imagem": "biscoito-polvilho.jpg",
+    "substituicoes": {
+      "polvilho azedo": "polvilho doce",
+      "parmesão": "queijo minas",
+      "óleo": "manteiga"
+    }
+  },
+  {
+    "id": 119,
+    "titulo": "Wrap de Alface com Frango",
+    "categoria": "Lanches/Snacks",
+    "tempo": "15 min",
+    "porcoes": 2,
+    "tamanhoPorcao": "3 wraps (150g)",
+    "dificuldade": "Fácil",
+    "calorias": 165,
+    "proteinas": 24,
+    "carboidratos": 8,
+    "gorduras": 4,
+    "ingredientes": [
+      "6 folhas grandes de alface",
+      "200g de frango desfiado",
+      "1 cenoura ralada",
+      "1/2 pepino em tiras",
+      "2 colheres de homus",
+      "Shoyu e gengibre"
+    ],
+    "modoPreparo": [
+      "Tempere frango com shoyu e gengibre",
+      "Lave e seque bem as folhas de alface",
+      "Espalhe homus nas folhas",
+      "Distribua frango, cenoura e pepino",
+      "Enrole como charuto",
+      "Prenda com palito se necessário",
+      "Sirva fresco"
+    ],
+    "tags": ["low carb", "leve", "oriental"],
+    "imagem": "wrap-alface.jpg",
+    "substituicoes": {
+      "alface": "folhas de couve",
+      "frango": "camarão",
+      "homus": "guacamole"
+    }
+  },
+  {
+    "id": 120,
+    "titulo": "Bolinhas de Coco Proteicas",
+    "categoria": "Lanches/Snacks",
+    "tempo": "15 min",
+    "porcoes": 15,
+    "tamanhoPorcao": "2 bolinhas (40g)",
+    "dificuldade": "Fácil",
+    "calorias": 95,
+    "proteinas": 6,
+    "carboidratos": 10,
+    "gorduras": 4,
+    "ingredientes": [
+      "1 xícara de coco ralado",
+      "2 scoops de whey baunilha",
+      "3 colheres de leite de coco",
+      "2 colheres de mel",
+      "Essência de baunilha",
+      "Coco ralado para decorar"
+    ],
+    "modoPreparo": [
+      "Misture coco ralado com whey",
+      "Adicione leite de coco e mel",
+      "Acrescente essência de baunilha",
+      "Misture até formar massa",
+      "Modele bolinhas pequenas",
+      "Passe no coco ralado",
+      "Leve à geladeira por 30 minutos",
+      "Guarde em pote hermético"
+    ],
+    "tags": ["proteico", "doce", "tropical"],
+    "imagem": "bolinhas-coco.jpg",
+    "substituicoes": {
+      "whey": "leite em pó desnatado",
+      "mel": "xarope de agave",
+      "leite coco": "leite comum"
+    }
+  }
+]

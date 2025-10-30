@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { initialRecipes } from "@/data/recipes";
+import { receitas } from "@/data/receitas"; // Importação atualizada
 import { Recipe } from "@/types/recipe";
 import RecipeDetailHeader from "@/components/RecipeDetailHeader";
 import IngredientCheckbox from "@/components/IngredientCheckbox";
@@ -16,7 +16,7 @@ const ReceitaDetalhe = () => {
   const [isFavorite, setIsFavorite] = useState<boolean>(false);
 
   useEffect(() => {
-    const foundRecipe = initialRecipes.find((r) => r.id === id);
+    const foundRecipe = receitas.find((r) => r.id === id); // Usando 'receitas'
     setRecipe(foundRecipe);
 
     if (foundRecipe) {
@@ -29,10 +29,10 @@ const ReceitaDetalhe = () => {
 
     if (isFavorite) {
       removeFavoriteRecipeId(recipe.id);
-      toast.info(`"${recipe.nome}" removida dos favoritos.`);
+      toast.info(`"${recipe.titulo}" removida dos favoritos.`); // Usando 'titulo'
     } else {
       addFavoriteRecipeId(recipe.id);
-      toast.success(`"${recipe.nome}" adicionada aos favoritos!`);
+      toast.success(`"${recipe.titulo}" adicionada aos favoritos!`); // Usando 'titulo'
     }
     setIsFavorite(!isFavorite);
   };
@@ -52,12 +52,12 @@ const ReceitaDetalhe = () => {
       return;
     }
 
-    let texto = `🍽️ ${recipe.nome}\n\n`;
+    let texto = `🍽️ ${recipe.titulo}\n\n`; // Usando 'titulo'
     
     texto += `${recipe.descricao}\n\n`;
     
-    texto += `⏱️ Tempo de preparo: ${recipe.tempoPreparo} min\n`;
-    texto += `🔥 Calorias: ${recipe.calorias} kcal\n\n`;
+    texto += `⏱️ Tempo de preparo: ${recipe.tempo} min\n`; // Usando 'tempo'
+    texto += `🔥 Calorias: ${recipe.calorias} kcal\n\n`; // Usando 'calorias' top-level
     
     texto += `📝 INGREDIENTES:\n`;
     recipe.ingredientes.forEach(ingrediente => {
@@ -70,18 +70,18 @@ const ReceitaDetalhe = () => {
     });
     
     texto += `\n💪 INFORMAÇÕES NUTRICIONAIS:\n`;
-    texto += `Porção: ${recipe.tamanhoPorcao}\n`; // Adicionado aqui
-    texto += `Calorias: ${recipe.informacoesNutricionais.calorias} kcal\n`;
-    texto += `Proteínas: ${recipe.informacoesNutricionais.proteinas}g\n`;
-    texto += `Carboidratos: ${recipe.informacoesNutricionais.carboidratos}g\n`;
-    texto += `Gorduras: ${recipe.informacoesNutricionais.gorduras}g\n\n`;
+    texto += `Porção: ${recipe.tamanhoPorcao}\n`;
+    texto += `Calorias: ${recipe.calorias} kcal\n`; // Usando 'calorias' top-level
+    texto += `Proteínas: ${recipe.proteinas}g\n`; // Usando 'proteinas' top-level
+    texto += `Carboidratos: ${recipe.carboidratos}g\n`; // Usando 'carboidratos' top-level
+    texto += `Gorduras: ${recipe.gorduras}g\n\n`; // Usando 'gorduras' top-level
     
     texto += `Receita do app EatClean 💚\n${window.location.href}`; // Adiciona a URL atual
 
     if (navigator.share) {
       try {
         await navigator.share({
-          title: recipe.nome,
+          title: recipe.titulo, // Usando 'titulo'
           text: texto,
           url: window.location.href, // Compartilha a URL diretamente também
         });
@@ -114,13 +114,13 @@ const ReceitaDetalhe = () => {
       <div className="flex-grow pt-16">
         <img
           src={recipe.imagem}
-          alt={recipe.nome}
+          alt={recipe.titulo} // Usando 'titulo'
           className="w-full h-64 object-cover rounded-b-3xl shadow-md"
         />
 
         <div className="p-4">
           <h1 className="text-3xl font-bold text-eatclean-gray-text mt-4 mb-2">
-            {recipe.nome}
+            {recipe.titulo}
           </h1>
           <p className="text-eatclean-gray-inactive text-base mb-6">
             {recipe.descricao}
@@ -153,10 +153,10 @@ const ReceitaDetalhe = () => {
             </div>
 
             <div className="grid grid-cols-2 gap-4">
-              <NutritionalInfoCard label="Calorias" value={recipe.informacoesNutricionais.calorias} unit="kcal" />
-              <NutritionalInfoCard label="Proteínas" value={recipe.informacoesNutricionais.proteinas} unit="g" />
-              <NutritionalInfoCard label="Gorduras" value={recipe.informacoesNutricionais.gorduras} unit="g" />
-              <NutritionalInfoCard label="Carboidratos" value={recipe.informacoesNutricionais.carboidratos} unit="g" />
+              <NutritionalInfoCard label="Calorias" value={recipe.calorias} unit="kcal" />
+              <NutritionalInfoCard label="Proteínas" value={recipe.proteinas} unit="g" />
+              <NutritionalInfoCard label="Gorduras" value={recipe.gorduras} unit="g" />
+              <NutritionalInfoCard label="Carboidratos" value={recipe.carboidratos} unit="g" />
             </div>
           </section>
         </div>

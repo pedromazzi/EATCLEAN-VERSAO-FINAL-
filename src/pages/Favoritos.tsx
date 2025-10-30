@@ -3,7 +3,7 @@ import { HeartOff } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import RecipeCard from "@/components/RecipeCard";
-import { initialRecipes } from "@/data/recipes";
+import { receitas } from "@/data/receitas"; // Importação atualizada
 import { Recipe } from "@/types/recipe";
 import { getFavoriteRecipeIds, removeFavoriteRecipeId } from "@/utils/favorites";
 
@@ -12,7 +12,7 @@ const Favoritos = () => {
 
   const loadFavoriteRecipes = useCallback(() => {
     const favoriteIds = getFavoriteRecipeIds();
-    const recipes = initialRecipes.filter((recipe) =>
+    const recipes = receitas.filter((recipe) => // Usando 'receitas'
       favoriteIds.includes(recipe.id)
     );
     setFavoriteRecipes(recipes);

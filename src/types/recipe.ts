@@ -1,19 +1,19 @@
 export interface Recipe {
   id: string;
-  nome: string;
+  titulo: string; // Novo nome para 'nome'
   descricao: string;
   categoria: string;
-  calorias: number;
-  tempoPreparo: number;
-  imagem: string;
+  tempo: number; // Novo nome para 'tempoPreparo'
+  porcoes: number;
+  tamanhoPorcao: string;
+  dificuldade?: string; // Opcional
+  calorias: number; // Agora no nível superior
+  proteinas: number; // Agora no nível superior
+  carboidratos: number; // Agora no nível superior
+  gorduras: number; // Agora no nível superior
   ingredientes: string[];
   modoPreparo: string[];
-  porcoes: number; // Adicionado o campo porcoes
-  tamanhoPorcao: string; // Adicionado o campo tamanhoPorcao
-  informacoesNutricionais: {
-    calorias: number;
-    proteinas: number;
-    gorduras: number;
-    carboidratos: number;
-  };
+  tags?: string[]; // Opcional
+  imagem: string;
+  substituicoes?: { [key: string]: string }; // Opcional
 }
