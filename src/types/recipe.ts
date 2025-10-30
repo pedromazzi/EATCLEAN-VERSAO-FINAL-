@@ -8,6 +8,8 @@ export interface Recipe {
   imagem: string;
   ingredientes: string[];
   modoPreparo: string[];
+  porcoes: number; // Adicionado o campo porcoes
+  tamanhoPorcao: string; // Adicionado o campo tamanhoPorcao
   informacoesNutricionais: {
     calorias: number;
     proteinas: number;

@@ -26,6 +26,8 @@ export const initialRecipes: Recipe[] = [
       "Despeje o molho sobre a salada e misture delicadamente.",
       "Finalize com coentro fresco picado e sirva imediatamente.",
     ],
+    porcoes: 1,
+    tamanhoPorcao: "1 porção (aprox. 300g)",
     informacoesNutricionais: {
       calorias: 350,
       proteinas: 12,
@@ -54,6 +56,8 @@ export const initialRecipes: Recipe[] = [
       "Bata até obter uma mistura homogênea e cremosa.",
       "Sirva imediatamente.",
     ],
+    porcoes: 1,
+    tamanhoPorcao: "1 copo (aprox. 350ml)",
     informacoesNutricionais: {
       calorias: 180,
       proteinas: 5,
@@ -82,6 +86,8 @@ export const initialRecipes: Recipe[] = [
       "Cozinhe o brócolis no vapor até ficar al dente.",
       "Sirva o frango grelhado com a batata doce e o brócolis.",
     ],
+    porcoes: 1,
+    tamanhoPorcao: "1 prato (aprox. 400g)",
     informacoesNutricionais: {
       calorias: 420,
       proteinas: 40,
@@ -114,6 +120,8 @@ export const initialRecipes: Recipe[] = [
       "Use um mixer de mão para bater a sopa até ficar cremosa. Se preferir, deixe alguns pedaços de legumes.",
       "Sirva quente, finalizado com salsinha fresca.",
     ],
+    porcoes: 2,
+    tamanhoPorcao: "1 tigela (aprox. 300ml)",
     informacoesNutricionais: {
       calorias: 250,
       proteinas: 8,
@@ -142,6 +150,8 @@ export const initialRecipes: Recipe[] = [
       "Leve à geladeira por pelo menos 30 minutos para firmar.",
       "Corte em barrinhas e armazene em um recipiente hermético.",
     ],
+    porcoes: 6,
+    tamanhoPorcao: "1 barrinha (aprox. 30g)",
     informacoesNutricionais: {
       calorias: 150,
       proteinas: 6,
@@ -171,6 +181,8 @@ export const initialRecipes: Recipe[] = [
       "Prove e ajuste o adoçante se desejar.",
       "Transfira para potes individuais e leve à geladeira por pelo menos 30 minutos antes de servir.",
     ],
+    porcoes: 2,
+    tamanhoPorcao: "1 porção (aprox. 100g)",
     informacoesNutricionais: {
       calorias: 200,
       proteinas: 4,
@@ -197,6 +209,8 @@ export const initialRecipes: Recipe[] = [
       "Leve à geladeira por pelo menos 1 hora para que os sabores se infundam.",
       "Sirva gelada.",
     ],
+    porcoes: 4,
+    tamanhoPorcao: "1 copo (aprox. 250ml)",
     informacoesNutricionais: {
       calorias: 10,
       proteinas: 0,
@@ -228,6 +242,8 @@ export const initialRecipes: Recipe[] = [
       "Enrole a tortilha firmemente, dobrando as laterais para dentro.",
       "Corte ao meio e sirva.",
     ],
+    porcoes: 1,
+    tamanhoPorcao: "1 wrap (aprox. 250g)",
     informacoesNutricionais: {
       calorias: 380,
       proteinas: 25,

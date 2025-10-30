@@ -70,6 +70,7 @@ const ReceitaDetalhe = () => {
     });
     
     texto += `\n💪 INFORMAÇÕES NUTRICIONAIS:\n`;
+    texto += `Porção: ${recipe.tamanhoPorcao}\n`; // Adicionado aqui
     texto += `Calorias: ${recipe.informacoesNutricionais.calorias} kcal\n`;
     texto += `Proteínas: ${recipe.informacoesNutricionais.proteinas}g\n`;
     texto += `Carboidratos: ${recipe.informacoesNutricionais.carboidratos}g\n`;
@@ -145,6 +146,12 @@ const ReceitaDetalhe = () => {
 
           <section className="mb-8">
             <h2 className="text-xl font-bold text-eatclean-gray-text mb-4">Informações Nutricionais</h2>
+            {/* Novo card de Porção */}
+            <div className="mb-4 p-3 bg-green-50 rounded-lg border border-green-200">
+              <p className="text-sm text-gray-600 mb-1">Porção</p>
+              <p className="text-base font-semibold text-gray-800">{recipe.tamanhoPorcao}</p>
+            </div>
+
             <div className="grid grid-cols-2 gap-4">
               <NutritionalInfoCard label="Calorias" value={recipe.informacoesNutricionais.calorias} unit="kcal" />
               <NutritionalInfoCard label="Proteínas" value={recipe.informacoesNutricionais.proteinas} unit="g" />
