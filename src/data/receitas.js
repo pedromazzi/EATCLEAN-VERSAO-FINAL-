@@ -737,4 +737,5 @@ export const receitas = [
       "mel": "adoçante",
       "frutas": "cacau nibs ou granola"
     }
+  }
 ];
