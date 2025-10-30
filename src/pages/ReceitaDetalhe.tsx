@@ -16,7 +16,7 @@ const ReceitaDetalhe = () => {
   const [isFavorite, setIsFavorite] = useState<boolean>(false);
 
   useEffect(() => {
-    const foundRecipe = receitas.find((r) => r.id === id); // Usando 'receitas'
+    const foundRecipe = receitas.find((r) => r.id === Number(id)); // CORREÇÃO AQUI
     setRecipe(foundRecipe);
 
     if (foundRecipe) {
@@ -52,12 +52,12 @@ const ReceitaDetalhe = () => {
       return;
     }
 
-    let texto = `🍽️ ${recipe.titulo}\n\n`; // Usando 'titulo'
+    let texto = `🍽️ ${recipe.titulo}\n\n`; 
     
     texto += `${recipe.descricao}\n\n`;
     
-    texto += `⏱️ Tempo de preparo: ${recipe.tempo} min\n`; // Usando 'tempo'
-    texto += `🔥 Calorias: ${recipe.calorias} kcal\n\n`; // Usando 'calorias' top-level
+    texto += `⏱️ Tempo de preparo: ${recipe.tempo} min\n`; 
+    texto += `🔥 Calorias: ${recipe.calorias} kcal\n\n`; 
     
     texto += `📝 INGREDIENTES:\n`;
     recipe.ingredientes.forEach(ingrediente => {
@@ -71,31 +71,29 @@ const ReceitaDetalhe = () => {
     
     texto += `\n💪 INFORMAÇÕES NUTRICIONAIS:\n`;
     texto += `Porção: ${recipe.tamanhoPorcao}\n`;
-    texto += `Calorias: ${recipe.calorias} kcal\n`; // Usando 'calorias' top-level
-    texto += `Proteínas: ${recipe.proteinas}g\n`; // Usando 'proteinas' top-level
-    texto += `Carboidratos: ${recipe.carboidratos}g\n`; // Usando 'carboidratos' top-level
-    texto += `Gorduras: ${recipe.gorduras}g\n\n`; // Usando 'gorduras' top-level
+    texto += `Calorias: ${recipe.calorias} kcal\n`; 
+    texto += `Proteínas: ${recipe.proteinas}g\n`; 
+    texto += `Carboidratos: ${recipe.carboidratos}g\n`; 
+    texto += `Gorduras: ${recipe.gorduras}g\n\n`; 
     
-    texto += `Receita do app EatClean 💚\n${window.location.href}`; // Adiciona a URL atual
+    texto += `Receita do app EatClean 💚\n${window.location.href}`; 
 
     if (navigator.share) {
       try {
         await navigator.share({
-          title: recipe.titulo, // Usando 'titulo'
+          title: recipe.titulo, 
           text: texto,
-          url: window.location.href, // Compartilha a URL diretamente também
+          url: window.location.href, 
         });
         toast.success('Receita compartilhada com sucesso!');
       } catch (error: any) {
-        // Usuário cancelou ou erro diferente de AbortError
         if (error.name !== 'AbortError') {
           console.error('Erro ao compartilhar:', error);
-          copyToClipboard(texto); // Fallback para copiar
+          copyToClipboard(texto); 
         }
       }
     } else {
-      // Navegador não suporta Web Share API
-      copyToClipboard(texto); // Fallback para copiar
+      copyToClipboard(texto); 
     }
   };
 
@@ -108,13 +106,13 @@ const ReceitaDetalhe = () => {
       <RecipeDetailHeader 
         isFavorite={isFavorite} 
         onToggleFavorite={handleToggleFavorite} 
-        onShare={handleShare} // Passando a nova função de compartilhar
+        onShare={handleShare} 
       />
 
       <div className="flex-grow pt-16">
         <img
           src={recipe.imagem}
-          alt={recipe.titulo} // Usando 'titulo'
+          alt={recipe.titulo} 
           className="w-full h-64 object-cover rounded-b-3xl shadow-md"
         />
 
@@ -146,7 +144,6 @@ const ReceitaDetalhe = () => {
 
           <section className="mb-8">
             <h2 className="text-xl font-bold text-eatclean-gray-text mb-4">Informações Nutricionais</h2>
-            {/* Novo card de Porção */}
             <div className="mb-4 p-3 bg-green-50 rounded-lg border border-green-200">
               <p className="text-sm text-gray-600 mb-1">Porção</p>
               <p className="text-base font-semibold text-gray-800">{recipe.tamanhoPorcao}</p>
