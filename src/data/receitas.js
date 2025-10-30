@@ -105,7 +105,7 @@ export const receitas = [
     "substituicoes": {
       "whey": "3 colheres de aveia + 1 de cacau",
       "ovo": "1/2 banana amassada",
-      "leite": "água ou leite de amêndoas"
+      "leite": "água ou leite de amêndoa"
     }
   },
   {
@@ -352,7 +352,8 @@ export const receitas = [
       "Deixe descansar por 2 minutos",
       "Aqueça frigideira antiaderente",
       "Despeje pequenas porções da massa",
-      "Cozinhe 2min cada lado"
+      "Cozinhe 2min cada lado",
+      "Sirva com frutas ou mel"
     ],
     "tags": ["rápido", "sem açúcar", "fácil"],
     "imagem": "panqueca-aveia.jpg",
@@ -1505,6 +1506,766 @@ export const receitas = [
       "grão de bico": "lentilha cozida",
       "pepino": "abobrinha crua",
       "cominho": "coentro"
+    }
+  },
+  {
+    "id": 41,
+    "titulo": "Atum Selado com Gergelim",
+    "categoria": "Almoço/Jantar",
+    "tempo": "15 min",
+    "porcoes": 2,
+    "tamanhoPorcao": "1 filé médio (150g)",
+    "dificuldade": "Médio",
+    "calorias": 265,
+    "proteinas": 38,
+    "carboidratos": 6,
+    "gorduras": 10,
+    "ingredientes": [
+      "2 filés de atum fresco (300g)",
+      "3 colheres de gergelim (branco e preto)",
+      "2 colheres de shoyu light",
+      "1 colher de mel",
+      "Gengibre ralado",
+      "Azeite spray",
+      "Limão siciliano"
+    ],
+    "modoPreparo": [
+      "Misture shoyu, mel e gengibre",
+      "Marine o atum por 5 minutos",
+      "Passe os filés no gergelim",
+      "Aqueça frigideira em fogo alto",
+      "Sele o atum 1-2 minutos cada lado",
+      "O centro deve ficar rosado",
+      "Corte em fatias e sirva com limão"
+    ],
+    "tags": ["proteico", "gourmet", "ômega 3"],
+    "imagem": "atum-gergelim.jpg",
+    "substituicoes": {
+      "atum": "salmão fresco",
+      "shoyu": "tamari",
+      "mel": "adoçante culinário"
+    }
+  },
+  {
+    "id": 42,
+    "titulo": "Panqueca Americana Proteica",
+    "categoria": "Café da Manhã",
+    "tempo": "15 min",
+    "porcoes": 2,
+    "tamanhoPorcao": "3 panquecas médias (total 180g)",
+    "dificuldade": "Fácil",
+    "calorias": 245,
+    "proteinas": 20,
+    "carboidratos": 28,
+    "gorduras": 6,
+    "ingredientes": [
+      "1 scoop de whey baunilha",
+      "2 ovos",
+      "1/2 xícara de aveia",
+      "1/4 xícara de leite desnatado",
+      "1 colher de fermento",
+      "1 pitada de sal",
+      "Canela a gosto"
+    ],
+    "modoPreparo": [
+      "Bata todos ingredientes no liquidificador",
+      "Deixe descansar por 2 minutos",
+      "Aqueça frigideira antiaderente",
+      "Despeje porções da massa",
+      "Quando bolhas aparecerem, vire",
+      "Cozinhe mais 1-2 minutos",
+      "Empilhe e sirva com frutas"
+    ],
+    "tags": ["proteico", "café da manhã", "americano"],
+    "imagem": "panqueca-americana.jpg",
+    "substituicoes": {
+      "whey": "banana amassada",
+      "aveia": "farinha de arroz",
+      "leite": "bebida vegetal"
+    }
+  },
+  {
+    "id": 43,
+    "titulo": "Escondidinho de Frango Fit",
+    "categoria": "Almoço/Jantar",
+    "tempo": "40 min",
+    "porcoes": 6,
+    "tamanhoPorcao": "1 porção média (200g)",
+    "dificuldade": "Médio",
+    "calorias": 275,
+    "proteinas": 26,
+    "carboidratos": 28,
+    "gorduras": 8,
+    "ingredientes": [
+      "500g de frango desfiado",
+      "4 batatas doces médias",
+      "1 cebola picada",
+      "2 tomates",
+      "100ml de leite desnatado",
+      "50g de queijo minas ralado",
+      "Temperos a gosto"
+    ],
+    "modoPreparo": [
+      "Cozinhe as batatas doces",
+      "Refogue frango com cebola e tomate",
+      "Amasse as batatas com leite",
+      "Em refratário, coloque o frango",
+      "Cubra com purê de batata doce",
+      "Polvilhe queijo ralado",
+      "Leve ao forno a 180°C por 20 minutos",
+      "Deixe dourar e sirva"
+    ],
+    "tags": ["comfort food", "proteico", "marmita"],
+    "imagem": "escondidinho-frango.jpg",
+    "substituicoes": {
+      "frango": "carne moída ou atum",
+      "batata doce": "mandioquinha",
+      "queijo minas": "cottage"
+    }
+  },
+  {
+    "id": 44,
+    "titulo": "Vitamina de Abacate Proteica",
+    "categoria": "Bebidas",
+    "tempo": "5 min",
+    "porcoes": 1,
+    "tamanhoPorcao": "1 copo grande (350ml)",
+    "dificuldade": "Muito Fácil",
+    "calorias": 295,
+    "proteinas": 18,
+    "carboidratos": 32,
+    "gorduras": 12,
+    "ingredientes": [
+      "1/2 abacate maduro",
+      "1 scoop de whey baunilha",
+      "200ml de leite desnatado",
+      "1 colher de mel",
+      "Gelo a gosto",
+      "Cacau em pó para decorar"
+    ],
+    "modoPreparo": [
+      "Adicione todos ingredientes no liquidificador",
+      "Bata até ficar cremoso",
+      "Adicione mais gelo se necessário",
+      "Prove e ajuste o mel",
+      "Sirva em copo alto",
+      "Polvilhe cacau por cima"
+    ],
+    "tags": ["proteico", "cremoso", "nutritivo"],
+    "imagem": "vitamina-abacate.jpg",
+    "substituicoes": {
+      "abacate": "banana congelada",
+      "whey": "iogurte grego",
+      "leite": "leite de coco"
+    }
+  },
+  {
+    "id": 45,
+    "titulo": "Berinjela à Parmegiana Light",
+    "categoria": "Almoço/Jantar",
+    "tempo": "35 min",
+    "porcoes": 4,
+    "tamanhoPorcao": "2 fatias grandes (220g)",
+    "dificuldade": "Médio",
+    "calorias": 195,
+    "proteinas": 14,
+    "carboidratos": 18,
+    "gorduras": 9,
+    "ingredientes": [
+      "2 berinjelas grandes",
+      "300ml de molho de tomate caseiro",
+      "150g de muçarela light",
+      "50g de queijo parmesão",
+      "Orégano e manjericão",
+      "Sal a gosto"
+    ],
+    "modoPreparo": [
+      "Corte berinjelas em fatias de 1cm",
+      "Salgue e deixe descansar 15min",
+      "Enxágue e seque bem",
+      "Grelhe as fatias sem óleo",
+      "Em refratário, monte camadas",
+      "Alterne berinjela, molho e queijo",
+      "Finalize com parmesão",
+      "Asse a 180°C por 20 minutos"
+    ],
+    "tags": ["vegetariano", "low carb", "italiano"],
+    "imagem": "berinjela-parmegiana.jpg",
+    "substituicoes": {
+      "berinjela": "abobrinha",
+      "muçarela": "queijo cottage",
+      "molho tomate": "molho branco fit"
+    }
+  },
+  {
+    "id": 46,
+    "titulo": "Bites de Brownie Proteico",
+    "categoria": "Sobremesas",
+    "tempo": "25 min",
+    "porcoes": 16,
+    "tamanhoPorcao": "2 bites (40g)",
+    "dificuldade": "Fácil",
+    "calorias": 115,
+    "proteinas": 8,
+    "carboidratos": 14,
+    "gorduras": 4,
+    "ingredientes": [
+      "1 xícara de feijão preto cozido",
+      "2 scoops de whey chocolate",
+      "3 colheres de cacau em pó",
+      "2 ovos",
+      "1/4 xícara de mel",
+      "1 colher de essência de baunilha",
+      "1 colher de fermento"
+    ],
+    "modoPreparo": [
+      "Pré-aqueça o forno a 180°C",
+      "Bata feijão, ovos e mel no liquidificador",
+      "Transfira para um bowl",
+      "Adicione whey, cacau e fermento",
+      "Misture bem",
+      "Despeje em forminhas pequenas",
+      "Asse por 18-20 minutos",
+      "Deixe esfriar antes de desenformar"
+    ],
+    "tags": ["proteico", "sobremesa", "surpreendente"],
+    "imagem": "brownie-bites.jpg",
+    "substituicoes": {
+      "feijão preto": "grão de bico cozido",
+      "whey": "cacau + adoçante",
+      "mel": "xarope de agave"
+    }
+  },
+  {
+    "id": 47,
+    "titulo": "Peito de Peru Grelhado",
+    "categoria": "Almoço/Jantar",
+    "tempo": "20 min",
+    "porcoes": 3,
+    "tamanhoPorcao": "1 filé grande (160g)",
+    "dificuldade": "Fácil",
+    "calorias": 215,
+    "proteinas": 42,
+    "carboidratos": 2,
+    "gorduras": 4,
+    "ingredientes": [
+      "3 filés de peito de peru (480g)",
+      "2 dentes de alho",
+      "Suco de 1 limão",
+      "Alecrim fresco",
+      "Páprica defumada",
+      "Sal e pimenta",
+      "Azeite spray"
+    ],
+    "modoPreparo": [
+      "Tempere os filés com todos ingredientes",
+      "Deixe marinar por 10 minutos",
+      "Aqueça grill em fogo médio-alto",
+      "Grelhe 5 minutos cada lado",
+      "Não deixe ressecar",
+      "Deixe descansar 3 minutos",
+      "Fatie e sirva"
+    ],
+    "tags": ["proteico", "low carb", "magro"],
+    "imagem": "peru-grelhado.jpg",
+    "substituicoes": {
+      "peru": "frango ou chester",
+      "alecrim": "tomilho",
+      "limão": "laranja"
+    }
+  },
+  {
+    "id": 48,
+    "titulo": "Pão de Queijo Fit",
+    "categoria": "Lanches/Snacks",
+    "tempo": "25 min",
+    "porcoes": 12,
+    "tamanhoPorcao": "2 unidades (60g)",
+    "dificuldade": "Fácil",
+    "calorias": 145,
+    "proteinas": 10,
+    "carboidratos": 18,
+    "gorduras": 4,
+    "ingredientes": [
+      "1 xícara de polvilho azedo",
+      "1/2 xícara de queijo cottage",
+      "2 ovos",
+      "2 colheres de azeite",
+      "50g de queijo minas ralado",
+      "Sal a gosto"
+    ],
+    "modoPreparo": [
+      "Pré-aqueça o forno a 180°C",
+      "Bata cottage, ovos e azeite no liquidificador",
+      "Transfira para um bowl",
+      "Adicione polvilho, queijo e sal",
+      "Misture até formar massa",
+      "Faça bolinhas com as mãos",
+      "Disponha em forma untada",
+      "Asse por 20-25 minutos"
+    ],
+    "tags": ["brasileiro", "lanche", "sem glúten"],
+    "imagem": "pao-queijo-fit.jpg",
+    "substituicoes": {
+      "cottage": "ricota",
+      "polvilho azedo": "polvilho doce",
+      "queijo minas": "parmesão"
+    }
+  },
+  {
+    "id": 49,
+    "titulo": "Bowl Mexicano Fit",
+    "categoria": "Almoço/Jantar",
+    "tempo": "25 min",
+    "porcoes": 2,
+    "tamanhoPorcao": "1 bowl grande (400g)",
+    "dificuldade": "Médio",
+    "calorias": 385,
+    "proteinas": 32,
+    "carboidratos": 42,
+    "gorduras": 12,
+    "ingredientes": [
+      "200g de carne moída magra",
+      "1 xícara de feijão preto cozido",
+      "1 xícara de arroz integral cozido",
+      "1 tomate picado",
+      "Alface picada",
+      "1/4 abacate",
+      "Páprica e cominho",
+      "Salsinha e limão"
+    ],
+    "modoPreparo": [
+      "Tempere carne com páprica e cominho",
+      "Doure a carne moída",
+      "Aqueça o feijão",
+      "Monte o bowl: arroz, feijão e carne",
+      "Adicione alface e tomate",
+      "Coloque abacate em fatias",
+      "Finalize com salsinha e limão"
+    ],
+    "tags": ["proteico", "completo", "mexicano"],
+    "imagem": "bowl-mexicano.jpg",
+    "substituicoes": {
+      "carne": "frango desfiado",
+      "feijão preto": "feijão vermelho",
+      "arroz integral": "quinoa"
+    }
+  },
+  {
+    "id": 50,
+    "titulo": "Cheesecake Proteico de Limão",
+    "categoria": "Sobremesas",
+    "tempo": "20 min + 4h geladeira",
+    "porcoes": 8,
+    "tamanhoPorcao": "1 fatia média (100g)",
+    "dificuldade": "Médio",
+    "calorias": 165,
+    "proteinas": 14,
+    "carboidratos": 18,
+    "gorduras": 5,
+    "ingredientes": [
+      "Base: 1 xícara de aveia + 2 col mel",
+      "Recheio:",
+      "400g de queijo cottage",
+      "200g de iogurte grego",
+      "2 scoops de whey baunilha",
+      "Raspas e suco de 2 limões",
+      "2 colheres de gelatina incolor"
+    ],
+    "modoPreparo": [
+      "Misture aveia com mel e forre forma",
+      "Bata cottage, iogurte, whey e limão",
+      "Dissolva gelatina em água quente",
+      "Adicione à mistura e bata",
+      "Despeje sobre a base",
+      "Leve à geladeira por 4 horas",
+      "Decore com raspas de limão"
+    ],
+    "tags": ["proteico", "sobremesa", "gelado"],
+    "imagem": "cheesecake-limao.jpg",
+    "substituicoes": {
+      "cottage": "cream cheese light",
+      "limão": "maracujá",
+      "whey": "leite condensado fit"
+    }
+  },
+  {
+    "id": 51,
+    "titulo": "Camarão ao Alho Light",
+    "categoria": "Almoço/Jantar",
+    "tempo": "15 min",
+    "porcoes": 2,
+    "tamanhoPorcao": "1 prato raso (200g)",
+    "dificuldade": "Fácil",
+    "calorias": 225,
+    "proteinas": 36,
+    "carboidratos": 8,
+    "gorduras": 6,
+    "ingredientes": [
+      "300g de camarão limpo",
+      "6 dentes de alho picados",
+      "1 cebola pequena",
+      "Suco de 1 limão",
+      "Azeite spray",
+      "Pimenta dedo-de-moça",
+      "Salsinha fresca"
+    ],
+    "modoPreparo": [
+      "Tempere camarões com limão e sal",
+      "Aqueça frigideira em fogo alto",
+      "Refogue alho e cebola rapidamente",
+      "Adicione os camarões",
+      "Cozinhe por 3-4 minutos",
+      "Não deixe ressecar",
+      "Finalize com pimenta e salsinha"
+    ],
+    "tags": ["proteico", "rápido", "gourmet"],
+    "imagem": "camarao-alho.jpg",
+    "substituicoes": {
+      "camarão": "frango em cubos",
+      "pimenta dedo-de-moça": "pimenta do reino",
+      "limão": "vinho branco"
+    }
+  },
+  {
+    "id": 52,
+    "titulo": "Mingau de Aveia Proteico",
+    "categoria": "Café da Manhã",
+    "tempo": "10 min",
+    "porcoes": 1,
+    "tamanhoPorcao": "1 tigela média (280ml)",
+    "dificuldade": "Muito Fácil",
+    "calorias": 265,
+    "proteinas": 20,
+    "carboidratos": 38,
+    "gorduras": 5,
+    "ingredientes": [
+      "1/2 xícara de aveia",
+      "1 scoop de whey baunilha",
+      "250ml de leite desnatado",
+      "1 banana fatiada",
+      "1 colher de mel",
+      "Canela em pó"
+    ],
+    "modoPreparo": [
+      "Aqueça o leite em uma panela",
+      "Adicione a aveia e mexa",
+      "Cozinhe por 5 minutos em fogo baixo",
+      "Desligue e adicione o whey",
+      "Mexa bem até incorporar",
+      "Transfira para tigela",
+      "Decore com banana, mel e canela"
+    ],
+    "tags": ["proteico", "quentinho", "reconfortante"],
+    "imagem": "mingau-aveia.jpg",
+    "substituicoes": {
+      "aveia": "quinoa em flocos",
+      "whey": "pasta de amendoim",
+      "banana": "maçã ralada"
+    }
+  },
+  {
+    "id": 53,
+    "titulo": "Lasanha de Berinjela Fit",
+    "categoria": "Almoço/Jantar",
+    "tempo": "45 min",
+    "porcoes": 6,
+    "tamanhoPorcao": "1 porção média (220g)",
+    "dificuldade": "Médio",
+    "calorias": 245,
+    "proteinas": 24,
+    "carboidratos": 18,
+    "gorduras": 10,
+    "ingredientes": [
+      "3 berinjelas grandes",
+      "500g de carne moída magra",
+      "500ml de molho de tomate",
+      "200g de ricota",
+      "100g de muçarela light",
+      "Orégano e manjericão",
+      "Sal e pimenta"
+    ],
+    "modoPreparo": [
+      "Corte berinjelas em fatias finas",
+      "Grelhe as fatias sem óleo",
+      "Refogue a carne com molho de tomate",
+      "Misture ricota com ervas",
+      "Monte camadas em refratário",
+      "Alterne berinjela, carne e ricota",
+      "Finalize com muçarela",
+      "Asse a 180°C por 30 minutos"
+    ],
+    "tags": ["low carb", "proteico", "italiano"],
+    "imagem": "lasanha-berinjela.jpg",
+    "substituicoes": {
+      "berinjela": "abobrinha",
+      "carne moída": "frango moído",
+      "ricota": "cottage"
+    }
+  },
+  {
+    "id": 54,
+    "titulo": "Pipoca Doce Fit",
+    "categoria": "Lanches/Snacks",
+    "tempo": "10 min",
+    "porcoes": 4,
+    "tamanhoPorcao": "2 xícaras (40g)",
+    "dificuldade": "Fácil",
+    "calorias": 125,
+    "proteinas": 3,
+    "carboidratos": 24,
+    "gorduras": 2,
+    "ingredientes": [
+      "1/2 xícara de milho de pipoca",
+      "2 colheres de mel",
+      "1 colher de óleo de coco",
+      "1 colher de canela",
+      "1 pitada de sal"
+    ],
+    "modoPreparo": [
+      "Estoure o milho em pipoqueira ou panela",
+      "Derreta mel com óleo de coco",
+      "Adicione canela e sal",
+      "Despeje sobre a pipoca",
+      "Misture bem até cobrir tudo",
+      "Espalhe em assadeira",
+      "Deixe esfriar e quebre em pedaços"
+    ],
+    "tags": ["snack", "doce", "natural"],
+    "imagem": "pipoca-doce.jpg",
+    "substituicoes": {
+      "mel": "xarope de agave",
+      "óleo coco": "manteiga ghee",
+      "canela": "cacau em pó"
+    }
+  },
+  {
+    "id": 55,
+    "titulo": "Omelete de Claras no Pote",
+    "categoria": "Café da Manhã",
+    "tempo": "5 min",
+    "porcoes": 1,
+    "tamanhoPorcao": "1 pote grande (250ml)",
+    "dificuldade": "Muito Fácil",
+    "calorias": 145,
+    "proteinas": 24,
+    "carboidratos": 6,
+    "gorduras": 2,
+    "ingredientes": [
+      "4 claras de ovo",
+      "2 colheres de cottage",
+      "2 colheres de tomate picado",
+      "1 colher de cebolinha",
+      "Sal e pimenta"
+    ],
+    "modoPreparo": [
+      "Bata as claras em um pote",
+      "Adicione cottage, tomate e cebolinha",
+      "Tempere com sal e pimenta",
+      "Tampe deixando um espaço",
+      "Microondas por 2-3 minutos",
+      "Deixe descansar 1 minuto",
+      "Sirva no próprio pote"
+    ],
+    "tags": ["proteico", "rápido", "prático"],
+    "imagem": "omelete-pote.jpg",
+    "substituicoes": {
+      "claras": "ovos inteiros",
+      "cottage": "queijo branco",
+      "tomate": "espinafre"
+    }
+  },
+  {
+    "id": 56,
+    "titulo": "Carne de Panela Fit",
+    "categoria": "Almoço/Jantar",
+    "tempo": "60 min",
+    "porcoes": 6,
+    "tamanhoPorcao": "1 concha grande (220g)",
+    "dificuldade": "Médio",
+    "calorias": 285,
+    "proteinas": 36,
+    "carboidratos": 16,
+    "gorduras": 9,
+    "ingredientes": [
+      "800g de músculo bovino",
+      "2 cebolas grandes",
+      "4 dentes de alho",
+      "3 tomates picados",
+      "2 cenouras",
+      "500ml de água",
+      "Temperos e ervas",
+      "Sal e pimenta"
+    ],
+    "modoPreparo": [
+      "Corte a carne em cubos grandes",
+      "Tempere bem com sal e alho",
+      "Doure a carne em panela de pressão",
+      "Adicione cebola e tomate",
+      "Acrescente água e temperos",
+      "Tampe e cozinhe por 40 minutos",
+      "Adicione cenouras nos últimos 10min",
+      "Ajuste o sal e sirva"
+    ],
+    "tags": ["proteico", "comfort food", "tradicional"],
+    "imagem": "carne-panela.jpg",
+    "substituicoes": {
+      "músculo": "patinho ou coxão mole",
+      "cenoura": "batata doce",
+      "água": "caldo de legumes"
+    }
+  },
+  {
+    "id": 57,
+    "titulo": "Salada de Frutas com Iogurte",
+    "categoria": "Sobremesas",
+    "tempo": "10 min",
+    "porcoes": 2,
+    "tamanhoPorcao": "1 tigela grande (300g)",
+    "dificuldade": "Muito Fácil",
+    "calorias": 185,
+    "proteinas": 8,
+    "carboidratos": 35,
+    "gorduras": 3,
+    "ingredientes": [
+      "1 banana",
+      "1 maçã",
+      "1 xícara de morangos",
+      "1 kiwi",
+      "200g de iogurte natural",
+      "1 colher de mel",
+      "Hortelã fresca"
+    ],
+    "modoPreparo": [
+      "Corte todas as frutas em cubos",
+      "Misture em uma tigela",
+      "À parte, misture iogurte com mel",
+      "Despeje sobre as frutas",
+      "Misture delicadamente",
+      "Decore com hortelã",
+      "Sirva gelado"
+    ],
+    "tags": ["refrescante", "natural", "vitaminado"],
+    "imagem": "salada-frutas.jpg",
+    "substituicoes": {
+      "frutas": "qualquer mix da estação",
+      "iogurte natural": "iogurte grego",
+      "mel": "agave"
+    }
+  },
+  {
+    "id": 58,
+    "titulo": "Espetinho de Frango Temperado",
+    "categoria": "Almoço/Jantar",
+    "tempo": "30 min",
+    "porcoes": 4,
+    "tamanhoPorcao": "2 espetinhos (180g)",
+    "dificuldade": "Fácil",
+    "calorias": 235,
+    "proteinas": 38,
+    "carboidratos": 6,
+    "gorduras": 7,
+    "ingredientes": [
+      "500g de peito de frango em cubos",
+      "1 pimentão vermelho",
+      "1 cebola",
+      "Suco de 1 limão",
+      "2 colheres de shoyu light",
+      "Páprica e alho",
+      "Palitos de churrasco"
+    ],
+    "modoPreparo": [
+      "Marine o frango com limão, shoyu e temperos",
+      "Deixe por 20 minutos",
+      "Corte pimentão e cebola em quadrados",
+      "Monte os espetinhos alternando",
+      "Grelhe por 10-12 minutos",
+      "Vire para dourar todos os lados",
+      "Sirva quente"
+    ],
+    "tags": ["proteico", "churrasco", "prático"],
+    "imagem": "espetinho-frango.jpg",
+    "substituicoes": {
+      "frango": "carne magra ou camarão",
+      "pimentão": "tomate cereja",
+      "shoyu": "molho inglês"
+    }
+  },
+  {
+    "id": 59,
+    "titulo": "Pão Integral na Frigideira",
+    "categoria": "Café da Manhã",
+    "tempo": "15 min",
+    "porcoes": 4,
+    "tamanhoPorcao": "1 pão médio (80g)",
+    "dificuldade": "Fácil",
+    "calorias": 165,
+    "proteinas": 8,
+    "carboidratos": 26,
+    "gorduras": 4,
+    "ingredientes": [
+      "1 xícara de farinha integral",
+      "1/2 xícara de aveia",
+      "1 ovo",
+      "1/2 xícara de iogurte natural",
+      "1 colher de fermento",
+      "Sal a gosto",
+      "Sementes (opcional)"
+    ],
+    "modoPreparo": [
+      "Misture farinha, aveia, sal e fermento",
+      "Adicione ovo e iogurte",
+      "Misture até formar massa",
+      "Divida em 4 porções",
+      "Modele discos achatados",
+      "Cozinhe em frigideira 3min cada lado",
+      "Sirva quente"
+    ],
+    "tags": ["sem óleo", "prático", "caseiro"],
+    "imagem": "pao-frigideira.jpg",
+    "substituicoes": {
+      "farinha integral": "farinha de aveia",
+      "iogurte": "leite",
+      "sementes": "ervas secas"
+    }
+  },
+  {
+    "id": 60,
+    "titulo": "Sopa Creme de Abóbora",
+    "categoria": "Sopas",
+    "tempo": "30 min",
+    "porcoes": 5,
+    "tamanhoPorcao": "1 tigela grande (300ml)",
+    "dificuldade": "Fácil",
+    "calorias": 125,
+    "proteinas": 5,
+    "carboidratos": 22,
+    "gorduras": 3,
+    "ingredientes": [
+      "500g de abóbora cabotiá",
+      "1 cebola média",
+      "2 dentes de alho",
+      "800ml de caldo de legumes",
+      "100ml de leite de coco light",
+      "Gengibre ralado",
+      "Sal e noz-moscada"
+    ],
+    "modoPreparo": [
+      "Corte a abóbora em cubos",
+      "Refogue alho, cebola e gengibre",
+      "Adicione a abóbora",
+      "Acrescente o caldo",
+      "Cozinhe até a abóbora amolecer",
+      "Bata tudo no liquidificador",
+      "Adicione leite de coco",
+      "Tempere e sirva quente"
+    ],
+    "tags": ["reconfortante", "cremoso", "nutritivo"],
+    "imagem": "creme-abobora.jpg",
+    "substituicoes": {
+      "abóbora": "mandioquinha ou batata doce",
+      "leite de coco": "creme de leite light",
+      "gengibre": "curry"
     }
   }
 ];
