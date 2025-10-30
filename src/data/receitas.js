@@ -737,5 +737,774 @@ export const receitas = [
       "mel": "adoçante",
       "frutas": "cacau nibs ou granola"
     }
+  },
+  {
+    "id": 21,
+    "titulo": "Muffin Salgado de Frango e Brócolis",
+    "categoria": "Lanches/Snacks",
+    "tempo": "25 min",
+    "porcoes": 6,
+    "tamanhoPorcao": "1 muffin médio (70g)",
+    "dificuldade": "Fácil",
+    "calorias": 145,
+    "proteinas": 16,
+    "carboidratos": 12,
+    "gorduras": 4,
+    "ingredientes": [
+      "200g de frango desfiado",
+      "1 xícara de brócolis picado",
+      "3 ovos",
+      "1/2 xícara de aveia",
+      "1/4 xícara de queijo cottage",
+      "1 colher de fermento",
+      "Sal, pimenta e orégano"
+    ],
+    "modoPreparo": [
+      "Pré-aqueça o forno a 180°C",
+      "Cozinhe o brócolis no vapor por 5 minutos",
+      "Bata os ovos em um bowl",
+      "Adicione aveia, cottage, frango e brócolis",
+      "Tempere com sal, pimenta e orégano",
+      "Acrescente o fermento e misture delicadamente",
+      "Distribua em forminhas de muffin",
+      "Asse por 18-20 minutos até dourar"
+    ],
+    "tags": ["proteico", "marmita", "meal prep"],
+    "imagem": "muffin-frango.jpg",
+    "substituicoes": {
+      "frango": "atum escorrido ou carne moída",
+      "brócolis": "espinafre ou couve-flor",
+      "aveia": "farinha de amêndoas"
+    }
+  },
+  {
+    "id": 22,
+    "titulo": "Strogonoff Fit de Carne",
+    "categoria": "Almoço/Jantar",
+    "tempo": "30 min",
+    "porcoes": 4,
+    "tamanhoPorcao": "1 concha grande (280g)",
+    "dificuldade": "Médio",
+    "calorias": 295,
+    "proteinas": 34,
+    "carboidratos": 18,
+    "gorduras": 10,
+    "ingredientes": [
+      "500g de carne magra em tiras",
+      "1 cebola grande picada",
+      "200g de champignon fatiado",
+      "1 lata de tomate pelado",
+      "200ml de iogurte grego natural",
+      "1 colher de mostarda",
+      "Sal, pimenta e páprica",
+      "Salsinha picada"
+    ],
+    "modoPreparo": [
+      "Tempere a carne com sal e pimenta",
+      "Em uma panela, doure a carne em fogo alto",
+      "Retire a carne e reserve",
+      "Na mesma panela, refogue a cebola",
+      "Adicione o champignon e cozinhe por 5min",
+      "Acrescente tomate pelado e mostarda",
+      "Retorne a carne, cozinhe por 10min em fogo baixo",
+      "Desligue o fogo e adicione o iogurte",
+      "Mexa bem e finalize com salsinha"
+    ],
+    "tags": ["proteico", "comfort food", "marmita"],
+    "imagem": "strogonoff-fit.jpg",
+    "substituicoes": {
+      "carne": "frango em tiras ou camarão",
+      "iogurte grego": "creme de leite light",
+      "champignon": "palmito em rodelas"
+    }
+  },
+  {
+    "id": 23,
+    "titulo": "Panqueca de Banana Sem Farinha",
+    "categoria": "Café da Manhã",
+    "tempo": "10 min",
+    "porcoes": 1,
+    "tamanhoPorcao": "3 panquecas pequenas (total 120g)",
+    "dificuldade": "Muito Fácil",
+    "calorias": 195,
+    "proteinas": 13,
+    "carboidratos": 27,
+    "gorduras": 5,
+    "ingredientes": [
+      "1 banana madura",
+      "2 ovos",
+      "1 colher de canela em pó",
+      "1 pitada de sal"
+    ],
+    "modoPreparo": [
+      "Amasse bem a banana em um bowl",
+      "Adicione os ovos e bata com garfo",
+      "Acrescente canela e sal",
+      "Aqueça frigideira antiaderente",
+      "Despeje pequenas porções da massa",
+      "Cozinhe 2 minutos de cada lado",
+      "Sirva com frutas ou mel"
+    ],
+    "tags": ["sem glúten", "rápido", "natural"],
+    "imagem": "panqueca-banana.jpg",
+    "substituicoes": {
+      "banana": "purê de maçã",
+      "ovos": "substituto vegano de ovo",
+      "canela": "noz-moscada"
+    }
+  },
+  {
+    "id": 24,
+    "titulo": "Frango Teriyaki com Legumes",
+    "categoria": "Almoço/Jantar",
+    "tempo": "25 min",
+    "porcoes": 3,
+    "tamanhoPorcao": "1 prato raso (300g)",
+    "dificuldade": "Médio",
+    "calorias": 285,
+    "proteinas": 36,
+    "carboidratos": 22,
+    "gorduras": 7,
+    "ingredientes": [
+      "400g de peito de frango em cubos",
+      "1 brócolis pequeno",
+      "1 cenoura em rodelas",
+      "1 pimentão vermelho",
+      "3 colheres de shoyu light",
+      "1 colher de mel",
+      "1 colher de gengibre ralado",
+      "2 dentes de alho",
+      "Gergelim para decorar"
+    ],
+    "modoPreparo": [
+      "Corte o frango em cubos médios",
+      "Misture shoyu, mel, gengibre e alho",
+      "Marine o frango por 10 minutos",
+      "Cozinhe os legumes no vapor",
+      "Em uma frigideira, doure o frango",
+      "Adicione os legumes e o restante do molho",
+      "Cozinhe por 5 minutos",
+      "Finalize com gergelim"
+    ],
+    "tags": ["oriental", "proteico", "colorido"],
+    "imagem": "frango-teriyaki.jpg",
+    "substituicoes": {
+      "frango": "tofu firme",
+      "shoyu": "molho de coco aminos",
+      "mel": "adoçante culinário"
+    }
+  },
+  {
+    "id": 25,
+    "titulo": "Quiche Fit de Espinafre",
+    "categoria": "Almoço/Jantar",
+    "tempo": "40 min",
+    "porcoes": 6,
+    "tamanhoPorcao": "1 fatia média (130g)",
+    "dificuldade": "Médio",
+    "calorias": 185,
+    "proteinas": 15,
+    "carboidratos": 14,
+    "gorduras": 8,
+    "ingredientes": [
+      "4 ovos",
+      "200ml de leite desnatado",
+      "2 xícaras de espinafre picado",
+      "100g de queijo cottage",
+      "1 cebola pequena",
+      "1 xícara de aveia",
+      "Sal, pimenta e noz-moscada"
+    ],
+    "modoPreparo": [
+      "Pré-aqueça o forno a 180°C",
+      "Refogue a cebola e o espinafre",
+      "Bata os ovos com o leite",
+      "Adicione cottage, aveia e temperos",
+      "Misture o espinafre refogado",
+      "Despeje em forma untada",
+      "Asse por 30-35 minutos",
+      "Deixe esfriar antes de cortar"
+    ],
+    "tags": ["vegetariano", "meal prep", "proteico"],
+    "imagem": "quiche-espinafre.jpg",
+    "substituicoes": {
+      "espinafre": "brócolis ou tomate seco",
+      "cottage": "ricota",
+      "aveia": "farinha integral"
+    }
+  },
+  {
+    "id": 26,
+    "titulo": "Smoothie Verde Energético",
+    "categoria": "Bebidas",
+    "tempo": "5 min",
+    "porcoes": 1,
+    "tamanhoPorcao": "1 copo grande (400ml)",
+    "dificuldade": "Muito Fácil",
+    "calorias": 195,
+    "proteinas": 8,
+    "carboidratos": 35,
+    "gorduras": 3,
+    "ingredientes": [
+      "1 xícara de espinafre fresco",
+      "1 banana congelada",
+      "1/2 maçã verde",
+      "1 colher de aveia",
+      "200ml de água de coco",
+      "Suco de 1/2 limão",
+      "1 colher de chia"
+    ],
+    "modoPreparo": [
+      "Adicione todos ingredientes no liquidificador",
+      "Bata em potência máxima por 1 minuto",
+      "Adicione mais água se necessário",
+      "Prove e ajuste o limão",
+      "Sirva imediatamente bem gelado"
+    ],
+    "tags": ["detox", "energético", "vegano"],
+    "imagem": "smoothie-verde.jpg",
+    "substituicoes": {
+      "espinafre": "couve",
+      "banana": "manga",
+      "água de coco": "água normal"
+    }
+  },
+  {
+    "id": 27,
+    "titulo": "Bolinho de Batata Doce com Atum",
+    "categoria": "Lanches/Snacks",
+    "tempo": "30 min",
+    "porcoes": 8,
+    "tamanhoPorcao": "2 bolinhos (80g)",
+    "dificuldade": "Médio",
+    "calorias": 165,
+    "proteinas": 14,
+    "carboidratos": 20,
+    "gorduras": 4,
+    "ingredientes": [
+      "2 batatas doces médias cozidas",
+      "2 latas de atum escorrido",
+      "1 ovo",
+      "2 colheres de aveia",
+      "1 cebola pequena picada",
+      "Salsinha e cebolinha",
+      "Sal e pimenta"
+    ],
+    "modoPreparo": [
+      "Amasse as batatas doces",
+      "Misture com atum, ovo e aveia",
+      "Adicione cebola e temperos",
+      "Modele bolinhos com as mãos",
+      "Passe na aveia (opcional)",
+      "Asse a 180°C por 20 minutos ou",
+      "Frite em frigideira antiaderente"
+    ],
+    "tags": ["proteico", "lanche", "marmita"],
+    "imagem": "bolinho-batata-atum.jpg",
+    "substituicoes": {
+      "batata doce": "mandioca ou inhame",
+      "atum": "frango desfiado",
+      "aveia": "farinha de linhaça"
+    }
+  },
+  {
+    "id": 28,
+    "titulo": "Risoto de Couve-Flor com Frango",
+    "categoria": "Almoço/Jantar",
+    "tempo": "35 min",
+    "porcoes": 4,
+    "tamanhoPorcao": "1 prato fundo (320g)",
+    "dificuldade": "Médio",
+    "calorias": 245,
+    "proteinas": 28,
+    "carboidratos": 18,
+    "gorduras": 8,
+    "ingredientes": [
+      "1 couve-flor grande processada",
+      "300g de frango em cubos",
+      "1 cebola picada",
+      "2 dentes de alho",
+      "400ml de caldo de legumes",
+      "50g de queijo parmesão",
+      "Azeite spray",
+      "Sal e pimenta"
+    ],
+    "modoPreparo": [
+      "Processe a couve-flor até virar grãos",
+      "Tempere e doure o frango",
+      "Reserve o frango",
+      "Refogue alho e cebola",
+      "Adicione a couve-flor processada",
+      "Acrescente o caldo aos poucos",
+      "Cozinhe por 15 minutos mexendo",
+      "Adicione frango e parmesão",
+      "Ajuste temperos e sirva"
+    ],
+    "tags": ["low carb", "proteico", "gourmet"],
+    "imagem": "risoto-couve-flor.jpg",
+    "substituicoes": {
+      "couve-flor": "brócolis",
+      "frango": "camarão",
+      "parmesão": "queijo cottage"
+    }
+  },
+  {
+    "id": 29,
+    "titulo": "Torta de Frango Fit",
+    "categoria": "Almoço/Jantar",
+    "tempo": "50 min",
+    "porcoes": 8,
+    "tamanhoPorcao": "1 fatia média (150g)",
+    "dificuldade": "Médio",
+    "calorias": 225,
+    "proteinas": 22,
+    "carboidratos": 20,
+    "gorduras": 7,
+    "ingredientes": [
+      "Para a massa:",
+      "2 xícaras de aveia",
+      "2 ovos",
+      "2 colheres de azeite",
+      "Sal a gosto",
+      "Para o recheio:",
+      "400g de frango desfiado",
+      "1 lata de milho escorrido",
+      "1 tomate picado",
+      "Temperos a gosto"
+    ],
+    "modoPreparo": [
+      "Pré-aqueça o forno a 180°C",
+      "Bata aveia, ovos, azeite e sal",
+      "Forre o fundo de uma forma",
+      "Misture ingredientes do recheio",
+      "Distribua sobre a massa",
+      "Cubra com mais massa",
+      "Asse por 35-40 minutos",
+      "Deixe esfriar antes de cortar"
+    ],
+    "tags": ["proteico", "comfort food", "meal prep"],
+    "imagem": "torta-frango.jpg",
+    "substituicoes": {
+      "frango": "atum ou carne moída",
+      "aveia": "farinha integral",
+      "milho": "ervilha"
+    }
+  },
+  {
+    "id": 30,
+    "titulo": "Bolo de Banana Fit",
+    "categoria": "Sobremesas",
+    "tempo": "45 min",
+    "porcoes": 10,
+    "tamanhoPorcao": "1 fatia média (80g)",
+    "dificuldade": "Fácil",
+    "calorias": 155,
+    "proteinas": 6,
+    "carboidratos": 24,
+    "gorduras": 4,
+    "ingredientes": [
+      "3 bananas maduras",
+      "2 ovos",
+      "2 xícaras de aveia",
+      "1/2 xícara de leite desnatado",
+      "1 colher de fermento",
+      "1 colher de canela",
+      "Adoçante a gosto",
+      "Nozes picadas (opcional)"
+    ],
+    "modoPreparo": [
+      "Pré-aqueça o forno a 180°C",
+      "Bata bananas, ovos e leite no liquidificador",
+      "Transfira para um bowl",
+      "Adicione aveia, fermento e canela",
+      "Adoce a gosto",
+      "Misture as nozes",
+      "Despeje em forma untada",
+      "Asse por 35-40 minutos"
+    ],
+    "tags": ["sobremesa", "sem açúcar", "natural"],
+    "imagem": "bolo-banana.jpg",
+    "substituicoes": {
+      "banana": "maçã ralada",
+      "aveia": "farinha de amêndoas",
+      "nozes": "castanhas ou passas"
+    }
+  },
+  {
+    "id": 31,
+    "titulo": "Carne Moída com Legumes",
+    "categoria": "Almoço/Jantar",
+    "tempo": "25 min",
+    "porcoes": 4,
+    "tamanhoPorcao": "1 concha grande (250g)",
+    "dificuldade": "Fácil",
+    "calorias": 235,
+    "proteinas": 28,
+    "carboidratos": 14,
+    "gorduras": 8,
+    "ingredientes": [
+      "500g de carne moída magra",
+      "1 berinjela em cubos",
+      "1 abobrinha em cubos",
+      "1 cenoura ralada",
+      "1 cebola picada",
+      "2 tomates picados",
+      "2 dentes de alho",
+      "Temperos a gosto"
+    ],
+    "modoPreparo": [
+      "Refogue alho e cebola",
+      "Adicione a carne e deixe dourar",
+      "Acrescente os legumes mais duros",
+      "Adicione tomate e temperos",
+      "Cozinhe por 15 minutos",
+      "Acrescente abobrinha por último",
+      "Ajuste sal e sirva"
+    ],
+    "tags": ["proteico", "marmita", "prático"],
+    "imagem": "carne-legumes.jpg",
+    "substituicoes": {
+      "carne moída": "frango moído ou PTS",
+      "berinjela": "chuchu",
+      "legumes": "qualquer mix disponível"
+    }
+  },
+  {
+    "id": 32,
+    "titulo": "Overnight Oats Proteico",
+    "categoria": "Café da Manhã",
+    "tempo": "5 min + 8h geladeira",
+    "porcoes": 1,
+    "tamanhoPorcao": "1 pote médio (250ml)",
+    "dificuldade": "Muito Fácil",
+    "calorias": 285,
+    "proteinas": 18,
+    "carboidratos": 42,
+    "gorduras": 6,
+    "ingredientes": [
+      "1/2 xícara de aveia",
+      "1 scoop de whey baunilha",
+      "200ml de leite desnatado",
+      "1 colher de chia",
+      "1 colher de mel",
+      "Frutas para decorar"
+    ],
+    "modoPreparo": [
+      "Misture aveia, whey, leite e chia em um pote",
+      "Adicione mel e mexa bem",
+      "Tampe e leve à geladeira por 8 horas",
+      "Pela manhã, mexa novamente",
+      "Decore com frutas frescas",
+      "Sirva gelado"
+    ],
+    "tags": ["prático", "proteico", "café da manhã"],
+    "imagem": "overnight-oats.jpg",
+    "substituicoes": {
+      "whey": "iogurte grego",
+      "leite": "bebida vegetal",
+      "mel": "pasta de amendoim"
+    }
+  },
+  {
+    "id": 33,
+    "titulo": "Peixe Assado com Ervas",
+    "categoria": "Almoço/Jantar",
+    "tempo": "30 min",
+    "porcoes": 2,
+    "tamanhoPorcao": "1 filé grande (180g)",
+    "dificuldade": "Fácil",
+    "calorias": 225,
+    "proteinas": 38,
+    "carboidratos": 4,
+    "gorduras": 7,
+    "ingredientes": [
+      "2 filés de peixe branco (360g)",
+      "1 limão",
+      "2 dentes de alho",
+      "Ervas frescas (tomilho, alecrim)",
+      "Azeite em spray",
+      "Sal e pimenta",
+      "Tomates cereja"
+    ],
+    "modoPreparo": [
+      "Pré-aqueça o forno a 200°C",
+      "Tempere os filés com sal, pimenta e alho",
+      "Regue com suco de limão",
+      "Disponha em assadeira",
+      "Adicione ervas e tomates",
+      "Asse por 15-20 minutos",
+      "Sirva com legumes"
+    ],
+    "tags": ["proteico", "low carb", "light"],
+    "imagem": "peixe-ervas.jpg",
+    "substituicoes": {
+      "peixe branco": "salmão ou truta",
+      "ervas frescas": "ervas secas",
+      "tomate cereja": "abobrinha"
+    }
+  },
+  {
+    "id": 34,
+    "titulo": "Cookies de Aveia e Banana",
+    "categoria": "Sobremesas",
+    "tempo": "20 min",
+    "porcoes": 12,
+    "tamanhoPorcao": "2 cookies (50g)",
+    "dificuldade": "Fácil",
+    "calorias": 135,
+    "proteinas": 4,
+    "carboidratos": 22,
+    "gorduras": 4,
+    "ingredientes": [
+      "2 bananas maduras",
+      "1 xícara de aveia",
+      "1/4 xícara de nozes picadas",
+      "2 colheres de pasta de amendoim",
+      "1 colher de canela",
+      "Gotas de chocolate 70% (opcional)"
+    ],
+    "modoPreparo": [
+      "Pré-aqueça o forno a 180°C",
+      "Amasse as bananas",
+      "Misture todos ingredientes",
+      "Deixe descansar por 5 minutos",
+      "Forme bolinhas e achate",
+      "Disponha em assadeira",
+      "Asse por 12-15 minutos"
+    ],
+    "tags": ["sobremesa", "sem açúcar", "snack"],
+    "imagem": "cookies-aveia.jpg",
+    "substituicoes": {
+      "nozes": "castanhas ou amêndoas",
+      "pasta amendoim": "tahine",
+      "chocolate": "uvas passas"
+    }
+  },
+  {
+    "id": 35,
+    "titulo": "Salada Grega Fit",
+    "categoria": "Almoço/Jantar",
+    "tempo": "15 min",
+    "porcoes": 2,
+    "tamanhoPorcao": "1 tigela grande (350g)",
+    "dificuldade": "Muito Fácil",
+    "calorias": 245,
+    "proteinas": 14,
+    "carboidratos": 18,
+    "gorduras": 14,
+    "ingredientes": [
+      "2 tomates em cubos",
+      "1 pepino em cubos",
+      "1/2 cebola roxa fatiada",
+      "100g de queijo feta light",
+      "Azeitonas pretas",
+      "Azeite extra virgem",
+      "Orégano e limão"
+    ],
+    "modoPreparo": [
+      "Corte todos os vegetais",
+      "Misture em uma tigela",
+      "Adicione queijo feta em cubos",
+      "Tempere com azeite, limão e orégano",
+      "Finalize com azeitonas",
+      "Sirva fresco"
+    ],
+    "tags": ["vegetariano", "mediterrânea", "fresco"],
+    "imagem": "salada-grega.jpg",
+    "substituicoes": {
+      "queijo feta": "queijo branco",
+      "pepino": "abobrinha crua",
+      "azeitonas": "alcaparras"
+    }
+  },
+  {
+    "id": 36,
+    "titulo": "Frittata de Legumes",
+    "categoria": "Almoço/Jantar",
+    "tempo": "25 min",
+    "porcoes": 4,
+    "tamanhoPorcao": "1 fatia grande (160g)",
+    "dificuldade": "Fácil",
+    "calorias": 165,
+    "proteinas": 14,
+    "carboidratos": 10,
+    "gorduras": 8,
+    "ingredientes": [
+      "6 ovos",
+      "1 abobrinha fatiada",
+      "1 pimentão vermelho",
+      "1 tomate",
+      "1 cebola",
+      "Manjericão fresco",
+      "Sal e pimenta"
+    ],
+    "modoPreparo": [
+      "Bata os ovos com sal e pimenta",
+      "Refogue todos os legumes",
+      "Despeje os ovos sobre os legumes",
+      "Cozinhe em fogo baixo por 5 minutos",
+      "Leve ao forno a 180°C por 10 minutos",
+      "Finalize com manjericão",
+      "Deixe esfriar e corte"
+    ],
+    "tags": ["vegetariano", "proteico", "colorido"],
+    "imagem": "frittata-legumes.jpg",
+    "substituicoes": {
+      "legumes": "qualquer combinação",
+      "ovos": "mix de ovos e claras",
+      "manjericão": "orégano"
+    }
+  },
+  {
+    "id": 37,
+    "titulo": "Iogurte Proteico com Granola",
+    "categoria": "Café da Manhã",
+    "tempo": "5 min",
+    "porcoes": 1,
+    "tamanhoPorcao": "1 tigela média (250g)",
+    "dificuldade": "Muito Fácil",
+    "calorias": 265,
+    "proteinas": 22,
+    "carboidratos": 32,
+    "gorduras": 6,
+    "ingredientes": [
+      "200g de iogurte grego natural",
+      "1 scoop de whey baunilha",
+      "3 colheres de granola light",
+      "1/2 xícara de frutas vermelhas",
+      "1 colher de mel",
+      "Sementes de chia"
+    ],
+    "modoPreparo": [
+      "Misture o iogurte com whey",
+      "Transfira para uma tigela",
+      "Adicione frutas vermelhas",
+      "Polvilhe granola",
+      "Regue com mel",
+      "Finalize com chia"
+    ],
+    "tags": ["proteico", "prático", "café da manhã"],
+    "imagem": "iogurte-granola.jpg",
+    "substituicoes": {
+      "iogurte grego": "iogurte natural",
+      "whey": "pasta de amendoim",
+      "granola": "aveia torrada"
+    }
+  },
+  {
+    "id": 38,
+    "titulo": "Caldo de Frango Caseiro",
+    "categoria": "Sopas",
+    "tempo": "45 min",
+    "porcoes": 6,
+    "tamanhoPorcao": "1 tigela grande (350ml)",
+    "dificuldade": "Fácil",
+    "calorias": 185,
+    "proteinas": 24,
+    "carboidratos": 16,
+    "gorduras": 4,
+    "ingredientes": [
+      "400g de peito de frango",
+      "2 batatas médias",
+      "2 cenouras",
+      "1 chuchu",
+      "1 cebola",
+      "2 dentes de alho",
+      "2L de água",
+      "Temperos e ervas"
+    ],
+    "modoPreparo": [
+      "Cozinhe o frango com água e sal",
+      "Desfie o frango e reserve",
+      "No caldo, adicione legumes picados",
+      "Cozinhe até ficarem macios",
+      "Retorne o frango desfiado",
+      "Tempere a gosto",
+      "Cozinhe mais 5 minutos",
+      "Sirva quente com ervas"
+    ],
+    "tags": ["comfort food", "proteico", "caseiro"],
+    "imagem": "caldo-frango.jpg",
+    "substituicoes": {
+      "batata": "mandioquinha",
+      "chuchu": "abobrinha",
+      "frango": "carne magra"
+    }
+  },
+  {
+    "id": 39,
+    "titulo": "Barrinha de Cereal Caseira",
+    "categoria": "Lanches/Snacks",
+    "tempo": "30 min",
+    "porcoes": 12,
+    "tamanhoPorcao": "1 barrinha (40g)",
+    "dificuldade": "Fácil",
+    "calorias": 145,
+    "proteinas": 5,
+    "carboidratos": 20,
+    "gorduras": 5,
+    "ingredientes": [
+      "2 xícaras de aveia",
+      "1/2 xícara de mel",
+      "1/4 xícara de pasta de amendoim",
+      "1/4 xícara de castanhas picadas",
+      "2 colheres de sementes (chia, linhaça)",
+      "1 colher de essência de baunilha"
+    ],
+    "modoPreparo": [
+      "Pré-aqueça o forno a 180°C",
+      "Misture mel e pasta de amendoim",
+      "Aqueça até derreter",
+      "Adicione aveia, castanhas e sementes",
+      "Misture bem",
+      "Espalhe em forma forrada",
+      "Asse por 15-20 minutos",
+      "Deixe esfriar e corte em barrinhas"
+    ],
+    "tags": ["energético", "snack", "natural"],
+    "imagem": "barrinha-cereal.jpg",
+    "substituicoes": {
+      "mel": "xarope de agave",
+      "pasta amendoim": "tahine",
+      "castanhas": "frutas secas"
+    }
+  },
+  {
+    "id": 40,
+    "titulo": "Salada de Grão de Bico",
+    "categoria": "Almoço/Jantar",
+    "tempo": "15 min",
+    "porcoes": 3,
+    "tamanhoPorcao": "1 tigela média (280g)",
+    "dificuldade": "Muito Fácil",
+    "calorias": 235,
+    "proteinas": 12,
+    "carboidratos": 32,
+    "gorduras": 8,
+    "ingredientes": [
+      "2 xícaras de grão de bico cozido",
+      "1 tomate em cubos",
+      "1 pepino em cubos",
+      "1/2 cebola roxa",
+      "Salsinha fresca",
+      "Azeite e limão",
+      "Cominho e páprica"
+    ],
+    "modoPreparo": [
+      "Escorra bem o grão de bico",
+      "Corte todos os vegetais",
+      "Misture tudo em uma tigela",
+      "Tempere com azeite, limão e especiarias",
+      "Adicione salsinha picada",
+      "Deixe marinar por 10 minutos",
+      "Sirva fresco"
+    ],
+    "tags": ["vegetariano", "proteico", "fresco"],
+    "imagem": "salada-grao-bico.jpg",
+    "substituicoes": {
+      "grão de bico": "lentilha cozida",
+      "pepino": "abobrinha crua",
+      "cominho": "coentro"
+    }
   }
 ];
