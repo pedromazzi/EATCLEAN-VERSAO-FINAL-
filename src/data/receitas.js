@@ -3030,5 +3030,783 @@ export const receitas = [
       "alecrim": "tomilho",
       "ghee": "azeite extra virgem"
     }
+  },
+  {
+    "id": 81,
+    "titulo": "Pizza de Frigideira Fit",
+    "categoria": "Almoço/Jantar",
+    "tempo": "20 min",
+    "porcoes": 2,
+    "tamanhoPorcao": "1/2 pizza (200g)",
+    "dificuldade": "Fácil",
+    "calorias": 265,
+    "proteinas": 22,
+    "carboidratos": 28,
+    "gorduras": 8,
+    "ingredientes": [
+      "1 xícara de aveia",
+      "2 ovos",
+      "1/2 xícara de leite desnatado",
+      "Sal e orégano",
+      "Para cobertura:",
+      "Molho de tomate",
+      "Muçarela light",
+      "Tomate cereja",
+      "Manjericão"
+    ],
+    "modoPreparo": [
+      "Bata aveia, ovos, leite e sal no liquidificador",
+      "Despeje em frigideira antiaderente",
+      "Cozinhe em fogo baixo tampado por 5min",
+      "Vire com cuidado",
+      "Adicione molho e cobertura",
+      "Tampe por mais 3 minutos",
+      "Finalize com manjericão fresco",
+      "Sirva quente"
+    ],
+    "tags": ["prático", "pizza", "caseiro"],
+    "imagem": "pizza-frigideira.jpg",
+    "substituicoes": {
+      "aveia": "farinha integral",
+      "muçarela": "queijo cottage",
+      "cobertura": "variável a gosto"
+    }
+  },
+  {
+    "id": 82,
+    "titulo": "Suco Verde Detox",
+    "categoria": "Bebidas",
+    "tempo": "5 min",
+    "porcoes": 1,
+    "tamanhoPorcao": "1 copo grande (400ml)",
+    "dificuldade": "Muito Fácil",
+    "calorias": 95,
+    "proteinas": 4,
+    "carboidratos": 18,
+    "gorduras": 1,
+    "ingredientes": [
+      "1 folha de couve",
+      "1/2 maçã verde",
+      "Suco de 1 limão",
+      "1 pedaço de gengibre",
+      "1 colher de chia",
+      "300ml de água gelada",
+      "Hortelã (opcional)"
+    ],
+    "modoPreparo": [
+      "Lave bem a couve",
+      "Corte a maçã em pedaços",
+      "Adicione todos ingredientes no liquidificador",
+      "Bata bem até ficar homogêneo",
+      "Coe se preferir",
+      "Sirva gelado imediatamente"
+    ],
+    "tags": ["detox", "matinal", "energético"],
+    "imagem": "suco-verde.jpg",
+    "substituicoes": {
+      "couve": "espinafre",
+      "maçã": "abacaxi",
+      "chia": "linhaça"
+    }
+  },
+  {
+    "id": 83,
+    "titulo": "Filé de Frango Empanado Fit",
+    "categoria": "Almoço/Jantar",
+    "tempo": "25 min",
+    "porcoes": 3,
+    "tamanhoPorcao": "1 filé grande (150g)",
+    "dificuldade": "Médio",
+    "calorias": 245,
+    "proteinas": 36,
+    "carboidratos": 14,
+    "gorduras": 6,
+    "ingredientes": [
+      "3 filés de frango (450g)",
+      "2 ovos batidos",
+      "1 xícara de aveia triturada",
+      "2 colheres de parmesão ralado",
+      "Temperos: alho, sal, páprica",
+      "Azeite spray"
+    ],
+    "modoPreparo": [
+      "Tempere os filés e deixe marinar 10min",
+      "Prepare aveia com parmesão em um prato",
+      "Passe filés no ovo",
+      "Empane na aveia pressionando bem",
+      "Disponha em assadeira",
+      "Borrife azeite por cima",
+      "Asse a 200°C por 20 minutos",
+      "Vire na metade do tempo"
+    ],
+    "tags": ["proteico", "crocante", "assado"],
+    "imagem": "frango-empanado.jpg",
+    "substituicoes": {
+      "frango": "peixe branco",
+      "aveia": "farinha de rosca integral",
+      "parmesão": "gergelim"
+    }
+  },
+  {
+    "id": 84,
+    "titulo": "Pavê de Morango Light",
+    "categoria": "Sobremesas",
+    "tempo": "25 min + 4h geladeira",
+    "porcoes": 8,
+    "tamanhoPorcao": "1 fatia média (120g)",
+    "dificuldade": "Médio",
+    "calorias": 175,
+    "proteinas": 10,
+    "carboidratos": 24,
+    "gorduras": 5,
+    "ingredientes": [
+      "1 pacote de biscoito integral",
+      "500g de morangos",
+      "400g de iogurte grego",
+      "200g de cream cheese light",
+      "1 lata de leite condensado light",
+      "Suco de limão"
+    ],
+    "modoPreparo": [
+      "Corte morangos em fatias",
+      "Bata iogurte, cream cheese e leite condensado",
+      "Monte camadas: biscoito, creme, morango",
+      "Repita as camadas",
+      "Finalize com morangos",
+      "Leve à geladeira por 4 horas",
+      "Sirva gelado"
+    ],
+    "tags": ["sobremesa", "gelado", "festa"],
+    "imagem": "pave-morango.jpg",
+    "substituicoes": {
+      "morango": "banana ou maracujá",
+      "biscoito integral": "biscoito maisena",
+      "cream cheese": "ricota batida"
+    }
+  },
+  {
+    "id": 85,
+    "titulo": "Feijoada Light",
+    "categoria": "Almoço/Jantar",
+    "tempo": "90 min",
+    "porcoes": 8,
+    "tamanhoPorcao": "1 concha grande (300g)",
+    "dificuldade": "Médio",
+    "calorias": 315,
+    "proteinas": 28,
+    "carboidratos": 35,
+    "gorduras": 9,
+    "ingredientes": [
+      "500g de feijão preto",
+      "300g de carne seca dessalgada",
+      "200g de lombo suíno magro",
+      "2 folhas de louro",
+      "1 cebola",
+      "4 dentes de alho",
+      "Temperos a gosto"
+    ],
+    "modoPreparo": [
+      "Deixe feijão de molho por 8h",
+      "Cozinhe feijão na pressão por 30min",
+      "Corte carnes em cubos",
+      "Refogue alho e cebola",
+      "Adicione as carnes e doure",
+      "Junte ao feijão cozido",
+      "Cozinhe junto por 40 minutos",
+      "Ajuste temperos e sirva"
+    ],
+    "tags": ["brasileiro", "proteico", "tradicional"],
+    "imagem": "feijoada-light.jpg",
+    "substituicoes": {
+      "carne seca": "frango defumado",
+      "lombo": "peito de peru",
+      "feijão preto": "feijão carioca"
+    }
+  },
+  {
+    "id": 86,
+    "titulo": "Waffle Proteico",
+    "categoria": "Café da Manhã",
+    "tempo": "15 min",
+    "porcoes": 2,
+    "tamanhoPorcao": "2 waffles (150g)",
+    "dificuldade": "Fácil",
+    "calorias": 255,
+    "proteinas": 22,
+    "carboidratos": 30,
+    "gorduras": 6,
+    "ingredientes": [
+      "1 scoop de whey baunilha",
+      "2 ovos",
+      "1/2 xícara de aveia",
+      "1/4 xícara de leite",
+      "1 colher de fermento",
+      "Canela e baunilha",
+      "Adoçante a gosto"
+    ],
+    "modoPreparo": [
+      "Bata todos ingredientes no liquidificador",
+      "Deixe descansar 2 minutos",
+      "Aqueça máquina de waffle",
+      "Despeje massa e feche",
+      "Cozinhe por 3-5 minutos",
+      "Retire com cuidado",
+      "Sirva com frutas ou mel"
+    ],
+    "tags": ["proteico", "café da manhã", "especial"],
+    "imagem": "waffle-proteico.jpg",
+    "substituicoes": {
+      "whey": "banana amassada",
+      "aveia": "farinha de amêndoas",
+      "leite": "bebida vegetal"
+    }
+  },
+  {
+    "id": 87,
+    "titulo": "Bolinho de Bacalhau Fit",
+    "categoria": "Lanches/Snacks",
+    "tempo": "35 min",
+    "porcoes": 12,
+    "tamanhoPorcao": "2 bolinhos (80g)",
+    "dificuldade": "Médio",
+    "calorias": 145,
+    "proteinas": 18,
+    "carboidratos": 12,
+    "gorduras": 4,
+    "ingredientes": [
+      "300g de bacalhau dessalgado",
+      "2 batatas médias cozidas",
+      "1 cebola pequena",
+      "2 ovos",
+      "Salsinha",
+      "Sal e pimenta",
+      "Aveia para empanar"
+    ],
+    "modoPreparo": [
+      "Desfie o bacalhau bem fino",
+      "Amasse as batatas",
+      "Misture bacalhau, batata, cebola e salsinha",
+      "Adicione 1 ovo e temperos",
+      "Modele bolinhos",
+      "Passe no ovo e depois na aveia",
+      "Asse a 200°C por 20 minutos",
+      "Vire na metade"
+    ],
+    "tags": ["português", "assado", "especial"],
+    "imagem": "bolinho-bacalhau.jpg",
+    "substituicoes": {
+      "bacalhau": "atum em lata",
+      "batata": "mandioca",
+      "aveia": "farinha de rosca"
+    }
+  },
+  {
+    "id": 88,
+    "titulo": "Arroz Integral com Legumes",
+    "categoria": "Acompanhamentos",
+    "tempo": "40 min",
+    "porcoes": 6,
+    "tamanhoPorcao": "1 xícara (180g)",
+    "dificuldade": "Fácil",
+    "calorias": 185,
+    "proteinas": 5,
+    "carboidratos": 36,
+    "gorduras": 3,
+    "ingredientes": [
+      "2 xícaras de arroz integral",
+      "1 cenoura em cubos",
+      "1 abobrinha em cubos",
+      "1/2 xícara de ervilhas",
+      "1 cebola",
+      "2 dentes de alho",
+      "4 xícaras de água",
+      "Sal e temperos"
+    ],
+    "modoPreparo": [
+      "Refogue alho e cebola",
+      "Adicione o arroz e refogue",
+      "Acrescente água e sal",
+      "Cozinhe por 25 minutos",
+      "Adicione cenoura e abobrinha",
+      "Cozinhe mais 10 minutos",
+      "Adicione ervilhas nos últimos 5min",
+      "Sirva quente"
+    ],
+    "tags": ["integral", "nutritivo", "acompanhamento"],
+    "imagem": "arroz-legumes.jpg",
+    "substituicoes": {
+      "arroz integral": "quinoa",
+      "legumes": "qualquer mix disponível",
+      "ervilhas": "milho"
+    }
+  },
+  {
+    "id": 89,
+    "titulo": "Smoothie Bowl de Açaí",
+    "categoria": "Café da Manhã",
+    "tempo": "10 min",
+    "porcoes": 1,
+    "tamanhoPorcao": "1 bowl grande (350g)",
+    "dificuldade": "Fácil",
+    "calorias": 315,
+    "proteinas": 12,
+    "carboidratos": 52,
+    "gorduras": 9,
+    "ingredientes": [
+      "200g de polpa de açaí",
+      "1 banana congelada",
+      "1/2 xícara de frutas vermelhas",
+      "Toppings:",
+      "Granola",
+      "Banana fatiada",
+      "Morango",
+      "Coco ralado",
+      "Mel"
+    ],
+    "modoPreparo": [
+      "Bata açaí com banana no liquidificador",
+      "Adicione frutas vermelhas",
+      "Bata até cremoso e espesso",
+      "Despeje em bowl",
+      "Decore com toppings em fileiras",
+      "Sirva imediatamente"
+    ],
+    "tags": ["energético", "instagram", "colorido"],
+    "imagem": "smoothie-bowl.jpg",
+    "substituicoes": {
+      "açaí": "pitaya ou banana",
+      "frutas vermelhas": "manga",
+      "toppings": "qualquer combinação"
+    }
+  },
+  {
+    "id": 90,
+    "titulo": "Coxinha de Frango Assada Fit",
+    "categoria": "Lanches/Snacks",
+    "tempo": "50 min",
+    "porcoes": 12,
+    "tamanhoPorcao": "2 coxinhas (100g)",
+    "dificuldade": "Médio",
+    "calorias": 165,
+    "proteinas": 14,
+    "carboidratos": 20,
+    "gorduras": 4,
+    "ingredientes": [
+      "Massa: 2 xíc farinha integral + 2 xíc caldo",
+      "Recheio:",
+      "300g de frango desfiado",
+      "1 cebola",
+      "Temperos",
+      "Para empanar:",
+      "Aveia triturada",
+      "1 ovo batido"
+    ],
+    "modoPreparo": [
+      "Faça o recheio refogando frango com temperos",
+      "Ferva caldo com sal",
+      "Despeje farinha e mexa até soltar",
+      "Deixe esfriar e amasse",
+      "Modele coxinhas recheadas",
+      "Passe no ovo e na aveia",
+      "Asse a 200°C por 30 minutos",
+      "Sirva quente"
+    ],
+    "tags": ["brasileiro", "festa", "assado"],
+    "imagem": "coxinha-assada.jpg",
+    "substituicoes": {
+      "frango": "carne seca ou atum",
+      "farinha integral": "farinha de arroz",
+      "aveia": "farinha de rosca"
+    }
+  },
+  {
+    "id": 91,
+    "titulo": "Caponata de Berinjela",
+    "categoria": "Almoço/Jantar",
+    "tempo": "35 min",
+    "porcoes": 6,
+    "tamanhoPorcao": "1 concha média (200g)",
+    "dificuldade": "Médio",
+    "calorias": 125,
+    "proteinas": 4,
+    "carboidratos": 18,
+    "gorduras": 5,
+    "ingredientes": [
+      "2 berinjelas grandes",
+      "3 tomates",
+      "1 cebola",
+      "2 talos de aipo",
+      "Azeitonas pretas",
+      "2 colheres de vinagre balsâmico",
+      "Alcaparras",
+      "Manjericão"
+    ],
+    "modoPreparo": [
+      "Corte berinjela em cubos",
+      "Grelhe ou asse até dourar",
+      "Refogue cebola e aipo",
+      "Adicione tomates picados",
+      "Acrescente berinjela",
+      "Adicione azeitonas e alcaparras",
+      "Finalize com vinagre e manjericão",
+      "Sirva frio ou morno"
+    ],
+    "tags": ["italiana", "vegetariana", "agridoce"],
+    "imagem": "caponata-berinjela.jpg",
+    "substituicoes": {
+      "berinjela": "abobrinha",
+      "aipo": "salsão",
+      "azeitonas": "uvas passas"
+    }
+  },
+  {
+    "id": 92,
+    "titulo": "Parfait de Iogurte com Frutas",
+    "categoria": "Café da Manhã",
+    "tempo": "10 min",
+    "porcoes": 2,
+    "tamanhoPorcao": "1 copo alto (300ml)",
+    "dificuldade": "Muito Fácil",
+    "calorias": 225,
+    "proteinas": 16,
+    "carboidratos": 32,
+    "gorduras": 5,
+    "ingredientes": [
+      "400g de iogurte grego",
+      "1 xícara de granola",
+      "1 xícara de morangos",
+      "1/2 xícara de mirtilo",
+      "2 colheres de mel",
+      "Hortelã fresca"
+    ],
+    "modoPreparo": [
+      "Corte morangos em fatias",
+      "Em copos altos, faça camadas",
+      "Primeira camada: iogurte",
+      "Segunda: granola",
+      "Terceira: frutas",
+      "Repita as camadas",
+      "Finalize com mel e hortelã",
+      "Sirva imediatamente"
+    ],
+    "tags": ["bonito", "nutritivo", "colorido"],
+    "imagem": "parfait-iogurte.jpg",
+    "substituicoes": {
+      "iogurte grego": "iogurte natural",
+      "frutas": "qualquer mix da estação",
+      "granola": "aveia torrada"
+    }
+  },
+  {
+    "id": 93,
+    "titulo": "Lentilha Temperada",
+    "categoria": "Almoço/Jantar",
+    "tempo": "40 min",
+    "porcoes": 6,
+    "tamanhoPorcao": "1 concha média (220g)",
+    "dificuldade": "Fácil",
+    "calorias": 185,
+    "proteinas": 14,
+    "carboidratos": 28,
+    "gorduras": 3,
+    "ingredientes": [
+      "2 xícaras de lentilha",
+      "1 cenoura picada",
+      "1 cebola",
+      "3 dentes de alho",
+      "2 folhas de louro",
+      "1 tomate",
+      "Cominho e páprica",
+      "Sal a gosto"
+    ],
+    "modoPreparo": [
+      "Lave bem a lentilha",
+      "Refogue alho e cebola",
+      "Adicione lentilha e refogue",
+      "Acrescente água (3x o volume)",
+      "Adicione louro e temperos",
+      "Cozinhe por 25 minutos",
+      "Adicione cenoura e tomate",
+      "Cozinhe mais 10 minutos",
+      "Finalize com cheiro verde"
+    ],
+    "tags": ["proteína vegetal", "nutritivo", "econômico"],
+    "imagem": "lentilha-temperada.jpg",
+    "substituicoes": {
+      "lentilha": "grão de bico",
+      "cenoura": "batata doce",
+      "cominho": "curry"
+    }
+  },
+  {
+    "id": 94,
+    "titulo": "Panini de Peito de Peru",
+    "categoria": "Lanches/Snacks",
+    "tempo": "10 min",
+    "porcoes": 2,
+    "tamanhoPorcao": "1 panini completo (180g)",
+    "dificuldade": "Fácil",
+    "calorias": 285,
+    "proteinas": 26,
+    "carboidratos": 32,
+    "gorduras": 7,
+    "ingredientes": [
+      "4 fatias de pão integral",
+      "150g de peito de peru",
+      "2 fatias de queijo branco",
+      "Tomate fatiado",
+      "Rúcula",
+      "Mostarda dijon",
+      "Azeite spray"
+    ],
+    "modoPreparo": [
+      "Passe mostarda no pão",
+      "Monte: peru, queijo, tomate, rúcula",
+      "Feche o sanduíche",
+      "Aqueça sanduicheira ou frigideira",
+      "Borrife azeite",
+      "Pressione o panini por 3-4 minutos",
+      "Corte ao meio e sirva"
+    ],
+    "tags": ["prático", "lanche", "quente"],
+    "imagem": "panini-peru.jpg",
+    "substituicoes": {
+      "peru": "frango grelhado",
+      "pão integral": "pão sírio",
+      "queijo branco": "muçarela light"
+    }
+  },
+  {
+    "id": 95,
+    "titulo": "Chips de Batata Doce",
+    "categoria": "Lanches/Snacks",
+    "tempo": "35 min",
+    "porcoes": 4,
+    "tamanhoPorcao": "1 xícara (60g)",
+    "dificuldade": "Fácil",
+    "calorias": 125,
+    "proteinas": 2,
+    "carboidratos": 26,
+    "gorduras": 2,
+    "ingredientes": [
+      "2 batatas doces grandes",
+      "Azeite spray",
+      "Sal a gosto",
+      "Páprica defumada",
+      "Alecrim seco (opcional)"
+    ],
+    "modoPreparo": [
+      "Pré-aqueça o forno a 180°C",
+      "Corte batatas em fatias bem finas",
+      "Seque bem com papel toalha",
+      "Disponha em assadeira forrada",
+      "Borrife azeite",
+      "Tempere com sal e páprica",
+      "Asse por 25-30 minutos",
+      "Vire na metade até ficarem crocantes"
+    ],
+    "tags": ["snack", "crocante", "assado"],
+    "imagem": "chips-batata-doce.jpg",
+    "substituicoes": {
+      "batata doce": "beterraba ou mandioquinha",
+      "páprica": "curry ou alho",
+      "alecrim": "tomilho"
+    }
+  },
+  {
+    "id": 96,
+    "titulo": "Atum Selado Oriental",
+    "categoria": "Almoço/Jantar",
+    "tempo": "20 min",
+    "porcoes": 2,
+    "tamanhoPorcao": "1 filé médio (160g)",
+    "dificuldade": "Médio",
+    "calorias": 245,
+    "proteinas": 36,
+    "carboidratos": 8,
+    "gorduras": 8,
+    "ingredientes": [
+      "2 filés de atum fresco",
+      "3 colheres de shoyu",
+      "1 colher de mel",
+      "Gengibre ralado",
+      "Alho",
+      "Gergelim preto e branco",
+      "Limão siciliano",
+      "Cebolinha"
+    ],
+    "modoPreparo": [
+      "Misture shoyu, mel, gengibre e alho",
+      "Marine atum por 10 minutos",
+      "Cubra filés com gergelim",
+      "Aqueça frigideira em fogo alto",
+      "Sele atum 90 segundos cada lado",
+      "Centro deve ficar rosado",
+      "Fatie em fatias grossas",
+      "Sirva com limão e cebolinha"
+    ],
+    "tags": ["oriental", "gourmet", "ômega 3"],
+    "imagem": "atum-oriental.jpg",
+    "substituicoes": {
+      "atum": "salmão fresco",
+      "mel": "agave",
+      "gergelim": "crosta de pistache"
+    }
+  },
+  {
+    "id": 97,
+    "titulo": "Crepe Suíço Proteico",
+    "categoria": "Sobremesas",
+    "tempo": "15 min",
+    "porcoes": 2,
+    "tamanhoPorcao": "1 crepe recheado (160g)",
+    "dificuldade": "Médio",
+    "calorias": 245,
+    "proteinas": 20,
+    "carboidratos": 28,
+    "gorduras": 7,
+    "ingredientes": [
+      "2 ovos",
+      "1 scoop de whey baunilha",
+      "3 colheres de aveia",
+      "Leite desnatado",
+      "Recheio:",
+      "Iogurte grego",
+      "Morangos",
+      "Mel"
+    ],
+    "modoPreparo": [
+      "Bata ovos, whey, aveia e leite",
+      "Deixe descansar 5 minutos",
+      "Faça crepes finos em frigideira",
+      "Misture iogurte com morangos",
+      "Recheie os crepes",
+      "Dobre em triângulo",
+      "Regue com mel e sirva"
+    ],
+    "tags": ["proteico", "sobremesa", "especial"],
+    "imagem": "crepe-suico.jpg",
+    "substituicoes": {
+      "whey": "banana amassada",
+      "morangos": "banana caramelizada",
+      "iogurte": "ricota batida"
+    }
+  },
+  {
+    "id": 98,
+    "titulo": "Jardineira de Legumes",
+    "categoria": "Acompanhamentos",
+    "tempo": "25 min",
+    "porcoes": 6,
+    "tamanhoPorcao": "1 concha média (200g)",
+    "dificuldade": "Fácil",
+    "calorias": 95,
+    "proteinas": 4,
+    "carboidratos": 18,
+    "gorduras": 2,
+    "ingredientes": [
+      "2 cenouras",
+      "2 batatas",
+      "1 chuchu",
+      "1/2 xícara de vagem",
+      "1/2 xícara de ervilha",
+      "1 cebola",
+      "2 dentes de alho",
+      "Sal e cheiro verde"
+    ],
+    "modoPreparo": [
+      "Corte todos legumes em cubos",
+      "Refogue alho e cebola",
+      "Adicione cenoura e batata",
+      "Acrescente água até cobrir",
+      "Cozinhe por 10 minutos",
+      "Adicione demais legumes",
+      "Cozinhe mais 10 minutos",
+      "Finalize com cheiro verde"
+    ],
+    "tags": ["vegetariano", "colorido", "nutritivo"],
+    "imagem": "jardineira-legumes.jpg",
+    "substituicoes": {
+      "legumes": "qualquer combinação disponível",
+      "batata": "mandioquinha",
+      "vagem": "brócolis"
+    }
+  },
+  {
+    "id": 99,
+    "titulo": "Brigadeiro Proteico",
+    "categoria": "Sobremesas",
+    "tempo": "15 min + 1h geladeira",
+    "porcoes": 20,
+    "tamanhoPorcao": "2 brigadeiros (40g)",
+    "dificuldade": "Fácil",
+    "calorias": 85,
+    "proteinas": 6,
+    "carboidratos": 10,
+    "gorduras": 3,
+    "ingredientes": [
+      "1 lata de leite condensado light",
+      "2 scoops de whey chocolate",
+      "2 colheres de cacau em pó",
+      "1 colher de manteiga ghee",
+      "Chocolate granulado para decorar"
+    ],
+    "modoPreparo": [
+      "Em panela, misture leite condensado e cacau",
+      "Adicione ghee",
+      "Cozinhe mexendo sempre",
+      "Quando soltar do fundo, desligue",
+      "Adicione whey e misture bem",
+      "Deixe esfriar",
+      "Modele bolinhas",
+      "Passe no granulado"
+    ],
+    "tags": ["proteico", "sobremesa", "brasileiro"],
+    "imagem": "brigadeiro-proteico.jpg",
+    "substituicoes": {
+      "leite condensado": "leite condensado fit caseiro",
+      "whey": "leite em pó desnatado",
+      "ghee": "manteiga comum"
+    }
+  },
+  {
+    "id": 100,
+    "titulo": "Poke Bowl Tropical",
+    "categoria": "Almoço/Jantar",
+    "tempo": "25 min",
+    "porcoes": 2,
+    "tamanhoPorcao": "1 bowl grande (400g)",
+    "dificuldade": "Médio",
+    "calorias": 385,
+    "proteinas": 32,
+    "carboidratos": 45,
+    "gorduras": 10,
+    "ingredientes": [
+      "200g de salmão ou atum em cubos",
+      "1 xícara de arroz integral cozido",
+      "1/2 abacate",
+      "1/2 manga",
+      "Edamame",
+      "Pepino",
+      "Shoyu e gergelim",
+      "Cebolinha"
+    ],
+    "modoPreparo": [
+      "Tempere peixe com shoyu e gergelim",
+      "Deixe marinar 10 minutos",
+      "Monte bowl: arroz como base",
+      "Disponha peixe, abacate e manga",
+      "Adicione edamame e pepino",
+      "Regue com shoyu",
+      "Polvilhe gergelim e cebolinha",
+      "Sirva fresco"
+    ],
+    "tags": ["havaiano", "completo", "colorido"],
+    "imagem": "poke-bowl.jpg",
+    "substituicoes": {
+      "salmão": "frango grelhado",
+      "arroz integral": "quinoa",
+      "manga": "abacaxi"
+    }
   }
 ];
