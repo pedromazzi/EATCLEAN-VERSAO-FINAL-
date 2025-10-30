@@ -1,4 +1,4 @@
-[
+
   {
     "id": 1,
     "titulo": "Omelete Turbinado de Claras",
@@ -738,4 +738,3 @@
       "frutas": "cacau nibs ou granola"
     }
   }
-]
