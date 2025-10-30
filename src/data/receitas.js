@@ -1,4 +1,4 @@
-
+export const receitas = [
   {
     "id": 1,
     "titulo": "Omelete Turbinado de Claras",
