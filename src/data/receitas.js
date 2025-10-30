@@ -1576,7 +1576,7 @@ export const receitas = [
       "Cozinhe mais 1-2 minutos",
       "Empilhe e sirva com frutas"
     ],
-    "tags": ["proteico", "café da manhã", "americano"],
+    "tags": ["proteico", "café da Manhã", "americano"],
     "imagem": "panqueca-americana.jpg",
     "substituicoes": {
       "whey": "banana amassada",
@@ -1802,7 +1802,8 @@ export const receitas = [
       "Misture até formar massa",
       "Faça bolinhas com as mãos",
       "Disponha em forma untada",
-      "Asse por 20-25 minutos"
+      "Asse por 20-25 minutos",
+      "Sirva quente"
     ],
     "tags": ["brasileiro", "lanche", "sem glúten"],
     "imagem": "pao-queijo-fit.jpg",
@@ -1841,7 +1842,8 @@ export const receitas = [
       "Monte o bowl: arroz, feijão e carne",
       "Adicione alface e tomate",
       "Coloque abacate em fatias",
-      "Finalize com salsinha e limão"
+      "Finalize com salsinha e limão",
+      "Sirva fresco"
     ],
     "tags": ["proteico", "completo", "mexicano"],
     "imagem": "bowl-mexicano.jpg",
@@ -1879,7 +1881,8 @@ export const receitas = [
       "Adicione à mistura e bata",
       "Despeje sobre a base",
       "Leve à geladeira por 4 horas",
-      "Decore com raspas de limão"
+      "Decore com raspas de limão",
+      "Sirva gelado"
     ],
     "tags": ["proteico", "sobremesa", "gelado"],
     "imagem": "cheesecake-limao.jpg",
@@ -1917,7 +1920,8 @@ export const receitas = [
       "Adicione os camarões",
       "Cozinhe por 3-4 minutos",
       "Não deixe ressecar",
-      "Finalize com pimenta e salsinha"
+      "Finalize com pimenta e salsinha",
+      "Sirva imediatamente"
     ],
     "tags": ["proteico", "rápido", "gourmet"],
     "imagem": "camarao-alho.jpg",
@@ -1954,7 +1958,8 @@ export const receitas = [
       "Desligue e adicione o whey",
       "Mexa bem até incorporar",
       "Transfira para tigela",
-      "Decore com banana, mel e canela"
+      "Decore com banana, mel e canela",
+      "Sirva quente"
     ],
     "tags": ["proteico", "quentinho", "reconfortante"],
     "imagem": "mingau-aveia.jpg",
@@ -1993,7 +1998,8 @@ export const receitas = [
       "Monte camadas em refratário",
       "Alterne berinjela, carne e ricota",
       "Finalize com muçarela",
-      "Asse a 180°C por 30 minutos"
+      "Asse a 180°C por 30 minutos",
+      "Sirva quente"
     ],
     "tags": ["low carb", "proteico", "italiano"],
     "imagem": "lasanha-berinjela.jpg",
@@ -2029,7 +2035,8 @@ export const receitas = [
       "Despeje sobre a pipoca",
       "Misture bem até cobrir tudo",
       "Espalhe em assadeira",
-      "Deixe esfriar e quebre em pedaços"
+      "Deixe esfriar e quebre em pedaços",
+      "Sirva"
     ],
     "tags": ["snack", "doce", "natural"],
     "imagem": "pipoca-doce.jpg",
@@ -3253,7 +3260,7 @@ export const receitas = [
       "Retire com cuidado",
       "Sirva com frutas ou mel"
     ],
-    "tags": ["proteico", "café da manhã", "especial"],
+    "tags": ["proteico", "café da Manhã", "especial"],
     "imagem": "waffle-proteico.jpg",
     "substituicoes": {
       "whey": "banana amassada",
@@ -3807,6 +3814,382 @@ export const receitas = [
       "salmão": "frango grelhado",
       "arroz integral": "quinoa",
       "manga": "abacaxi"
+    }
+  },
+  {
+    "id": 101,
+    "titulo": "Ovo Mexido com Cottage e Tomate",
+    "categoria": "Café da Manhã",
+    "tempo": "10 min",
+    "porcoes": 1,
+    "tamanhoPorcao": "1 prato raso (200g)",
+    "dificuldade": "Muito Fácil",
+    "calorias": 215,
+    "proteinas": 24,
+    "carboidratos": 6,
+    "gorduras": 10,
+    "ingredientes": [
+      "3 ovos",
+      "3 colheres de queijo cottage",
+      "3 tomates cereja cortados",
+      "Cebolinha picada",
+      "Sal e pimenta",
+      "Azeite spray"
+    ],
+    "modoPreparo": [
+      "Bata os ovos em um bowl",
+      "Tempere com sal e pimenta",
+      "Aqueça frigideira antiaderente",
+      "Despeje os ovos",
+      "Mexa delicadamente",
+      "Quando começar a firmar, adicione cottage",
+      "Adicione tomates e cebolinha",
+      "Sirva imediatamente"
+    ],
+    "tags": ["proteico", "rápido", "low carb"],
+    "imagem": "ovo-mexido-cottage.jpg",
+    "substituicoes": {
+      "cottage": "ricota esfarelada",
+      "tomate cereja": "tomate comum picado",
+      "cebolinha": "salsinha"
+    }
+  },
+  {
+    "id": 102,
+    "titulo": "Mingau de Banana com Canela",
+    "categoria": "Café da Manhã",
+    "tempo": "12 min",
+    "porcoes": 1,
+    "tamanhoPorcao": "1 tigela grande (300ml)",
+    "dificuldade": "Muito Fácil",
+    "calorias": 235,
+    "proteinas": 8,
+    "carboidratos": 42,
+    "gorduras": 4,
+    "ingredientes": [
+      "1 banana madura",
+      "1/2 xícara de aveia",
+      "250ml de leite desnatado",
+      "1 colher de canela em pó",
+      "1 colher de mel",
+      "Nozes picadas para decorar"
+    ],
+    "modoPreparo": [
+      "Amasse a banana em uma panela",
+      "Adicione leite e aveia",
+      "Leve ao fogo médio mexendo",
+      "Adicione canela",
+      "Cozinhe por 5-7 minutos",
+      "Desligue quando engrossar",
+      "Transfira para tigela",
+      "Decore com mel e nozes"
+    ],
+    "tags": ["quentinho", "reconfortante", "natural"],
+    "imagem": "mingau-banana.jpg",
+    "substituicoes": {
+      "banana": "maçã ralada",
+      "aveia": "quinoa em flocos",
+      "nozes": "amêndoas"
+    }
+  },
+  {
+    "id": 103,
+    "titulo": "Toast Francês Proteico",
+    "categoria": "Café da Manhã",
+    "tempo": "15 min",
+    "porcoes": 2,
+    "tamanhoPorcao": "2 fatias (140g)",
+    "dificuldade": "Fácil",
+    "calorias": 265,
+    "proteinas": 18,
+    "carboidratos": 32,
+    "gorduras": 7,
+    "ingredientes": [
+      "4 fatias de pão integral",
+      "2 ovos",
+      "1/2 xícara de leite desnatado",
+      "1 scoop de whey baunilha",
+      "Canela em pó",
+      "Frutas para servir",
+      "Mel"
+    ],
+    "modoPreparo": [
+      "Bata ovos, leite, whey e canela",
+      "Mergulhe fatias de pão na mistura",
+      "Deixe absorver por 30 segundos cada lado",
+      "Aqueça frigideira antiaderente",
+      "Doure as fatias 2-3 minutos cada lado",
+      "Sirva com frutas frescas",
+      "Regue com mel"
+    ],
+    "tags": ["proteico", "francês", "especial"],
+    "imagem": "toast-frances.jpg",
+    "substituicoes": {
+      "pão integral": "brioche fit",
+      "whey": "banana amassada",
+      "mel": "xarope de bordo"
+    }
+  },
+  {
+    "id": 104,
+    "titulo": "Vitamina Verde Detox Matinal",
+    "categoria": "Café da Manhã",
+    "tempo": "5 min",
+    "porcoes": 1,
+    "tamanhoPorcao": "1 copo grande (400ml)",
+    "dificuldade": "Muito Fácil",
+    "calorias": 185,
+    "proteinas": 6,
+    "carboidratos": 35,
+    "gorduras": 3,
+    "ingredientes": [
+      "1 xícara de espinafre",
+      "1 banana",
+      "1/2 maçã verde",
+      "1 colher de linhaça",
+      "Suco de 1/2 limão",
+      "200ml de água de coco",
+      "Gengibre a gosto"
+    ],
+    "modoPreparo": [
+      "Lave bem o espinafre",
+      "Adicione todos ingredientes no liquidificador",
+      "Bata em potência máxima",
+      "Adicione gelo se desejar",
+      "Sirva imediatamente"
+    ],
+    "tags": ["detox", "energético", "verde"],
+    "imagem": "vitamina-verde-matinal.jpg",
+    "substituicoes": {
+      "espinafre": "couve",
+      "banana": "manga",
+      "água de coco": "água normal"
+    }
+  },
+  {
+    "id": 105,
+    "titulo": "Omelete de Forno Rápido",
+    "categoria": "Café da Manhã",
+    "tempo": "15 min",
+    "porcoes": 2,
+    "tamanhoPorcao": "1/2 omelete (180g)",
+    "dificuldade": "Muito Fácil",
+    "calorias": 195,
+    "proteinas": 20,
+    "carboidratos": 8,
+    "gorduras": 9,
+    "ingredientes": [
+      "4 ovos",
+      "1/2 xícara de leite",
+      "1/2 xícara de queijo branco ralado",
+      "1 tomate picado",
+      "Orégano",
+      "Sal e pimenta"
+    ],
+    "modoPreparo": [
+      "Pré-aqueça o forno a 200°C",
+      "Bata ovos com leite",
+      "Adicione queijo, tomate e temperos",
+      "Despeje em forma pequena untada",
+      "Leve ao forno por 12-15 minutos",
+      "Deixe dourar levemente",
+      "Corte e sirva"
+    ],
+    "tags": ["fácil", "forno", "proteico"],
+    "imagem": "omelete-forno-rapido.jpg",
+    "substituicoes": {
+      "queijo branco": "cottage",
+      "tomate": "espinafre",
+      "leite": "bebida vegetal"
+    }
+  },
+  {
+    "id": 106,
+    "titulo": "Tortilha Espanhola Fit",
+    "categoria": "Café da Manhã",
+    "tempo": "25 min",
+    "porcoes": 4,
+    "tamanhoPorcao": "1 fatia média (150g)",
+    "dificuldade": "Médio",
+    "calorias": 185,
+    "proteinas": 14,
+    "carboidratos": 18,
+    "gorduras": 7,
+    "ingredientes": [
+      "6 ovos",
+      "2 batatas médias",
+      "1 cebola",
+      "Sal e pimenta",
+      "Azeite spray",
+      "Salsinha"
+    ],
+    "modoPreparo": [
+      "Cozinhe batatas e corte em rodelas finas",
+      "Refogue cebola até dourar",
+      "Bata ovos com sal e pimenta",
+      "Misture batatas e cebola aos ovos",
+      "Despeje em frigideira antiaderente",
+      "Cozinhe em fogo baixo tampado por 10min",
+      "Vire com cuidado usando prato",
+      "Cozinhe mais 5 minutos"
+    ],
+    "tags": ["espanhol", "tradicional", "proteico"],
+    "imagem": "tortilha-espanhola.jpg",
+    "substituicoes": {
+      "batata": "batata doce",
+      "cebola": "alho-poró",
+      "ovos": "mix de ovos e claras"
+    }
+  },
+  {
+    "id": 107,
+    "titulo": "Bowl de Mamão com Aveia",
+    "categoria": "Café da Manhã",
+    "tempo": "8 min",
+    "porcoes": 1,
+    "tamanhoPorcao": "1 bowl médio (300g)",
+    "dificuldade": "Muito Fácil",
+    "calorias": 245,
+    "proteinas": 10,
+    "carboidratos": 45,
+    "gorduras": 5,
+    "ingredientes": [
+      "1 xícara de mamão picado",
+      "1/2 xícara de aveia",
+      "200ml de leite",
+      "1 colher de mel",
+      "1 colher de chia",
+      "Granola para decorar"
+    ],
+    "modoPreparo": [
+      "Cozinhe aveia com leite por 5 minutos",
+      "Deixe esfriar levemente",
+      "Adicione chia e mel",
+      "Transfira para bowl",
+      "Cubra com mamão picado",
+      "Decore com granola",
+      "Sirva morno ou frio"
+    ],
+    "tags": ["nutritivo", "digestivo", "matinal"],
+    "imagem": "bowl-mamao.jpg",
+    "substituicoes": {
+      "mamão": "manga ou banana",
+      "aveia": "quinoa",
+      "granola": "coco ralado"
+    }
+  },
+  {
+    "id": 108,
+    "titulo": "Shakshuka Light",
+    "categoria": "Café da Manhã",
+    "tempo": "20 min",
+    "porcoes": 2,
+    "tamanhoPorcao": "1 porção com 2 ovos (250g)",
+    "dificuldade": "Médio",
+    "calorias": 215,
+    "proteinas": 16,
+    "carboidratos": 14,
+    "gorduras": 11,
+    "ingredientes": [
+      "4 ovos",
+      "3 tomates maduros",
+      "1 pimentão vermelho",
+      "1 cebola",
+      "2 dentes de alho",
+      "Cominho e páprica",
+      "Coentro fresco"
+    ],
+    "modoPreparo": [
+      "Refogue cebola, alho e pimentão",
+      "Adicione tomates picados",
+      "Tempere com cominho e páprica",
+      "Cozinhe por 10 minutos",
+      "Faça buraquinhos no molho",
+      "Quebre ovos nos buraquinhos",
+      "Tampe e cozinhe até ovos firmarem",
+      "Finalize com coentro"
+    ],
+    "tags": ["israelense", "proteico", "especiarias"],
+    "imagem": "shakshuka.jpg",
+    "substituicoes": {
+      "tomate": "molho de tomate caseiro",
+      "pimentão": "berinjela",
+      "coentro": "salsinha"
+    }
+  },
+  {
+    "id": 109,
+    "titulo": "Sanduíche Natural de Atum",
+    "categoria": "Café da Manhã",
+    "tempo": "10 min",
+    "porcoes": 2,
+    "tamanhoPorcao": "1 sanduíche completo (180g)",
+    "dificuldade": "Muito Fácil",
+    "calorias": 245,
+    "proteinas": 24,
+    "carboidratos": 26,
+    "gorduras": 6,
+    "ingredientes": [
+      "4 fatias de pão integral",
+      "1 lata de atum em água",
+      "2 colheres de iogurte grego",
+      "1 tomate fatiado",
+      "Alface",
+      "Cenoura ralada",
+      "Sal e limão"
+    ],
+    "modoPreparo": [
+      "Escorra bem o atum",
+      "Misture atum com iogurte e limão",
+      "Tempere com sal",
+      "Monte nos pães: atum, alface, tomate, cenoura",
+      "Feche o sanduíche",
+      "Corte ao meio",
+      "Sirva fresco"
+    ],
+    "tags": ["prático", "leve", "proteico"],
+    "imagem": "sanduiche-atum.jpg",
+    "substituicoes": {
+      "atum": "frango desfiado",
+      "iogurte": "cottage",
+      "pão integral": "pão sírio"
+    }
+  },
+  {
+    "id": 110,
+    "titulo": "Pudim de Chia com Frutas Vermelhas",
+    "categoria": "Café da Manhã",
+    "tempo": "5 min + 8h geladeira",
+    "porcoes": 2,
+    "tamanhoPorcao": "1 pote médio (200ml)",
+    "dificuldade": "Muito Fácil",
+    "calorias": 195,
+    "proteinas": 8,
+    "carboidratos": 28,
+    "gorduras": 7,
+    "ingredientes": [
+      "4 colheres de chia",
+      "300ml de leite de amêndoas",
+      "1 colher de mel",
+      "Essência de baunilha",
+      "1 xícara de frutas vermelhas",
+      "Granola para decorar"
+    ],
+    "modoPreparo": [
+      "Misture chia, leite, mel e baunilha",
+      "Mexa bem para não empelotar",
+      "Leve à geladeira por 8 horas ou overnight",
+      "Pela manhã, mexa novamente",
+      "Distribua em potinhos",
+      "Decore com frutas vermelhas",
+      "Adicione granola por cima"
+    ],
+    "tags": ["overnight", "prático", "nutritivo"],
+    "imagem": "pudim-chia-frutas.jpg",
+    "substituicoes": {
+      "leite amêndoas": "leite de coco",
+      "frutas vermelhas": "banana",
+      "mel": "xarope de agave"
     }
   }
 ];
