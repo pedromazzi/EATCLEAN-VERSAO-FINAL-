@@ -2003,8 +2003,7 @@ export const receitas = [
       "Sirva quente"
     ],
     "tags": ["low carb", "proteico", "italiano"],
-    "imagem": "lasanha-berinjela.
-jpg",
+    "imagem": "lasanha-berinjela.jpg",
     "substituicoes": {
       "berinjela": "abobrinha",
       "carne moída": "frango moído",
