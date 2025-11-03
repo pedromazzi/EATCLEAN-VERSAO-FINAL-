@@ -690,7 +690,7 @@ export const receitas = [
       "Corte as abobrinhas em espiral (macarrão)",
       "Refogue alho em uma panela",
       "Adicione a carne moída e doure",
-      "Acrescente o molho de tomate",
+      "Acrescento o molho de tomate",
       "Cozinhe por 10 minutos",
       "Em outra panela, refogue levemente a abobrinha",
       "Sirva a abobrinha com o molho por cima",
@@ -3620,46 +3620,6 @@ export const receitas = [
       "batata doce": "beterraba ou mandioquinha",
       "páprica": "curry ou alho",
       "alecrim": "tomilho"
-    }
-  },
-  {
-    "id": 96,
-    "titulo": "Atum Selado Oriental",
-    "categoria": "Almoço/Jantar",
-    "tempo": "20 min",
-    "porcoes": 2,
-    "tamanhoPorcao": "1 filé médio (160g)",
-    "dificuldade": "Médio",
-    "calorias": 245,
-    "proteinas": 36,
-    "carboidratos": 8,
-    "gorduras": 8,
-    "ingredientes": [
-      "2 filés de atum fresco",
-      "3 colheres de shoyu",
-      "1 colher de mel",
-      "Gengibre ralado",
-      "Alho",
-      "Gergelim preto e branco",
-      "Limão siciliano",
-      "Cebolinha"
-    ],
-    "modoPreparo": [
-      "Misture shoyu, mel, gengibre e alho",
-      "Marine atum por 10 minutos",
-      "Cubra filés com gergelim",
-      "Aqueça frigideira em fogo alto",
-      "Sele atum 90 segundos cada lado",
-      "Centro deve ficar rosado",
-      "Fatie em fatias grossas",
-      "Sirva com limão e cebolinha"
-    ],
-    "tags": ["oriental", "gourmet", "ômega 3"],
-    "imagem": "/src/assets/images/receitas/atum-oriental.jpg",
-    "substituicoes": {
-      "atum": "salmão fresco",
-      "mel": "agave",
-      "gergelim": "crosta de pistache"
     }
   },
   {
