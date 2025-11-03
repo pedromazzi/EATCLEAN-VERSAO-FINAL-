@@ -29,7 +29,7 @@ export const receitas = [
       "Deixe cozinhar por mais 1 minuto"
     ],
     "tags": ["proteico", "low carb", "rápido", "vegetariano"],
-    "imagem": "/src/assets/images/receitas/omelete-claras.jpg",
+    "imagem": "/src/assets/images/receitas/omelete-claras.png",
     "substituicoes": {
       "espinafre": "rúcula ou couve baby",
       "queijo cottage": "ricota light",
@@ -621,7 +621,7 @@ export const receitas = [
       "Deixe esfriar e corte em fatias"
     ],
     "tags": ["proteico", "meal prep", "vegetariano"],
-    "imagem": "/src/assets/images/receitas/omelete-forno.jpg",
+    "imagem": "/src/assets/images/receitas/omelete-legumes.png",
     "substituicoes": {
       "legumes": "qualquer mix de vegetais",
       "queijo minas": "cottage ou ricota",
@@ -847,7 +847,7 @@ export const receitas = [
       "Sirva com frutas ou mel"
     ],
     "tags": ["sem glúten", "rápido", "natural"],
-    "imagem": "/src/assets/images/receitas/panqueca-banana.jpg",
+    "imagem": "/src/assets/images/receitas/panqueca-banana.png",
     "substituicoes": {
       "banana": "purê de maçã",
       "ovos": "substituto vegano de ovo",
@@ -963,7 +963,7 @@ export const receitas = [
       "Sirva imediatamente bem gelado"
     ],
     "tags": ["detox", "energético", "vegano"],
-    "imagem": "/src/assets/images/receitas/smoothie-verde.jpg",
+    "imagem": "/src/assets/images/receitas/smoothie-verde-detox.png",
     "substituicoes": {
       "espinafre": "couve",
       "banana": "manga",
