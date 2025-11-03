@@ -57,7 +57,7 @@ const RecipeCard: React.FC<RecipeCardProps> = ({ recipe, onRemoveFavorite }) => 
           </div>
           <div className="flex items-center gap-1 text-eatclean-orange-highlight">
             <Clock size={16} />
-            <span>{recipe.tempo} min</span> {/* Usando 'tempo' */}
+            <span>{recipe.tempo}</span> {/* CORRIGIDO: Removido ' min' */}
           </div>
         </div>
       </div>

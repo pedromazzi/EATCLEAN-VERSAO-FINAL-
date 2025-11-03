@@ -56,7 +56,7 @@ const ReceitaDetalhe = () => {
     
     texto += `${recipe.descricao}\n\n`;
     
-    texto += `⏱️ Tempo de preparo: ${recipe.tempo} min\n`; 
+    texto += `⏱️ Tempo de preparo: ${recipe.tempo}\n`; // CORRIGIDO: Removido ' min'
     texto += `🔥 Calorias: ${recipe.calorias} kcal\n\n`; 
     
     texto += `📝 INGREDIENTES:\n`;
