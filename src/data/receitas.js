@@ -3481,7 +3481,7 @@ export const receitas = [
     "carboidratos": 28,
     "gorduras": 3,
     "ingredientes": [
-      "2 xícaras de lentilha",
+      "2 xícara de lentilha",
       "1 cenoura picada",
       "1 cebola",
       "3 dentes de alho",
@@ -3892,43 +3892,6 @@ export const receitas = [
     }
   },
   {
-    "id": 105,
-    "titulo": "Omelete de Forno Rápido",
-    "categoria": "Café da Manhã",
-    "tempo": "15 min",
-    "porcoes": 2,
-    "tamanhoPorcao": "1/2 omelete (180g)",
-    "dificuldade": "Muito Fácil",
-    "calorias": 195,
-    "proteinas": 20,
-    "carboidratos": 8,
-    "gorduras": 9,
-    "ingredientes": [
-      "4 ovos",
-      "1/2 xícara de leite",
-      "1/2 xícara de queijo branco ralado",
-      "1 tomate picado",
-      "Orégano",
-      "Sal e pimenta"
-    ],
-    "modoPreparo": [
-      "Pré-aqueça o forno a 200°C",
-      "Bata ovos com leite",
-      "Adicione queijo, tomate e temperos",
-      "Despeje em forma pequena untada",
-      "Leve ao forno por 12-15 minutos",
-      "Deixe dourar levemente",
-      "Corte e sirva"
-    ],
-    "tags": ["fácil", "forno", "proteico"],
-    "imagem": "/src/assets/images/receitas/omelete-forno-rapido.jpg",
-    "substituicoes": {
-      "queijo branco": "cottage",
-      "tomate": "espinafre",
-      "leite": "bebida vegetal"
-    }
-  },
-  {
     "id": 106,
     "titulo": "Tortilha Espanhola Fit",
     "categoria": "Café da Manhã",
@@ -4260,7 +4223,8 @@ export const receitas = [
       "Guarde em pote hermético"
     ],
     "tags": ["crocante", "proteico", "vegano"],
-    "imagem": "/src/assets/images/receitas/chips-grao-bico.jpg",
+    "imagem": "/src/assets/images/receitas/chips-grao-bico.
+    jpg",
     "substituicoes": {
       "grão de bico": "edamame",
       "páprica": "curry",
@@ -5039,7 +5003,7 @@ export const receitas = [
     "carboidratos": 26,
     "gorduras": 2,
     "ingredientes": [
-      "2 xícaras de ervilha seca",
+      "2 xícara de ervilha seca",
       "1 cebola",
       "2 dentes de alho",
       "1 cenoura",
