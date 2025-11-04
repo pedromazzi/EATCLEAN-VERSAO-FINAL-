@@ -1933,44 +1933,6 @@ export const receitas = [
     }
   },
   {
-    "id": 52,
-    "titulo": "Mingau de Aveia Proteico",
-    "categoria": "Café da Manhã",
-    "tempo": "10 min",
-    "porcoes": 1,
-    "tamanhoPorcao": "1 tigela média (280ml)",
-    "dificuldade": "Muito Fácil",
-    "calorias": 265,
-    "proteinas": 20,
-    "carboidratos": 38,
-    "gorduras": 5,
-    "ingredientes": [
-      "1/2 xícara de aveia",
-      "1 scoop de whey baunilha",
-      "250ml de leite desnatado",
-      "1 banana fatiada",
-      "1 colher de mel",
-      "Canela em pó"
-    ],
-    "modoPreparo": [
-      "Aqueça o leite em uma panela",
-      "Adicione a aveia e mexa",
-      "Cozinhe por 5 minutos em fogo baixo",
-      "Desligue e adicione o whey",
-      "Mexa bem até incorporar",
-      "Transfira para tigela",
-      "Decore com banana, mel e canela",
-      "Sirva quente"
-    ],
-    "tags": ["proteico", "quentinho", "reconfortante"],
-    "imagem": "/src/assets/images/receitas/mingau-aveia.jpg",
-    "substituicoes": {
-      "aveia": "quinoa em flocos",
-      "whey": "pasta de amendoim",
-      "banana": "maçã ralada"
-    }
-  },
-  {
     "id": 53,
     "titulo": "Lasanha de Berinjela Fit",
     "categoria": "Almoço/Jantar",
