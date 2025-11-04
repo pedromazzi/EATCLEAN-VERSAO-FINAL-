@@ -3229,7 +3229,8 @@ export const receitas = [
     "substituicoes": {
       "whey": "banana amassada",
       "aveia": "farinha de amêndoas",
-      "leite": "bebida vegetal"
+      "leite": "bebida vegetal",
+      "mel": "banana amassada"
     }
   },
   {
@@ -4223,8 +4224,7 @@ export const receitas = [
       "Guarde em pote hermético"
     ],
     "tags": ["crocante", "proteico", "vegano"],
-    "imagem": "/src/assets/images/receitas/chips-grao-bico.
-    jpg",
+    "imagem": "/src/assets/images/receitas/chips-grao-bico.jpg",
     "substituicoes": {
       "grão de bico": "edamame",
       "páprica": "curry",
