@@ -37,6 +37,7 @@
     /* Custom EatClean colors */
     --eatclean-primary-green: 144 50% 51%; /* #48BB78 - Verde mais claro */
     --eatclean-orange-highlight: 18 100% 60%; /* #FF6B35 */
+    --eatclean-secondary-orange: 30 90% 55%; /* Um laranja um pouco mais suave para o contorno */
     --eatclean-gray-text: 215 18% 27%; /* #374151 */
     --eatclean-gray-inactive: 217 10% 46%; /* #6B7280 */
     --eatclean-light-gray: 210 17% 96%; /* #F3F4F6 */
@@ -76,6 +77,7 @@
     /* Custom EatClean colors for dark mode (keeping same for now) */
     --eatclean-primary-green: 144 50% 51%; /* #48BB78 - Verde mais claro */
     --eatclean-orange-highlight: 18 100% 60%;
+    --eatclean-secondary-orange: 30 90% 55%;
     --eatclean-gray-text: 215 18% 27%;
     --eatclean-gray-inactive: 217 10% 46%;
     --eatclean-light-gray: 210 17% 96%;

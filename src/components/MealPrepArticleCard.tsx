@@ -16,7 +16,7 @@ const MealPrepArticleCard: React.FC<MealPrepArticleCardProps> = ({
   linkTo,
 }) => {
   const content = (
-    <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 p-4 bg-eatclean-white rounded-xl shadow-sm cursor-pointer transition-transform duration-200 hover:scale-[1.01]">
+    <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 p-4 bg-eatclean-white rounded-2xl shadow-sm cursor-pointer transition-transform duration-200 hover:scale-[1.01] border-2 border-eatclean-secondary-orange">
       <img
         src={imageSrc}
         alt={title}

@@ -65,6 +65,7 @@ export default {
         // Custom EatClean colors
         "eatclean-primary-green": "hsl(var(--eatclean-primary-green))",
         "eatclean-orange-highlight": "hsl(var(--eatclean-orange-highlight))",
+        "eatclean-secondary-orange": "hsl(var(--eatclean-secondary-orange))", // Nova cor adicionada
         "eatclean-gray-text": "hsl(var(--eatclean-gray-text))",
         "eatclean-gray-inactive": "hsl(var(--eatclean-gray-inactive))",
         "eatclean-light-gray": "hsl(var(--eatclean-light-gray))",
