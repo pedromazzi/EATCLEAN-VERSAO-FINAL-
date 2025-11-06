@@ -36,7 +36,7 @@ const MealPrep = () => {
           linkTo="/guia-meal-prep-iniciantes" // Placeholder para futura rota
         />
         <MealPrepArticleCard
-          imageSrc="https://via.placeholder.com/100x100/FF6B35/FFFFFF?text=Receitas"
+          imageSrc="/images/meal-prep/meal-prep3.png" // Caminho direto para a imagem na pasta public
           title="Receitas rápidas para o almoço da semana"
           description="Opções práticas e saborosas para levar para o trabalho ou faculdade."
           linkTo="/receitas-meal-prep-almoco" // Placeholder para futura rota
