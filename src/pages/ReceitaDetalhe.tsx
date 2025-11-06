@@ -102,7 +102,7 @@ const ReceitaDetalhe = () => {
   }
 
   return (
-    <div className="min-h-screen flex flex-col bg-gradient-to-b from-gray-100 to-white">
+    <div className="min-h-screen flex flex-col bg-gradient-to-b from-gray-200 to-white">
       <RecipeDetailHeader 
         isFavorite={isFavorite} 
         onToggleFavorite={handleToggleFavorite} 
