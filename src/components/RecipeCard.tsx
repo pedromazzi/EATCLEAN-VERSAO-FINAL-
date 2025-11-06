@@ -25,7 +25,7 @@ const RecipeCard: React.FC<RecipeCardProps> = ({ recipe, onRemoveFavorite }) => 
 
   return (
     <div
-      className="bg-eatclean-white rounded-2xl shadow-md overflow-hidden cursor-pointer transform transition-transform duration-200 hover:scale-[1.02] relative"
+      className="bg-eatclean-white rounded-2xl shadow-md overflow-hidden cursor-pointer transform transition-transform duration-200 hover:scale-[1.02] relative border-2 border-eatclean-orange-highlight"
       onClick={handleClick}
     >
       {onRemoveFavorite && (
