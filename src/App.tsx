@@ -12,6 +12,8 @@ import Guia from "./pages/Guia";
 import PlanoSemanal from "./pages/PlanoSemanal";
 import ListaCompras from "./pages/ListaCompras";
 import ReceitaDetalhe from "./pages/ReceitaDetalhe";
+import GuiaMealPrepIniciantes from "@/pages/GuiaMealPrepIniciantes"; // Nova importação
+import ReceitasMealPrepAlmoco from "@/pages/ReceitasMealPrepAlmoco"; // Nova importação
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -34,8 +36,10 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <Routes>
-          {/* Rota para ReceitaDetalhe que usa seu próprio header */}
+          {/* Rotas que usam seu próprio header/navegação */}
           <Route path="/receita/:id" element={<ReceitaDetalhe />} />
+          <Route path="/guia-meal-prep-iniciantes" element={<GuiaMealPrepIniciantes />} /> {/* Nova rota */}
+          <Route path="/receitas-meal-prep-almoco" element={<ReceitasMealPrepAlmoco />} /> {/* Nova rota */}
 
           {/* Rotas que usam o Layout padrão (Header e Footer) */}
           <Route path="/" element={<Layout />}>
