@@ -16,7 +16,7 @@ const ReceitaDetalhe = () => {
   const [isFavorite, setIsFavorite] = useState<boolean>(false);
 
   useEffect(() => {
-    const foundRecipe = receitas.find((r) => r.id === Number(id)); // CORREÇÃO AQUI
+    const foundRecipe = receitas.find((r) => r.id === Number(id));
     setRecipe(foundRecipe);
 
     if (foundRecipe) {
@@ -29,10 +29,10 @@ const ReceitaDetalhe = () => {
 
     if (isFavorite) {
       removeFavoriteRecipeId(recipe.id);
-      toast.info(`"${recipe.titulo}" removida dos favoritos.`); // Usando 'titulo'
+      toast.info(`"${recipe.titulo}" removida dos favoritos.`);
     } else {
       addFavoriteRecipeId(recipe.id);
-      toast.success(`"${recipe.titulo}" adicionada aos favoritos!`); // Usando 'titulo'
+      toast.success(`"${recipe.titulo}" adicionada aos favoritos!`);
     }
     setIsFavorite(!isFavorite);
   };
@@ -56,7 +56,7 @@ const ReceitaDetalhe = () => {
     
     texto += `${recipe.descricao}\n\n`;
     
-    texto += `⏱️ Tempo de preparo: ${recipe.tempo}\n`; // CORRIGIDO: Removido ' min'
+    texto += `⏱️ Tempo de preparo: ${recipe.tempo}\n`;
     texto += `🔥 Calorias: ${recipe.calorias} kcal\n\n`; 
     
     texto += `📝 INGREDIENTES:\n`;
@@ -102,7 +102,7 @@ const ReceitaDetalhe = () => {
   }
 
   return (
-    <div className="min-h-screen flex flex-col bg-gradient-to-b from-white to-eatclean-primary-green/5">
+    <div className="min-h-screen flex flex-col bg-gradient-to-b from-gray-100 to-white">
       <RecipeDetailHeader 
         isFavorite={isFavorite} 
         onToggleFavorite={handleToggleFavorite} 
