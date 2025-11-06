@@ -109,11 +109,11 @@ const ReceitaDetalhe = () => {
         onShare={handleShare} 
       />
 
-      <div className="flex-grow pt-16 bg-eatclean-white rounded-2xl shadow-md border-2 border-eatclean-orange-highlight mx-4 mb-4">
+      <div className="flex-grow pt-16 bg-eatclean-white rounded-2xl shadow-md mx-4 mb-4">
         <img
           src={recipe.imagem}
           alt={recipe.titulo} 
-          className="w-full h-64 object-cover rounded-t-2xl"
+          className="w-full h-64 object-cover border-2 border-eatclean-orange-highlight rounded-2xl"
         />
 
         <div className="p-4">
