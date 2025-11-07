@@ -18,7 +18,7 @@ import PageTransition from "@/components/PageTransition"; // Importação do Pag
 
 const Guia = () => {
   return (
-    <PageTransition> {/* PageTransition envolvendo todo o conteúdo */}
+    <PageTransition>
       <div className="p-4 bg-eatclean-light-gray min-h-[calc(100vh-128px)]">
         {/* 1. CABEÇALHO DA TELA */}
         <div className="relative mb-6 rounded-xl overflow-hidden shadow-md">
