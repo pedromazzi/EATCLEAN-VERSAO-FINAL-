@@ -102,7 +102,13 @@ const ReceitaDetalhe = () => {
   }
 
   return (
-    <div className="min-h-screen flex flex-col bg-gradient-to-b from-gray-100 to-white">
+    <div 
+      className="min-h-screen bg-gradient-to-b from-gray-100 to-white"
+      style={{
+        backgroundImage: 'radial-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 1px)',
+        backgroundSize: '4px 4px'
+      }}
+    >
       <RecipeDetailHeader 
         isFavorite={isFavorite} 
         onToggleFavorite={handleToggleFavorite} 
