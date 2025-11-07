@@ -12,51 +12,51 @@ import Guia from "./pages/Guia";
 import PlanoSemanal from "./pages/PlanoSemanal";
 import ListaCompras from "./pages/ListaCompras";
 import ReceitaDetalhe from "./pages/ReceitaDetalhe";
-import GuiaMealPrepIniciantes from "@/pages/GuiaMealPrepIniciantes";
-import ReceitasMealPrepAlmoco from "@/pages/ReceitasMealPrepAlmoco";
+import GuiaMealPrepIniciantes from "@/pages/GuiaMealPrepIniciantes"; // Nova importação
+import ReceitasMealPrepAlmoco from "@/pages/ReceitasMealPrepAlmoco"; // Nova importação
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
+// Componente de Layout para envolver as rotas com Header e Footer fixos
 const Layout = () => (
   <div className="min-h-screen flex flex-col bg-eatclean-white">
     <Header />
-    <main className="flex-grow pt-16 pb-16 overflow-auto">
-      <Outlet />
+    <main className="flex-grow pt-16 pb-16 overflow-auto"> {/* Padding para evitar sobreposição com header/footer */}
+      <Outlet /> {/* Renderiza o conteúdo da rota atual */}
     </main>
     <FooterNavigation />
   </div>
 );
 
-const App = () => {
-  return (
-    <QueryClientProvider client={queryClient}>
-      <TooltipProvider>
-        <Toaster />
-        <Sonner />
-        <BrowserRouter>
-          <Routes>
-            {/* Rotas que usam seu próprio header/navegação */}
-            <Route path="/receita/:id" element={<ReceitaDetalhe />} />
-            <Route path="/guia-meal-prep-iniciantes" element={<GuiaMealPrepIniciantes />} />
-            <Route path="/receitas-meal-prep-almoco" element={<ReceitasMealPrepAlmoco />} />
+const App = () => (
+  <QueryClientProvider client={queryClient}>
+    <TooltipProvider>
+      <Toaster />
+      <Sonner />
+      <BrowserRouter>
+        <Routes>
+          {/* Rotas que usam seu próprio header/navegação */}
+          <Route path="/receita/:id" element={<ReceitaDetalhe />} />
+          <Route path="/guia-meal-prep-iniciantes" element={<GuiaMealPrepIniciantes />} /> {/* Nova rota */}
+          <Route path="/receitas-meal-prep-almoco" element={<ReceitasMealPrepAlmoco />} /> {/* Nova rota */}
 
-            {/* Rotas que usam o Layout padrão (Header e Footer) */}
-            <Route path="/" element={<Layout />}>
-              <Route index element={<Explorar />} />
-              <Route path="explorar" element={<Explorar />} />
-              <Route path="favoritos" element={<Favoritos />} />
-              <Route path="meal-prep" element={<MealPrep />} />
-              <Route path="guia" element={<Guia />} />
-              <Route path="plano-semanal" element={<PlanoSemanal />} />
-              <Route path="lista-compras" element={<ListaCompras />} />
-              <Route path="*" element={<NotFound />} />
-            </Route>
-          </Routes>
-        </BrowserRouter>
-      </TooltipProvider>
-    </QueryClientProvider>
-  );
-};
+          {/* Rotas que usam o Layout padrão (Header e Footer) */}
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Explorar />} /> {/* Rota padrão para '/' */}
+            <Route path="explorar" element={<Explorar />} />
+            <Route path="favoritos" element={<Favoritos />} />
+            <Route path="meal-prep" element={<MealPrep />} />
+            <Route path="guia" element={<Guia />} />
+            <Route path="plano-semanal" element={<PlanoSemanal />} />
+            <Route path="lista-compras" element={<ListaCompras />} />
+            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+            <Route path="*" element={<NotFound />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </TooltipProvider>
+  </QueryClientProvider>
+);
 
 export default App;

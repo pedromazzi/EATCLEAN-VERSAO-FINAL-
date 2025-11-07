@@ -3,16 +3,16 @@ import { Search } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import RecipeCard from "@/components/RecipeCard";
 import CategoryTabs from "@/components/CategoryTabs";
-import { receitas } from "@/data/receitas";
+import { receitas } from "@/data/receitas"; // Importação atualizada
 import { Recipe } from "@/types/recipe";
-import ScrollToTop from "@/components/ScrollToTop";
+import ScrollToTop from "@/components/ScrollToTop"; // Nova importação
 
 const categories = [
   "Todos",
   "Café da Manhã",
   "Almoço/Jantar",
-  "Lanches/Snacks",
-  "Sopas",
+  "Lanches/Snacks", // Mapeado de "Snacks/Lanches"
+  "Sopas", // Mapeado de "Sopas e Caldos"
   "Sobremesas",
   "Bebidas",
 ];
@@ -20,12 +20,14 @@ const categories = [
 const Explorar = () => {
   const [searchTerm, setSearchTerm] = useState<string>("");
   const [activeCategory, setActiveCategory] = useState<string>("Todos");
-  const [filteredRecipes, setFilteredRecipes] = useState<Recipe[]>(receitas);
+  const [filteredRecipes, setFilteredRecipes] = useState<Recipe[]>(receitas); // Usando 'receitas'
 
   useEffect(() => {
-    let recipesToFilter = receitas;
+    let recipesToFilter = receitas; // Usando 'receitas'
 
+    // Filter by category
     if (activeCategory !== "Todos") {
+      // Mapeamento de categorias para compatibilidade
       const mappedCategory = activeCategory === "Lanches/Snacks" ? "Lanches/Snacks" :
                              activeCategory === "Sopas" ? "Sopas" : activeCategory;
       
@@ -34,9 +36,10 @@ const Explorar = () => {
       );
     }
 
+    // Filter by search term
     if (searchTerm) {
       recipesToFilter = recipesToFilter.filter((recipe) =>
-        recipe.titulo.toLowerCase().includes(searchTerm.toLowerCase())
+        recipe.titulo.toLowerCase().includes(searchTerm.toLowerCase()) // Usando 'titulo'
       );
     }
 

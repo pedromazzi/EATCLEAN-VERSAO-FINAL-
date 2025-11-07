@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback } from "react";
-import { Shuffle, ShoppingCart, Share2 } from "lucide-react";
+import { Shuffle, ShoppingCart, Share2 } from "lucide-react"; // Removido Download, adicionado Share2
 import { Button } from "@/components/ui/button";
-import { receitas } from "@/data/receitas";
+import { receitas } from "@/data/receitas"; // Importação atualizada
 import { Recipe } from "@/types/recipe";
 import PlanRecipeCard from "@/components/PlanRecipeCard";
 import EmptyPlanSlot from "@/components/EmptyPlanSlot";
@@ -14,7 +14,6 @@ import {
 } from "@/utils/planStorage";
 import { useNavigate } from "react-router-dom";
 import { toast } from "sonner";
-import ScrollToTop from "@/components/ScrollToTop";
 
 const dayNames = [
   "Segunda",
@@ -42,7 +41,7 @@ const PlanoSemanal = () => {
   }, []);
 
   const getRandomRecipe = (excludeIds: string[] = []): Recipe | null => {
-    const availableRecipes = receitas.filter(
+    const availableRecipes = receitas.filter( // Usando 'receitas'
       (recipe) => !excludeIds.includes(recipe.id)
     );
     if (availableRecipes.length === 0) {
@@ -53,7 +52,7 @@ const PlanoSemanal = () => {
   };
 
   const generateAutomaticPlan = useCallback(() => {
-    if (receitas.length === 0) {
+    if (receitas.length === 0) { // Usando 'receitas'
       toast.error("Não há receitas disponíveis para gerar o plano.");
       return;
     }
@@ -71,7 +70,7 @@ const PlanoSemanal = () => {
           dayPlan.meals.push(recipe.id);
           recipesUsedToday.push(recipe.id);
         } else {
-          dayPlan.meals.push(null);
+          dayPlan.meals.push(null); // No more unique recipes for the day
         }
       }
       newPlan.push(dayPlan);
@@ -119,7 +118,7 @@ const PlanoSemanal = () => {
 
     const uniqueRecipeIds = Array.from(new Set(allRecipeIdsInPlan));
 
-    const recipesForShoppingList = receitas.filter((recipe) =>
+    const recipesForShoppingList = receitas.filter((recipe) => // Usando 'receitas'
       uniqueRecipeIds.includes(recipe.id)
     );
 
@@ -149,11 +148,11 @@ const PlanoSemanal = () => {
       textoPlano += `📅 ${day.dayName.toUpperCase()}\n`;
       day.meals.forEach((recipeId, index) => {
         if (recipeId) {
-          const recipe = receitas.find((r) => r.id === recipeId);
+          const recipe = receitas.find((r) => r.id === recipeId); // Usando 'receitas'
           if (recipe) {
             const emoji = index === 0 ? "☀️" : index === 1 ? "🍴" : "🌙";
             const nomeRefeicao = index === 0 ? "Café da Manhã" : index === 1 ? "Almoço" : "Jantar";
-            textoPlano += `${emoji} ${nomeRefeicao}: ${recipe.titulo} (${recipe.calorias} kcal)\n`;
+            textoPlano += `${emoji} ${nomeRefeicao}: ${recipe.titulo} (${recipe.calorias} kcal)\n`; // Usando 'titulo' e 'calorias' top-level
             totalCalories += recipe.calorias;
           }
         }
@@ -286,7 +285,7 @@ const PlanoSemanal = () => {
                         {recipeId ? (
                           <PlanRecipeCard
                             recipe={
-                              receitas.find((r) => r.id === recipeId)!
+                              receitas.find((r) => r.id === recipeId)! // Usando 'receitas'
                             }
                             onReplace={() => replaceRecipe(dayIndex, mealIndex)}
                           />
@@ -341,7 +340,6 @@ const PlanoSemanal = () => {
           </Button>
         </div>
       )}
-      <ScrollToTop />
     </div>
   );
 };

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { receitas } from "@/data/receitas";
+import { receitas } from "@/data/receitas"; // Importação atualizada
 import { Recipe } from "@/types/recipe";
 import RecipeDetailHeader from "@/components/RecipeDetailHeader";
 import IngredientCheckbox from "@/components/IngredientCheckbox";
@@ -8,8 +8,8 @@ import PreparationStep from "@/components/PreparationStep";
 import NutritionalInfoCard from "@/components/NutritionalInfoCard";
 import NotFound from "./NotFound";
 import { addFavoriteRecipeId, removeFavoriteRecipeId, checkIsFavorite } from "@/utils/favorites";
-import { toast } from "sonner";
-import ScrollToTop from "@/components/ScrollToTop";
+import { toast } from "sonner"; // Importando o toast
+import ScrollToTop from "@/components/ScrollToTop"; // Nova importação
 
 const ReceitaDetalhe = () => {
   const { id } = useParams<{ id: string }>();
@@ -117,7 +117,7 @@ const ReceitaDetalhe = () => {
       />
 
       <div className="flex-grow pt-16 bg-eatclean-white rounded-2xl shadow-md mx-4 mb-4">
-        <div className="relative">
+        <div className="relative"> {/* Adicionado div wrapper para a imagem e o aviso */}
           <img
             src={recipe.imagem}
             alt={recipe.titulo} 

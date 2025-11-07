@@ -3,17 +3,17 @@ import { HeartOff } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import RecipeCard from "@/components/RecipeCard";
-import { receitas } from "@/data/receitas";
+import { receitas } from "@/data/receitas"; // Importação atualizada
 import { Recipe } from "@/types/recipe";
 import { getFavoriteRecipeIds, removeFavoriteRecipeId } from "@/utils/favorites";
-import ScrollToTop from "@/components/ScrollToTop";
+import ScrollToTop from "@/components/ScrollToTop"; // Nova importação
 
 const Favoritos = () => {
   const [favoriteRecipes, setFavoriteRecipes] = useState<Recipe[]>([]);
 
   const loadFavoriteRecipes = useCallback(() => {
     const favoriteIds = getFavoriteRecipeIds();
-    const recipes = receitas.filter((recipe) =>
+    const recipes = receitas.filter((recipe) => // Usando 'receitas'
       favoriteIds.includes(recipe.id)
     );
     setFavoriteRecipes(recipes);
@@ -21,6 +21,7 @@ const Favoritos = () => {
 
   useEffect(() => {
     loadFavoriteRecipes();
+    // Adiciona um listener para o evento 'storage' para sincronizar entre abas/janelas
     window.addEventListener('storage', loadFavoriteRecipes);
     return () => {
       window.removeEventListener('storage', loadFavoriteRecipes);
@@ -29,7 +30,7 @@ const Favoritos = () => {
 
   const handleRemoveFavorite = (recipeId: string) => {
     removeFavoriteRecipeId(recipeId);
-    loadFavoriteRecipes();
+    loadFavoriteRecipes(); // Recarrega a lista de favoritos após a remoção
   };
 
   return (

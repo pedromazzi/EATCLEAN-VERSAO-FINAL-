@@ -1,6 +1,9 @@
 import React from "react";
 import MealPrepArticleCard from "@/components/MealPrepArticleCard";
-import ScrollToTop from "@/components/ScrollToTop";
+import ScrollToTop from "@/components/ScrollToTop"; // Nova importação
+
+// As imagens na pasta public são acessadas diretamente pelo caminho raiz '/'
+// Não é necessário importá-las como módulos em Vite quando estão em 'public'.
 
 const MealPrep = () => {
   return (
@@ -8,7 +11,7 @@ const MealPrep = () => {
       {/* 1. CABEÇALHO COM IMAGEM */}
       <div className="mb-6">
         <img
-          src="/images/meal-prep/meal-prep.png"
+          src="/images/meal-prep/meal-prep.png" // Caminho direto para a imagem na pasta public
           alt="Meal Prep"
           className="w-full h-48 object-cover rounded-xl shadow-md"
         />
@@ -28,16 +31,16 @@ const MealPrep = () => {
       {/* 3. DOIS CARDS COM FOTO (Artigos) */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
         <MealPrepArticleCard
-          imageSrc="/images/meal-prep/meal-prep2.png"
+          imageSrc="/images/meal-prep/meal-prep2.png" // Caminho direto para a imagem na pasta public
           title="Guia completo de meal prep para iniciantes"
           description="Aprenda os passos básicos para começar a preparar suas refeições da semana."
-          linkTo="/guia-meal-prep-iniciantes"
+          linkTo="/guia-meal-prep-iniciantes" // Placeholder para futura rota
         />
         <MealPrepArticleCard
-          imageSrc="/images/meal-prep/meal-prep3.png"
+          imageSrc="/images/meal-prep/meal-prep3.png" // Caminho direto para a imagem na pasta public
           title="Receitas rápidas para o almoço da semana"
           description="Opções práticas e saborosas para levar para o trabalho ou faculdade."
-          linkTo="/receitas-meal-prep-almoco"
+          linkTo="/receitas-meal-prep-almoco" // Placeholder para futura rota
         />
       </div >
 

@@ -1,7 +1,7 @@
 import React from "react";
 import { ArrowLeft } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-import ScrollToTop from "@/components/ScrollToTop";
+import ScrollToTop from "@/components/ScrollToTop"; // Nova importação
 
 const ReceitasMealPrepAlmoco = () => {
   const navigate = useNavigate();
@@ -43,7 +43,7 @@ const ReceitasMealPrepAlmoco = () => {
 
           {/* Como usar este guia */}
           <section>
-            <h2 className="text-2xl font-bold text-eatclean-gray-text mb-3">O que é Meal Prep?</h2>
+            <h2 className="text-2xl font-bold text-eatclean-gray-text mb-3">Como usar este guia</h2>
             <p className="text-eatclean-gray-text leading-relaxed">
               Escolha 1 ou 2 receitas abaixo e prepare tudo de uma vez no seu dia de meal prep. Você terá almoços saudáveis e deliciosos prontos para a semana inteira!
             </p>

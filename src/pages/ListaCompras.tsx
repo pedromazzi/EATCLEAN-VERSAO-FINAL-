@@ -5,13 +5,14 @@ import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Label } from "@/components/ui/label";
 import { cn } from "@/lib/utils";
-import { receitas } from "@/data/receitas";
+import { receitas } from "@/data/receitas"; // Importação atualizada
+import { Recipe } from "@/types/recipe";
 import { loadWeeklyPlan } from "@/utils/planStorage";
 import { toast } from "sonner";
-import ScrollToTop from "@/components/ScrollToTop";
 
 const CHECKED_ITEMS_STORAGE_KEY = "eatclean_lista_compras_marcados";
 
+// Lista de ingredientes a serem completamente ignorados na lista de compras
 const ingredientesParaIgnorar = [
   'gelo',
   'água',
@@ -34,39 +35,74 @@ const deveIgnorarIngrediente = (ingrediente: string): boolean => {
   );
 };
 
+// Função para limpar o nome do ingrediente, removendo quantidades, medidas e descritivos
 const cleanIngredientName = (ingredient: string): string | null => {
+  // Garantir que é string
   if (typeof ingredient !== 'string') return null;
 
+  // Converter para minúsculo
   let cleaned = ingredient.toLowerCase().trim();
   
+  // Remover "uma" ou "um" no início
   cleaned = cleaned.replace(/^uma?\s+/gi, '');
+  
+  // Remover "pitada de" completamente
   cleaned = cleaned.replace(/pitada\s+(de|do|da)?\s*/gi, '');
+  
+  // Remover tudo antes de "de" ou "do" ou "da" no início (medidas)
   cleaned = cleaned.replace(/^(\d+\s?)?(\/\d+)?(\s)?(xícara|xícaras|colher|colheres|sopa|chá|litro|litros|g|kg|ml|l|unidade|unidades|dente|dentes|folhas|folha|talo|talos|peito|médio|média|grande|pequeno|pequena)(\s)?(de|do|da)\s/gi, '');
+  
+  // Remover números e frações no início
   cleaned = cleaned.replace(/^(\d+)(\/\d+)?\s*/g, '');
+  
+  // Remover medidas soltas
   cleaned = cleaned.replace(/^(xícara|xícaras|colher|colheres|sopa|chá|litro|litros|unidade|unidades|dente|dentes|folhas|folha|talo|talos|peito)\s+(de|do|da)?\s*/gi, '');
+  
+  // Remover preparos e detalhes
   cleaned = cleaned.replace(/\s+(picado|picada|picados|picadas|cortado|cortada|ralado|ralada|desfiado|desfiada|fatiado|fatiada|em cubos|em tiras|em tiras finas|ao meio|cozido|cozida|a vapor|grelhado|grelhada|fresco|fresca|maduro|madura|congelado|congelada|gelado|gelada)/gi, '');
+  
+  // Remover qualificadores
   cleaned = cleaned.replace(/\s+(extra|virgem|sem açúcar|natural|integral|vegetal|light|em flocos|secas|verde)/gi, '');
+  
+  // Remover finalizações
   cleaned = cleaned.replace(/\s+(para finalizar|a gosto|opcional)/gi, '');
+  
+  // Remover parênteses e conteúdo
   cleaned = cleaned.replace(/\(.*?\)/g, '');
+  
+  // Remover "folhas de", "suco de", etc
   cleaned = cleaned.replace(/^(folhas|folha|suco|sopa|chá|litro|caldo|molho|extrato|pasta|sementes)\s+(de|do|da)?\s*/gi, '');
+  
+  // Remover conectores desnecessários
   cleaned = cleaned.replace(/^(de|do|da|e|ou|em)\s+/gi, '');
+  
+  // Limpar espaços múltiplos
   cleaned = cleaned.replace(/\s+/g, ' ').trim();
   
+  // Se ficou muito curto ou vazio, retornar null
   if (cleaned.length < 3) return null;
   
+  // Capitalizar primeira letra
   return cleaned.charAt(0).toUpperCase() + cleaned.slice(1);
 };
 
+// Função para normalizar nomes de ingredientes
 const normalizarIngrediente = (ingredient: string): string => {
+  // Garantir que é string
   if (typeof ingredient !== 'string') return ingredient;
 
   const dicionario: { [key: string]: string } = {
+    // Básicos
     'sal': 'Sal',
     'pimenta': 'Pimenta',
     'sal e pimenta': 'Sal e pimenta',
     'temperos': 'Temperos variados',
+    
+    // Óleos e gorduras
     'azeite': 'Azeite de oliva',
     'azeite oliva': 'Azeite de oliva',
+    
+    // Vegetais
     'cebola roxa': 'Cebola roxa',
     'cebola': 'Cebola',
     'tomate cereja': 'Tomate cereja',
@@ -81,18 +117,30 @@ const normalizarIngrediente = (ingredient: string): string => {
     'pepino': 'Pepino',
     'aipo': 'Aipo',
     'maçã': 'Maçã',
+    
+    // Ervas
     'coentro': 'Coentro',
     'salsinha': 'Salsinha',
     'hortelã': 'Hortelã',
     'ervas': 'Ervas frescas',
+    
+    // Proteínas
     'frango': 'Frango',
+    
+    // Grãos e cereais
     'quinoa': 'Quinoa',
     'aveia': 'Aveia',
+    
+    // Frutas
     'abacate': 'Abacate',
     'banana': 'Banana',
     'limão': 'Limão',
+    
+    // Laticínios e similares
     'leite': 'Leite vegetal',
     'iogurte': 'Iogurte',
+    
+    // Ingredientes especiais
     'cacau em pó': 'Cacau em pó',
     'amendoim': 'Pasta de amendoim',
     'chia': 'Sementes de chia',
@@ -102,14 +150,19 @@ const normalizarIngrediente = (ingredient: string): string => {
     'mel': 'Mel',
     'xarope': 'Xarope',
     'adoçante': 'Adoçante',
+    
+    // Líquidos
     'água coco': 'Água de coco',
     'caldo': 'Caldo de legumes',
+    
+    // Outros
     'frutas': 'Frutas secas',
     'legumes': 'Legumes variados'
   };
   
   const ingredientLower = ingredient.toLowerCase();
   
+  // Buscar correspondência no dicionário
   for (const [key, value] of Object.entries(dicionario)) {
     if (ingredientLower === key || ingredientLower.includes(key)) {
       return value;
@@ -125,12 +178,14 @@ const ListaCompras = () => {
   const [shoppingList, setShoppingList] = useState<string[]>([]);
   const [checkedItems, setCheckedItems] = useState<Set<string>>(new Set());
 
+  // Função para carregar e consolidar ingredientes
   const generateShoppingList = useCallback((recipesToProcess: Recipe[]) => {
     const ingredientesArray: string[] = [];
     let temSalOuPimenta = false;
     
     recipesToProcess.forEach((recipe) => {
       recipe.ingredientes.forEach((rawIngredient) => {
+        // Verificar se deve ignorar
         if (deveIgnorarIngrediente(rawIngredient)) {
           return;
         }
@@ -139,10 +194,12 @@ const ListaCompras = () => {
         if (cleaned) {
           const normalized = normalizarIngrediente(cleaned);
           
+          // Verificar sal e pimenta para consolidação
           const normalizedLower = normalized.toLowerCase();
           if (normalizedLower.includes('sal') || normalizedLower.includes('pimenta')) {
             temSalOuPimenta = true;
           } else {
+            // Adicionar se não for duplicata
             if (!ingredientesArray.includes(normalized)) {
               ingredientesArray.push(normalized);
             }
@@ -151,10 +208,12 @@ const ListaCompras = () => {
       });
     });
     
+    // Adicionar "Sal e pimenta" se algum dos dois foi encontrado
     if (temSalOuPimenta) {
       ingredientesArray.push('Sal e pimenta');
     }
     
+    // Ordenar o array de forma segura
     return ingredientesArray.sort((a, b) => {
       const strA = String(a).toLowerCase();
       const strB = String(b).toLowerCase();
@@ -162,19 +221,22 @@ const ListaCompras = () => {
     });
   }, []);
 
+  // Efeito para carregar a lista de compras e o estado dos checkboxes
   useEffect(() => {
     let recipesToProcess: Recipe[] = [];
 
+    // 1. Tentar carregar receitas do estado de navegação (vindo do Plano Semanal)
     if (location.state && location.state.recipes) {
       recipesToProcess = location.state.recipes as Recipe[];
     } else {
+      // 2. Se não houver no estado, tentar carregar do Local Storage
       const storedPlan = loadWeeklyPlan();
       if (storedPlan) {
         const allRecipeIdsInPlan = storedPlan.plan.flatMap((day) =>
           day.meals.filter((id) => id !== null)
         ) as string[];
         const uniqueRecipeIds = Array.from(new Set(allRecipeIdsInPlan));
-        recipesToProcess = receitas.filter((recipe) =>
+        recipesToProcess = receitas.filter((recipe) => // Usando 'receitas'
           uniqueRecipeIds.includes(recipe.id)
         );
       }
@@ -183,6 +245,7 @@ const ListaCompras = () => {
     const generatedList = generateShoppingList(recipesToProcess);
     setShoppingList(generatedList);
 
+    // Carregar estado dos checkboxes do Local Storage
     try {
       const storedCheckedItems = localStorage.getItem(CHECKED_ITEMS_STORAGE_KEY);
       if (storedCheckedItems) {
@@ -193,6 +256,7 @@ const ListaCompras = () => {
     }
   }, [location.state, generateShoppingList]);
 
+  // Efeito para persistir o estado dos checkboxes
   useEffect(() => {
     try {
       localStorage.setItem(
@@ -260,10 +324,10 @@ const ListaCompras = () => {
         });
       } catch (error) {
         console.log('Erro ao compartilhar:', error, "Tentando copiar para área de transferência.");
-        handleCopyList();
+        handleCopyList(); // Fallback para copiar
       }
     } else {
-      handleCopyList();
+      handleCopyList(); // Fallback para copiar
     }
   };
 
@@ -331,11 +395,12 @@ const ListaCompras = () => {
               <div
                 key={index}
                 className="flex items-center space-x-3 py-2 cursor-pointer hover:bg-eatclean-light-gray/50 rounded-md px-2 -mx-2"
+                // REMOVIDO: onClick={() => handleToggleCheck(ingredient)} do div pai
               >
                 <Checkbox
                   id={`ingredient-${index}`}
                   checked={checkedItems.has(ingredient)}
-                  onCheckedChange={(checked) => handleToggleCheck(ingredient)}
+                  onCheckedChange={(checked) => handleToggleCheck(ingredient)} // onCheckedChange já é suficiente
                   className="h-5 w-5 rounded-full border-eatclean-gray-inactive data-[state=checked]:bg-eatclean-primary-green data-[state=checked]:text-eatclean-white"
                 />
                 <Label
@@ -374,7 +439,6 @@ const ListaCompras = () => {
           </Button>
         </div>
       )}
-      <ScrollToTop />
     </div>
   );
 };
