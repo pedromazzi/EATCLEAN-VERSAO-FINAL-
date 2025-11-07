@@ -59,20 +59,21 @@ const Explorar = () => {
 
   return (
     <div className="p-4 bg-eatclean-light-gray min-h-[calc(100vh-128px)]">
-      {/* Barra de Pesquisa */}
-      <div className="relative mb-6">
-        <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-eatclean-gray-inactive" size={20} />
-        <Input
-          type="text"
-          placeholder="Pesquisar receitas"
-          className="w-full pl-10 pr-4 py-3 rounded-xl bg-eatclean-light-gray border-none text-eatclean-gray-text placeholder:text-eatclean-gray-inactive focus:ring-2 focus:ring-eatclean-primary-green focus:outline-none"
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
-        />
-      </div>
+      {/* Contêiner sticky para a barra de pesquisa e abas de categoria */}
+      <div className="sticky top-0 z-40 bg-eatclean-light-gray pb-4 mb-2 shadow-md">
+        {/* Barra de Pesquisa */}
+        <div className="relative mb-4">
+          <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-eatclean-gray-inactive" size={20} />
+          <Input
+            type="text"
+            placeholder="Pesquisar receitas"
+            className="w-full pl-10 pr-4 py-3 rounded-xl bg-eatclean-white border-none text-eatclean-gray-text placeholder:text-eatclean-gray-inactive focus:ring-2 focus:ring-eatclean-primary-green focus:outline-none"
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+          />
+        </div>
 
-      {/* Abas de Categorias */}
-      <div className="mb-6">
+        {/* Abas de Categorias */}
         <CategoryTabs
           categories={categories}
           activeCategory={activeCategory}
