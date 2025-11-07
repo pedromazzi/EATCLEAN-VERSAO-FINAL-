@@ -10,7 +10,7 @@ import NotFound from "./NotFound";
 import { addFavoriteRecipeId, removeFavoriteRecipeId, checkIsFavorite } from "@/utils/favorites";
 import { toast } from "sonner";
 import ScrollToTop from "@/components/ScrollToTop";
-import PageTransition from "@/components/PageTransition"; // Nova importação
+import PageTransition from "@/components/PageTransition";
 
 const ReceitaDetalhe = () => {
   const { id } = useParams<{ id: string }>();
@@ -104,7 +104,7 @@ const ReceitaDetalhe = () => {
   }
 
   return (
-    <PageTransition> {/* Envolvendo o conteúdo da página */}
+    <PageTransition>
       <div 
         className="min-h-screen bg-gradient-to-b from-gray-100 to-white"
         style={{

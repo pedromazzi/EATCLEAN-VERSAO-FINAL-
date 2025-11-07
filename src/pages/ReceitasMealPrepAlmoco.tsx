@@ -2,13 +2,13 @@ import React from "react";
 import { ArrowLeft } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import ScrollToTop from "@/components/ScrollToTop";
-import PageTransition from "@/components/PageTransition"; // Nova importação
+import PageTransition from "@/components/PageTransition";
 
 const ReceitasMealPrepAlmoco = () => {
   const navigate = useNavigate();
 
   return (
-    <PageTransition> {/* Envolvendo o conteúdo da página */}
+    <PageTransition>
       <div className="min-h-screen bg-gradient-to-b from-gray-100 to-white">
         {/* Botão Voltar */}
         <div className="p-4">

@@ -2,13 +2,13 @@ import React from "react";
 import { ArrowLeft } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import ScrollToTop from "@/components/ScrollToTop";
-import PageTransition from "@/components/PageTransition"; // Nova importação
+import PageTransition from "@/components/PageTransition";
 
 const GuiaMealPrepIniciantes = () => {
   const navigate = useNavigate();
 
   return (
-    <PageTransition> {/* Envolvendo o conteúdo da página */}
+    <PageTransition>
       <div className="min-h-screen bg-gradient-to-b from-gray-100 to-white">
         {/* Botão Voltar */}
         <div className="p-4">
@@ -394,7 +394,7 @@ const GuiaMealPrepIniciantes = () => {
             {/* Lembre-se */}
             <section className="bg-eatclean-primary-green/10 p-6 rounded-xl">
               <h2 className="text-2xl font-bold text-eatclean-gray-text mb-3">Lembre-se</h2>
-              <p className="text-eatclean-gray-text leading-relaxed mb-3">
+              <p className="text-lg text-eatclean-gray-text leading-relaxed mb-3">
                 Meal prep não precisa ser perfeito! O objetivo é facilitar sua vida, não criar mais estresse. Comece pequeno, seja consistente e ajuste conforme necessário.
               </p>
               <p className="text-eatclean-gray-text font-semibold">

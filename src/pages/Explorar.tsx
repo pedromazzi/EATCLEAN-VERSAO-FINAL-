@@ -6,7 +6,7 @@ import CategoryTabs from "@/components/CategoryTabs";
 import { receitas } from "@/data/receitas";
 import { Recipe } from "@/types/recipe";
 import ScrollToTop from "@/components/ScrollToTop";
-import PageTransition from "@/components/PageTransition"; // Nova importação
+import PageTransition from "@/components/PageTransition";
 
 const categories = [
   "Todos",
@@ -45,7 +45,7 @@ const Explorar = () => {
   }, [searchTerm, activeCategory]);
 
   return (
-    <PageTransition> {/* Envolvendo o conteúdo da página */}
+    <PageTransition>
       <div className="p-4 bg-eatclean-light-gray min-h-[calc(100vh-128px)]">
         {/* Barra de Pesquisa */}
         <div className="relative mb-6">

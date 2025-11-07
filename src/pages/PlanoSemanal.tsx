@@ -14,8 +14,8 @@ import {
 } from "@/utils/planStorage";
 import { useNavigate } from "react-router-dom";
 import { toast } from "sonner";
-import PageTransition from "@/components/PageTransition"; // Nova importação
-import ScrollToTop from "@/components/ScrollToTop"; // Certifique-se de que esta importação existe se a página for longa
+import PageTransition from "@/components/PageTransition";
+import ScrollToTop from "@/components/ScrollToTop";
 
 const dayNames = [
   "Segunda",
@@ -183,7 +183,7 @@ const PlanoSemanal = () => {
   const isPlanGenerated = weeklyPlan && weeklyPlan.plan.length > 0;
 
   return (
-    <PageTransition> {/* Envolvendo o conteúdo da página */}
+    <PageTransition>
       <div className="p-4 bg-eatclean-light-gray min-h-[calc(100vh-128px)]">
         <h1 className="text-3xl font-bold text-eatclean-gray-text mb-2">
           Plano Semanal
