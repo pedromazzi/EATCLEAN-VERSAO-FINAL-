@@ -110,11 +110,16 @@ const ReceitaDetalhe = () => {
       />
 
       <div className="flex-grow pt-16 bg-eatclean-white rounded-2xl shadow-md mx-4 mb-4">
-        <img
-          src={recipe.imagem}
-          alt={recipe.titulo} 
-          className="w-full h-64 object-cover border-2 border-eatclean-orange-highlight rounded-2xl"
-        />
+        <div className="relative"> {/* Adicionado div wrapper para a imagem e o aviso */}
+          <img
+            src={recipe.imagem}
+            alt={recipe.titulo} 
+            className="w-full h-64 object-cover border-2 border-eatclean-orange-highlight rounded-2xl"
+          />
+          <p className="text-xs text-eatclean-gray-inactive italic text-center mt-2 px-4">
+            *As imagens são ilustrativas e podem não representar o resultado final
+          </p>
+        </div>
 
         <div className="p-4">
           <h1 className="text-3xl font-bold text-eatclean-gray-text mt-4 mb-2">
