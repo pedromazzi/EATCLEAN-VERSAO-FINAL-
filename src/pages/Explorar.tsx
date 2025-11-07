@@ -58,9 +58,9 @@ const Explorar = () => {
   }, [searchTerm, activeCategory]);
 
   return (
-    <div className="p-4 bg-eatclean-light-gray min-h-[calc(100vh-128px)]">
+    <div className="bg-eatclean-light-gray min-h-screen">
       {/* Contêiner sticky para a barra de pesquisa e abas de categoria */}
-      <div className="sticky top-0 z-50 bg-eatclean-light-gray pt-4 pb-4 -mx-4 px-4 shadow-md">
+      <div className="sticky top-0 z-50 bg-eatclean-light-gray px-4 py-4 shadow-md">
         {/* Barra de Pesquisa */}
         <div className="relative mb-4">
           <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-eatclean-gray-inactive" size={20} />
@@ -82,7 +82,7 @@ const Explorar = () => {
       </div>
 
       {/* Grid de Receitas */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4">
         {isLoading ? (
           // Mostra 6 skeleton cards enquanto carrega
           <>
@@ -102,7 +102,7 @@ const Explorar = () => {
       </div>
 
       {!isLoading && filteredRecipes.length === 0 && (
-        <p className="text-center text-eatclean-gray-inactive mt-8">
+        <p className="text-center text-eatclean-gray-inactive mt-8 px-4">
           Nenhuma receita encontrada para os critérios selecionados.
         </p>
       )}
