@@ -60,7 +60,7 @@ const Explorar = () => {
   return (
     <div className="p-4 bg-eatclean-light-gray min-h-[calc(100vh-128px)]">
       {/* Contêiner sticky para a barra de pesquisa e abas de categoria */}
-      <div className="sticky top-0 z-40 bg-eatclean-light-gray pb-4 mb-2 shadow-md">
+      <div className="sticky top-0 z-50 bg-eatclean-light-gray pt-4 pb-4 -mx-4 px-4 shadow-md">
         {/* Barra de Pesquisa */}
         <div className="relative mb-4">
           <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-eatclean-gray-inactive" size={20} />
