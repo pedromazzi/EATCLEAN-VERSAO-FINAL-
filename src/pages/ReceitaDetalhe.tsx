@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { receitas } from "@/data/receitas"; // Importação atualizada
+import { receitas } from "@/data/receitas";
 import { Recipe } from "@/types/recipe";
 import RecipeDetailHeader from "@/components/RecipeDetailHeader";
 import IngredientCheckbox from "@/components/IngredientCheckbox";
@@ -8,8 +8,9 @@ import PreparationStep from "@/components/PreparationStep";
 import NutritionalInfoCard from "@/components/NutritionalInfoCard";
 import NotFound from "./NotFound";
 import { addFavoriteRecipeId, removeFavoriteRecipeId, checkIsFavorite } from "@/utils/favorites";
-import { toast } from "sonner"; // Importando o toast
-import ScrollToTop from "@/components/ScrollToTop"; // Nova importação
+import { toast } from "sonner";
+import ScrollToTop from "@/components/ScrollToTop";
+import PageTransition from "@/components/PageTransition"; // Nova importação
 
 const ReceitaDetalhe = () => {
   const { id } = useParams<{ id: string }>();
@@ -103,75 +104,77 @@ const ReceitaDetalhe = () => {
   }
 
   return (
-    <div 
-      className="min-h-screen bg-gradient-to-b from-gray-100 to-white"
-      style={{
-        backgroundImage: 'radial-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 1px)',
-        backgroundSize: '4px 4px'
-      }}
-    >
-      <RecipeDetailHeader 
-        isFavorite={isFavorite} 
-        onToggleFavorite={handleToggleFavorite} 
-        onShare={handleShare} 
-      />
+    <PageTransition> {/* Envolvendo o conteúdo da página */}
+      <div 
+        className="min-h-screen bg-gradient-to-b from-gray-100 to-white"
+        style={{
+          backgroundImage: 'radial-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 1px)',
+          backgroundSize: '4px 4px'
+        }}
+      >
+        <RecipeDetailHeader 
+          isFavorite={isFavorite} 
+          onToggleFavorite={handleToggleFavorite} 
+          onShare={handleShare} 
+        />
 
-      <div className="flex-grow pt-16 bg-eatclean-white rounded-2xl shadow-md mx-4 mb-4">
-        <div className="relative"> {/* Adicionado div wrapper para a imagem e o aviso */}
-          <img
-            src={recipe.imagem}
-            alt={recipe.titulo} 
-            className="w-full h-64 object-cover border-2 border-eatclean-orange-highlight rounded-2xl"
-          />
-          <p className="text-xs text-eatclean-gray-inactive italic text-center mt-2 px-4">
-            *As imagens são ilustrativas e podem não representar o resultado final
-          </p>
+        <div className="flex-grow pt-16 bg-eatclean-white rounded-2xl shadow-md mx-4 mb-4">
+          <div className="relative">
+            <img
+              src={recipe.imagem}
+              alt={recipe.titulo} 
+              className="w-full h-64 object-cover border-2 border-eatclean-orange-highlight rounded-2xl"
+            />
+            <p className="text-xs text-eatclean-gray-inactive italic text-center mt-2 px-4">
+              *As imagens são ilustrativas e podem não representar o resultado final
+            </p>
+          </div>
+
+          <div className="p-4">
+            <h1 className="text-3xl font-bold text-eatclean-gray-text mt-4 mb-2">
+              {recipe.titulo}
+            </h1>
+            <p className="text-eatclean-gray-inactive text-base mb-6">
+              {recipe.descricao}
+            </p>
+
+            <section className="mb-8">
+              <h2 className="text-xl font-bold text-eatclean-gray-text mb-4">Ingredientes</h2>
+              <div className="space-y-2">
+                {recipe.ingredientes.map((ingredient, index) => (
+                  <IngredientCheckbox key={index} ingredient={ingredient} />
+                ))}
+              </div>
+            </section>
+
+            <section className="mb-8">
+              <h2 className="text-xl font-bold text-eatclean-gray-text mb-4">Modo de Preparo</h2>
+              <div className="space-y-4">
+                {recipe.modoPreparo.map((step, index) => (
+                  <PreparationStep key={index} stepNumber={index + 1} stepText={step} />
+                ))}
+              </div>
+            </section>
+
+            <section className="mb-8">
+              <h2 className="text-xl font-bold text-eatclean-gray-text mb-4">Informações Nutricionais</h2>
+              <div className="mb-4 p-3 bg-green-50 rounded-lg border border-green-200">
+                <p className="text-sm text-gray-600 mb-1">Porção</p>
+                <p className="text-base font-semibold text-gray-800">{recipe.tamanhoPorcao}</p>
+              </div>
+
+              <div className="grid grid-cols-2 gap-4">
+                <NutritionalInfoCard label="Calorias" value={recipe.calorias} unit="kcal" />
+                <NutritionalInfoCard label="Proteínas" value={recipe.proteinas} unit="g" />
+                <NutritionalInfoCard label="Gorduras" value={recipe.gorduras} unit="g" />
+                <NutritionalInfoCard label="Carboidratos" value={recipe.carboidratos} unit="g" />
+              </div>
+            </section>
+          </div>
         </div>
-
-        <div className="p-4">
-          <h1 className="text-3xl font-bold text-eatclean-gray-text mt-4 mb-2">
-            {recipe.titulo}
-          </h1>
-          <p className="text-eatclean-gray-inactive text-base mb-6">
-            {recipe.descricao}
-          </p>
-
-          <section className="mb-8">
-            <h2 className="text-xl font-bold text-eatclean-gray-text mb-4">Ingredientes</h2>
-            <div className="space-y-2">
-              {recipe.ingredientes.map((ingredient, index) => (
-                <IngredientCheckbox key={index} ingredient={ingredient} />
-              ))}
-            </div>
-          </section>
-
-          <section className="mb-8">
-            <h2 className="text-xl font-bold text-eatclean-gray-text mb-4">Modo de Preparo</h2>
-            <div className="space-y-4">
-              {recipe.modoPreparo.map((step, index) => (
-                <PreparationStep key={index} stepNumber={index + 1} stepText={step} />
-              ))}
-            </div>
-          </section>
-
-          <section className="mb-8">
-            <h2 className="text-xl font-bold text-eatclean-gray-text mb-4">Informações Nutricionais</h2>
-            <div className="mb-4 p-3 bg-green-50 rounded-lg border border-green-200">
-              <p className="text-sm text-gray-600 mb-1">Porção</p>
-              <p className="text-base font-semibold text-gray-800">{recipe.tamanhoPorcao}</p>
-            </div>
-
-            <div className="grid grid-cols-2 gap-4">
-              <NutritionalInfoCard label="Calorias" value={recipe.calorias} unit="kcal" />
-              <NutritionalInfoCard label="Proteínas" value={recipe.proteinas} unit="g" />
-              <NutritionalInfoCard label="Gorduras" value={recipe.gorduras} unit="g" />
-              <NutritionalInfoCard label="Carboidratos" value={recipe.carboidratos} unit="g" />
-            </div>
-          </section>
-        </div>
+        <ScrollToTop />
       </div>
-      <ScrollToTop />
-    </div>
+    </PageTransition>
   );
 };
 
