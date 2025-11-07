@@ -1,6 +1,7 @@
 import React from "react";
 import { ArrowLeft } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import ScrollToTop from "@/components/ScrollToTop"; // Nova importação
 
 const ReceitasMealPrepAlmoco = () => {
   const navigate = useNavigate();
@@ -399,6 +400,7 @@ const ReceitasMealPrepAlmoco = () => {
 
         </div>
       </article>
+      <ScrollToTop />
     </div>
   );
 };
