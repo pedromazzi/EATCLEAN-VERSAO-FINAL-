@@ -6,6 +6,7 @@ import CategoryTabs from "@/components/CategoryTabs";
 import { receitas } from "@/data/receitas"; // Importação atualizada
 import { Recipe } from "@/types/recipe";
 import ScrollToTop from "@/components/ScrollToTop"; // Nova importação
+import SkeletonCard from "@/components/SkeletonCard"; // Importe o SkeletonCard
 
 const categories = [
   "Todos",
@@ -21,6 +22,16 @@ const Explorar = () => {
   const [searchTerm, setSearchTerm] = useState<string>("");
   const [activeCategory, setActiveCategory] = useState<string>("Todos");
   const [filteredRecipes, setFilteredRecipes] = useState<Recipe[]>(receitas); // Usando 'receitas'
+  const [isLoading, setIsLoading] = useState(true); // Estado de loading
+
+  useEffect(() => {
+    // Simula um pequeno delay de carregamento
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 800); // 800ms de skeleton
+    
+    return () => clearTimeout(timer);
+  }, []);
 
   useEffect(() => {
     let recipesToFilter = receitas; // Usando 'receitas'
@@ -71,12 +82,25 @@ const Explorar = () => {
 
       {/* Grid de Receitas */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {filteredRecipes.map((recipe) => (
-          <RecipeCard key={recipe.id} recipe={recipe} />
-        ))}
+        {isLoading ? (
+          // Mostra 6 skeleton cards enquanto carrega
+          <>
+            <SkeletonCard />
+            <SkeletonCard />
+            <SkeletonCard />
+            <SkeletonCard />
+            <SkeletonCard />
+            <SkeletonCard />
+          </>
+        ) : (
+          // Mostra as receitas reais
+          filteredRecipes.map((recipe) => (
+            <RecipeCard key={recipe.id} recipe={recipe} />
+          ))
+        )}
       </div>
 
-      {filteredRecipes.length === 0 && (
+      {!isLoading && filteredRecipes.length === 0 && (
         <p className="text-center text-eatclean-gray-inactive mt-8">
           Nenhuma receita encontrada para os critérios selecionados.
         </p>
