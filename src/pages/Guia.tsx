@@ -14,11 +14,11 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import ScrollToTop from "@/components/ScrollToTop";
-import PageTransition from "@/components/PageTransition";
+// import PageTransition from "@/components/PageTransition"; // Removido temporariamente
 
 const Guia = () => {
   return (
-    <PageTransition>
+    // <PageTransition> {/* Removido temporariamente */}
       <div className="p-4 bg-eatclean-light-gray min-h-[calc(100vh-128px)]">
         {/* 1. CABEÇALHO DA TELA */}
         <div className="relative mb-6 rounded-xl overflow-hidden shadow-md">
@@ -927,7 +927,7 @@ const Guia = () => {
         </Accordion>
         <ScrollToTop />
       </div>
-    </PageTransition>
+    // </PageTransition> {/* Removido temporariamente */}
   );
 };
 

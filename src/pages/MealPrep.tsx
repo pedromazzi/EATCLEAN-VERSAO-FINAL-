@@ -1,11 +1,11 @@
 import React from "react";
 import MealPrepArticleCard from "@/components/MealPrepArticleCard";
 import ScrollToTop from "@/components/ScrollToTop";
-import PageTransition from "@/components/PageTransition";
+// import PageTransition from "@/components/PageTransition"; // Removido temporariamente
 
 const MealPrep = () => {
   return (
-    <PageTransition>
+    // <PageTransition> {/* Removido temporariamente */}
       <div className="p-4 bg-eatclean-light-gray min-h-[calc(100vh-128px)]">
         {/* 1. CABEÇALHO COM IMAGEM */}
         <div className="mb-6">
@@ -66,7 +66,7 @@ const MealPrep = () => {
         </section>
         <ScrollToTop />
       </div >
-    </PageTransition>
+    // </PageTransition> {/* Removido temporariamente */}
   );
 };
 

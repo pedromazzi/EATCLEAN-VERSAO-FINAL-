@@ -7,7 +7,7 @@ import { receitas } from "@/data/receitas";
 import { Recipe } from "@/types/recipe";
 import { getFavoriteRecipeIds, removeFavoriteRecipeId } from "@/utils/favorites";
 import ScrollToTop from "@/components/ScrollToTop";
-import PageTransition from "@/components/PageTransition";
+// import PageTransition from "@/components/PageTransition"; // Removido temporariamente
 
 const Favoritos = () => {
   const [favoriteRecipes, setFavoriteRecipes] = useState<Recipe[]>([]);
@@ -34,7 +34,7 @@ const Favoritos = () => {
   };
 
   return (
-    <PageTransition>
+    // <PageTransition> {/* Removido temporariamente */}
       <div className="p-4 bg-eatclean-light-gray min-h-[calc(100vh-128px)]">
         <h1 className="text-3xl font-bold text-eatclean-gray-text mb-6 text-center">
           Favoritos
@@ -68,7 +68,7 @@ const Favoritos = () => {
         )}
         <ScrollToTop />
       </div>
-    </PageTransition>
+    // </PageTransition> {/* Removido temporariamente */}
   );
 };
 

@@ -3,7 +3,7 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route, Outlet, useLocation } from "react-router-dom";
-import { AnimatePresence } from "framer-motion";
+// import { AnimatePresence } from "framer-motion"; // Removido temporariamente
 import Header from "./components/Header";
 import FooterNavigation from "./components/FooterNavigation";
 import Explorar from "./pages/Explorar";
@@ -38,7 +38,7 @@ const App = () => {
         <Toaster />
         <Sonner />
         <BrowserRouter>
-          <AnimatePresence mode="wait">
+          {/* <AnimatePresence mode="wait"> */} {/* Removido temporariamente */}
             <Routes location={location} key={location.pathname}>
               {/* Rotas que usam seu próprio header/navegação */}
               <Route path="/receita/:id" element={<ReceitaDetalhe />} />
@@ -57,7 +57,7 @@ const App = () => {
                 <Route path="*" element={<NotFound />} />
               </Route>
             </Routes>
-          </AnimatePresence>
+          {/* </AnimatePresence> */} {/* Removido temporariamente */}
         </BrowserRouter>
       </TooltipProvider>
     </QueryClientProvider>

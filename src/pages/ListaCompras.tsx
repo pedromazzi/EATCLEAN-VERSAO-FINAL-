@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils";
 import { receitas } from "@/data/receitas";
 import { loadWeeklyPlan } from "@/utils/planStorage";
 import { toast } from "sonner";
-import PageTransition from "@/components/PageTransition";
+// import PageTransition from "@/components/PageTransition"; // Removido temporariamente
 import ScrollToTop from "@/components/ScrollToTop";
 
 const CHECKED_ITEMS_STORAGE_KEY = "eatclean_lista_compras_marcados";
@@ -272,7 +272,7 @@ const ListaCompras = () => {
   const totalItems = shoppingList.length;
 
   return (
-    <PageTransition>
+    // <PageTransition> {/* Removido temporariamente */}
       <div className="p-4 bg-eatclean-light-gray min-h-[calc(100vh-128px)] flex flex-col">
         {/* Cabeçalho */}
         <div className="flex items-center justify-between mb-4">
@@ -378,7 +378,7 @@ const ListaCompras = () => {
         )}
         <ScrollToTop />
       </div>
-    </PageTransition>
+    // </PageTransition> {/* Removido temporariamente */}
   );
 };
 

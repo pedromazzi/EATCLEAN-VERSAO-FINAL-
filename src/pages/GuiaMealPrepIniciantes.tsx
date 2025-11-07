@@ -2,13 +2,13 @@ import React from "react";
 import { ArrowLeft } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import ScrollToTop from "@/components/ScrollToTop";
-import PageTransition from "@/components/PageTransition";
+// import PageTransition from "@/components/PageTransition"; // Removido temporariamente
 
 const GuiaMealPrepIniciantes = () => {
   const navigate = useNavigate();
 
   return (
-    <PageTransition>
+    // <PageTransition> {/* Removido temporariamente */}
       <div className="min-h-screen bg-gradient-to-b from-gray-100 to-white">
         {/* Botão Voltar */}
         <div className="p-4">
@@ -406,7 +406,7 @@ const GuiaMealPrepIniciantes = () => {
         </article>
         <ScrollToTop />
       </div>
-    </PageTransition>
+    // </PageTransition> {/* Removido temporariamente */}
   );
 };
 

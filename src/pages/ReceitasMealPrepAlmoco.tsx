@@ -2,13 +2,13 @@ import React from "react";
 import { ArrowLeft } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import ScrollToTop from "@/components/ScrollToTop";
-import PageTransition from "@/components/PageTransition";
+// import PageTransition from "@/components/PageTransition"; // Removido temporariamente
 
 const ReceitasMealPrepAlmoco = () => {
   const navigate = useNavigate();
 
   return (
-    <PageTransition>
+    // <PageTransition> {/* Removido temporariamente */}
       <div className="min-h-screen bg-gradient-to-b from-gray-100 to-white">
         {/* Botão Voltar */}
         <div className="p-4">
@@ -45,7 +45,7 @@ const ReceitasMealPrepAlmoco = () => {
 
             {/* Como usar este guia */}
             <section>
-              <h2 className="text-2xl font-bold text-eatclean-gray-text mb-3">Como usar este guia</h2>
+              <h2 className="text-2xl font-bold text-eatclean-gray-text mb-3">O que é Meal Prep?</h2>
               <p className="text-eatclean-gray-text leading-relaxed">
                 Escolha 1 ou 2 receitas abaixo e prepare tudo de uma vez no seu dia de meal prep. Você terá almoços saudáveis e deliciosos prontos para a semana inteira!
               </p>
@@ -404,7 +404,7 @@ const ReceitasMealPrepAlmoco = () => {
         </article>
         <ScrollToTop />
       </div>
-    </PageTransition>
+    // </PageTransition> {/* Removido temporariamente */}
   );
 };
 
