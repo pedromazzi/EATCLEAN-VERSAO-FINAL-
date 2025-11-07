@@ -6,6 +6,7 @@ import RecipeCard from "@/components/RecipeCard";
 import { receitas } from "@/data/receitas"; // Importação atualizada
 import { Recipe } from "@/types/recipe";
 import { getFavoriteRecipeIds, removeFavoriteRecipeId } from "@/utils/favorites";
+import ScrollToTop from "@/components/ScrollToTop"; // Nova importação
 
 const Favoritos = () => {
   const [favoriteRecipes, setFavoriteRecipes] = useState<Recipe[]>([]);
@@ -64,6 +65,7 @@ const Favoritos = () => {
           ))}
         </div>
       )}
+      <ScrollToTop />
     </div>
   );
 };

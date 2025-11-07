@@ -9,6 +9,7 @@ import NutritionalInfoCard from "@/components/NutritionalInfoCard";
 import NotFound from "./NotFound";
 import { addFavoriteRecipeId, removeFavoriteRecipeId, checkIsFavorite } from "@/utils/favorites";
 import { toast } from "sonner"; // Importando o toast
+import ScrollToTop from "@/components/ScrollToTop"; // Nova importação
 
 const ReceitaDetalhe = () => {
   const { id } = useParams<{ id: string }>();
@@ -169,6 +170,7 @@ const ReceitaDetalhe = () => {
           </section>
         </div>
       </div>
+      <ScrollToTop />
     </div>
   );
 };

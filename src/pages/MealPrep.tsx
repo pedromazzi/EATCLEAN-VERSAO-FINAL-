@@ -1,5 +1,6 @@
 import React from "react";
 import MealPrepArticleCard from "@/components/MealPrepArticleCard";
+import ScrollToTop from "@/components/ScrollToTop"; // Nova importação
 
 // As imagens na pasta public são acessadas diretamente pelo caminho raiz '/'
 // Não é necessário importá-las como módulos em Vite quando estão em 'public'.
@@ -64,6 +65,7 @@ const MealPrep = () => {
           Varie os temperos para não enjoar das refeições ao longo da semana.
         </p>
       </section>
+      <ScrollToTop />
     </div >
   );
 };

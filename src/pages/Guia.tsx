@@ -14,6 +14,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import ScrollToTop from "@/components/ScrollToTop"; // Nova importação
 
 const Guia = () => {
   return (
@@ -374,6 +375,7 @@ const Guia = () => {
                 <li>✓ Evita "furo na dieta" por falta de opção</li>
                 <li>✓ Economiza dinheiro</li>
                 <li>✓ Controle total dos ingredientes</li>
+              <li>✓ Controle de porções: Ajuda a manter o foco nos seus objetivos</li>
               </ul>
 
               <p className="mt-2"><strong>Como fazer:</strong></p>
@@ -922,6 +924,7 @@ const Guia = () => {
           </AccordionContent>
         </AccordionItem>
       </Accordion>
+      <ScrollToTop />
     </div>
   );
 };

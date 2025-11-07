@@ -5,6 +5,7 @@ import RecipeCard from "@/components/RecipeCard";
 import CategoryTabs from "@/components/CategoryTabs";
 import { receitas } from "@/data/receitas"; // Importação atualizada
 import { Recipe } from "@/types/recipe";
+import ScrollToTop from "@/components/ScrollToTop"; // Nova importação
 
 const categories = [
   "Todos",
@@ -80,6 +81,7 @@ const Explorar = () => {
           Nenhuma receita encontrada para os critérios selecionados.
         </p>
       )}
+      <ScrollToTop />
     </div>
   );
 };
