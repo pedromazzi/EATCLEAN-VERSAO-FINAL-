@@ -14,7 +14,6 @@ import {
 } from "@/utils/planStorage";
 import { useNavigate } from "react-router-dom";
 import { toast } from "sonner";
-// import PageTransition from "@/components/PageTransition"; // Removido temporariamente
 import ScrollToTop from "@/components/ScrollToTop";
 
 const dayNames = [
@@ -183,169 +182,167 @@ const PlanoSemanal = () => {
   const isPlanGenerated = weeklyPlan && weeklyPlan.plan.length > 0;
 
   return (
-    // <PageTransition> {/* Removido temporariamente */}
-      <div className="p-4 bg-eatclean-light-gray min-h-[calc(100vh-128px)]">
-        <h1 className="text-3xl font-bold text-eatclean-gray-text mb-2">
-          Plano Semanal
-        </h1>
-        <p className="text-eatclean-gray-inactive text-base mb-6">
-          Monte seu plano de refeições personalizado
-        </p>
+    <div className="p-4 bg-eatclean-light-gray min-h-[calc(100vh-128px)]">
+      <h1 className="text-3xl font-bold text-eatclean-gray-text mb-2">
+        Plano Semanal
+      </h1>
+      <p className="text-eatclean-gray-inactive text-base mb-6">
+        Monte seu plano de refeições personalizado
+      </p>
 
-        {/* Configuração do Plano */}
-        <div className="bg-eatclean-white rounded-xl shadow-sm p-6 mb-6">
+      {/* Configuração do Plano */}
+      <div className="bg-eatclean-white rounded-xl shadow-sm p-6 mb-6">
+        <h2 className="text-xl font-bold text-eatclean-gray-text mb-4">
+          Configurar Plano
+        </h2>
+
+        {/* Seletor de NÚMERO DE DIAS */}
+        <div className="mb-4">
+          <p className="text-eatclean-gray-text font-medium mb-2">
+            Quantos dias?
+          </p>
+          <div className="flex gap-2">
+            {[3, 5, 7].map((days) => (
+              <Button
+                key={days}
+                variant={numDays === days ? "default" : "outline"}
+                className={
+                  numDays === days
+                    ? "bg-eatclean-primary-green text-eatclean-white hover:bg-eatclean-primary-green/90"
+                    : "border-eatclean-gray-inactive text-eatclean-gray-text hover:bg-eatclean-light-gray"
+                }
+                onClick={() => setNumDays(days)}
+              >
+                {days} dias
+              </Button>
+            ))}
+          </div>
+        </div>
+
+        {/* Seletor de REFEIÇÕES POR DIA */}
+        <div className="mb-6">
+          <p className="text-eatclean-gray-text font-medium mb-2">
+            Quantas refeições por dia?
+          </p>
+          <div className="flex gap-2">
+            {[2, 3].map((meals) => (
+              <Button
+                key={meals}
+                variant={mealsPerDay === meals ? "default" : "outline"}
+                className={
+                  mealsPerDay === meals
+                    ? "bg-eatclean-primary-green text-eatclean-white hover:bg-eatclean-primary-green/90"
+                    : "border-eatclean-gray-inactive text-eatclean-gray-text hover:bg-eatclean-light-gray"
+                }
+                onClick={() => setMealsPerDay(meals)}
+              >
+                {meals} refeições
+              </Button>
+            ))}
+          </div>
+        </div>
+
+        {/* BOTÃO "GERAR PLANO AUTOMÁTICO" */}
+        <Button
+          className="w-full bg-eatclean-primary-green hover:bg-eatclean-primary-green/90 text-eatclean-white rounded-xl py-3 text-lg font-semibold flex items-center justify-center gap-2"
+          onClick={generateAutomaticPlan}
+        >
+          <Shuffle size={20} />
+          Gerar Plano Automático
+        </Button>
+      </div>
+
+      {/* Grade do Plano */}
+      {isPlanGenerated && (
+        <div className="bg-eatclean-white rounded-xl shadow-sm p-4 mb-6">
           <h2 className="text-xl font-bold text-eatclean-gray-text mb-4">
-            Configurar Plano
+            Seu Plano
           </h2>
-
-          {/* Seletor de NÚMERO DE DIAS */}
-          <div className="mb-4">
-            <p className="text-eatclean-gray-text font-medium mb-2">
-              Quantos dias?
-            </p>
-            <div className="flex gap-2">
-              {[3, 5, 7].map((days) => (
-                <Button
-                  key={days}
-                  variant={numDays === days ? "default" : "outline"}
-                  className={
-                    numDays === days
-                      ? "bg-eatclean-primary-green text-eatclean-white hover:bg-eatclean-primary-green/90"
-                      : "border-eatclean-gray-inactive text-eatclean-gray-text hover:bg-eatclean-light-gray"
-                  }
-                  onClick={() => setNumDays(days)}
-                >
-                  {days} dias
-                </Button>
-              ))}
-            </div>
+          <div className="overflow-x-auto">
+            <table className="w-full min-w-[600px] table-fixed">
+              <thead>
+                <tr className="text-left text-sm font-medium text-eatclean-gray-inactive border-b border-eatclean-light-gray">
+                  <th className="w-1/5 py-2 px-2">Dia</th>
+                  {Array.from({ length: mealsPerDay }).map((_, i) => (
+                    <th key={i} className="w-auto py-2 px-2">
+                      Refeição {i + 1}
+                    </th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody>
+                {weeklyPlan!.plan.map((day, dayIndex) => (
+                  <tr
+                    key={day.dayName}
+                    className="border-b border-eatclean-light-gray last:border-b-0"
+                  >
+                    <td className="py-3 px-2 align-top">
+                      <span className="font-semibold text-eatclean-gray-text">
+                        {day.dayName}
+                      </span>
+                    </td>
+                    {day.meals.map((recipeId, mealIndex) => (
+                      <td key={mealIndex} className="py-3 px-2 align-top">
+                        {recipeId ? (
+                          <PlanRecipeCard
+                            recipe={
+                              receitas.find((r) => r.id === recipeId)!
+                            }
+                            onReplace={() => replaceRecipe(dayIndex, mealIndex)}
+                          />
+                        ) : (
+                          <EmptyPlanSlot
+                          // onAddRecipe={() => handleAddRecipeManually(dayIndex, mealIndex)} // Implementar modal para seleção manual
+                          />
+                        )}
+                      </td>
+                    ))}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
 
-          {/* Seletor de REFEIÇÕES POR DIA */}
-          <div className="mb-6">
-            <p className="text-eatclean-gray-text font-medium mb-2">
-              Quantas refeições por dia?
-            </p>
-            <div className="flex gap-2">
-              {[2, 3].map((meals) => (
-                <Button
-                  key={meals}
-                  variant={mealsPerDay === meals ? "default" : "outline"}
-                  className={
-                    mealsPerDay === meals
-                      ? "bg-eatclean-primary-green text-eatclean-white hover:bg-eatclean-primary-green/90"
-                      : "border-eatclean-gray-inactive text-eatclean-gray-text hover:bg-eatclean-light-gray"
-                  }
-                  onClick={() => setMealsPerDay(meals)}
-                >
-                  {meals} refeições
-                </Button>
-              ))}
-            </div>
+          {/* Botões de Ação do Plano */}
+          <div className="flex flex-col sm:flex-row gap-4 mt-6">
+            <Button
+              variant="outline"
+              className="flex-grow border-eatclean-orange-highlight text-eatclean-orange-highlight hover:bg-eatclean-orange-highlight/10"
+              onClick={handleGenerateShoppingList}
+              disabled={!isPlanGenerated}
+            >
+              <ShoppingCart size={18} className="mr-2" />
+              Gerar Lista de Compras
+            </Button>
+            <Button
+              variant="outline"
+              className="flex-grow border-eatclean-gray-inactive text-eatclean-gray-text hover:bg-eatclean-light-gray"
+              onClick={handleSharePlan}
+              disabled={!isPlanGenerated}
+            >
+              <Share2 size={18} className="mr-2" />
+              Compartilhar Plano
+            </Button>
           </div>
+        </div>
+      )}
 
-          {/* BOTÃO "GERAR PLANO AUTOMÁTICO" */}
+      {!isPlanGenerated && (
+        <div className="text-center text-eatclean-gray-inactive py-12">
+          <p className="text-lg mb-4">
+            Configure o número de dias e refeições e gere seu plano!
+          </p>
           <Button
-            className="w-full bg-eatclean-primary-green hover:bg-eatclean-primary-green/90 text-eatclean-white rounded-xl py-3 text-lg font-semibold flex items-center justify-center gap-2"
+            className="bg-eatclean-primary-green hover:bg-eatclean-primary-green/90 text-eatclean-white rounded-xl py-3 text-lg font-semibold flex items-center justify-center gap-2 mx-auto"
             onClick={generateAutomaticPlan}
           >
             <Shuffle size={20} />
-            Gerar Plano Automático
+            Gerar Primeiro Plano
           </Button>
         </div>
-
-        {/* Grade do Plano */}
-        {isPlanGenerated && (
-          <div className="bg-eatclean-white rounded-xl shadow-sm p-4 mb-6">
-            <h2 className="text-xl font-bold text-eatclean-gray-text mb-4">
-              Seu Plano
-            </h2>
-            <div className="overflow-x-auto">
-              <table className="w-full min-w-[600px] table-fixed">
-                <thead>
-                  <tr className="text-left text-sm font-medium text-eatclean-gray-inactive border-b border-eatclean-light-gray">
-                    <th className="w-1/5 py-2 px-2">Dia</th>
-                    {Array.from({ length: mealsPerDay }).map((_, i) => (
-                      <th key={i} className="w-auto py-2 px-2">
-                        Refeição {i + 1}
-                      </th>
-                    ))}
-                  </tr>
-                </thead>
-                <tbody>
-                  {weeklyPlan!.plan.map((day, dayIndex) => (
-                    <tr
-                      key={day.dayName}
-                      className="border-b border-eatclean-light-gray last:border-b-0"
-                    >
-                      <td className="py-3 px-2 align-top">
-                        <span className="font-semibold text-eatclean-gray-text">
-                          {day.dayName}
-                        </span>
-                      </td>
-                      {day.meals.map((recipeId, mealIndex) => (
-                        <td key={mealIndex} className="py-3 px-2 align-top">
-                          {recipeId ? (
-                            <PlanRecipeCard
-                              recipe={
-                                receitas.find((r) => r.id === recipeId)!
-                              }
-                              onReplace={() => replaceRecipe(dayIndex, mealIndex)}
-                            />
-                          ) : (
-                            <EmptyPlanSlot
-                            // onAddRecipe={() => handleAddRecipeManually(dayIndex, mealIndex)} // Implementar modal para seleção manual
-                            />
-                          )}
-                        </td>
-                      ))}
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-
-            {/* Botões de Ação do Plano */}
-            <div className="flex flex-col sm:flex-row gap-4 mt-6">
-              <Button
-                variant="outline"
-                className="flex-grow border-eatclean-orange-highlight text-eatclean-orange-highlight hover:bg-eatclean-orange-highlight/10"
-                onClick={handleGenerateShoppingList}
-                disabled={!isPlanGenerated}
-              >
-                <ShoppingCart size={18} className="mr-2" />
-                Gerar Lista de Compras
-              </Button>
-              <Button
-                variant="outline"
-                className="flex-grow border-eatclean-gray-inactive text-eatclean-gray-text hover:bg-eatclean-light-gray"
-                onClick={handleSharePlan}
-                disabled={!isPlanGenerated}
-              >
-                <Share2 size={18} className="mr-2" />
-                Compartilhar Plano
-              </Button>
-            </div>
-          </div>
-        )}
-
-        {!isPlanGenerated && (
-          <div className="text-center text-eatclean-gray-inactive py-12">
-            <p className="text-lg mb-4">
-              Configure o número de dias e refeições e gere seu plano!
-            </p>
-            <Button
-              className="bg-eatclean-primary-green hover:bg-eatclean-primary-green/90 text-eatclean-white rounded-xl py-3 text-lg font-semibold flex items-center justify-center gap-2 mx-auto"
-              onClick={generateAutomaticPlan}
-            >
-              <Shuffle size={20} />
-              Gerar Primeiro Plano
-            </Button>
-          </div>
-        )}
-        <ScrollToTop />
-      </div>
-    // </PageTransition> {/* Removido temporariamente */}
+      )}
+      <ScrollToTop />
+    </div>
   );
 };
 

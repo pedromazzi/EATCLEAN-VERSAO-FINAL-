@@ -14,7 +14,6 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import ScrollToTop from "@/components/ScrollToTop";
-// import PageTransition from "@/components/PageTransition"; // Removido temporariamente
 
 const Guia = () => {
   return (
@@ -543,390 +542,390 @@ const Guia = () => {
                   <li>• Muita proteína (carnes, ovos, peixe)</li>
                   <li>• Carboidrato moderado (arroz, batata doce)</li>
                   <li>• Gordura boa (azeite, abacate, castanhas)</li>
-                </ul>
-              </div>
-
-              <div className="mt-3">
-                <p><strong>GANHO DE MASSA:</strong></p>
-                <ul className="ml-4 space-y-1">
-                  <li>• Muita proteína (construir músculo)</li>
-                  <li>• Bastante carboidrato (energia para treinar)</li>
-                  <li>• Gordura boa (produzir hormônios)</li>
-                </ul>
-              </div>
-
-              <div className="mt-3">
-                <p><strong>MANUTENÇÃO:</strong></p>
-                <ul className="ml-4 space-y-1">
-                  <li>• Equilíbrio entre todos os macronutrientes</li>
-                </ul>
-              </div>
-
-              <h4 className="font-bold text-lg mt-6">🍽️ PORÇÕES NA PRÁTICA (SEM BALANÇA)</h4>
-              
-              <div className="space-y-3 mt-3">
-                <div>
-                  <p><strong>PROTEÍNA:</strong></p>
-                  <ul className="ml-4">
-                    <li>• Tamanho e espessura da palma da sua mão</li>
-                    <li className="italic text-sm">Exemplo: 1 filé de frango do tamanho da palma</li>
                   </ul>
                 </div>
 
-                <div>
-                  <p><strong>CARBOIDRATO:</strong></p>
-                  <ul className="ml-4">
-                    <li>• Tamanho do seu punho fechado</li>
-                    <li className="italic text-sm">Exemplo: 1 punho de arroz cozido</li>
-                  </ul>
-                </div>
-
-                <div>
-                  <p><strong>VEGETAIS:</strong></p>
-                  <ul className="ml-4">
-                    <li>• 2 mãos em concha juntas</li>
-                    <li className="italic text-sm">Coma à vontade! Difícil exagerar</li>
-                  </ul>
-                </div>
-
-                <div>
-                  <p><strong>GORDURAS:</strong></p>
-                  <ul className="ml-4">
-                    <li>• Tamanho do seu polegar</li>
-                    <li className="italic text-sm">Exemplo: 1 colher de sopa de azeite</li>
-                  </ul>
-                </div>
-              </div>
-
-              <h4 className="font-bold text-lg mt-6">⏰ QUANDO COMER O QUÊ</h4>
-              
-              <div className="space-y-3 mt-3">
-                <div>
-                  <p><strong>Carboidratos</strong> são sua energia. Priorize:</p>
+                <div className="mt-3">
+                  <p><strong>GANHO DE MASSA:</strong></p>
                   <ul className="ml-4 space-y-1">
-                    <li>• Café da manhã (começar o dia com disposição)</li>
-                    <li>• Antes do treino (ter energia para treinar)</li>
-                    <li>• Depois do treino (recuperar os músculos)</li>
+                    <li>• Muita proteína (construir músculo)</li>
+                    <li>• Bastante carboidrato (energia para treinar)</li>
+                    <li>• Gordura boa (produzir hormônios)</li>
                   </ul>
                 </div>
 
-                <div>
-                  <p><strong>Proteínas</strong> em todas as refeições:</p>
+                <div className="mt-3">
+                  <p><strong>MANUTENÇÃO:</strong></p>
                   <ul className="ml-4 space-y-1">
-                    <li>• Ajuda a manter a saciedade</li>
-                    <li>• Constrói e recupera músculos</li>
-                    <li>• Acelera o metabolismo</li>
+                    <li>• Equilíbrio entre todos os macronutrientes</li>
                   </ul>
                 </div>
 
-                <div>
-                  <p><strong>Gorduras boas</strong> ao longo do dia:</p>
-                  <ul className="ml-4 space-y-1">
-                    <li>• Dão saciedade</li>
-                    <li>• Ajudam na produção de hormônios</li>
-                    <li>• Não tenha medo delas!</li>
-                  </ul>
-                </div>
-              </div>
-
-              <h4 className="font-bold text-lg mt-6">⚠️ ARMADILHAS COMUNS</h4>
-              
-              <ol className="space-y-3 ml-4 list-decimal mt-3">
-                <li>
-                  <strong>Subestimar porções:</strong>
-                  <ul className="ml-4 mt-1">
-                    <li>• Use a mão como referência</li>
-                    <li>• Cuidado com o "só um pouquinho" que vira muito</li>
-                    <li>• Pratos menores ajudam a controlar</li>
-                    <li>• "Provar" enquanto cozinha</li>
-                  </ul>
-                </li>
-
-                <li>
-                  <strong>Esquecer "pequenas" coisas:</strong>
-                  <ul className="ml-4 mt-1">
-                    <li>• Óleo no cozimento conta!</li>
-                    <li>• Molhos têm calorias</li>
-                    <li>• Bebidas calóricas (sucos, refrigerantes)</li>
-                  </ul>
-                </li>
-
-                <li>
-                  <strong>Não contar fins de semana:</strong>
-                  <ul className="ml-4 mt-1">
-                    <li>• 5 dias certinho + 2 dias de exagero = zero resultado</li>
-                    <li>• Use a regra 80/20: 80% certinho, 20% flexível</li>
-                    <li>• Flexível não significa descontrole total</li>
-                  </ul>
-                </li>
-
-                <li>
-                  <strong>Comparar com outras pessoas:</strong>
-                  <ul className="ml-4 mt-1">
-                    <li>• "Meu amigo come muito e não engorda!"</li>
-                    <li>• Cada metabolismo é único</li>
-                    <li>• Foque no SEU corpo e progresso</li>
-                  </ul>
-                </li>
-
-                <li>
-                  <strong>Ficar obcecado:</strong>
-                  <ul className="ml-4 mt-1">
-                    <li>• Alimentação saudável não é prisão</li>
-                    <li>• Aprenda a fazer escolhas melhores</li>
-                    <li>• Qualidade de vida importa!</li>
-                  </ul>
-                </li>
-              </ol>
-
-              <h4 className="font-bold text-lg mt-6">🎯 SINAIS DE QUE ESTÁ INDO BEM</h4>
-              
-              <ul className="space-y-1 ml-4 mt-3">
-                <li>✓ Tem energia durante o dia</li>
-                <li>✓ Dorme bem</li>
-                <li>✓ Consegue treinar com intensidade</li>
-                <li>✓ Não tem fome extrema constante</li>
-                <li>✓ Vê progressão visual no espelho</li>
-                <li>✓ Consegue manter a rotina sem sofrimento</li>
-              </ul>
-            </div>
-          </AccordionContent>
-        </AccordionItem>
-
-        {/* ACCORDION 6: Hábitos e Consistência */}
-        <AccordionItem value="item-6" className="bg-eatclean-white rounded-xl shadow-sm border-none">
-          <AccordionTrigger className="flex items-center justify-start gap-3 p-4 text-eatclean-gray-text font-bold text-lg hover:no-underline">
-            <div className="w-8 h-8 rounded-full bg-eatclean-primary-green/10 flex items-center justify-center flex-shrink-0">
-              <TrendingUp size={20} className="text-eatclean-primary-green" />
-            </div>
-            <span className="flex-grow text-left">Hábitos e Consistência</span>
-          </AccordionTrigger>
-          <AccordionContent className="px-4 pb-4 text-eatclean-gray-text space-y-3">
-            <div className="space-y-4">
-              <p>Resultados duradouros vêm de hábitos consistentes, não de perfeição temporária. <strong>"Consistência > Perfeição"</strong></p>
-
-              <h4 className="font-bold text-lg mt-4">🎯 MINDSET CORRETO</h4>
-              
-              <ol className="space-y-3 ml-4 list-decimal mt-3">
-                <li>
-                  <strong>Pense em processo, não apenas em resultado:</strong>
-                  <ul className="ml-4 mt-1">
-                    <li>✗ "Quero perder 10kg"</li>
-                    <li>✓ "Vou treinar 4x/semana e seguir meu plano alimentar"</li>
-                  </ul>
-                </li>
-
-                <li>
-                  <strong>Seja paciente:</strong>
-                  <ul className="ml-4 mt-1">
-                    <li>• Mudanças reais levam tempo</li>
-                    <li>• Foco no progresso, não na perfeição</li>
-                    <li>• 1% melhor a cada dia = 37x melhor em 1 ano</li>
-                  </ul>
-                </li>
-
-                <li>
-                  <strong>Aceite os altos e baixos:</strong>
-                  <ul className="ml-4 mt-1">
-                    <li>• Dias ruins acontecem</li>
-                    <li>• Um deslize não arruína tudo</li>
-                    <li>• Volte no próximo dia, sem culpa</li>
-                  </ul>
-                </li>
-
-                <li>
-                  <strong>Celebre pequenas vitórias:</strong>
-                  <ul className="ml-4 mt-1">
-                    <li>✓ Treinou quando não queria? Vitória!</li>
-                    <li>✓ Escolheu água ao invés de refrigerante? Vitória!</li>
-                    <li>✓ Preparou marmitas? Vitória!</li>
-                  </ul>
-                </li>
-              </ol>
-
-              <h4 className="font-bold text-lg mt-6">🔄 CONSTRUINDO HÁBITOS DURADOUROS</h4>
-              
-              <p className="mt-2"><strong>Método dos Pequenos Passos:</strong></p>
-
-              <div className="space-y-3 mt-3">
-                <div>
-                  <p className="font-semibold">Semana 1-2:</p>
-                  <ul className="ml-4">
-                    <li>□ Beber 2L de água por dia</li>
-                    <li>□ Comer proteína no café da manhã</li>
-                  </ul>
-                </div>
-
-                <div>
-                  <p className="font-semibold">Semana 3-4:</p>
-                  <ul className="ml-4">
-                    <li>□ Adicionar vegetais no almoço e jantar</li>
-                    <li>□ Dormir 7-8h por noite</li>
-                  </ul>
-                </div>
-
-                <div>
-                  <p className="font-semibold">Semana 5-6:</p>
-                  <ul className="ml-4">
-                    <li>□ Meal prep nos domingos</li>
-                    <li>□ Caminhar 10.000 passos/dia</li>
-                  </ul>
-                </div>
-
-                <div>
-                  <p className="font-semibold">Semana 7-8:</p>
-                  <ul className="ml-4">
-                    <li>□ Começar exercícios 3x/semana</li>
-                    <li>□ Reduzir açúcar adicionado</li>
-                  </ul>
-                </div>
-              </div>
-
-              <p className="italic mt-3">Dica: Não tente mudar tudo de uma vez. Um hábito por vez!</p>
-
-              <h4 className="font-bold text-lg mt-6">📅 ROTINA DIÁRIA IDEAL</h4>
-              
-              <div className="space-y-3 mt-3">
-                <div>
-                  <p className="font-semibold">Manhã (6h-9h):</p>
-                  <ul className="ml-4 space-y-1">
-                    <li>✓ Acorde no mesmo horário</li>
-                    <li>✓ Beba 500ml de água ao acordar</li>
-                    <li>✓ Café da manhã completo (30 min após acordar)</li>
-                    <li>✓ Sol por 15 minutos (vitamina D)</li>
-                  </ul>
-                </div>
-
-                <div>
-                  <p className="font-semibold">Meio-dia (12h-13h):</p>
-                  <ul className="ml-4 space-y-1">
-                    <li>✓ Almoço balanceado</li>
-                    <li>✓ Não pule refeições!</li>
-                    <li>✓ Mastigue devagar (20 minutos de refeição)</li>
-                  </ul>
-                </div>
-
-                <div>
-                  <p className="font-semibold">Tarde (15h-18h):</p>
-                  <ul className="ml-4 space-y-1">
-                    <li>✓ Lanche nutritivo</li>
-                    <li>✓ Hidratação constante</li>
-                    <li>✓ Treino (se for seu horário)</li>
-                  </ul>
-                </div>
-
-                <div>
-                  <p className="font-semibold">Noite (18h-21h):</p>
-                  <ul className="ml-4 space-y-1">
-                    <li>✓ Jantar leve mas nutritivo</li>
-                    <li>✓ Jantar 2-3h antes de dormir</li>
-                    <li>✓ Evite telas 1h antes de dormir</li>
-                    <li>✓ Durma 7-8h</li>
-                  </ul>
-                </div>
-              </div>
-
-              <h4 className="font-bold text-lg mt-6">💪 LIDANDO COM DESAFIOS</h4>
-              
-              <div className="space-y-3 mt-3">
-                <div>
-                  <p className="font-semibold">Falta de tempo:</p>
-                  <ul className="ml-4 space-y-1">
-                    <li>✓ Meal prep no fim de semana</li>
-                    <li>✓ Refeições simples e rápidas</li>
-                    <li>✓ Use o EatClean para receitas práticas!</li>
-                  </ul>
-                </div>
-
-                <div>
-                  <p className="font-semibold">Viagens/eventos:</p>
-                  <ul className="ml-4 space-y-1">
-                    <li>✓ Planeje com antecedência</li>
-                    <li>✓ Leve snacks saudáveis</li>
-                    <li>✓ Aplique a regra 80/20</li>
-                    <li>✓ Volte à rotina no dia seguinte</li>
-                  </ul>
-                </div>
-
-                <div>
-                  <p className="font-semibold">Falta de motivação:</p>
-                  <ul className="ml-4 space-y-1">
-                    <li>✓ Tenha um "por quê" forte</li>
-                    <li>✓ Acompanhe seu progresso (fotos, medidas)</li>
-                    <li>✓ Encontre um parceiro de treino</li>
-                    <li>✓ Varie as receitas para não enjoar</li>
-                  </ul>
-                </div>
-
-                <div>
-                  <p className="font-semibold">Vontade de desistir:</p>
-                  <ul className="ml-4 space-y-1">
-                    <li>✓ Lembre-se de onde começou</li>
-                    <li>✓ Foque no que já conquistou</li>
-                    <li>✓ Um dia ruim não anula semanas de esforço</li>
-                    <li>✓ Amanhã é um novo começo</li>
-                  </ul>
-                </div>
-              </div>
-
-              <h4 className="font-bold text-lg mt-6">🌟 DICAS DE OURO</h4>
-              
-              <ol className="space-y-3 ml-4 list-decimal mt-3">
-                <li>
-                  <strong>Regra dos 3 dias:</strong>
-                  <p className="ml-4">Nunca fique mais de 3 dias sem treinar ou comer bem. Mantém o hábito vivo.</p>
-                </li>
-
-                <li>
-                  <strong>Prepare o ambiente:</strong>
-                  <ul className="ml-4 mt-1">
-                    <li>• Tenha sempre comida saudável em casa</li>
-                    <li>• Remova tentações (ou deixe fora de vista)</li>
-                    <li>• Deixe roupas de treino separadas</li>
-                  </ul>
-                </li>
-
-                <li>
-                  <strong>Comunidade:</strong>
-                  <ul className="ml-4 mt-1">
-                    <li>• Siga perfis motivadores</li>
-                    <li>• Compartilhe sua jornada</li>
-                    <li>• Encontre pessoas com objetivos similares</li>
-                  </ul>
-                </li>
-
-                <li>
-                  <strong>Auto-compaixão:</strong>
-                  <ul className="ml-4 mt-1">
-                    <li>• Seja gentil consigo mesmo</li>
-                    <li>• Erros são parte do processo</li>
-                    <li>• Progresso não é linear</li>
-                  </ul>
-                </li>
-
-                <li>
-                  <strong>Foque no que você PODE fazer:</strong>
-                  <ul className="ml-4 mt-1">
-                    <li>• Não tem tempo para 1h de treino? Faça 20 min</li>
-                    <li>• Não conseguiu meal prep? Faça refeições simples</li>
-                    <li>• Saiu da dieta? Volte na próxima refeição</li>
+                <h4 className="font-bold text-lg mt-6">🍽️ PORÇÕES NA PRÁTICA (SEM BALANÇA)</h4>
+                
+                <div className="space-y-3 mt-3">
+                  <div>
+                    <p><strong>PROTEÍNA:</strong></p>
+                    <ul className="ml-4">
+                      <li>• Tamanho e espessura da palma da sua mão</li>
+                      <li className="italic text-sm">Exemplo: 1 filé de frango do tamanho da palma</li>
                     </ul>
-                </li>
-              </ol>
+                  </div>
 
-              <div className="bg-eatclean-primary-green/10 p-4 rounded-lg mt-6">
-                <h4 className="font-bold text-lg">🏆 LEMBRE-SE</h4>
-                <p className="mt-2 italic text-center">"Não é sobre ser perfeito. É sobre ser melhor do que ontem."</p>
-                <p className="mt-3">Alimentação saudável não é punição, é autocuidado. Não é restrição, é nutrição. Não é temporário, é estilo de vida.</p>
-                <p className="mt-3 font-semibold text-center">Você consegue! Um passo de cada vez. 💪🥗</p>
+                  <div>
+                    <p><strong>CARBOIDRATO:</strong></p>
+                    <ul className="ml-4">
+                      <li>• Tamanho do seu punho fechado</li>
+                      <li className="italic text-sm">Exemplo: 1 punho de arroz cozido</li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <p><strong>VEGETAIS:</strong></p>
+                    <ul className="ml-4">
+                      <li>• 2 mãos em concha juntas</li>
+                      <li className="italic text-sm">Coma à vontade! Difícil exagerar</li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <p><strong>GORDURAS:</strong></p>
+                    <ul className="ml-4">
+                      <li>• Tamanho do seu polegar</li>
+                      <li className="italic text-sm">Exemplo: 1 colher de sopa de azeite</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <h4 className="font-bold text-lg mt-6">⏰ QUANDO COMER O QUÊ</h4>
+                
+                <div className="space-y-3 mt-3">
+                  <div>
+                    <p><strong>Carboidratos</strong> são sua energia. Priorize:</p>
+                    <ul className="ml-4 space-y-1">
+                      <li>• Café da manhã (começar o dia com disposição)</li>
+                      <li>• Antes do treino (ter energia para treinar)</li>
+                      <li>• Depois do treino (recuperar os músculos)</li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <p><strong>Proteínas</strong> em todas as refeições:</p>
+                    <ul className="ml-4 space-y-1">
+                      <li>• Ajuda a manter a saciedade</li>
+                      <li>• Constrói e recupera músculos</li>
+                      <li>• Acelera o metabolismo</li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <p><strong>Gorduras boas</strong> ao longo do dia:</p>
+                    <ul className="ml-4 space-y-1">
+                      <li>• Dão saciedade</li>
+                      <li>• Ajudam na produção de hormônios</li>
+                      <li>• Não tenha medo delas!</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <h4 className="font-bold text-lg mt-6">⚠️ ARMADILHAS COMUNS</h4>
+                
+                <ol className="space-y-3 ml-4 list-decimal mt-3">
+                  <li>
+                    <strong>Subestimar porções:</strong>
+                    <ul className="ml-4 mt-1">
+                      <li>• Use a mão como referência</li>
+                      <li>• Cuidado com o "só um pouquinho" que vira muito</li>
+                      <li>• Pratos menores ajudam a controlar</li>
+                      <li>• "Provar" enquanto cozinha</li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <strong>Esquecer "pequenas" coisas:</strong>
+                    <ul className="ml-4 mt-1">
+                      <li>• Óleo no cozimento conta!</li>
+                      <li>• Molhos têm calorias</li>
+                      <li>• Bebidas calóricas (sucos, refrigerantes)</li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <strong>Não contar fins de semana:</strong>
+                    <ul className="ml-4 mt-1">
+                      <li>• 5 dias certinho + 2 dias de exagero = zero resultado</li>
+                      <li>• Use a regra 80/20: 80% certinho, 20% flexível</li>
+                      <li>• Flexível não significa descontrole total</li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <strong>Comparar com outras pessoas:</strong>
+                    <ul className="ml-4 mt-1">
+                      <li>• "Meu amigo come muito e não engorda!"</li>
+                      <li>• Cada metabolismo é único</li>
+                      <li>• Foque no SEU corpo e progresso</li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <strong>Ficar obcecado:</strong>
+                    <ul className="ml-4 mt-1">
+                      <li>• Alimentação saudável não é prisão</li>
+                      <li>• Aprenda a fazer escolhas melhores</li>
+                      <li>• Qualidade de vida importa!</li>
+                    </ul>
+                  </li>
+                </ol>
+
+                <h4 className="font-bold text-lg mt-6">🎯 SINAIS DE QUE ESTÁ INDO BEM</h4>
+                
+                <ul className="space-y-1 ml-4 mt-3">
+                  <li>✓ Tem energia durante o dia</li>
+                  <li>✓ Dorme bem</li>
+                  <li>✓ Consegue treinar com intensidade</li>
+                  <li>✓ Não tem fome extrema constante</li>
+                  <li>✓ Vê progressão visual no espelho</li>
+                  <li>✓ Consegue manter a rotina sem sofrimento</li>
+                </ul>
               </div>
-            </div>
-          </AccordionContent>
-        </AccordionItem>
-      </Accordion>
-      <ScrollToTop />
-    </div>
-  );
-};
+            </AccordionContent>
+          </AccordionItem>
+
+          {/* ACCORDION 6: Hábitos e Consistência */}
+          <AccordionItem value="item-6" className="bg-eatclean-white rounded-xl shadow-sm border-none">
+            <AccordionTrigger className="flex items-center justify-start gap-3 p-4 text-eatclean-gray-text font-bold text-lg hover:no-underline">
+              <div className="w-8 h-8 rounded-full bg-eatclean-primary-green/10 flex items-center justify-center flex-shrink-0">
+                <TrendingUp size={20} className="text-eatclean-primary-green" />
+              </div>
+              <span className="flex-grow text-left">Hábitos e Consistência</span>
+            </AccordionTrigger>
+            <AccordionContent className="px-4 pb-4 text-eatclean-gray-text space-y-3">
+              <div className="space-y-4">
+                <p>Resultados duradouros vêm de hábitos consistentes, não de perfeição temporária. <strong>"Consistência > Perfeição"</strong></p>
+
+                <h4 className="font-bold text-lg mt-4">🎯 MINDSET CORRETO</h4>
+                
+                <ol className="space-y-3 ml-4 list-decimal mt-3">
+                  <li>
+                    <strong>Pense em processo, não apenas em resultado:</strong>
+                    <ul className="ml-4 mt-1">
+                      <li>✗ "Quero perder 10kg"</li>
+                      <li>✓ "Vou treinar 4x/semana e seguir meu plano alimentar"</li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <strong>Seja paciente:</strong>
+                    <ul className="ml-4 mt-1">
+                      <li>• Mudanças reais levam tempo</li>
+                      <li>• Foco no progresso, não na perfeição</li>
+                      <li>• 1% melhor a cada dia = 37x melhor em 1 ano</li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <strong>Aceite os altos e baixos:</strong>
+                    <ul className="ml-4 mt-1">
+                      <li>• Dias ruins acontecem</li>
+                      <li>• Um deslize não arruína tudo</li>
+                      <li>• Volte no próximo dia, sem culpa</li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <strong>Celebre pequenas vitórias:</strong>
+                    <ul className="ml-4 mt-1">
+                      <li>✓ Treinou quando não queria? Vitória!</li>
+                      <li>✓ Escolheu água ao invés de refrigerante? Vitória!</li>
+                      <li>✓ Preparou marmitas? Vitória!</li>
+                    </ul>
+                  </li>
+                </ol>
+
+                <h4 className="font-bold text-lg mt-6">🔄 CONSTRUINDO HÁBITOS DURADOUROS</h4>
+                
+                <p className="mt-2"><strong>Método dos Pequenos Passos:</strong></p>
+
+                <div className="space-y-3 mt-3">
+                  <div>
+                    <p className="font-semibold">Semana 1-2:</p>
+                    <ul className="ml-4">
+                      <li>□ Beber 2L de água por dia</li>
+                      <li>□ Comer proteína no café da manhã</li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <p className="font-semibold">Semana 3-4:</p>
+                    <ul className="ml-4">
+                      <li>□ Adicionar vegetais no almoço e jantar</li>
+                      <li>□ Dormir 7-8h por noite</li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <p className="font-semibold">Semana 5-6:</p>
+                    <ul className="ml-4">
+                      <li>□ Meal prep nos domingos</li>
+                      <li>□ Caminhar 10.000 passos/dia</li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <p className="font-semibold">Semana 7-8:</p>
+                    <ul className="ml-4">
+                      <li>□ Começar exercícios 3x/semana</li>
+                      <li>□ Reduzir açúcar adicionado</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <p className="italic mt-3">Dica: Não tente mudar tudo de uma vez. Um hábito por vez!</p>
+
+                <h4 className="font-bold text-lg mt-6">📅 ROTINA DIÁRIA IDEAL</h4>
+                
+                <div className="space-y-3 mt-3">
+                  <div>
+                    <p className="font-semibold">Manhã (6h-9h):</p>
+                    <ul className="ml-4 space-y-1">
+                      <li>✓ Acorde no mesmo horário</li>
+                      <li>✓ Beba 500ml de água ao acordar</li>
+                      <li>✓ Café da manhã completo (30 min após acordar)</li>
+                      <li>✓ Sol por 15 minutos (vitamina D)</li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <p className="font-semibold">Meio-dia (12h-13h):</p>
+                    <ul className="ml-4 space-y-1">
+                      <li>✓ Almoço balanceado</li>
+                      <li>✓ Não pule refeições!</li>
+                      <li>✓ Mastigue devagar (20 minutos de refeição)</li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <p className="font-semibold">Tarde (15h-18h):</p>
+                    <ul className="ml-4 space-y-1">
+                      <li>✓ Lanche nutritivo</li>
+                      <li>✓ Hidratação constante</li>
+                      <li>✓ Treino (se for seu horário)</li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <p className="font-semibold">Noite (18h-21h):</p>
+                    <ul className="ml-4 space-y-1">
+                      <li>✓ Jantar leve mas nutritivo</li>
+                      <li>✓ Jantar 2-3h antes de dormir</li>
+                      <li>✓ Evite telas 1h antes de dormir</li>
+                      <li>✓ Durma 7-8h</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <h4 className="font-bold text-lg mt-6">💪 LIDANDO COM DESAFIOS</h4>
+                
+                <div className="space-y-3 mt-3">
+                  <div>
+                    <p className="font-semibold">Falta de tempo:</p>
+                    <ul className="ml-4 space-y-1">
+                      <li>✓ Meal prep no fim de semana</li>
+                      <li>✓ Refeições simples e rápidas</li>
+                      <li>✓ Use o EatClean para receitas práticas!</li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <p className="font-semibold">Viagens/eventos:</p>
+                    <ul className="ml-4 space-y-1">
+                      <li>✓ Planeje com antecedência</li>
+                      <li>✓ Leve snacks saudáveis</li>
+                      <li>✓ Aplique a regra 80/20</li>
+                      <li>✓ Volte à rotina no dia seguinte</li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <p className="font-semibold">Falta de motivação:</p>
+                    <ul className="ml-4 space-y-1">
+                      <li>✓ Tenha um "por quê" forte</li>
+                      <li>✓ Acompanhe seu progresso (fotos, medidas)</li>
+                      <li>✓ Encontre um parceiro de treino</li>
+                      <li>✓ Varie as receitas para não enjoar</li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <p className="font-semibold">Vontade de desistir:</p>
+                    <ul className="ml-4 space-y-1">
+                      <li>✓ Lembre-se de onde começou</li>
+                      <li>✓ Foque no que já conquistou</li>
+                      <li>✓ Um dia ruim não anula semanas de esforço</li>
+                      <li>✓ Amanhã é um novo começo</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <h4 className="font-bold text-lg mt-6">🌟 DICAS DE OURO</h4>
+                
+                <ol className="space-y-3 ml-4 list-decimal mt-3">
+                  <li>
+                    <strong>Regra dos 3 dias:</strong>
+                    <p className="ml-4">Nunca fique mais de 3 dias sem treinar ou comer bem. Mantém o hábito vivo.</p>
+                  </li>
+
+                  <li>
+                    <strong>Prepare o ambiente:</strong>
+                    <ul className="ml-4 mt-1">
+                      <li>• Tenha sempre comida saudável em casa</li>
+                      <li>• Remova tentações (ou deixe fora de vista)</li>
+                      <li>• Deixe roupas de treino separadas</li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <strong>Comunidade:</strong>
+                    <ul className="ml-4 mt-1">
+                      <li>• Siga perfis motivadores</li>
+                      <li>• Compartilhe sua jornada</li>
+                      <li>• Encontre pessoas com objetivos similares</li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <strong>Auto-compaixão:</strong>
+                    <ul className="ml-4 mt-1">
+                      <li>• Seja gentil consigo mesmo</li>
+                      <li>• Erros são parte do processo</li>
+                      <li>• Progresso não é linear</li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <strong>Foque no que você PODE fazer:</strong>
+                    <ul className="ml-4 mt-1">
+                      <li>• Não tem tempo para 1h de treino? Faça 20 min</li>
+                      <li>• Não conseguiu meal prep? Faça refeições simples</li>
+                      <li>• Saiu da dieta? Volte na próxima refeição</li>
+                    </ul>
+                  </li>
+                </ol>
+
+                <div className="bg-eatclean-primary-green/10 p-4 rounded-lg mt-6">
+                  <h4 className="font-bold text-lg">🏆 LEMBRE-SE</h4>
+                  <p className="mt-2 italic text-center">"Não é sobre ser perfeito. É sobre ser melhor do que ontem."</p>
+                  <p className="mt-3">Alimentação saudável não é punição, é autocuidado. Não é restrição, é nutrição. Não é temporário, é estilo de vida.</p>
+                  <p className="mt-3 font-semibold text-center">Você consegue! Um passo de cada vez. 💪🥗</p>
+                </div>
+              </div>
+            </AccordionContent>
+          </AccordionItem>
+        </Accordion>
+        <ScrollToTop />
+      </div>
+    );
+  };
 
 export default Guia;

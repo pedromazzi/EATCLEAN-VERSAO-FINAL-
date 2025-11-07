@@ -2,8 +2,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route, Outlet, useLocation } from "react-router-dom";
-// import { AnimatePresence } from "framer-motion"; // Removido temporariamente
+import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom";
 import Header from "./components/Header";
 import FooterNavigation from "./components/FooterNavigation";
 import Explorar from "./pages/Explorar";
@@ -30,34 +29,30 @@ const Layout = () => (
 );
 
 const App = () => {
-  const location = useLocation();
-
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
         <Toaster />
         <Sonner />
         <BrowserRouter>
-          {/* <AnimatePresence mode="wait"> */} {/* Removido temporariamente */}
-            <Routes location={location} key={location.pathname}>
-              {/* Rotas que usam seu próprio header/navegação */}
-              <Route path="/receita/:id" element={<ReceitaDetalhe />} />
-              <Route path="/guia-meal-prep-iniciantes" element={<GuiaMealPrepIniciantes />} />
-              <Route path="/receitas-meal-prep-almoco" element={<ReceitasMealPrepAlmoco />} />
+          <Routes>
+            {/* Rotas que usam seu próprio header/navegação */}
+            <Route path="/receita/:id" element={<ReceitaDetalhe />} />
+            <Route path="/guia-meal-prep-iniciantes" element={<GuiaMealPrepIniciantes />} />
+            <Route path="/receitas-meal-prep-almoco" element={<ReceitasMealPrepAlmoco />} />
 
-              {/* Rotas que usam o Layout padrão (Header e Footer) */}
-              <Route path="/" element={<Layout />}>
-                <Route index element={<Explorar />} />
-                <Route path="explorar" element={<Explorar />} />
-                <Route path="favoritos" element={<Favoritos />} />
-                <Route path="meal-prep" element={<MealPrep />} />
-                <Route path="guia" element={<Guia />} />
-                <Route path="plano-semanal" element={<PlanoSemanal />} />
-                <Route path="lista-compras" element={<ListaCompras />} />
-                <Route path="*" element={<NotFound />} />
-              </Route>
-            </Routes>
-          {/* </AnimatePresence> */} {/* Removido temporariamente */}
+            {/* Rotas que usam o Layout padrão (Header e Footer) */}
+            <Route path="/" element={<Layout />}>
+              <Route index element={<Explorar />} />
+              <Route path="explorar" element={<Explorar />} />
+              <Route path="favoritos" element={<Favoritos />} />
+              <Route path="meal-prep" element={<MealPrep />} />
+              <Route path="guia" element={<Guia />} />
+              <Route path="plano-semanal" element={<PlanoSemanal />} />
+              <Route path="lista-compras" element={<ListaCompras />} />
+              <Route path="*" element={<NotFound />} />
+            </Route>
+          </Routes>
         </BrowserRouter>
       </TooltipProvider>
     </QueryClientProvider>
