@@ -14,16 +14,16 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import ScrollToTop from "@/components/ScrollToTop";
-// import PageTransition from "@/components/PageTransition"; // Removido temporariamente
+import PageTransition from "@/components/PageTransition"; // Importação do PageTransition
 
 const Guia = () => {
   return (
-    // <PageTransition> {/* Removido temporariamente */}
+    <PageTransition> {/* PageTransition envolvendo todo o conteúdo */}
       <div className="p-4 bg-eatclean-light-gray min-h-[calc(100vh-128px)]">
         {/* 1. CABEÇALHO DA TELA */}
         <div className="relative mb-6 rounded-xl overflow-hidden shadow-md">
           <img
-            src="/images/guia/guia-nutricional.png"
+            src="https://images.unsplash.com/photo-1490645935967-10de6ba17061" // URL da imagem atualizada
             alt="Guia Nutricional"
             className="w-full h-48 md:h-64 object-cover"
           />
@@ -93,7 +93,7 @@ const Guia = () => {
             </AccordionTrigger>
             <AccordionContent className="px-4 pb-4 text-eatclean-gray-text space-y-3">
               <div className="space-y-4">
-                <p>Os macronutrientes são os nutrientes que seu corpo precisa em maior quantidade. Cada um tem funções específicas e é essencial para o bom funcionamento do organismo.</p>
+                <p>Os macronutrientes (vitaminas e minerais) são necessários em pequenas quantidades, mas são fundamentais para o funcionamento do corpo.</p>
 
                 <h4 className="font-bold text-lg mt-4">🥩 PROTEÍNAS</h4>
                 <p><strong>Função:</strong> Construção e reparação muscular, produção de hormônios e enzimas.</p>
@@ -639,6 +639,7 @@ const Guia = () => {
                       <li>• Use a mão como referência</li>
                       <li>• Cuidado com o "só um pouquinho" que vira muito</li>
                       <li>• Pratos menores ajudam a controlar</li>
+                      <li>• "Provar" enquanto cozinha</li>
                     </ul>
                   </li>
 
@@ -648,7 +649,6 @@ const Guia = () => {
                       <li>• Óleo no cozimento conta!</li>
                       <li>• Molhos têm calorias</li>
                       <li>• Bebidas calóricas (sucos, refrigerantes)</li>
-                      <li>• "Provar" enquanto cozinha</li>
                     </ul>
                   </li>
 
@@ -927,7 +927,7 @@ const Guia = () => {
         </Accordion>
         <ScrollToTop />
       </div>
-    // </PageTransition> {/* Removido temporariamente */}
+    </PageTransition>
   );
 };
 
