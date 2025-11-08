@@ -706,7 +706,7 @@ const Guia = () => {
             <div className="space-y-4">
               <p>Resultados duradouros vêm de hábitos consistentes, não de perfeição temporária. <strong>"Consistência > Perfeição"</strong></p>
 
-              <h4 className="font-bold text-lg mt-4">🧠 MINDSET CORRETO</h4>
+              <h4 className="font-bold text-lg mt-4">MINDSET CORRETO</h4>
               
               <ol className="space-y-3 ml-4 list-decimal mt-3">
                 <li>
