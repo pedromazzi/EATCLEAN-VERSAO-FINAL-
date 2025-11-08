@@ -29,7 +29,7 @@ export const receitas = [
       "Deixe cozinhar por mais 1 minuto"
     ],
     "tags": ["proteico", "low carb", "rápido", "vegetariano"],
-    "imagem": "/src/assets/images/receitas/omelete-claras.png",
+    "imagem": "/images/receitas/omelete-claras.png",
     "substituicoes": {
       "espinafre": "rúcula ou couve baby",
       "queijo cottage": "ricota light",
@@ -65,7 +65,7 @@ export const receitas = [
       "Corte ao meio e sirva"
     ],
     "tags": ["proteico", "prático", "marmita"],
-    "imagem": "/src/assets/images/receitas/wrap-frango.jpg",
+    "imagem": "/images/receitas/wrap-frango.png",
     "substituicoes": {
       "frango": "atum ou carne moída magra",
       "tortilha integral": "folha de alface (low carb)",
@@ -101,7 +101,7 @@ export const receitas = [
       "Desenforme ou coma direto na caneca"
     ],
     "tags": ["proteico", "rápido", "low carb", "sobremesa"],
-    "imagem": "/src/assets/images/receitas/brownie-caneca.jpg",
+    "imagem": "/images/receitas/brownie-caneca.png",
     "substituicoes": {
       "whey": "3 colheres de aveia + 1 de cacau",
       "ovo": "1/2 banana amassada",
@@ -139,7 +139,7 @@ export const receitas = [
       "Finalize com ervas frescas e limão"
     ],
     "tags": ["proteico", "low carb", "ômega 3", "gourmet"],
-    "imagem": "/src/assets/images/receitas/salmao-aspargos.jpg",
+    "imagem": "/images/receitas/salmao-aspargos.jpg",
     "substituicoes": {
       "salmão": "tilápia ou bacalhau",
       "aspargos": "brócolis ou vagens",
@@ -175,7 +175,7 @@ export const receitas = [
       "Sirva quente"
     ],
     "tags": ["sem glúten", "proteico", "brasileiro"],
-    "imagem": "/src/assets/images/receitas/tapioca-fit.jpg",
+    "imagem": "/images/receitas/tapioca-fit.jpg",
     "substituicoes": {
       "frango": "atum ou carne moída",
       "cottage": "ricota",
@@ -210,7 +210,7 @@ export const receitas = [
       "Sirva imediatamente"
     ],
     "tags": ["energético", "antioxidante", "pré-treino"],
-    "imagem": "/src/assets/images/receitas/acai-bowl.jpg",
+    "imagem": "/images/receitas/acai-bowl.jpg",
     "substituicoes": {
       "açaí": "pitaya ou banana congelada",
       "granola": "castanhas picadas",
@@ -245,7 +245,7 @@ export const receitas = [
       "Sirva gelado"
     ],
     "tags": ["proteico", "low carb", "sobremesa", "gelado"],
-    "imagem": "/src/assets/images/receitas/mousse-proteico.jpg",
+    "imagem": "/images/receitas/mousse-proteico.jpg",
     "substituicoes": {
       "iogurte grego": "cream cheese batido",
       "whey chocolate": "cacau 100% + adoçante",
@@ -283,7 +283,7 @@ export const receitas = [
       "Sirva com salada ou pão integral"
     ],
     "tags": ["proteico", "caseiro", "marmita"],
-    "imagem": "/src/assets/images/receitas/hamburguer-fit.jpg",
+    "imagem": "/images/receitas/hamburguer-fit.jpg",
     "substituicoes": {
       "patinho": "frango moído ou peru",
       "aveia": "farinha de linhaça",
@@ -320,7 +320,7 @@ export const receitas = [
       "Tempere e finalize com ervas"
     ],
     "tags": ["low carb", "vegetariano", "acompanhamento"],
-    "imagem": "/src/assets/images/receitas/arroz-couve-flor.jpg",
+    "imagem": "/images/receitas/arroz-couve-flor.jpg",
     "substituicoes": {
       "couve-flor": "brócolis",
       "cebola": "alho-poró",
@@ -356,7 +356,7 @@ export const receitas = [
       "Sirva com frutas ou mel"
     ],
     "tags": ["rápido", "sem açúcar", "fácil"],
-    "imagem": "/src/assets/images/receitas/panqueca-aveia.jpg",
+    "imagem": "/images/receitas/panqueca-aveia.jpg",
     "substituicoes": {
       "banana": "abóbora cozida",
       "aveia": "farinha de amêndoas",
@@ -390,7 +390,7 @@ export const receitas = [
       "Congele por 1h para textura mais firme"
     ],
     "tags": ["vegano", "sem açúcar", "gelado", "saudável"],
-    "imagem": "/src/assets/images/receitas/nice-cream.jpg",
+    "imagem": "/images/receitas/nice-cream.jpg",
     "substituicoes": {
       "banana": "manga congelada",
       "cacau": "frutas vermelhas",
@@ -428,7 +428,7 @@ export const receitas = [
       "Acompanhe com legumes"
     ],
     "tags": ["proteico", "gourmet", "low carb"],
-    "imagem": "/src/assets/images/receitas/frango-mostarda.jpg",
+    "imagem": "/images/receitas/frango-mostarda.jpg",
     "substituicoes": {
       "frango": "peito de peru",
       "mostarda dijon": "mostarda amarela",
@@ -463,7 +463,7 @@ export const receitas = [
       "Dobre e sirva"
     ],
     "tags": ["rápido", "sem glúten", "proteico"],
-    "imagem": "/src/assets/images/receitas/crepioca.jpg",
+    "imagem": "/images/receitas/crepioca.jpg",
     "substituicoes": {
       "ovos": "claras apenas (mais proteína)",
       "tapioca": "aveia",
@@ -504,7 +504,7 @@ export const receitas = [
       "Finalize com parmesão"
     ],
     "tags": ["proteico", "salada", "low carb"],
-    "imagem": "/src/assets/images/receitas/caesar-fit.jpg",
+    "imagem": "/images/receitas/caesar-fit.jpg",
     "substituicoes": {
       "frango": "salmão grelhado",
       "alface romana": "rúcula",
@@ -541,7 +541,7 @@ export const receitas = [
       "Sirva com torradas ou palitos de legumes"
     ],
     "tags": ["proteico", "lanche", "prático"],
-    "imagem": "/src/assets/images/receitas/pasta-atum.jpg",
+    "imagem": "/images/receitas/pasta-atum.jpg",
     "substituicoes": {
       "atum": "frango desfiado",
       "iogurte": "cottage",
@@ -582,7 +582,7 @@ export const receitas = [
       "Sirva quente"
     ],
     "tags": ["detox", "baixa caloria", "vegetariano"],
-    "imagem": "/src/assets/images/receitas/sopa-detox.jpg",
+    "imagem": "/images/receitas/sopa-detox.jpg",
     "substituicoes": {
       "legumes": "qualquer legume da preferência",
       "água": "caldo de legumes caseiro",
@@ -621,7 +621,7 @@ export const receitas = [
       "Deixe esfriar e corte em fatias"
     ],
     "tags": ["proteico", "meal prep", "vegetariano"],
-    "imagem": "/src/assets/images/receitas/omelete-legumes.png",
+    "imagem": "/images/receitas/omelete-legumes.png",
     "substituicoes": {
       "legumes": "qualquer mix de vegetais",
       "queijo minas": "cottage ou ricota",
@@ -658,7 +658,7 @@ export const receitas = [
       "Guarde em pote fechado"
     ],
     "tags": ["energético", "sem açúcar", "snack"],
-    "imagem": "/src/assets/images/receitas/energy-balls.jpg",
+    "imagem": "/images/receitas/energy-balls.jpg",
     "substituicoes": {
       "tâmaras": "uva passa",
       "castanhas": "amendoim ou amêndoas",
@@ -697,7 +697,7 @@ export const receitas = [
       "Finalize com manjericão e parmesão"
     ],
     "tags": ["low carb", "sem glúten", "proteico"],
-    "imagem": "/src/assets/images/receitas/espaguete-abobrinha.jpg",
+    "imagem": "/images/receitas/espaguete-abobrinha.jpg",
     "substituicoes": {
       "abobrinha": "cenoura em espiral",
       "carne moída": "frango desfiado",
@@ -732,7 +732,7 @@ export const receitas = [
       "Sirva gelado"
     ],
     "tags": ["vegetariano", "sobremesa", "gelado"],
-    "imagem": "/src/assets/images/receitas/pudim-chia.jpg",
+    "imagem": "/images/receitas/pudim-chia.jpg",
     "substituicoes": {
       "leite coco": "leite de amêndoas ou desnatado",
       "mel": "adoçante",
@@ -771,7 +771,7 @@ export const receitas = [
       "Asse por 18-20 minutos até dourar"
     ],
     "tags": ["proteico", "marmita", "meal prep"],
-    "imagem": "/src/assets/images/receitas/muffin-frango.jpg",
+    "imagem": "/images/receitas/muffin-frango.jpg",
     "substituicoes": {
       "frango": "atum escorrido ou carne moída",
       "brócolis": "espinafre ou couve-flor",
@@ -812,7 +812,7 @@ export const receitas = [
       "Mexa bem e finalize com salsinha"
     ],
     "tags": ["proteico", "comfort food", "marmita"],
-    "imagem": "/src/assets/images/receitas/strogonoff-fit.jpg",
+    "imagem": "/images/receitas/strogonoff-fit.jpg",
     "substituicoes": {
       "carne": "frango em tiras ou camarão",
       "iogurte grego": "creme de leite light",
@@ -847,7 +847,7 @@ export const receitas = [
       "Sirva com frutas ou mel"
     ],
     "tags": ["sem glúten", "rápido", "natural"],
-    "imagem": "/src/assets/images/receitas/panqueca-banana.png",
+    "imagem": "/images/receitas/panqueca-banana.png",
     "substituicoes": {
       "banana": "purê de maçã",
       "ovos": "substituto vegano de ovo",
@@ -888,7 +888,7 @@ export const receitas = [
       "Finalize com gergelim"
     ],
     "tags": ["oriental", "proteico", "colorido"],
-    "imagem": "/src/assets/images/receitas/frango-teriyaki.jpg",
+    "imagem": "/images/receitas/frango-teriyaki.jpg",
     "substituicoes": {
       "frango": "tofu firme",
       "shoyu": "molho de coco aminos",
@@ -927,7 +927,7 @@ export const receitas = [
       "Deixe esfriar antes de cortar"
     ],
     "tags": ["vegetariano", "meal prep", "proteico"],
-    "imagem": "/src/assets/images/receitas/quiche-espinafre.jpg",
+    "imagem": "/images/receitas/quiche-espinafre.jpg",
     "substituicoes": {
       "espinafre": "brócolis ou tomate seco",
       "cottage": "ricota",
@@ -963,7 +963,7 @@ export const receitas = [
       "Sirva imediatamente bem gelado"
     ],
     "tags": ["detox", "energético", "vegano"],
-    "imagem": "/src/assets/images/receitas/smoothie-verde-detox.png",
+    "imagem": "/images/receitas/smoothie-verde-detox.png",
     "substituicoes": {
       "espinafre": "couve",
       "banana": "manga",
@@ -1001,7 +1001,7 @@ export const receitas = [
       "Frite em frigideira antiaderente"
     ],
     "tags": ["proteico", "lanche", "marmita"],
-    "imagem": "/src/assets/images/receitas/bolinho-batata-atum.jpg",
+    "imagem": "/images/receitas/bolinho-batata-atum.jpg",
     "substituicoes": {
       "batata doce": "mandioca ou inhame",
       "atum": "frango desfiado",
@@ -1042,7 +1042,7 @@ export const receitas = [
       "Ajuste temperos e sirva"
     ],
     "tags": ["low carb", "proteico", "gourmet"],
-    "imagem": "/src/assets/images/receitas/risoto-couve-flor.jpg",
+    "imagem": "/images/receitas/risoto-couve-flor.jpg",
     "substituicoes": {
       "couve-flor": "brócolis",
       "frango": "camarão",
@@ -1084,7 +1084,7 @@ export const receitas = [
       "Deixe esfriar antes de cortar"
     ],
     "tags": ["proteico", "comfort food", "meal prep"],
-    "imagem": "/src/assets/images/receitas/torta-frango.jpg",
+    "imagem": "/images/receitas/torta-frango.jpg",
     "substituicoes": {
       "frango": "atum ou carne moída",
       "aveia": "farinha integral",
@@ -1124,7 +1124,7 @@ export const receitas = [
       "Asse por 35-40 minutos"
     ],
     "tags": ["sobremesa", "sem açúcar", "natural"],
-    "imagem": "/src/assets/images/receitas/bolo-banana.jpg",
+    "imagem": "/images/receitas/bolo-banana.jpg",
     "substituicoes": {
       "banana": "maçã ralada",
       "aveia": "farinha de amêndoas",
@@ -1163,7 +1163,7 @@ export const receitas = [
       "Ajuste sal e sirva"
     ],
     "tags": ["proteico", "marmita", "prático"],
-    "imagem": "/src/assets/images/receitas/carne-legumes.jpg",
+    "imagem": "/images/receitas/carne-legumes.jpg",
     "substituicoes": {
       "carne moída": "frango moído ou PTS",
       "berinjela": "chuchu",
@@ -1199,7 +1199,7 @@ export const receitas = [
       "Sirva gelado"
     ],
     "tags": ["prático", "proteico", "café da manhã"],
-    "imagem": "/src/assets/images/receitas/overnight-oats.jpg",
+    "imagem": "/images/receitas/overnight-oats.jpg",
     "substituicoes": {
       "whey": "iogurte grego",
       "leite": "bebida vegetal",
@@ -1237,7 +1237,7 @@ export const receitas = [
       "Sirva com legumes"
     ],
     "tags": ["proteico", "low carb", "light"],
-    "imagem": "/src/assets/images/receitas/peixe-ervas.jpg",
+    "imagem": "/images/receitas/peixe-ervas.jpg",
     "substituicoes": {
       "peixe branco": "salmão ou truta",
       "ervas frescas": "ervas secas",
@@ -1274,7 +1274,7 @@ export const receitas = [
       "Asse por 12-15 minutos"
     ],
     "tags": ["sobremesa", "sem açúcar", "snack"],
-    "imagem": "/src/assets/images/receitas/cookies-aveia.jpg",
+    "imagem": "/images/receitas/cookies-aveia.jpg",
     "substituicoes": {
       "nozes": "castanhas ou amêndoas",
       "pasta amendoim": "tahine",
@@ -1311,7 +1311,7 @@ export const receitas = [
       "Sirva fresco"
     ],
     "tags": ["vegetariano", "mediterrânea", "fresco"],
-    "imagem": "/src/assets/images/receitas/salada-grega.jpg",
+    "imagem": "/images/receitas/salada-grega.jpg",
     "substituicoes": {
       "queijo feta": "queijo branco",
       "pepino": "abobrinha crua",
@@ -1349,7 +1349,7 @@ export const receitas = [
       "Deixe esfriar e corte"
     ],
     "tags": ["vegetariano", "proteico", "colorido"],
-    "imagem": "/src/assets/images/receitas/frittata-legumes.jpg",
+    "imagem": "/images/receitas/frittata-legumes.jpg",
     "substituicoes": {
       "legumes": "qualquer combinação",
       "ovos": "mix de ovos e claras",
@@ -1385,7 +1385,7 @@ export const receitas = [
       "Finalize com chia"
     ],
     "tags": ["proteico", "prático", "café da manhã"],
-    "imagem": "/src/assets/images/receitas/iogurte-granola.jpg",
+    "imagem": "/images/receitas/iogurte-granola.jpg",
     "substituicoes": {
       "iogurte grego": "iogurte natural",
       "whey": "pasta de amendoim",
@@ -1425,7 +1425,7 @@ export const receitas = [
       "Sirva quente com ervas"
     ],
     "tags": ["comfort food", "proteico", "caseiro"],
-    "imagem": "/src/assets/images/receitas/caldo-frango.jpg",
+    "imagem": "/images/receitas/caldo-frango.jpg",
     "substituicoes": {
       "batata": "mandioquinha",
       "chuchu": "abobrinha",
@@ -1463,7 +1463,7 @@ export const receitas = [
       "Deixe esfriar e corte em barrinhas"
     ],
     "tags": ["energético", "snack", "natural"],
-    "imagem": "/src/assets/images/receitas/barrinha-cereal.jpg",
+    "imagem": "/images/receitas/barrinha-cereal.jpg",
     "substituicoes": {
       "mel": "xarope de agave",
       "pasta amendoim": "tahine",
@@ -1501,7 +1501,7 @@ export const receitas = [
       "Sirva fresco"
     ],
     "tags": ["vegetariano", "proteico", "fresco"],
-    "imagem": "/src/assets/images/receitas/salada-grao-bico.jpg",
+    "imagem": "/images/receitas/salada-grao-bico.jpg",
     "substituicoes": {
       "grão de bico": "lentilha cozida",
       "pepino": "abobrinha crua",
@@ -1539,7 +1539,7 @@ export const receitas = [
       "Corte em fatias e sirva com limão"
     ],
     "tags": ["proteico", "gourmet", "ômega 3"],
-    "imagem": "/src/assets/images/receitas/atum-gergelim.jpg",
+    "imagem": "/images/receitas/atum-gergelim.jpg",
     "substituicoes": {
       "atum": "salmão fresco",
       "shoyu": "tamari",
@@ -1577,7 +1577,7 @@ export const receitas = [
       "Empilhe e sirva com frutas"
     ],
     "tags": ["proteico", "café da Manhã", "americano"],
-    "imagem": "/src/assets/images/receitas/panqueca-americana.jpg",
+    "imagem": "/images/receitas/panqueca-americana.jpg",
     "substituicoes": {
       "whey": "banana amassada",
       "aveia": "farinha de arroz",
@@ -1616,7 +1616,7 @@ export const receitas = [
       "Deixe dourar e sirva"
     ],
     "tags": ["comfort food", "proteico", "marmita"],
-    "imagem": "/src/assets/images/receitas/escondidinho-frango.jpg",
+    "imagem": "/images/receitas/escondidinho-frango.jpg",
     "substituicoes": {
       "frango": "carne moída ou atum",
       "batata doce": "mandioquinha",
@@ -1652,7 +1652,7 @@ export const receitas = [
       "Polvilhe cacau por cima"
     ],
     "tags": ["proteico", "cremoso", "nutritivo"],
-    "imagem": "/src/assets/images/receitas/vitamina-abacate.jpg",
+    "imagem": "/images/receitas/vitamina-abacate.jpg",
     "substituicoes": {
       "abacate": "banana congelada",
       "whey": "iogurte grego",
@@ -1691,7 +1691,7 @@ export const receitas = [
       "Sirva quente"
     ],
     "tags": ["vegetariano", "low carb", "italiano"],
-    "imagem": "/src/assets/images/receitas/berinjela-parmegiana.jpg",
+    "imagem": "/images/receitas/berinjela-parmegiana.jpg",
     "substituicoes": {
       "berinjela": "abobrinha",
       "muçarela": "queijo cottage",
@@ -1730,7 +1730,7 @@ export const receitas = [
       "Deixe esfriar antes de desenformar"
     ],
     "tags": ["proteico", "sobremesa", "surpreendente"],
-    "imagem": "/src/assets/images/receitas/brownie-bites.jpg",
+    "imagem": "/images/receitas/brownie-bites.jpg",
     "substituicoes": {
       "feijão preto": "grão de bico cozido",
       "whey": "cacau + adoçante",
@@ -1768,7 +1768,7 @@ export const receitas = [
       "Fatie e sirva"
     ],
     "tags": ["proteico", "low carb", "magro"],
-    "imagem": "/src/assets/images/receitas/peru-grelhado.jpg",
+    "imagem": "/images/receitas/peru-grelhado.jpg",
     "substituicoes": {
       "peru": "frango ou chester",
       "alecrim": "tomilho",
@@ -1807,7 +1807,7 @@ export const receitas = [
       "Sirva quente"
     ],
     "tags": ["brasileiro", "lanche", "sem glúten"],
-    "imagem": "/src/assets/images/receitas/pao-queijo-fit.jpg",
+    "imagem": "/images/receitas/pao-queijo-fit.jpg",
     "substituicoes": {
       "cottage": "ricota",
       "polvilho azedo": "polvilho doce",
@@ -1847,7 +1847,7 @@ export const receitas = [
       "Sirva fresco"
     ],
     "tags": ["proteico", "completo", "mexicano"],
-    "imagem": "/src/assets/images/receitas/bowl-mexicano.jpg",
+    "imagem": "/images/receitas/bowl-mexicano.jpg",
     "substituicoes": {
       "carne": "frango desfiado",
       "feijão preto": "feijão vermelho",
@@ -1886,7 +1886,7 @@ export const receitas = [
       "Sirva gelado"
     ],
     "tags": ["proteico", "sobremesa", "gelado"],
-    "imagem": "/src/assets/images/receitas/cheesecake-limao.jpg",
+    "imagem": "/images/receitas/cheesecake-limao.jpg",
     "substituicoes": {
       "cottage": "cream cheese light",
       "limão": "maracujá",
@@ -1925,7 +1925,7 @@ export const receitas = [
       "Sirva imediatamente"
     ],
     "tags": ["proteico", "rápido", "gourmet"],
-    "imagem": "/src/assets/images/receitas/camarao-alho.jpg",
+    "imagem": "/images/receitas/camarao-alho.jpg",
     "substituicoes": {
       "camarão": "frango em cubos",
       "pimenta dedo-de-moça": "pimenta do reino",
@@ -1965,7 +1965,7 @@ export const receitas = [
       "Sirva quente"
     ],
     "tags": ["low carb", "proteico", "italiano"],
-    "imagem": "/src/assets/images/receitas/lasanha-berinjela.jpg",
+    "imagem": "/images/receitas/lasanha-berinjela.jpg",
     "substituicoes": {
       "berinjela": "abobrinha",
       "carne moída": "frango moído",
@@ -2002,7 +2002,7 @@ export const receitas = [
       "Sirva"
     ],
     "tags": ["snack", "doce", "natural"],
-    "imagem": "/src/assets/images/receitas/pipoca-doce.jpg",
+    "imagem": "/images/receitas/pipoca-doce.jpg",
     "substituicoes": {
       "mel": "xarope de agave",
       "óleo coco": "manteiga ghee",
@@ -2038,7 +2038,7 @@ export const receitas = [
       "Sirva no próprio pote"
     ],
     "tags": ["proteico", "rápido", "prático"],
-    "imagem": "/src/assets/images/receitas/omelete-pote.jpg",
+    "imagem": "/images/receitas/omelete-pote.jpg",
     "substituicoes": {
       "claras": "ovos inteiros",
       "cottage": "queijo branco",
@@ -2078,7 +2078,7 @@ export const receitas = [
       "Ajuste o sal e sirva"
     ],
     "tags": ["proteico", "comfort food", "tradicional"],
-    "imagem": "/src/assets/images/receitas/carne-panela.jpg",
+    "imagem": "/images/receitas/carne-panela.jpg",
     "substituicoes": {
       "músculo": "patinho ou coxão mole",
       "cenoura": "batata doce",
@@ -2116,7 +2116,7 @@ export const receitas = [
       "Sirva gelado"
     ],
     "tags": ["refrescante", "natural", "vitaminado"],
-    "imagem": "/src/assets/images/receitas/salada-frutas.jpg",
+    "imagem": "/images/receitas/salada-frutas.jpg",
     "substituicoes": {
       "frutas": "qualquer mix da estação",
       "iogurte natural": "iogurte grego",
@@ -2154,7 +2154,7 @@ export const receitas = [
       "Sirva quente"
     ],
     "tags": ["proteico", "churrasco", "prático"],
-    "imagem": "/src/assets/images/receitas/espetinho-frango.jpg",
+    "imagem": "/images/receitas/espetinho-frango.jpg",
     "substituicoes": {
       "frango": "carne magra ou camarão",
       "pimentão": "tomate cereja",
@@ -2192,7 +2192,7 @@ export const receitas = [
       "Sirva quente"
     ],
     "tags": ["sem óleo", "prático", "caseiro"],
-    "imagem": "/src/assets/images/receitas/pao-frigideira.jpg",
+    "imagem": "/images/receitas/pao-frigideira.jpg",
     "substituicoes": {
       "farinha integral": "farinha de aveia",
       "iogurte": "leite",
@@ -2231,7 +2231,7 @@ export const receitas = [
       "Tempere e sirva quente"
     ],
     "tags": ["reconfortante", "cremoso", "nutritivo"],
-    "imagem": "/src/assets/images/receitas/creme-abobora.jpg",
+    "imagem": "/images/receitas/creme-abobora.jpg",
     "substituicoes": {
       "abóbora": "mandioquinha ou batata doce",
       "leite de coco": "creme de leite light",
@@ -2270,7 +2270,7 @@ export const receitas = [
       "Sirva com legumes"
     ],
     "tags": ["proteico", "low carb", "leve"],
-    "imagem": "/src/assets/images/receitas/tilapia-limao.jpg",
+    "imagem": "/images/receitas/tilapia-limao.jpg",
     "substituicoes": {
       "tilápia": "pescada ou merluza",
       "limão": "laranja",
@@ -2309,7 +2309,7 @@ export const receitas = [
       "Adicione passas após esfriar"
     ],
     "tags": ["caseiro", "crocante", "natural"],
-    "imagem": "/src/assets/images/receitas/granola-caseira.jpg",
+    "imagem": "/images/receitas/granola-caseira.jpg",
     "substituicoes": {
       "castanhas": "amêndoas ou nozes",
       "mel": "xarope de agave",
@@ -2349,7 +2349,7 @@ export const receitas = [
       "Finalize com gergelim"
     ],
     "tags": ["oriental", "completo", "colorido"],
-    "imagem": "/src/assets/images/receitas/yakisoba-fit.jpg",
+    "imagem": "/images/receitas/yakisoba-fit.jpg",
     "substituicoes": {
       "macarrão arroz": "abobrinha em tiras",
       "frango": "camarão ou tofu",
@@ -2385,7 +2385,7 @@ export const receitas = [
       "Decore com sementes de maracujá"
     ],
     "tags": ["sobremesa", "gelado", "cítrico"],
-    "imagem": "/src/assets/images/receitas/mousse-maracuja.jpg",
+    "imagem": "/images/receitas/mousse-maracuja.jpg",
     "substituicoes": {
       "maracujá": "limão ou morango",
       "leite condensado": "leite condensado fit caseiro",
@@ -2425,7 +2425,7 @@ export const receitas = [
       "Finalize com castanhas"
     ],
     "tags": ["oriental", "proteico", "colorido"],
-    "imagem": "/src/assets/images/receitas/frango-xadrez.jpg",
+    "imagem": "/images/receitas/frango-xadrez.jpg",
     "substituicoes": {
       "frango": "camarão ou tofu",
       "castanha caju": "amendoim",
@@ -2461,7 +2461,7 @@ export const receitas = [
       "Sirva imediatamente"
     ],
     "tags": ["energético", "pré-treino", "nutritivo"],
-    "imagem": "/src/assets/images/receitas/vitamina-beterraba.jpg",
+    "imagem": "/images/receitas/vitamina-beterraba.jpg",
     "substituicoes": {
       "beterraba": "cenoura",
       "banana": "maçã",
@@ -2500,7 +2500,7 @@ export const receitas = [
       "Sirva com molho de tomate"
     ],
     "tags": ["proteico", "assado", "marmita"],
-    "imagem": "/src/assets/images/receitas/almondegas-peru.jpg",
+    "imagem": "/images/receitas/almondegas-peru.jpg",
     "substituicoes": {
       "peru": "frango ou patinho moído",
       "aveia": "farinha de rosca integral",
@@ -2538,7 +2538,7 @@ export const receitas = [
       "Cozinhe 2 minutos cada lado"
     ],
     "tags": ["doce", "natural", "nutritivo"],
-    "imagem": "/src/assets/images/receitas/panqueca-batata-doce.jpg",
+    "imagem": "/images/receitas/panqueca-batata-doce.jpg",
     "substituicoes": {
       "batata doce": "abóbora cozida",
       "aveia": "farinha de amêndoas",
@@ -2577,7 +2577,7 @@ export const receitas = [
       "Sirva bem gelado"
     ],
     "tags": ["refrescante", "proteico", "peruano"],
-    "imagem": "/src/assets/images/receitas/ceviche-peixe.jpg",
+    "imagem": "/images/receitas/ceviche-peixe.jpg",
     "substituicoes": {
       "peixe branco": "camarão",
       "limão": "lima da pérsia",
@@ -2615,7 +2615,7 @@ export const receitas = [
       "Guarde em pote hermético"
     ],
     "tags": ["sobremesa", "sem açúcar", "vegano"],
-    "imagem": "/src/assets/images/receitas/trufa-tamaras.jpg",
+    "imagem": "/images/receitas/trufa-tamaras.jpg",
     "substituicoes": {
       "tâmaras": "figos secos",
       "amêndoas": "castanha de caju",
@@ -2653,7 +2653,7 @@ export const receitas = [
       "Sirva com molho de tomate"
     ],
     "tags": ["italiano", "sem glúten", "caseiro"],
-    "imagem": "/src/assets/images/receitas/nhoque-batata-doce.jpg",
+    "imagem": "/images/receitas/nhoque-batata-doce.jpg",
     "substituicoes": {
       "batata doce": "mandioquinha",
       "farinha arroz": "polvilho",
@@ -2690,7 +2690,7 @@ export const receitas = [
       "Tempere com sal e pimenta"
     ],
     "tags": ["italiana", "fresco", "simples"],
-    "imagem": "/src/assets/images/receitas/salada-caprese.jpg",
+    "imagem": "/images/receitas/salada-caprese.jpg",
     "substituicoes": {
       "muçarela búfala": "queijo branco",
       "tomate": "tomate cereja",
@@ -2730,7 +2730,7 @@ export const receitas = [
       "Faça cobertura e despeje morna"
     ],
     "tags": ["clássico", "caseiro", "sobremesa"],
-    "imagem": "/src/assets/images/receitas/bolo-cenoura.jpg",
+    "imagem": "/images/receitas/bolo-cenoura.jpg",
     "substituicoes": {
       "óleo coco": "óleo de girassol",
       "aveia": "farinha de amêndoas",
@@ -2769,7 +2769,7 @@ export const receitas = [
       "Asse por 15-20 minutos até dourar"
     ],
     "tags": ["oriental", "assado", "crocante"],
-    "imagem": "/src/assets/images/receitas/rolinho-primavera.jpg",
+    "imagem": "/images/receitas/rolinho-primavera.jpg",
     "substituicoes": {
       "massa filo": "massa de pastel integral",
       "frango": "camarão",
@@ -2803,7 +2803,7 @@ export const receitas = [
       "Sirva imediatamente após treino"
     ],
     "tags": ["proteico", "pós-treino", "recovery"],
-    "imagem": "/src/assets/images/receitas/shake-pos-treino.jpg",
+    "imagem": "/images/receitas/shake-pos-treino.jpg",
     "substituicoes": {
       "whey": "pasta de amendoim + aveia",
       "banana": "mamão",
@@ -2843,7 +2843,7 @@ export const receitas = [
       "Ajuste temperos e sirva"
     ],
     "tags": ["proteico", "brasileiro", "comfort food"],
-    "imagem": "/src/assets/images/receitas/picadinho-carne.jpg",
+    "imagem": "/images/receitas/picadinho-carne.jpg",
     "substituicoes": {
       "carne": "frango em cubos",
       "batata": "mandioquinha",
@@ -2881,7 +2881,7 @@ export const receitas = [
       "Sirva quente ou frio"
     ],
     "tags": ["francês", "versátil", "fino"],
-    "imagem": "/src/assets/images/receitas/crepe-frances.jpg",
+    "imagem": "/images/receitas/crepe-frances.jpg",
     "substituicoes": {
       "farinha integral": "farinha de aveia",
       "leite": "bebida vegetal",
@@ -2921,7 +2921,7 @@ export const receitas = [
       "Sirva fresco"
     ],
     "tags": ["árabe", "refrescante", "vegetariano"],
-    "imagem": "/src/assets/images/receitas/tabule-libanes.jpg",
+    "imagem": "/images/receitas/tabule-libanes.jpg",
     "substituicoes": {
       "trigo quibe": "quinoa cozida",
       "pepino": "abobrinha crua",
@@ -2957,7 +2957,7 @@ export const receitas = [
       "Sirva gelado"
     ],
     "tags": ["proteico", "light", "sobremesa"],
-    "imagem": "/src/assets/images/receitas/gelatina-proteica.jpg",
+    "imagem": "/images/receitas/gelatina-proteica.jpg",
     "substituicoes": {
       "gelatina": "ágar-ágar",
       "iogurte grego": "iogurte natural",
@@ -2995,7 +2995,7 @@ export const receitas = [
       "Finalize com alecrim"
     ],
     "tags": ["proteico", "gourmet", "especial"],
-    "imagem": "/src/assets/images/receitas/medalhao-file.jpg",
+    "imagem": "/images/receitas/medalhao-file.jpg",
     "substituicoes": {
       "filé mignon": "alcatra ou picanha",
       "alecrim": "tomilho",
@@ -3036,7 +3036,7 @@ export const receitas = [
       "Sirva quente"
     ],
     "tags": ["prático", "pizza", "caseiro"],
-    "imagem": "/src/assets/images/receitas/pizza-frigideira.jpg",
+    "imagem": "/images/receitas/pizza-frango.jpg",
     "substituicoes": {
       "aveia": "farinha integral",
       "muçarela": "queijo cottage",
@@ -3073,7 +3073,7 @@ export const receitas = [
       "Sirva gelado imediatamente"
     ],
     "tags": ["detox", "matinal", "energético"],
-    "imagem": "/src/assets/images/receitas/suco-verde.jpg",
+    "imagem": "/images/receitas/suco-verde.jpg",
     "substituicoes": {
       "couve": "espinafre",
       "maçã": "abacaxi",
@@ -3111,7 +3111,7 @@ export const receitas = [
       "Vire na metade do tempo"
     ],
     "tags": ["proteico", "crocante", "assado"],
-    "imagem": "/src/assets/images/receitas/frango-empanado.jpg",
+    "imagem": "/images/receitas/frango-empanado.jpg",
     "substituicoes": {
       "frango": "peixe branco",
       "aveia": "farinha de rosca integral",
@@ -3148,7 +3148,7 @@ export const receitas = [
       "Sirva gelado"
     ],
     "tags": ["sobremesa", "gelado", "festa"],
-    "imagem": "/src/assets/images/receitas/pave-morango.jpg",
+    "imagem": "/images/receitas/pave-morango.jpg",
     "substituicoes": {
       "morango": "banana ou maracujá",
       "biscoito integral": "biscoito maisena",
@@ -3187,7 +3187,7 @@ export const receitas = [
       "Ajuste temperos e sirva"
     ],
     "tags": ["brasileiro", "proteico", "tradicional"],
-    "imagem": "/src/assets/images/receitas/feijoada-light.jpg",
+    "imagem": "/images/receitas/feijoada-light.jpg",
     "substituicoes": {
       "carne seca": "frango defumado",
       "lombo": "peito de peru",
@@ -3225,7 +3225,7 @@ export const receitas = [
       "Sirva com frutas ou mel"
     ],
     "tags": ["proteico", "café da Manhã", "especial"],
-    "imagem": "/src/assets/images/receitas/waffle-proteico.jpg",
+    "imagem": "/images/receitas/waffle-proteico.jpg",
     "substituicoes": {
       "whey": "banana amassada",
       "aveia": "farinha de amêndoas",
@@ -3265,7 +3265,7 @@ export const receitas = [
       "Vire na metade"
     ],
     "tags": ["português", "assado", "especial"],
-    "imagem": "/src/assets/images/receitas/bolinho-bacalhau.jpg",
+    "imagem": "/images/receitas/bolinho-bacalhau.jpg",
     "substituicoes": {
       "bacalhau": "atum em lata",
       "batata": "mandioca",
@@ -3305,7 +3305,7 @@ export const receitas = [
       "Sirva quente"
     ],
     "tags": ["integral", "nutritivo", "acompanhamento"],
-    "imagem": "/src/assets/images/receitas/arroz-legumes.jpg",
+    "imagem": "/images/receitas/arroz-legumes.jpg",
     "substituicoes": {
       "arroz integral": "quinoa",
       "legumes": "qualquer mix disponível",
@@ -3344,7 +3344,7 @@ export const receitas = [
       "Sirva imediatamente"
     ],
     "tags": ["energético", "instagram", "colorido"],
-    "imagem": "/src/assets/images/receitas/smoothie-bowl.jpg",
+    "imagem": "/images/receitas/smoothie-bowl.jpg",
     "substituicoes": {
       "açaí": "pitaya ou banana",
       "frutas vermelhas": "manga",
@@ -3384,7 +3384,7 @@ export const receitas = [
       "Sirva quente"
     ],
     "tags": ["brasileiro", "festa", "assado"],
-    "imagem": "/src/assets/images/receitas/coxinha-assada.jpg",
+    "imagem": "/images/receitas/coxinha-assada.png",
     "substituicoes": {
       "frango": "carne seca ou atum",
       "farinha integral": "farinha de arroz",
@@ -3424,7 +3424,7 @@ export const receitas = [
       "Sirva frio ou morno"
     ],
     "tags": ["italiana", "vegetariana", "agridoce"],
-    "imagem": "/src/assets/images/receitas/caponata-berinjela.jpg",
+    "imagem": "/images/receitas/caponata-berinjela.jpg",
     "substituicoes": {
       "berinjela": "abobrinha",
       "aipo": "salsão",
@@ -3462,7 +3462,7 @@ export const receitas = [
       "Sirva imediatamente"
     ],
     "tags": ["bonito", "nutritivo", "colorido"],
-    "imagem": "/src/assets/images/receitas/parfait-iogurte.jpg",
+    "imagem": "/images/receitas/parfait-iogurte.jpg",
     "substituicoes": {
       "iogurte grego": "iogurte natural",
       "frutas": "qualquer mix da estação",
@@ -3503,7 +3503,7 @@ export const receitas = [
       "Finalize com cheiro verde"
     ],
     "tags": ["proteína vegetal", "nutritivo", "econômico"],
-    "imagem": "/src/assets/images/receitas/lentilha-temperada.jpg",
+    "imagem": "/images/receitas/lentilha-temperada.jpg",
     "substituicoes": {
       "lentilha": "grão de bico",
       "cenoura": "batata doce",
@@ -3541,7 +3541,7 @@ export const receitas = [
       "Corte ao meio e sirva"
     ],
     "tags": ["prático", "lanche", "quente"],
-    "imagem": "/src/assets/images/receitas/panini-peru.jpg",
+    "imagem": "/images/receitas/panini-peru.jpg",
     "substituicoes": {
       "peru": "frango grelhado",
       "pão integral": "pão sírio",
@@ -3578,7 +3578,7 @@ export const receitas = [
       "Vire na metade até ficarem crocantes"
     ],
     "tags": ["snack", "crocante", "assado"],
-    "imagem": "/src/assets/images/receitas/chips-batata-doce.jpg",
+    "imagem": "/images/receitas/chips-batata-doce.jpg",
     "substituicoes": {
       "batata doce": "beterraba ou mandioquinha",
       "páprica": "curry ou alho",
@@ -3617,7 +3617,7 @@ export const receitas = [
       "Regue com mel e sirva"
     ],
     "tags": ["proteico", "sobremesa", "especial"],
-    "imagem": "/src/assets/images/receitas/crepe-suico.jpg",
+    "imagem": "/images/receitas/crepe-suico.jpg",
     "substituicoes": {
       "whey": "banana amassada",
       "morangos": "banana caramelizada",
@@ -3657,7 +3657,7 @@ export const receitas = [
       "Finalize com cheiro verde"
     ],
     "tags": ["vegetariano", "colorido", "nutritivo"],
-    "imagem": "/src/assets/images/receitas/jardineira-legumes.jpg",
+    "imagem": "/images/receitas/jardineira-legumes.jpg",
     "substituicoes": {
       "legumes": "qualquer combinação disponível",
       "batata": "mandioquinha",
@@ -3694,7 +3694,7 @@ export const receitas = [
       "Passe no granulado"
     ],
     "tags": ["proteico", "sobremesa", "brasileiro"],
-    "imagem": "/src/assets/images/receitas/brigadeiro-proteico.jpg",
+    "imagem": "/images/receitas/brigadeiro-proteico.jpg",
     "substituicoes": {
       "leite condensado": "leite condensado fit caseiro",
       "whey": "leite em pó desnatado",
@@ -3734,7 +3734,7 @@ export const receitas = [
       "Sirva fresco"
     ],
     "tags": ["havaiano", "completo", "colorido"],
-    "imagem": "/src/assets/images/receitas/poke-bowl.jpg",
+    "imagem": "/images/receitas/poke-bowl.jpg",
     "substituicoes": {
       "salmão": "frango grelhado",
       "arroz integral": "quinoa",
@@ -3772,7 +3772,7 @@ export const receitas = [
       "Sirva imediatamente"
     ],
     "tags": ["proteico", "rápido", "low carb"],
-    "imagem": "/src/assets/images/receitas/ovo-mexido-cottage.jpg",
+    "imagem": "/images/receitas/ovo-mexido-cottage.jpg",
     "substituicoes": {
       "cottage": "ricota esfarelada",
       "tomate cereja": "tomate comum picado",
@@ -3811,7 +3811,7 @@ export const receitas = [
       "Sirva morno ou frio"
     ],
     "tags": ["quentinho", "reconfortante", "natural"],
-    "imagem": "/src/assets/images/receitas/mingau-banana.jpg",
+    "imagem": "/images/receitas/mingau-aveia.jpg",
     "substituicoes": {
       "banana": "maçã ralada",
       "aveia": "quinoa em flocos",
@@ -3849,7 +3849,7 @@ export const receitas = [
       "Regue com mel"
     ],
     "tags": ["proteico", "francês", "especial"],
-    "imagem": "/src/assets/images/receitas/toast-frances.jpg",
+    "imagem": "/images/receitas/toast-frances.jpg",
     "substituicoes": {
       "pão integral": "brioche fit",
       "whey": "banana amassada",
@@ -3885,7 +3885,7 @@ export const receitas = [
       "Sirva imediatamente"
     ],
     "tags": ["detox", "energético", "verde"],
-    "imagem": "/src/assets/images/receitas/vitamina-verde-matinal.jpg",
+    "imagem": "/images/receitas/vitamina-verde-matinal.jpg",
     "substituicoes": {
       "espinafre": "couve",
       "banana": "manga",
@@ -3923,7 +3923,7 @@ export const receitas = [
       "Cozinhe mais 5 minutos"
     ],
     "tags": ["espanhol", "tradicional", "proteico"],
-    "imagem": "/src/assets/images/receitas/tortilha-espanhola.jpg",
+    "imagem": "/images/receitas/tortilha-espanhola.jpg",
     "substituicoes": {
       "batata": "batata doce",
       "cebola": "alho-poró",
@@ -3960,7 +3960,7 @@ export const receitas = [
       "Sirva morno ou frio"
     ],
     "tags": ["nutritivo", "digestivo", "matinal"],
-    "imagem": "/src/assets/images/receitas/bowl-mamao.jpg",
+    "imagem": "/images/receitas/bowl-mamao.jpg",
     "substituicoes": {
       "mamão": "manga ou banana",
       "aveia": "quinoa",
@@ -3999,7 +3999,7 @@ export const receitas = [
       "Finalize com coentro"
     ],
     "tags": ["israelense", "proteico", "especiarias"],
-    "imagem": "/src/assets/images/receitas/shakshuka.jpg",
+    "imagem": "/images/receitas/shakshuka.jpg",
     "substituicoes": {
       "tomate": "molho de tomate caseiro",
       "pimentão": "berinjela",
@@ -4037,7 +4037,7 @@ export const receitas = [
       "Sirva fresco"
     ],
     "tags": ["prático", "leve", "proteico"],
-    "imagem": "/src/assets/images/receitas/sanduiche-atum.jpg",
+    "imagem": "/images/receitas/sanduiche-atum.jpg",
     "substituicoes": {
       "atum": "frango desfiado",
       "iogurte": "cottage",
@@ -4074,7 +4074,7 @@ export const receitas = [
       "Adicione granola por cima"
     ],
     "tags": ["overnight", "prático", "nutritivo"],
-    "imagem": "/src/assets/images/receitas/pudim-chia-frutas.jpg",
+    "imagem": "/images/receitas/pudim-chia-frutas.jpg",
     "substituicoes": {
       "leite amêndoas": "leite de coco",
       "frutas vermelhas": "banana",
@@ -4111,7 +4111,7 @@ export const receitas = [
       "Sirva cenouras com homus para mergulhar"
     ],
     "tags": ["saudável", "árabe", "vegetariano"],
-    "imagem": "/src/assets/images/receitas/palitos-homus.jpg",
+    "imagem": "/images/receitas/palitos-homus.jpg",
     "substituicoes": {
       "cenoura": "pepino ou aipo",
       "grão de bico": "edamame",
@@ -4149,7 +4149,7 @@ export const receitas = [
       "Deixe esfriar antes de desenformar"
     ],
     "tags": ["proteico", "porção individual", "meal prep"],
-    "imagem": "/src/assets/images/receitas/mini-quiche.jpg",
+    "imagem": "/images/receitas/mini-quiche.jpg",
     "substituicoes": {
       "espinafre": "brócolis ou tomate",
       "cottage": "ricota",
@@ -4186,7 +4186,7 @@ export const receitas = [
       "Prenda com palito se necessário"
     ],
     "tags": ["low carb", "rápido", "proteico"],
-    "imagem": "/src/assets/images/receitas/rolinhos-peru.jpg",
+    "imagem": "/images/receitas/rolinhos-peru.jpg",
     "substituicoes": {
       "peru": "blanquet de frango",
       "queijo branco": "queijo cottage",
@@ -4224,7 +4224,7 @@ export const receitas = [
       "Guarde em pote hermético"
     ],
     "tags": ["crocante", "proteico", "vegano"],
-    "imagem": "/src/assets/images/receitas/chips-grao-bico.jpg",
+    "imagem": "/images/receitas/chips-grao-bico.jpg",
     "substituicoes": {
       "grão de bico": "edamame",
       "páprica": "curry",
@@ -4263,7 +4263,7 @@ export const receitas = [
       "Leve à geladeira até servir"
     ],
     "tags": ["proteico", "low carb", "festa"],
-    "imagem": "/src/assets/images/receitas/ovo-recheado.jpg",
+    "imagem": "/images/receitas/ovo-recheado.jpg",
     "substituicoes": {
       "iogurte": "maionese light",
       "mostarda": "wasabi",
@@ -4302,7 +4302,7 @@ export const receitas = [
       "Deixe esfriar e guarde em pote"
     ],
     "tags": ["nutritivo", "energético", "natural"],
-    "imagem": "/src/assets/images/receitas/mix-castanhas.jpg",
+    "imagem": "/images/receitas/mix-castanhas.jpg",
     "substituicoes": {
       "castanhas": "qualquer mix preferido",
       "mel": "xarope de bordo",
@@ -4340,7 +4340,7 @@ export const receitas = [
       "Sirva fresco"
     ],
     "tags": ["italiano", "fresco", "elegante"],
-    "imagem": "/src/assets/images/receitas/espetinho-caprese.jpg",
+    "imagem": "/images/receitas/espetinho-caprese.jpg",
     "substituicoes": {
       "muçarela búfala": "queijo branco em cubos",
       "manjericão": "rúcula",
@@ -4378,7 +4378,7 @@ export const receitas = [
       "Asse por 20 minutos até dourar"
     ],
     "tags": ["sem glúten", "crocante", "brasileiro"],
-    "imagem": "/src/assets/images/receitas/biscoito-polvilho.jpg",
+    "imagem": "/images/receitas/biscoito-polvilho.jpg",
     "substituicoes": {
       "polvilho azedo": "polvilho doce",
       "parmesão": "queijo minas",
@@ -4415,7 +4415,7 @@ export const receitas = [
       "Sirva fresco"
     ],
     "tags": ["low carb", "leve", "oriental"],
-    "imagem": "/src/assets/images/receitas/wrap-alface.jpg",
+    "imagem": "/images/receitas/wrap-alface.jpg",
     "substituicoes": {
       "alface": "folhas de couve",
       "frango": "camarão",
@@ -4453,7 +4453,7 @@ export const receitas = [
       "Guarde em pote hermético"
     ],
     "tags": ["proteico", "doce", "tropical"],
-    "imagem": "/src/assets/images/receitas/bolinhas-coco.jpg",
+    "imagem": "/images/receitas/bolinhas-coco.jpg",
     "substituicoes": {
       "whey": "leite em pó desnatado",
       "mel": "xarope de agave",
@@ -4490,7 +4490,7 @@ export const receitas = [
       "Finalize com cebolinha"
     ],
     "tags": ["cremoso", "acompanhamento", "brasileiro"],
-    "imagem": "/src/assets/images/receitas/pure-mandioquinha.jpg",
+    "imagem": "/images/receitas/pure-mandioquinha.jpg",
     "substituicoes": {
       "mandioquinha": "batata doce ou batata",
       "leite": "caldo de legumes",
@@ -4529,7 +4529,7 @@ export const receitas = [
       "Sirva quente"
     ],
     "tags": ["brasileiro", "crocante", "integral"],
-    "imagem": "/src/assets/images/receitas/farofa-aveia.jpg",
+    "imagem": "/images/receitas/farofa-aveia.jpg",
     "substituicoes": {
       "aveia": "quinoa em flocos",
       "uvas passas": "bacon vegetal",
@@ -4568,7 +4568,7 @@ export const receitas = [
       "Vire na metade do tempo"
     ],
     "tags": ["assado", "colorido", "nutritivo"],
-    "imagem": "/src/assets/images/receitas/legumes-assados.jpg",
+    "imagem": "/images/receitas/legumes-assados.jpg",
     "substituicoes": {
       "legumes": "qualquer combinação disponível",
       "ervas": "páprica defumada",
@@ -4605,7 +4605,7 @@ export const receitas = [
       "Finalize com limão se desejar"
     ],
     "tags": ["brasileiro", "rápido", "nutritivo"],
-    "imagem": "/src/assets/images/receitas/couve-refogada.jpg",
+    "imagem": "/images/receitas/couve-refogada.jpg",
     "substituicoes": {
       "couve": "escarola ou espinafre",
       "alho": "cebola",
@@ -4643,7 +4643,7 @@ export const receitas = [
       "Finalize com manjericão"
     ],
     "tags": ["cremoso", "italiano", "comfort"],
-    "imagem": "/src/assets/images/receitas/polenta-cremosa.jpg",
+    "imagem": "/images/receitas/polenta-cremosa.jpg",
     "substituicoes": {
       "fubá": "farinha de milho fina",
       "parmesão": "queijo cottage",
@@ -4681,7 +4681,7 @@ export const receitas = [
       "Sirva com gelo e hortelã"
     ],
     "tags": ["refrescante", "detox", "gelado"],
-    "imagem": "/src/assets/images/receitas/cha-verde-limao.jpg",
+    "imagem": "/images/receitas/cha-verde-limao.jpg",
     "substituicoes": {
       "chá verde": "chá branco",
       "limão": "gengibre",
@@ -4718,7 +4718,7 @@ export const receitas = [
       "Sirva bem gelado"
     ],
     "tags": ["detox", "hidratante", "zero calorias"],
-    "imagem": "/src/assets/images/receitas/agua-saborizada.jpg",
+    "imagem": "/images/receitas/agua-saborizada.jpg",
     "substituicoes": {
       "frutas": "qualquer combinação cítrica",
       "hortelã": "manjericão",
@@ -4754,7 +4754,7 @@ export const receitas = [
       "Polvilhe canela"
     ],
     "tags": ["proteico", "energético", "gelado"],
-    "imagem": "/src/assets/images/receitas/cafe-proteico.jpg",
+    "imagem": "/images/receitas/cafe-proteico.jpg",
     "substituicoes": {
       "whey": "banana + pasta amendoim",
       "leite": "leite de amêndoas",
@@ -4788,7 +4788,7 @@ export const receitas = [
       "Sirva imediatamente gelado"
     ],
     "tags": ["tropical", "energético", "vitamínico"],
-    "imagem": "/src/assets/images/receitas/smoothie-tropical.jpg",
+    "imagem": "/images/receitas/smoothie-tropical.jpg",
     "substituicoes": {
       "manga": "mamão",
       "abacaxi": "maracujá",
@@ -4825,7 +4825,7 @@ export const receitas = [
       "Sirva com gelo e hortelã"
     ],
     "tags": ["refrescante", "cremoso", "gelado"],
-    "imagem": "/src/assets/images/receitas/limonada-suica.jpg",
+    "imagem": "/images/receitas/limonada-suica.jpg",
     "substituicoes": {
       "leite condensado": "iogurte grego adoçado",
       "limão": "lima da pérsia",
@@ -4865,7 +4865,7 @@ export const receitas = [
       "Finalize com cheiro verde"
     ],
     "tags": ["reconfortante", "proteico", "brasileiro"],
-    "imagem": "/src/assets/images/receitas/canja-galinha.jpg",
+    "imagem": "/images/receitas/canja-galinha.jpg",
     "substituicoes": {
       "frango": "peru",
       "arroz integral": "arroz branco",
@@ -4904,7 +4904,7 @@ export const receitas = [
       "Finalize com manjericão e azeite"
     ],
     "tags": ["clássico", "cremoso", "italiano"],
-    "imagem": "/src/assets/images/receitas/sopa-tomate.jpg",
+    "imagem": "/images/receitas/sopa-tomate.jpg",
     "substituicoes": {
       "tomate fresco": "tomate pelado em lata",
       "manjericão": "orégano",
@@ -4943,7 +4943,7 @@ export const receitas = [
       "Finalize com fio de azeite"
     ],
     "tags": ["português", "tradicional", "comfort"],
-    "imagem": "/src/assets/images/receitas/caldo-verde.jpg",
+    "imagem": "/images/receitas/caldo-verde.jpg",
     "substituicoes": {
       "batata": "mandioca",
       "couve": "escarola",
@@ -4983,7 +4983,7 @@ export const receitas = [
       "Finalize com salsinha"
     ],
     "tags": ["cremoso", "proteico", "nutritivo"],
-    "imagem": "/src/assets/images/receitas/sopa-mandioquinha.jpg",
+    "imagem": "/images/receitas/sopa-mandioquinha.jpg",
     "substituicoes": {
       "mandioquinha": "batata doce",
       "frango": "carne desfiada",
@@ -5022,7 +5022,7 @@ export const receitas = [
       "Finalize com hortelã picada"
     ],
     "tags": ["proteína vegetal", "cremoso", "nutritivo"],
-    "imagem": "/src/assets/images/receitas/sopa-ervilha.jpg",
+    "imagem": "/images/receitas/sopa-ervilha.jpg",
     "substituicoes": {
       "ervilha seca": "lentilha",
       "hortelã": "coentro",
@@ -5061,7 +5061,7 @@ export const receitas = [
       "Sirva com frutas"
     ],
     "tags": ["integral", "fofo", "clássico"],
-    "imagem": "/src/assets/images/receitas/panqueca-americana-integral.jpg",
+    "imagem": "/images/receitas/panqueca-americana-integral.jpg",
     "substituicoes": {
       "farinha integral": "farinha de aveia",
       "leite": "bebida vegetal",
@@ -5099,7 +5099,7 @@ export const receitas = [
       "Asse por 25 minutos até dourar"
     ],
     "tags": ["sem glúten", "brasileiro", "caseiro"],
-    "imagem": "/src/assets/images/receitas/pao-queijo-batata-doce.jpg",
+    "imagem": "/images/receitas/pao-queijo-batata-doce.jpg",
     "substituicoes": {
       "batata doce": "mandioca",
       "polvilho azedo": "polvilho doce",
@@ -5135,7 +5135,7 @@ export const receitas = [
       "Sirva com frutas e mel"
     ],
     "tags": ["caseiro", "probiótico", "natural"],
-    "imagem": "/src/assets/images/receitas/iogurte-caseiro.jpg",
+    "imagem": "/images/receitas/iogurte-caseiro.jpg",
     "substituicoes": {
       "leite integral": "leite desnatado",
       "fermento": "iogurte grego",
@@ -5174,7 +5174,7 @@ export const receitas = [
       "Deixe esfriar 1 minuto"
     ],
     "tags": ["rápido", "microondas", "prático"],
-    "imagem": "/src/assets/images/receitas/bolo-caneca-salgado.jpg",
+    "imagem": "/images/receitas/bolo-caneca-salgado.jpg",
     "substituicoes": {
       "cottage": "ricota",
       "aveia": "farinha integral",
@@ -5209,7 +5209,7 @@ export const receitas = [
       "Sirva imediatamente"
     ],
     "tags": ["vitamínico", "digestivo", "energético"],
-    "imagem": "/src/assets/images/receitas/vitamina-mamao-laranja.jpg",
+    "imagem": "/images/receitas/vitamina-mamao-laranja.jpg",
     "substituicoes": {
       "mamão": "banana",
       "laranja": "tangerina",
