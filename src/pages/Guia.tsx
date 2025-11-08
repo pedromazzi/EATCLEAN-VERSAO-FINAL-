@@ -92,114 +92,7 @@ const Guia = () => {
           </AccordionTrigger>
           <AccordionContent className="px-4 pb-4 text-eatclean-gray-text space-y-3">
             <div className="space-y-4">
-              <p>Os macronutrientes são os nutrientes que seu corpo precisa em maior quantidade. Cada um tem funções específicas e é essencial para o bom funcionamento do organismo.</p>
-
-              <h4 className="font-bold text-lg mt-4">🥩 PROTEÍNAS</h4>
-              
-              <p className="mt-2"><strong>Função:</strong> Construção e reparação muscular, produção de hormônios e enzimas.</p>
-              
-              <p className="mt-2"><strong>Quantidade recomendada:</strong></p>
-              <ul className="space-y-1 ml-4">
-                <li>• Sedentário: 0,8-1g por kg de peso corporal</li>
-                <li>• Ativo/Fitness: 1,6-2,2g por kg de peso corporal</li>
-                <li>• Atletas: 2-2,5g por kg de peso corporal</li>
-              </ul>
-
-              <p className="mt-2"><strong>Melhores fontes:</strong></p>
-              <ul className="space-y-1 ml-4">
-                <li>✓ Frango (26g proteína/100g)</li>
-                <li>✓ Ovos (13g proteína/100g)</li>
-                <li>✓ Peixe (20-25g proteína/100g)</li>
-                <li>✓ Carne vermelha magra (26g proteína/100g)</li>
-                <li>✓ Iogurte grego (10g proteína/100g)</li>
-                <li>✓ Leguminosas (feijão, lentilha, grão de bico)</li>
-              </ul>
-
-              <p className="italic mt-2">Dica: Distribua a proteína em todas as refeições (20-30g por refeição) para melhor absorção.</p>
-
-              <h4 className="font-bold text-lg mt-6">🍠 CARBOIDRATOS</h4>
-              <p><strong>Função:</strong> Principal fonte de energia, combustível para treinos e funções cerebrais.</p>
-              
-              <p className="mt-2"><strong>Quantidade recomendada:</strong></p>
-              <ul className="space-y-1 ml-4">
-                <li>• Emagrecimento: 2-3g por kg de peso</li>
-                <li>• Manutenção: 3-5g por kg de peso</li>
-                <li>• Ganho de massa: 5-7g por kg de peso</li>
-              </ul>
-
-              <p className="mt-2"><strong>Carboidratos complexos (preferir):</strong></p>
-              <ul className="space-y-1 ml-4">
-                <li>✓ Batata doce</li>
-                <li>✓ Arroz integral</li>
-                <li>✓ Aveia</li>
-                <li>✓ Quinoa</li>
-                <li>✓ Mandioca</li>
-                <li>✓ Frutas inteiras</li>
-              </ul>
-
-              <p className="mt-2"><strong>Carboidratos simples (moderar):</strong></p>
-              <ul className="space-y-1 ml-4">
-                <li>⚠ Açúcar</li>
-                <li>⚠ Pão branco</li>
-                <li>⚠ Doces</li>
-                <li>⚠ Refrigerantes</li>
-              </ul>
-
-              <p className="italic mt-2">Dica: Consuma carboidratos principalmente no café da manhã e ao redor do treino (pré e pós). À noite, reduza a quantidade.</p>
-
-              <h4 className="font-bold text-lg mt-6">🥑 GORDURAS</h4>
-              <p><strong>Função:</strong> Produção hormonal, absorção de vitaminas, energia de longa duração.</p>
-              
-              <p className="mt-2"><strong>Quantidade recomendada:</strong></p>
-              <ul className="space-y-1 ml-4">
-                <li>• 20-35% das calorias totais</li>
-                <li>• Aproximadamente 0,8-1,2g por kg de peso</li>
-              </ul>
-
-              <p className="mt-2"><strong>Gorduras boas (insaturadas):</strong></p>
-              <ul className="space-y-1 ml-4">
-                <li>✓ Azeite extra virgem</li>
-                <li>✓ Abacate</li>
-                <li>✓ Castanhas e amêndoas</li>
-                <li>✓ Peixes gordos (salmão, sardinha)</li>
-                <li>✓ Sementes (chia, linhaça)</li>
-                <li>✓ Pasta de amendoim natural</li>
-              </ul>
-
-              <p className="mt-2"><strong>Gorduras a evitar (trans e saturadas em excesso):</strong></p>
-              <ul className="space-y-1 ml-4">
-                <li>✗ Margarina</li>
-                <li>✗ Frituras</li>
-                <li>✗ Produtos industrializados</li>
-                <li>✗ Fast food</li>
-              </ul>
-
-              <p className="italic mt-2">Dica: Não tenha medo da gordura! Ela é essencial para hormônios e saciedade. Apenas escolha as fontes certas.</p>
-
-              <h4 className="font-bold text-lg mt-6">⚖️ DISTRIBUIÇÃO BALANCEADA</h4>
-              <p>Exemplo para uma dieta de 2000 kcal:</p>
-              <ul className="space-y-1 ml-4">
-                <li>• Proteínas: 30% (150g) = 600 kcal</li>
-                <li>• Carboidratos: 40% (200g) = 800 kcal</li>
-                <li>• Gorduras: 30% (67g) = 600 kcal</li>
-              </ul>
-
-              <p className="italic mt-2">Lembre-se: Esses valores são referências. Cada pessoa tem necessidades diferentes baseadas em idade, sexo, atividade física e objetivos.</p>
-            </div>
-          </AccordionContent>
-        </AccordionItem>
-
-        {/* ACCORDION 3: Micronutrientes e Hidratação */}
-        <AccordionItem value="item-3" className="bg-eatclean-white rounded-xl shadow-sm border-none">
-          <AccordionTrigger className="flex items-center justify-start gap-3 p-4 text-eatclean-gray-text font-bold text-lg hover:no-underline">
-            <div className="w-8 h-8 rounded-full bg-eatclean-primary-green/10 flex items-center justify-center flex-shrink-0">
-              <Droplets size={20} className="text-eatclean-primary-green" />
-            </div>
-            <span className="flex-grow text-left">Micronutrientes e Hidratação</span>
-          </AccordionTrigger>
-          <AccordionContent className="px-4 pb-4 text-eatclean-gray-text space-y-3">
-            <div className="space-y-4">
-              <p>Os micronutrientes (vitaminas e minerais) são necessários em pequenas quantidades, mas são fundamentais para o funcionamento do corpo.</p>
+              <p>Os macronutrientes (vitaminas e minerais) são necessários em pequenas quantidades, mas são fundamentais para o funcionamento do corpo.</p>
 
               <h4 className="font-bold text-lg mt-4">💊 VITAMINAS ESSENCIAIS</h4>
               
@@ -639,6 +532,7 @@ const Guia = () => {
                     <li>• Use a mão como referência</li>
                     <li>• Cuidado com o "só um pouquinho" que vira muito</li>
                     <li>• Pratos menores ajudam a controlar</li>
+                    <li>• "Provar" enquanto cozinha</li>
                   </ul>
                 </li>
 
@@ -648,7 +542,6 @@ const Guia = () => {
                     <li>• Óleo no cozimento conta!</li>
                     <li>• Molhos têm calorias</li>
                     <li>• Bebidas calóricas (sucos, refrigerantes)</li>
-                    <li>• "Provar" enquanto cozinha</li>
                   </ul>
                 </li>
 
@@ -704,7 +597,10 @@ const Guia = () => {
           </AccordionTrigger>
           <AccordionContent className="px-4 pb-4 text-eatclean-gray-text space-y-3">
             <div className="space-y-4">
-              <p>Resultados duradouros vêm de hábitos consistentes, não de perfeição temporária. <strong>"Consistência > Perfeição"</strong></p>
+              <p>
+                Resultados duradouros vêm de hábitos consistentes, não de perfeição temporária.{" "}
+                <strong>Consistência leva à perfeição.</strong>
+              </p>
 
               <h4 className="font-bold text-lg mt-4">MINDSET CORRETO</h4>
               
